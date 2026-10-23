@@ -1260,8 +1260,12 @@
   ],
   "cuerpo": "",
   "extracto": "",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/manorustica01.webp",
+  "galeria": [
+   "/media/2024/11/manorustica01.webp",
+   "/media/2024/11/manorustica02.webp",
+   "/media/2024/11/manorustica03.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1532,8 +1536,12 @@
   ],
   "cuerpo": "",
   "extracto": "",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/37.nevadosmelipeuco02.webp",
+  "galeria": [
+   "/media/2024/11/37.nevadosmelipeuco02.webp",
+   "/media/2024/11/37.nevadosmelipeuco03-jpg.webp",
+   "/media/2024/11/37.nevadosmelipeuco04.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1583,8 +1591,12 @@
   ],
   "cuerpo": "",
   "extracto": "",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/52-nn02.webp",
+  "galeria": [
+   "/media/2024/11/52-nn02.webp",
+   "/media/2024/11/52-nn03.webp",
+   "/media/2024/11/52-nn04.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1707,8 +1719,10 @@
   ],
   "cuerpo": "",
   "extracto": "",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/39.patagoniavolcanes02.webp",
+  "galeria": [
+   "/media/2024/11/39.patagoniavolcanes02.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1762,8 +1776,12 @@
   ],
   "cuerpo": "",
   "extracto": "",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/raquetas-nieve-jpg.webp",
+  "galeria": [
+   "/media/2024/11/raquetas-nieve-jpg.webp",
+   "/media/2024/11/carpa-jpg.webp",
+   "/media/2024/11/bastones-jpg.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1805,8 +1823,12 @@
   ],
   "cuerpo": "",
   "extracto": "",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/50.pralinne02.webp",
+  "galeria": [
+   "/media/2024/11/50.pralinne02.webp",
+   "/media/2024/11/50.pralinne03.webp",
+   "/media/2024/11/50.pralinne04.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1942,8 +1964,11 @@
   ],
   "cuerpo": "",
   "extracto": "",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/32.rutaalconguillio02.webp",
+  "galeria": [
+   "/media/2024/11/32.rutaalconguillio02.webp",
+   "/media/2024/11/32.rutaalconguillio03.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1996,8 +2021,12 @@
   ],
   "cuerpo": "",
   "extracto": "",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/41.rosten02.webp",
+  "galeria": [
+   "/media/2024/11/41.rosten02.webp",
+   "/media/2024/11/41.rosten03-jpg.webp",
+   "/media/2024/11/41.rosten04-jpg.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -2086,8 +2115,12 @@
   ],
   "cuerpo": "",
   "extracto": "",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/43.travesiaartesanal02.webp",
+  "galeria": [
+   "/media/2024/11/43.travesiaartesanal02.webp",
+   "/media/2024/11/43.travesiaartesanal03.webp",
+   "/media/2024/11/43.travesiaartesanal04.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",

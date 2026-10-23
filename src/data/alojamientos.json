@@ -1051,8 +1051,12 @@
   ],
   "cuerpo": "<p>Una acogedora hostal familiar ubicada en el centro de Melipeuco. Ofrece alojamiento con opciones de tarifas que pueden incluir desayuno. Cuenta con estacionamiento privado, wifi gratuito y servicio de lavandería. Próximamente, también dispondremos de un restaurante para nuestros huéspedes.</p>",
   "extracto": "Una acogedora hostal familiar ubicada en el centro de Melipeuco. Ofrece alojamiento con opciones de tarifas que pueden incluir desayuno. Cuenta con estacionamiento…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/hostalturismoallipen01-1-wpcf_1024x882.jpg",
+  "galeria": [
+   "/media/2024/11/hostalturismoallipen01-1-wpcf_1024x882.jpg",
+   "/media/2024/11/hostalturismoallipen02-1-wpcf_1024x1013.jpg",
+   "/media/2024/11/hostalturismoallipen03-1-wpcf_1024x808.jpg"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1094,7 +1098,7 @@
    "facebook": "https://web.facebook.com/profile.php?id=100057459099018&locale=es_LA",
    "instagram": "https://www.instagram.com/hostalturismoallipen/"
   },
-  "logo": "",
+  "logo": "/media/2024/11/hostalturismoallipen01-1.jpg",
   "servicios": [],
   "clase": "Hostal"
  },
@@ -1114,8 +1118,12 @@
   ],
   "cuerpo": "<p>Cabañas ubicadas en sector de privilegio con bellezas naturales y vistas a la montaña y el volcán Llaima.</p>",
   "extracto": "Cabañas ubicadas en sector de privilegio con bellezas naturales y vistas a la montaña y el volcán Llaima.",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/huallerupelodge-1-1.webp",
+  "galeria": [
+   "/media/2024/11/huallerupelodge-1-1.webp",
+   "/media/2024/11/huallerupelodge-2.webp",
+   "/media/2024/11/huallerupelodge-4-1.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1178,7 +1186,7 @@
    "instagram": "https://www.instagram.com/huallerupe_lodge/",
    "youtube": "https://youtube.com/@huallerupelodge?feature=shared"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logohuallerupe-1.jpg",
   "servicios": [
    "Arriendo de bicicletas",
    "Información turística",
@@ -1203,8 +1211,12 @@
   ],
   "cuerpo": "<p>Ecolodge diseñado para integrarse armoniosamente con el entorno natural del Parque Nacional ConguillIo. Dedicado a la preservación del entorno y prestación de servicios turisticos de alojamiento enfocados en el turismo sustentable.</p>",
   "extracto": "Ecolodge diseñado para integrarse armoniosamente con el entorno natural del Parque Nacional ConguillIo. Dedicado a la preservación del entorno y prestación de servicios…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/labaita-3-1.webp",
+  "galeria": [
+   "/media/2024/11/labaita-3-1.webp",
+   "/media/2024/11/labaita-5-1.webp",
+   "/media/2024/11/labaita-4.jpg"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1267,7 +1279,7 @@
    "instagram": "https://www.instagram.com/la_baita_conguillio/",
    "youtube": "https://youtube.com/@labaitaconguillio3664?feature=shared"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logo-labaita.jpg",
   "servicios": [
    "Adaptado para movilidad reducida",
    "Bar",
@@ -1293,8 +1305,12 @@
   ],
   "cuerpo": "<p>Ubicadas en un entorno tranquilo y rodeadas de naturaleza, estas cabañas son el lugar perfecto para desconectarte del estrés diario y disfrutar del ambiente sereno que ofrece la región. Ven a conectar con la naturaleza y disfrutar de una estancia inigualable en un ambiente que te hará sentir como en casa.</p>",
   "extracto": "Ubicadas en un entorno tranquilo y rodeadas de naturaleza, estas cabañas son el lugar perfecto para desconectarte del estrés diario y disfrutar del ambiente sereno que…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/lacautiva-2-1.webp",
+  "galeria": [
+   "/media/2024/11/lacautiva-2-1.webp",
+   "/media/2024/11/lacautiva-3-1.webp",
+   "/media/2024/11/lacautiva-4-1.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1352,7 +1368,7 @@
    "facebook": "https://www.facebook.com/lacautivamelipeuco/?locale=es_LA",
    "instagram": "https://www.instagram.com/lacautivamelipeuco/"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logolacautiva-1.jpg",
   "servicios": [
    "Cocina equipada",
    "Estacionamiento",
@@ -1376,8 +1392,10 @@
   ],
   "cuerpo": "<p>La Querencia del Llaima es el destino perfecto para toda la familia. Aquí, cada integrante puede descansar, disfrutar y desconectarse en un entorno natural único. Sus cabañas están situadas cerca del río y rodeadas de cascadas, ofreciendo un ambiente tranquilo y revitalizante en contacto con la naturaleza.</p>",
   "extracto": "La Querencia del Llaima es el destino perfecto para toda la familia. Aquí, cada integrante puede descansar, disfrutar y desconectarse en un entorno natural único. Sus…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/laquerenciadelllaima02-1-wpcf_1024x1024.jpg",
+  "galeria": [
+   "/media/2024/11/laquerenciadelllaima02-1-wpcf_1024x1024.jpg"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1431,7 +1449,7 @@
    "facebook": "https://www.facebook.com/profile.php?id=100057590853559",
    "instagram": "https://www.instagram.com/laquerenciadellaima/"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logolaquerenciadelllaima-1.jpg",
   "servicios": [
    "Cocina equipada",
    "Estacionamiento",
@@ -1455,8 +1473,12 @@
   ],
   "cuerpo": "<p>Cabañas cercanas al Parque Nacional Conguillio, con una espectacular vista al Volcán Llaima. Ideal para disfrutar de la naturaleza y su encanto.</p>",
   "extracto": "Cabañas cercanas al Parque Nacional Conguillio, con una espectacular vista al Volcán Llaima. Ideal para disfrutar de la naturaleza y su encanto.",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/lemulen-4.webp",
+  "galeria": [
+   "/media/2024/11/lemulen-4.webp",
+   "/media/2024/11/lemulen-5-1.webp",
+   "/media/2024/11/lemulen-6-1.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1514,7 +1536,7 @@
    "facebook": "https://web.facebook.com/cabanaslemulen?locale=es_LA",
    "instagram": "https://www.instagram.com/lemulencabanas/"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logolemulen-1.jpg",
   "servicios": [
    "Tinajas",
    "TV"
@@ -1533,8 +1555,12 @@
   ],
   "cuerpo": "<p>Llaima Domo es un glamping que ofrece una experiencia de descanso en contacto con la naturaleza, combinando la sensación de acampar con comodidades modernas. Cada domo cuenta con baño privado, aire acondicionado y tinaja de agua caliente. También ofrecemos casas rodantes totalmente equipadas con terraza y tinajas.</p>",
   "extracto": "Llaima Domo es un glamping que ofrece una experiencia de descanso en contacto con la naturaleza, combinando la sensación de acampar con comodidades modernas. Cada domo…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/llaimadomos-4-1.webp",
+  "galeria": [
+   "/media/2024/11/llaimadomos-4-1.webp",
+   "/media/2024/11/llaimadomos-1-1.webp",
+   "/media/2024/11/llaimadomos-2-1.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1604,8 +1630,12 @@
   ],
   "cuerpo": "<p>El Lodge ofrece un alojamiento cómodo y acogedor, ideal para relajarse y recargar energías después de una jornada al aire libre. Durante todo el año, los visitantes pueden disfrutar de experiencias inolvidables, desde ascensos al Volcán Sollipulli y senderismo en verano, hasta esquí de randonnée y actividades invernales en un entorno privilegiado.</p>\n<p>Comprometidos con la sustentabilidad, producimos nuestra propia energía y promovemos el reciclaje y el cuidado del entorno, fomentando un turismo responsable que permite disfrutar de la naturaleza de manera consciente.</p>\n<p>Contamos con cabañas, domos y refugio de montaña completamente equipados, pensados para brindar comodidad y conexión con el entorno, convirtiendo cada estadía en una experiencia auténtica e inolvidable.</p>",
   "extracto": "El Lodge ofrece un alojamiento cómodo y acogedor, ideal para relajarse y recargar energías después de una jornada al aire libre. Durante todo el año, los visitantes…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/nevadosdesollipulli-6.webp",
+  "galeria": [
+   "/media/2024/11/nevadosdesollipulli-6.webp",
+   "/media/2024/11/nevadosdesollipulli-4-jpg.webp",
+   "/media/2024/11/nevadosdesollipulli-3.jpg"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1658,7 +1688,7 @@
    "whatsapp": "https://wa.me/+56979097685",
    "instagram": "https://www.instagram.com/nevados_sollipulli"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logonevadosdesollipulli-1.jpg",
   "servicios": [],
   "clase": "Lodge"
  },
@@ -1678,8 +1708,12 @@
   ],
   "cuerpo": "<p>Descubre la esencia de Melipeuco en Los Pioneros, donde la aventura se encuentra con la comodidad. Ofrecemos alojamiento acogedor en cabañas y áreas de camping, una deliciosa experiencia culinaria en nuestro restaurante, y emocionantes excursiones organizadas por nuestra operadora turística. Desde explorar el Parque Nacional Conguillío hasta sumergirse en la cultura mapuche local, cada momento es una aventura inolvidable. ¡Únete a nosotros y vive Melipeuco en su máxima expresión!</p>",
   "extracto": "Descubre la esencia de Melipeuco en Los Pioneros, donde la aventura se encuentra con la comodidad. Ofrecemos alojamiento acogedor en cabañas y áreas de camping, una…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/lospioneros05.webp",
+  "galeria": [
+   "/media/2024/11/lospioneros05.webp",
+   "/media/2024/11/lospioneros03.webp",
+   "/media/2024/11/lospioneros02.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1733,7 +1767,7 @@
    "facebook": "https://web.facebook.com/lospionerosmelipeuco?locale=es_LA",
    "instagram": "https://www.instagram.com/lospionerosmco/"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logolospioneros-1.jpg",
   "servicios": [],
   "clase": "Hotel"
  },
@@ -1753,8 +1787,12 @@
   ],
   "cuerpo": "<p>Nidos de Melipeuco es un lugar especial donde se fusionan naturaleza y confort. Situado en cuatro hectáreas de rica biodiversidad, ofrece mucho más que un simple descanso: es un refugio creado con amor y respeto por el entorno natural.</p>",
   "extracto": "Nidos de Melipeuco es un lugar especial donde se fusionan naturaleza y confort. Situado en cuatro hectáreas de rica biodiversidad, ofrece mucho más que un simple…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/nidosdemelipeuco2-jpg.webp",
+  "galeria": [
+   "/media/2024/11/nidosdemelipeuco2-jpg.webp",
+   "/media/2024/11/nidosdemelipeuco3-jpg.webp",
+   "/media/2024/11/nidosdemelipeuco4.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1816,7 +1854,7 @@
    "facebook": "https://web.facebook.com/nidosdemelipeuco/?_rdc=1&_rdr",
    "instagram": "https://www.instagram.com/nidosdemelipeuco/"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logonidosdemelipeuco-1.jpg",
   "servicios": [
    "Estacionamiento",
    "Piscina",
@@ -1840,8 +1878,11 @@
   ],
   "cuerpo": "<p>Empresa familiar que ofrece a sus visitantes servicios de alojamiento, alimentación, tours y excursiones, todo esto acompañado por el clima familiar que solo puede entregar o brindar personas que habitan en este entorno.</p>",
   "extracto": "Empresa familiar que ofrece a sus visitantes servicios de alojamiento, alimentación, tours y excursiones, todo esto acompañado por el clima familiar que solo puede…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/losarriesgados-1.webp",
+  "galeria": [
+   "/media/2024/11/losarriesgados-1.webp",
+   "/media/2024/11/losarriesgados-2.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -1895,7 +1936,7 @@
    "facebook": "https://www.facebook.com/losarriesgados/?locale=es_LA",
    "instagram": "https://www.instagram.com/posadalosarriesgados/"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logoposadalosarriesgados-1.jpg",
   "servicios": [],
   "clase": "Bed & Breakfast"
  },
@@ -1915,8 +1956,12 @@
   ],
   "cuerpo": "<p>Relmucura es un acogedor emprendimiento familiar mapuche campesino. Que ofrece una variedad de opciones de alojamiento, incluyendo hospedaje, agrocamping y cabañas, todos diseñados para brindar una experiencia de tranquilidad y conexión con la naturaleza. Ubicados frente al majestuoso Volcán Llaima y rodeados de un entorno natural impresionante, sus alojamientos permiten a los visitantes disfrutar de paisajes únicos y relajantes.</p>",
   "extracto": "Relmucura es un acogedor emprendimiento familiar mapuche campesino. Que ofrece una variedad de opciones de alojamiento, incluyendo hospedaje, agrocamping y cabañas,…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/relmucura01.webp",
+  "galeria": [
+   "/media/2024/11/relmucura01.webp",
+   "/media/2024/11/relmucura-3.webp",
+   "/media/2024/11/relmucura-1-jpg.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -2004,8 +2049,12 @@
   ],
   "cuerpo": "<p>Cabañas con tinaja de agua caliente totalmente privadas e ilimitadas, rodeadas de naturaleza ideal para descansar. Además contamos con arriendo de equipos para disfrutar de la montaña.</p>",
   "extracto": "Cabañas con tinaja de agua caliente totalmente privadas e ilimitadas, rodeadas de naturaleza ideal para descansar. Además contamos con arriendo de equipos para disfrutar…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/rucapangui2.webp",
+  "galeria": [
+   "/media/2024/11/rucapangui2.webp",
+   "/media/2024/11/rucapangui4.webp",
+   "/media/2024/11/rucapangui5.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -2063,7 +2112,7 @@
    "facebook": "https://www.facebook.com/profile.php?id=100063609039491",
    "instagram": "https://www.instagram.com/agroturismo_rucapangui/"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logorucapangui1-1.jpg",
   "servicios": [
    "Cocina equipada",
    "Tinajas"
@@ -2082,8 +2131,12 @@
   ],
   "cuerpo": "<p>Ofrecemos una experiencia auténtica en el campo con alojamiento acogedor y actividades agrícolas. Los huéspedes pueden aprender sobre la vida rural, interactuar con animales y degustar platos frescos y locales. Ideal para familias, parejas y grupos que buscan conectar con la naturaleza y vivir momentos inolvidables en un entorno tranquilo.</p>",
   "extracto": "Ofrecemos una experiencia auténtica en el campo con alojamiento acogedor y actividades agrícolas. Los huéspedes pueden aprender sobre la vida rural, interactuar con…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/sensen-2.webp",
+  "galeria": [
+   "/media/2024/11/sensen-2.webp",
+   "/media/2024/11/sensen-3.webp",
+   "/media/2024/11/sensen-1.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -2124,7 +2177,7 @@
    "whatsapp": "https://wa.me/+56983543599",
    "facebook": "https://web.facebook.com/hospedajesensen?locale=es_LA"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logosensen-1.jpg",
   "servicios": [],
   "clase": "Bed & Breakfast"
  },
@@ -2144,8 +2197,13 @@
   ],
   "cuerpo": "<p>Aledaña al Parque Nacional Conguillio, Vista Hermosa ofrece cabañas confortables para 2 a 8 personas, construidas con maderas nativas y pino Oregón, en perfecta armonía con el entorno natural. Disfruta de un refugio acogedor en el corazón del bosque nativo, con vistas al impresionante Valle de la Luna y al Volcán Llaima.</p>",
   "extracto": "Aledaña al Parque Nacional Conguillio, Vista Hermosa ofrece cabañas confortables para 2 a 8 personas, construidas con maderas nativas y pino Oregón, en perfecta armonía…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2024/11/vistahermosa.webp",
+  "galeria": [
+   "/media/2024/11/vistahermosa.webp",
+   "/media/2024/11/vistahermosa01.webp",
+   "/media/2024/11/vistahermosa02-jpg.webp",
+   "/media/2024/11/vistahermosa03-jpg.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -2207,7 +2265,7 @@
    "facebook": "https://web.facebook.com/VistaHermosaConguillio/?_rdc=1&_rdr",
    "instagram": "https://www.instagram.com/vistahermosaconguillio/"
   },
-  "logo": "",
+  "logo": "/media/2024/11/logovistahermosa.jpg",
   "servicios": [
    "Cocina equipada",
    "Estacionamiento",
