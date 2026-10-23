@@ -1,0 +1,23 @@
+---
+// Las noticias conservan la URL del sitio original (/<slug>/).
+import Base from '../layouts/Base.astro';
+import Heroe from '../components/Heroe.astro';
+import Tarjeta from '../components/Tarjeta.astro';
+import { noticias, url, type Noticia } from '../scripts/datos';
+export function getStaticPaths() { return noticias.map((n) => ({ params: { noticia: n.slug }, props: { n } })); }
+const { n } = Astro.props as { n: Noticia };
+const fecha = new Date(n.fecha + 'T12:00:00').toLocaleDateString('es-CL', { day: 'numeric', month: 'long', year: 'numeric' });
+const otras = noticias.filter((x) => x.slug !== n.slug).slice(0, 3);
+---
+<Base titulo={n.titulo} descripcion={n.extracto} imagen={n.imagen}>
+  <Heroe titulo={n.titulo} imagen={n.imagen} volver={{ url: '/noticias/', texto: 'Volver a Noticias' }}>
+    <p class="noticia-fecha" style="color:#fff">{fecha} · {n.categoria}</p>
+  </Heroe>
+  <section class="seccion"><div class="contenedor"><article class="prosa" style="max-width:780px;margin:auto" set:html={n.cuerpo} /></div></section>
+  {otras.length > 0 && (
+    <section class="seccion seccion--blanca"><div class="contenedor">
+      <div class="titulo-seccion"><h2>Otras noticias</h2></div>
+      <div class="grilla">{otras.map((o) => <Tarjeta url={url.noticia(o.slug)} titulo={o.titulo} imagen={o.imagen} texto={o.extracto} icono="camara" />)}</div>
+    </div></section>
+  )}
+</Base>

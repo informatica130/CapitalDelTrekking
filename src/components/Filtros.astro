@@ -1,0 +1,74 @@
+---
+// Filtros del lado del cliente para listados: cada elemento con [data-item] y atributos data-<clave>.
+interface Opcion { clave: string; etiqueta: string; valores: string[]; tipo?: 'pildoras' | 'select' }
+interface Props { opciones: Opcion[]; buscador?: boolean; contenedor: string }
+const { opciones, buscador = true, contenedor } = Astro.props;
+---
+<div class="filtros" data-filtros={contenedor}>
+  {buscador && <input type="search" placeholder="Buscar por nombre…" aria-label="Buscar" data-buscar />}
+  {opciones.filter((o) => o.tipo !== 'pildoras').map((o) => (
+    <select data-clave={o.clave} aria-label={o.etiqueta}>
+      <option value="">{o.etiqueta}: todos</option>
+      {o.valores.map((v) => <option value={v}>{v}</option>)}
+    </select>
+  ))}
+</div>
+{opciones.filter((o) => o.tipo === 'pildoras').map((o) => (
+  <div class="pildoras" data-pildoras={o.clave} data-para={contenedor} role="group" aria-label={o.etiqueta} style="margin:-14px 0 36px">
+    <button type="button" aria-pressed="true" data-valor="">Todas</button>
+    {o.valores.map((v) => <button type="button" aria-pressed="false" data-valor={v}>{v}</button>)}
+  </div>
+))}
+<p class="contador-res" data-contador={contenedor}></p>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-filtros]').forEach((caja) => {
+    const id = caja.dataset.filtros!;
+    const lista = document.getElementById(id);
+    if (!lista) return;
+    const items = [...lista.querySelectorAll<HTMLElement>('[data-item]')];
+    const contador = document.querySelector<HTMLElement>(`[data-contador="${id}"]`);
+    const vacio = document.querySelector<HTMLElement>(`[data-vacio="${id}"]`);
+    const buscar = caja.querySelector<HTMLInputElement>('[data-buscar]');
+    const selects = [...caja.querySelectorAll<HTMLSelectElement>('select[data-clave]')];
+    const grupos = [...document.querySelectorAll<HTMLElement>(`[data-pildoras][data-para="${id}"]`)];
+    const estado: Record<string, string> = {};
+
+    // Estado inicial desde la URL (?interes=Familiares, etc.)
+    const params = new URLSearchParams(location.search);
+    selects.forEach((s) => { const v = params.get(s.dataset.clave!); if (v) s.value = v; });
+    grupos.forEach((g) => {
+      const v = params.get(g.dataset.pildoras!) ?? '';
+      estado[g.dataset.pildoras!] = v;
+      g.querySelectorAll<HTMLButtonElement>('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.valor === v)));
+    });
+
+    const norm = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+    const aplicar = () => {
+      const q = norm(buscar?.value ?? '');
+      const filtros: [string, string][] = [
+        ...selects.map((s) => [s.dataset.clave!, s.value] as [string, string]),
+        ...Object.entries(estado),
+      ].filter(([, v]) => v);
+      let n = 0;
+      items.forEach((el) => {
+        const okTexto = !q || norm(el.textContent ?? '').includes(q);
+        const okFiltros = filtros.every(([k, v]) => (el.dataset[k] ?? '').split('|').includes(v));
+        const ok = okTexto && okFiltros;
+        el.classList.toggle('oculto', !ok);
+        if (ok) { n++; el.classList.add('visible'); }
+      });
+      if (contador) contador.textContent = `${n} resultado${n === 1 ? '' : 's'}`;
+      if (vacio) vacio.style.display = n ? 'none' : 'block';
+    };
+    buscar?.addEventListener('input', aplicar);
+    selects.forEach((s) => s.addEventListener('change', aplicar));
+    grupos.forEach((g) => g.addEventListener('click', (e) => {
+      const b = (e.target as HTMLElement).closest('button');
+      if (!b) return;
+      estado[g.dataset.pildoras!] = b.dataset.valor ?? '';
+      g.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      aplicar();
+    }));
+    aplicar();
+  });
+</script>

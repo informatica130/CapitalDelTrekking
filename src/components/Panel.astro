@@ -1,0 +1,23 @@
+---
+import Icono from './Icono.astro';
+interface Props { titulo: string; icono?: string; campos: { k: string; v: string }[] }
+const { titulo, icono = 'info', campos } = Astro.props;
+const enlace = (v: string) => /^https?:\/\//.test(v) ? v : /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? `mailto:${v}` : null;
+---
+{campos.length > 0 && (
+  <div class="panel">
+    <h3><Icono nombre={icono} />{titulo}</h3>
+    <dl class="campos">
+      {campos.map(({ k, v }) => {
+        const href = enlace(v);
+        const tel = /tel[eé]fono|whatsapp/i.test(k) ? v.replace(/[^\d+]/g, '') : '';
+        return (
+          <div>
+            <dt>{k}</dt>
+            <dd>{href ? <a href={href} target={href.startsWith('http') ? '_blank' : undefined} rel="noopener">{v.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}</a> : tel.length >= 8 ? <a href={`tel:${tel}`}>{v}</a> : v}</dd>
+          </div>
+        );
+      })}
+    </dl>
+  </div>
+)}

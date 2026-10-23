@@ -1,0 +1,66 @@
+---
+import Base from '../../layouts/Base.astro';
+import Heroe from '../../components/Heroe.astro';
+import Icono from '../../components/Icono.astro';
+import Galeria from '../../components/Galeria.astro';
+import Tarjeta from '../../components/Tarjeta.astro';
+import MapaRuta from '../../components/MapaRuta.astro';
+import { actividades, url, operadoresDe, vinculado, type Actividad } from '../../scripts/datos';
+
+export function getStaticPaths() {
+  return actividades.map((a) => ({ params: { slug: a.slug }, props: { a } }));
+}
+const { a } = Astro.props as { a: Actividad };
+const ops = operadoresDe(a.operadores);
+const relacionadas = a.relacionados.map(vinculado).filter(Boolean);
+const otras = relacionadas.length ? [] : actividades.filter((x) => x.categoria === a.categoria && x.slug !== a.slug && x.tipo === a.tipo).slice(0, 3);
+const listado = a.categoria === 'actividad' ? { url: '/que-hacer/', texto: 'Volver a Qué hacer' } : { url: '/que-visitar/', texto: 'Volver a Qué visitar' };
+---
+<Base titulo={a.titulo} descripcion={a.extracto} imagen={a.imagen}>
+  <Heroe titulo={a.titulo} imagen={a.imagen} volver={listado} />
+  <div class="franja"><div class="contenedor"><Icono nombre="info" />{a.resumen.map((c) => <span class="dato"><b>{c.k}:</b> {c.v}</span>)}</div></div>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="titulo-seccion"><span class="antetitulo">{a.categoria === 'actividad' ? 'Actividad' : 'Atractivo'}</span><h2>{a.subtitulo || 'La experiencia'}</h2></div>
+      <div style="max-width:820px;margin:0 auto 48px" class="prosa" set:html={a.cuerpo} />
+      <Galeria imagenes={a.galeria} titulo={a.titulo} />
+    </div>
+  </section>
+
+  {(a.mapa_embed || a.coords) && (
+    <section class="seccion seccion--blanca">
+      <div class="contenedor">
+        <div class="titulo-seccion"><span class="antetitulo">Ubicación</span><h2>Dónde está</h2></div>
+        {a.mapa_embed ? <iframe class="embed-mapa" src={a.mapa_embed} loading="lazy" referrerpolicy="no-referrer-when-downgrade" title={`Mapa de ${a.titulo}`} allowfullscreen></iframe> : <MapaRuta coords={a.coords} titulo={a.titulo} />}
+      </div>
+    </section>
+  )}
+
+  {ops.length > 0 && (
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="titulo-seccion"><span class="antetitulo">Vívelo con locales</span><h2>Operadores que ofrecen esta experiencia</h2></div>
+        <div class="grilla">{ops.map((o) => <Tarjeta url={url.operador(o.slug)} titulo={o.titulo} imagen={o.imagen} texto={o.extracto} icono="brujula" />)}</div>
+      </div>
+    </section>
+  )}
+
+  <section class="seccion seccion--oscura">
+    <div class="contenedor">
+      <div class="titulo-seccion">
+        <span class="antetitulo">Sigue explorando</span>
+        <h2>Otras actividades relacionadas</h2>
+        <p>Este es tu lienzo, y Melipeuco te invita a pintarlo con tus huellas y emociones.</p>
+      </div>
+      {(relacionadas.length || otras.length) ? (
+        <div class="grilla">
+          {relacionadas.map((v) => <Tarjeta url={v!.url} titulo={v!.titulo} imagen={v!.imagen} texto={v!.extracto} />)}
+          {otras.map((x) => <Tarjeta url={url.actividad(x.slug)} titulo={x.titulo} imagen={x.imagen} texto={x.extracto} chips={[{ t: x.tipo, c: 'chip--sol' }]} />)}
+        </div>
+      ) : (
+        <p class="centro"><a class="btn" href={listado.url}>Ver todas</a></p>
+      )}
+    </div>
+  </section>
+</Base>

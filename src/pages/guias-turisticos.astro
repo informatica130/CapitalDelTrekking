@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import Heroe from '../components/Heroe.astro';
+import Icono from '../components/Icono.astro';
+import Filtros from '../components/Filtros.astro';
+import { guias, unicos } from '../scripts/datos';
+const img = '/media/2024/11/3.01salto-chufquen.jpg';
+const iniciales = (n: string) => n.split(/\s+/).slice(0, 2).map((p) => p[0]).join('').toUpperCase();
+const esp = (e: string) => e.split(',').map((x) => x.trim()).filter(Boolean);
+---
+<Base titulo="Guías turísticos" descripcion="Guías locales de montaña, trekking, escalada, kayak y nieve en Melipeuco." imagen={img}>
+  <Heroe titulo="Guías" destacado="turísticos" imagen={img} bajada={`${guias.length} guías locales certificados para acompañarte en montaña, ríos y nieve.`} />
+  <section class="seccion">
+    <div class="contenedor">
+      <Filtros contenedor="lista-guias" opciones={[{ clave: 'esp', etiqueta: 'Especialidad', valores: unicos(guias.map((g) => g.especialidad)) }]} />
+      <div class="guias" id="lista-guias">
+        {guias.map((g) => (
+          <article class="guia revelar" data-item data-esp={esp(g.especialidad).join('|')}>
+            <div class="guia__foto">{g.foto ? <img src={g.foto} alt={g.nombre} loading="lazy" /> : iniciales(g.nombre)}</div>
+            <div>
+              <h3>{g.nombre}</h3>
+              <div class="esp">{g.especialidad}</div>
+              {g.direccion && <p class="meta"><b>Dirección:</b> {g.direccion}</p>}
+              {g.certificaciones && <p class="meta"><b>Certificaciones:</b> {g.certificaciones}</p>}
+              <div class="redes-ficha">
+                {g.telefono && <a href={`tel:${g.telefono}`} aria-label={`Llamar a ${g.nombre}`}><Icono nombre="telefono" /></a>}
+                {g.whatsapp && <a href={g.whatsapp} target="_blank" rel="noopener" aria-label="WhatsApp"><Icono nombre="whatsapp" /></a>}
+                {g.email && <a href={`mailto:${g.email}`} aria-label="Correo"><Icono nombre="email" /></a>}
+                {g.instagram && <a href={g.instagram} target="_blank" rel="noopener" aria-label="Instagram"><Icono nombre="instagram" /></a>}
+                {g.facebook && <a href={g.facebook} target="_blank" rel="noopener" aria-label="Facebook"><Icono nombre="facebook" /></a>}
+                {g.web && <a href={g.web} target="_blank" rel="noopener" aria-label="Sitio web"><Icono nombre="web" /></a>}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+      <p class="sin-resultados" data-vacio="lista-guias">No hay guías con esa especialidad.</p>
+    </div>
+  </section>
+</Base>

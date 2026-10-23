@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro';
+import Heroe from '../components/Heroe.astro';
+import ListadoActividades from '../components/ListadoActividades.astro';
+const img = '/media/2024/11/amanecer_sollipulli1-jpg.webp';
+---
+<Base titulo="Qué visitar" descripcion="Volcanes, lagos, lagunas, ríos, parques nacionales y atractivos culturales de Melipeuco." imagen={img}>
+  <Heroe titulo="Qué" destacado="visitar" imagen={img} bajada="Volcanes, lagunas cordilleranas, parques nacionales, geositios y patrimonio cultural." />
+  <section class="seccion"><div class="contenedor"><ListadoActividades categoria="atractivo" /></div></section>
+</Base>

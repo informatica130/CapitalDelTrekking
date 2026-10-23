@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import Heroe from '../components/Heroe.astro';
+import ListadoNegocios from '../components/ListadoNegocios.astro';
+import { alojamientos, url } from '../scripts/datos';
+const img = '/media/2024/11/huallerupelodge-3.jpg';
+---
+<Base titulo="Dónde dormir" descripcion="Cabañas, hostales, lodges, bed & breakfast y camping en Melipeuco." imagen={img}>
+  <Heroe titulo="Dónde" destacado="dormir" imagen={img} bajada="Cabañas entre bosque nativo, hostales en el pueblo, lodges de montaña y camping a orillas de río." />
+  <section class="seccion"><div class="contenedor">
+    <ListadoNegocios lista={alojamientos} id="lista-alojamientos" enlace={url.alojamiento} icono="cama" filtro={{ clave: 'clase', etiqueta: 'Tipo de alojamiento', campo: (n) => n.clase ?? '' }} />
+  </div></section>
+</Base>

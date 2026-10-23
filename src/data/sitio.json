@@ -1,0 +1,40 @@
+{
+  "nombre": "Melipeuco Capital del Trekking",
+  "lema": "Sal del camino, toma el sendero.",
+  "descripcion": "Rutas de trekking, volcanes, glaciares y bosques de araucarias en Melipeuco, Araucanía Andina. Descubre qué hacer, qué visitar, dónde dormir y dónde comer.",
+  "email_contacto": "turismo@munimelipeuco.cl",
+  "formulario_endpoint": "",
+  "redes": {
+    "instagram": "https://www.instagram.com/melipeucocapitaldeltrekking",
+    "facebook": "https://www.facebook.com/melipeucocapitaldeltrekking",
+    "tiktok": "https://www.tiktok.com/@capitaldeltrekking"
+  },
+  "menu": [
+    { "texto": "Inicio", "url": "/" },
+    { "texto": "Explora Melipeuco", "url": "/explora-melipeuco/" },
+    { "texto": "Experiencias", "hijos": [
+      { "texto": "Qué hacer", "url": "/que-hacer/" },
+      { "texto": "Qué visitar", "url": "/que-visitar/" }
+    ]},
+    { "texto": "Rutas de Trekking", "url": "/rutas-de-trekking/" },
+    { "texto": "Planifica", "hijos": [
+      { "texto": "Operadores turísticos", "url": "/operadores-turisticos/" },
+      { "texto": "Dónde dormir", "url": "/planifica-donde-dormir/" },
+      { "texto": "Guías turísticos", "url": "/guias-turisticos/" }
+    ]},
+    { "texto": "Servicios", "hijos": [
+      { "texto": "Complementarios", "url": "/complementarios/" },
+      { "texto": "Gastronomía", "url": "/gastronomia/" }
+    ]},
+    { "texto": "Mapa", "url": "/mapa/" }
+  ],
+  "footer": [
+    { "texto": "Rutas de trekking", "url": "/rutas-de-trekking/" },
+    { "texto": "Atractivos", "url": "/que-visitar/" },
+    { "texto": "Actividades", "url": "/que-hacer/" },
+    { "texto": "Servicios Turísticos", "url": "/complementarios/" },
+    { "texto": "Descubre Melipeuco", "url": "/explora-melipeuco/" },
+    { "texto": "Noticias", "url": "/noticias/" },
+    { "texto": "Contáctanos", "url": "/contactanos/" }
+  ]
+}

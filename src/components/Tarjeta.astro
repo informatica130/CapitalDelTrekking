@@ -1,0 +1,20 @@
+---
+import Icono from './Icono.astro';
+interface Props {
+  url: string; titulo: string; imagen?: string; texto?: string;
+  chips?: { t: string; c?: string }[]; etiqueta?: string; icono?: string; filtros?: Record<string, string>;
+}
+const { url, titulo, imagen, texto, chips = [], etiqueta, icono = 'montana', filtros = {} } = Astro.props;
+const data = Object.fromEntries(Object.entries(filtros).map(([k, v]) => [`data-${k}`, v]));
+---
+<a href={url} class="tarjeta revelar" data-item {...data}>
+  <div class="tarjeta__img">
+    {etiqueta && <span class={`etiqueta etiqueta--${etiqueta}`}>{etiqueta}</span>}
+    {imagen ? <img src={imagen} alt="" loading="lazy" decoding="async" /> : <div class="sin-foto"><Icono nombre={icono} /></div>}
+  </div>
+  <div class="tarjeta__cuerpo">
+    <h3>{titulo}</h3>
+    {texto && <p>{texto}</p>}
+    {chips.length > 0 && <div class="tarjeta__meta">{chips.map((c) => <span class={`chip ${c.c ?? ''}`}>{c.t}</span>)}</div>}
+  </div>
+</a>

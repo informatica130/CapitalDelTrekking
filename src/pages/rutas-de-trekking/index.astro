@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import Heroe from '../../components/Heroe.astro';
+import Tarjeta from '../../components/Tarjeta.astro';
+import Filtros from '../../components/Filtros.astro';
+import { rutas, url, unicos, NIVELES } from '../../scripts/datos';
+---
+<Base titulo="Rutas de Trekking" descripcion={`${rutas.length} rutas de trekking en Melipeuco: volcanes, lagunas, glaciares y bosques de araucarias.`} imagen="/media/slider2/11melipeuco32-jpeg.webp">
+  <Heroe titulo="Vive la aventura" destacado="en cada paso" imagen="/media/slider2/11melipeuco32-jpeg.webp" bajada={`${rutas.length} senderos para todos los niveles, desde paseos familiares hasta travesías glaciares.`} />
+  <section class="seccion">
+    <div class="contenedor">
+      <Filtros contenedor="lista-rutas" opciones={[
+        { clave: 'interes', etiqueta: 'Nivel', valores: [...NIVELES], tipo: 'pildoras' },
+        { clave: 'dificultad', etiqueta: 'Dificultad MIDE', valores: unicos(rutas.map((r) => r.dificultad)) },
+        { clave: 'recorrido', etiqueta: 'Tipo de recorrido', valores: unicos(rutas.flatMap((r) => r.tipo_recorrido)) },
+        { clave: 'condicion', etiqueta: 'Condición', valores: unicos(rutas.map((r) => r.condicion)) },
+      ]} />
+      <div class="grilla" id="lista-rutas">
+        {rutas.map((r) => (
+          <Tarjeta url={url.ruta(r.slug)} titulo={r.titulo} imagen={r.imagen} texto={r.extracto} etiqueta={r.interes}
+            chips={[
+              r.extension && { t: r.extension, c: 'chip--azul' },
+              r.duracion && { t: r.duracion },
+              r.dificultad && { t: `MIDE ${r.dificultad}`, c: 'chip--sol' },
+            ].filter(Boolean) as { t: string; c?: string }[]}
+            filtros={{ interes: r.interes, dificultad: r.dificultad, recorrido: r.tipo_recorrido.join('|'), condicion: r.condicion.split(',').map((x) => x.trim()).join('|') }} />
+        ))}
+      </div>
+      <p class="sin-resultados" data-vacio="lista-rutas">No hay rutas con esos filtros. Prueba con otra combinación.</p>
+    </div>
+  </section>
+</Base>

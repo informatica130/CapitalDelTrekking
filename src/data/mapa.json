@@ -1,0 +1,266 @@
+[
+ {
+  "gpx": "/media/kmz/01.bateamawida.gpx",
+  "lat": -38.77794040192631,
+  "lng": -71.22272043037897,
+  "name": "Batea Mahuida"
+ },
+ {
+  "gpx": "/media/kmz/02.canonygeisersdealpehue.gpx",
+  "lat": -38.951512331024546,
+  "lng": -71.61326781349415,
+  "name": "Cajón y geisers de Alpehue (Queipue)"
+ },
+ {
+  "gpx": "/media/kmz/03.saltochufquen-palomo.gpx",
+  "lat": -38.84151843063002,
+  "lng": -71.5607506161681,
+  "name": "Salto Chufquén - Palomo"
+ },
+ {
+  "gpx": "/media/kmz/04.caminoviejoamolulco.gpx",
+  "lat": -38.94515720856794,
+  "lng": -71.72073885454166,
+  "name": "Camino viejo a Molulco"
+ },
+ {
+  "gpx": "/media/kmz/05.canchalaleona.gpx",
+  "lat": -38.805850516083574,
+  "lng": -71.65059456814598,
+  "name": "Cancha La Leona"
+ },
+ {
+  "gpx": "/media/kmz/06.cascadasdonalaura.gpx",
+  "lat": -38.89602972210681,
+  "lng": -71.51971501647138,
+  "name": "Cascadas Doña Laura"
+ },
+ {
+  "gpx": "/media/kmz/07.cascadasaltosdecaren.gpx",
+  "lat": -38.90187158406281,
+  "lng": -71.54005445767056,
+  "name": "Cascadas Altos de Carén"
+ },
+ {
+  "gpx": "/media/kmz/08.contrabandistas.gpx",
+  "lat": -38.65131661345942,
+  "lng": -71.65088708465886,
+  "name": "Contrabandistas"
+ },
+ {
+  "gpx": "/media/kmz/09.wentekurra.gpx",
+  "lat": -38.835974535496376,
+  "lng": -71.7067792711647,
+  "name": "Wentekurra"
+ },
+ {
+  "gpx": "/media/kmz/10.travesiaelmarcial-insunza-santaolga.gpx",
+  "lat": -38.85074120175522,
+  "lng": -71.47296391534115,
+  "name": "Travesía El Marcial - Insunza - Santa Olga"
+ },
+ {
+  "gpx": "/media/kmz/11.travesiahuechelepun-loncotriuque.gpx",
+  "lat": -38.850716135454306,
+  "lng": -71.47286735582357,
+  "name": "Travesía Huechelepún - Loncotriuque"
+ },
+ {
+  "gpx": "/media/kmz/12.cerrohuallerupe.gpx",
+  "lat": -38.8695968784586,
+  "lng": -71.69442635582357,
+  "name": "Cerro Huallerupe"
+ },
+ {
+  "gpx": "/media/kmz/13.huelladelpuma.gpx",
+  "lat": -38.73826028637765,
+  "lng": -71.51691318650585,
+  "name": "Huella del Puma"
+ },
+ {
+  "gpx": "/media/kmz/14.lagunaarcoiris.gpx",
+  "lat": -38.6724974143971,
+  "lng": -71.62141054232943,
+  "name": "Laguna Arcoiris"
+ },
+ {
+  "gpx": "/media/kmz/15.lagunacaptren.gpx",
+  "lat": -38.64180227352653,
+  "lng": -71.70364004063408,
+  "name": "Laguna Captrén"
+ },
+ {
+  "gpx": "/media/kmz/16.lagunaelmiradordemolulco.gpx",
+  "lat": -38.925723974152184,
+  "lng": -71.70074537301171,
+  "name": "Laguna El Mirador de Molulco"
+ },
+ {
+  "gpx": "/media/kmz/17.lasaraucarias.gpx",
+  "lat": -38.65133337107047,
+  "lng": -71.65093000000002,
+  "name": "Las Araucarias"
+ },
+ {
+  "gpx": "/media/kmz/18.lasvertientes.gpx",
+  "lat": -38.76665315300983,
+  "lng": -71.63400515906261,
+  "name": "Las Vertientes"
+ },
+ {
+  "gpx": "/media/kmz/19.vn.llaimacumbreporcaranorte.gpx",
+  "lat": -38.642052972205946,
+  "lng": -71.70552618650586,
+  "name": "Volcán Llaima cumbre por cara norte"
+ },
+ {
+  "gpx": "/media/kmz/20.loscarpinteros.gpx",
+  "lat": -38.65080008929912,
+  "lng": -71.65052027670573,
+  "name": "Los Carpinteros"
+ },
+ {
+  "gpx": "/media/kmz/21.mallindelsapo.gpx",
+  "lat": -38.951448018049085,
+  "lng": -71.61831772883528,
+  "name": "Mallín del Sapo"
+ },
+ {
+  "gpx": "/media/kmz/22.miradorcayumandelegnay.gpx",
+  "lat": -38.85573837105613,
+  "lng": -71.58896445767057,
+  "name": "Mirador Cayuman de Legnay"
+ },
+ {
+  "gpx": "/media/kmz/23.miradorsierranevada.gpx",
+  "lat": -38.649369908500475,
+  "lng": -71.61515878514096,
+  "name": "Mirador Sierra Nevada"
+ },
+ {
+  "gpx": "/media/kmz/24.travesiaconguillio-malalcahuello.gpx",
+  "lat": -38.648967713731054,
+  "lng": -71.6182486897034,
+  "name": "Travesía de Conguillio a Malalcahuello"
+ },
+ {
+  "gpx": "/media/kmz/25.vn.sierranevadacumbrenorte.gpx",
+  "lat": -38.64930287619569,
+  "lng": -71.61927865789087,
+  "name": "Volcán Sierra Nevada cumbre norte"
+ },
+ {
+  "gpx": "/media/kmz/26.lavascordadasdepangueco.gpx",
+  "lat": -38.76945424818662,
+  "lng": -71.68856245767056,
+  "name": "Lavas Cordadas de Pangueco"
+ },
+ {
+  "gpx": "/media/kmz/27.pasollaima.gpx",
+  "lat": -38.93783899482286,
+  "lng": -71.4619032711647,
+  "name": "Paso Llaima"
+ },
+ {
+  "gpx": "/media/kmz/28.pasomallinchileno.gpx",
+  "lat": -38.93781395924319,
+  "lng": -71.46193545767056,
+  "name": "Paso Mallín Chileno"
+ },
+ {
+  "gpx": "/media/kmz/29.pastosblancos.gpx",
+  "lat": -38.68866094518802,
+  "lng": -71.62293427116471,
+  "name": "Pastos Blancos"
+ },
+ {
+  "gpx": "/media/kmz/30.valledelasobsidianasdemolulco.gpx",
+  "lat": -38.925707280915596,
+  "lng": -71.70071318650585,
+  "name": "Valle de las Obsidianas de Molulco"
+ },
+ {
+  "gpx": "/media/kmz/31.saltosdequillen.gpx",
+  "lat": -38.881475909667586,
+  "lng": -71.50464953354937,
+  "name": "Saltos de Quillén"
+ },
+ {
+  "gpx": "/media/kmz/32.gransaltodelrioalpehue.gpx",
+  "lat": -38.92842228618635,
+  "lng": -71.60962491534114,
+  "name": "Gran Salto del río Alpehue"
+ },
+ {
+  "gpx": "/media/kmz/33.senderodechiletrufultruful.gpx",
+  "lat": -38.831863887100276,
+  "lng": -71.65828481349413,
+  "name": "Senderos de Chile Tramo Truful Truful"
+ },
+ {
+  "gpx": "/media/kmz/34.vn.sollipullicumbrenorte.gpx",
+  "lat": -38.917425135514314,
+  "lng": -71.49418063859392,
+  "name": "Volcán Sollipulli cumbre Norte"
+ },
+ {
+  "gpx": "/media/kmz/35.vn.sollipulliglaciardelcraterycumbresur.gpx",
+  "lat": -38.923595317374826,
+  "lng": -71.48679245767055,
+  "name": "Volcán Sollipulli glaciar del crater y cumbre sur"
+ },
+ {
+  "gpx": "/media/kmz/36.travesiasollipulli-alpehue.gpx",
+  "lat": -38.91752530656699,
+  "lng": -71.49345107779446,
+  "name": "Travesía Sollipulli - Alpehue"
+ },
+ {
+  "gpx": "/media/kmz/37.lagunaverde.gpx",
+  "lat": -38.69570146192299,
+  "lng": -71.62534245767056,
+  "name": "Laguna Verde"
+ },
+ {
+  "gpx": "/media/kmz/38.saltodeltiriento.gpx",
+  "lat": -38.697517945175264,
+  "lng": -71.42151252377639,
+  "name": "Salto del Tiriento"
+ },
+ {
+  "gpx": "/media/kmz/39.narizdeldiabloylagunadelegnayporcaren.gpx",
+  "lat": -38.901879933485226,
+  "lng": -71.54001154232942,
+  "name": "Nariz del Diablo y Laguna de Legnay por Carén"
+ },
+ {
+  "gpx": "/media/kmz/40.trufultruful.gpx",
+  "lat": -38.77273286131888,
+  "lng": -71.63261901247407,
+  "name": "Truful Truful"
+ },
+ {
+  "gpx": "/media/kmz/41.circuitolagunaicalma.gpx",
+  "lat": -38.82058443603157,
+  "lng": -71.31702418650585,
+  "name": "Circuito Laguna Icalma"
+ },
+ {
+  "gpx": "/media/kmz/42.travesiamolulco-alpehue.gpx",
+  "lat": -38.921378281390204,
+  "lng": -71.6880582209923,
+  "name": "Travesía Molulco - Alpehue"
+ },
+ {
+  "gpx": "/media/kmz/43.lagunasdelllaima.gpx",
+  "lat": -38.83137488644001,
+  "lng": -71.69061454232944,
+  "name": "Lagunas del Llaima"
+ },
+ {
+  "gpx": "/media/kmz/44.lagunacarilafquen.gpx",
+  "lat": -38.92218896812177,
+  "lng": -71.485522,
+  "name": "Laguna Carilafquén"
+ }
+]

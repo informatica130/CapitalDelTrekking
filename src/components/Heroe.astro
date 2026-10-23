@@ -1,0 +1,14 @@
+---
+import Icono from './Icono.astro';
+interface Props { titulo: string; destacado?: string; imagen?: string; bajada?: string; volver?: { url: string; texto: string } }
+const { titulo, destacado, imagen, bajada, volver } = Astro.props;
+---
+<section class="heroe">
+  {imagen && <div class="heroe__img"><img src={imagen} alt="" fetchpriority="high" /></div>}
+  <div class="contenedor">
+    {volver && <a class="volver" href={volver.url}><Icono nombre="volver" class="" /> {volver.texto}</a>}
+    <h1 class="logo-anim">{titulo}{destacado && <><br /><strong>{destacado}</strong></>}</h1>
+    {bajada && <p class="bajada">{bajada}</p>}
+    <slot />
+  </div>
+</section>

@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro';
+import Heroe from '../components/Heroe.astro';
+import ListadoActividades from '../components/ListadoActividades.astro';
+const img = '/media/2024/11/36.travesia-sollipulli-alpehue-2-jpg.webp';
+---
+<Base titulo="Qué hacer" descripcion="Montañismo, canyoning, escalada, rafting, cicloturismo, astroturismo y más actividades en Melipeuco." imagen={img}>
+  <Heroe titulo="Qué" destacado="hacer" imagen={img} bajada="Ascensos a volcanes, ski randonée, canyoning, escalada, rafting, canopy y noches de astroturismo." />
+  <section class="seccion"><div class="contenedor"><ListadoActividades categoria="actividad" /></div></section>
+</Base>

@@ -1,0 +1,13 @@
+---
+import Base from '../../layouts/Base.astro';
+import Heroe from '../../components/Heroe.astro';
+import Tarjeta from '../../components/Tarjeta.astro';
+import { noticias, url } from '../../scripts/datos';
+const fecha = (f: string) => new Date(f + 'T12:00:00').toLocaleDateString('es-CL', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base titulo="Noticias" descripcion="Noticias y novedades de Melipeuco Capital del Trekking.">
+  <Heroe titulo="Noticias de" destacado="Melipeuco" imagen="/media/slider2/04.webp" />
+  <section class="seccion"><div class="contenedor"><div class="grilla">
+    {noticias.map((n) => <Tarjeta url={url.noticia(n.slug)} titulo={n.titulo} imagen={n.imagen} texto={n.extracto} icono="camara" chips={[{ t: fecha(n.fecha) }, { t: n.categoria, c: 'chip--verde' }]} />)}
+  </div></div></section>
+</Base>

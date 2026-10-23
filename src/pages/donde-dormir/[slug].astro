@@ -1,0 +1,7 @@
+---
+import FichaNegocio from '../../components/FichaNegocio.astro';
+import { alojamientos, type Negocio } from '../../scripts/datos';
+export function getStaticPaths() { return alojamientos.map((n) => ({ params: { slug: n.slug }, props: { n } })); }
+const { n } = Astro.props as { n: Negocio };
+---
+<FichaNegocio n={n} icono="cama" volver={{ url: '/planifica-donde-dormir/', texto: 'Volver a Dónde dormir' }} />

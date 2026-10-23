@@ -1,0 +1,79 @@
+---
+import Base from '../layouts/Base.astro';
+import Heroe from './Heroe.astro';
+import Icono from './Icono.astro';
+import Panel from './Panel.astro';
+import Redes from './Redes.astro';
+import Galeria from './Galeria.astro';
+import Tarjeta from './Tarjeta.astro';
+import MapaRuta from './MapaRuta.astro';
+import { url, valorCampo, type Negocio, type Ruta, type Actividad } from '../scripts/datos';
+interface Props { n: Negocio; volver: { url: string; texto: string }; icono?: string; oferta?: { rutas: Ruta[]; actividades: Actividad[] } }
+const { n, volver, icono = 'tienda', oferta } = Astro.props;
+const iconos: Record<string, string> = { 'Contacto': 'telefono', 'Información del lugar': 'pin' };
+const ubicacion = n.grupos.flatMap((g) => g.campos).find((c) => c.k === 'Ubicación')?.v ?? '';
+const tel = valorCampo(n.grupos.find((g) => g.titulo === 'Contacto')?.campos ?? [], 'Teléfono').replace(/[^\d+]/g, '');
+const whatsapp = n.redes.whatsapp;
+const mapsBusqueda = ubicacion ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${n.titulo}, ${ubicacion}`)}` : '';
+---
+<Base titulo={n.titulo} descripcion={n.extracto || `${n.titulo} en Melipeuco`} imagen={n.imagen}>
+  <Heroe titulo={n.titulo} imagen={n.imagen || '/media/2024/11/pewenmapu1-scaled.webp'} volver={volver}>
+    {n.logo && <img src={n.logo} alt={`Logo ${n.titulo}`} style="height:70px;width:auto;margin-top:14px;border-radius:10px;background:#fff;padding:6px" />}
+  </Heroe>
+  {n.resumen.length > 0 && <div class="franja"><div class="contenedor"><Icono nombre="info" />{n.resumen.map((c) => <span class="dato"><b>{c.k}:</b> {c.v}</span>)}</div></div>}
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="ficha">
+        <div>
+          <span class="antetitulo" style="font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;color:var(--sol-osc)">Conócenos</span>
+          <h2>{n.subtitulo && n.subtitulo !== 'Conócenos' ? n.subtitulo : n.titulo}</h2>
+          {n.cuerpo ? <div class="prosa" set:html={n.cuerpo} /> : <p style="color:var(--texto-suave)">Contáctanos para más información sobre nuestros servicios.</p>}
+          <p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+            {whatsapp && <a class="btn" href={whatsapp} target="_blank" rel="noopener"><Icono nombre="whatsapp" /> Escribir por WhatsApp</a>}
+            {tel.length >= 8 && <a class="btn btn--verde" href={`tel:${tel}`}><Icono nombre="telefono" /> Llamar</a>}
+          </p>
+          {n.servicios.length > 0 && (
+            <div style="margin-top:36px">
+              <h3>Servicios</h3>
+              <div class="servicios-iconos">{n.servicios.map((s) => <span>{s}</span>)}</div>
+            </div>
+          )}
+        </div>
+        <aside class="lateral">
+          {n.grupos.map((g) => <Panel titulo={g.titulo} campos={g.campos} icono={iconos[g.titulo]} />)}
+          <Redes redes={n.redes} />
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  {n.galeria.length > 0 && (
+    <section class="seccion seccion--blanca" style="padding-top:60px">
+      <div class="contenedor"><Galeria imagenes={n.galeria} titulo={n.titulo} /></div>
+    </section>
+  )}
+
+  {oferta && (oferta.rutas.length > 0 || oferta.actividades.length > 0) && (
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="titulo-seccion"><span class="antetitulo">Experiencias</span><h2>Rutas y actividades que ofrecemos</h2></div>
+        <div class="grilla">
+          {oferta.rutas.map((r) => <Tarjeta url={url.ruta(r.slug)} titulo={r.titulo} imagen={r.imagen} texto={r.extracto} etiqueta={r.interes} />)}
+          {oferta.actividades.map((a) => <Tarjeta url={url.actividad(a.slug)} titulo={a.titulo} imagen={a.imagen} texto={a.extracto} chips={[{ t: a.tipo, c: 'chip--sol' }]} />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {(n.mapa_embed || n.coords || ubicacion) && (
+    <section class="seccion seccion--blanca">
+      <div class="contenedor">
+        <div class="titulo-seccion"><span class="antetitulo">Ubicación</span><h2>Dónde estamos</h2>{ubicacion && <p><b>Estamos en:</b> {ubicacion}</p>}</div>
+        {n.mapa_embed ? <iframe class="embed-mapa" src={n.mapa_embed} loading="lazy" referrerpolicy="no-referrer-when-downgrade" title={`Mapa de ${n.titulo}`} allowfullscreen></iframe>
+          : n.coords ? <MapaRuta coords={n.coords} titulo={n.titulo} />
+          : <p class="centro"><a class="btn btn--verde" href={mapsBusqueda} target="_blank" rel="noopener"><Icono nombre="pin" /> Ver en Google Maps</a></p>}
+      </div>
+    </section>
+  )}
+</Base>

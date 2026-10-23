@@ -1,0 +1,62 @@
+---
+import Base from '../layouts/Base.astro';
+import Heroe from '../components/Heroe.astro';
+import { puntosMapa, rutas, url } from '../scripts/datos';
+// Une cada punto del mapa con su ficha de ruta (por nombre de archivo GPX o por nombre).
+const norm = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+const puntos = puntosMapa.map((p) => {
+  const r = rutas.find((x) => x.gpx && x.gpx.split('/').pop() === p.gpx.split('/').pop())
+    ?? rutas.find((x) => norm(x.titulo) === norm(p.name))
+    ?? rutas.find((x) => norm(p.name).includes(norm(x.titulo)) || norm(x.titulo).includes(norm(p.name)));
+  return { ...p, url: r ? url.ruta(r.slug) : '', nivel: r?.interes ?? '', titulo: r?.titulo ?? p.name };
+});
+---
+<Base titulo="Mapa de senderos" descripcion="Mapa interactivo con las rutas de trekking de Melipeuco y sus tracks GPX.">
+  <Heroe titulo="Mapa de" destacado="senderos" imagen="/media/slider2/04.webp" bajada="Selecciona un sendero para ver su recorrido y su perfil de elevación." />
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="pildoras" id="nivelesMapa" style="margin-bottom:20px">
+        <button type="button" aria-pressed="true" data-valor="">Todas</button>
+        <button type="button" aria-pressed="false" data-valor="Familiares">Familiares</button>
+        <button type="button" aria-pressed="false" data-valor="Trekkeros">Trekkeros</button>
+        <button type="button" aria-pressed="false" data-valor="Expertos">Expertos</button>
+      </div>
+      <div class="mapa mapa--grande" id="mapaGeneral" data-puntos={JSON.stringify(puntos)}></div>
+      <p class="paginacion-nota" style="margin-top:14px">Haz clic en un punto para ver el recorrido completo. Datos GPX referenciales: verifica siempre las condiciones en terreno.</p>
+    </div>
+  </section>
+  <script>
+    import L from 'leaflet';
+    import { crearMapa, pin } from '../scripts/mapa-base';
+    import { leerGpx } from '../scripts/gpx';
+    const el = document.getElementById('mapaGeneral')!;
+    const puntos = JSON.parse(el.dataset.puntos!) as { gpx: string; lat: number; lng: number; name: string; url: string; nivel: string; titulo: string }[];
+    const mapa = crearMapa(el, [-38.82, -71.6], 10);
+    const colores: Record<string, string> = { Familiares: '#3f9a5b', Trekkeros: '#1f6f9f', Expertos: '#c0392b' };
+    const capas = new Map<string, L.LayerGroup>();
+    let trackActivo: L.Layer | null = null;
+    const marcadores = puntos.map((p) => {
+      const m = L.marker([p.lat, p.lng], { icon: pin(colores[p.nivel] ?? '#f3b229', 16), title: p.titulo });
+      m.bindPopup(`<b>${p.titulo}</b>${p.nivel ? `<br>${p.nivel}` : ''}${p.url ? `<br><a href="${p.url}">Ver ficha de la ruta →</a>` : ''}`);
+      m.on('click', async () => {
+        if (trackActivo) mapa.removeLayer(trackActivo);
+        try {
+          const segs = await leerGpx(p.gpx);
+          trackActivo = L.featureGroup(segs.map((s) => L.polyline(s.map((q) => [q.lat, q.lng]), { color: colores[p.nivel] ?? '#f3b229', weight: 5 }))).addTo(mapa);
+          mapa.fitBounds((trackActivo as L.FeatureGroup).getBounds(), { padding: [40, 40], maxZoom: 14 });
+          m.openPopup();
+        } catch { /* sin track */ }
+      });
+      if (!capas.has(p.nivel)) capas.set(p.nivel, L.layerGroup().addTo(mapa));
+      capas.get(p.nivel)!.addLayer(m);
+      return m;
+    });
+    if (marcadores.length) mapa.fitBounds(L.featureGroup(marcadores).getBounds(), { padding: [30, 30] });
+    document.getElementById('nivelesMapa')!.addEventListener('click', (e) => {
+      const b = (e.target as HTMLElement).closest('button'); if (!b) return;
+      const v = b.dataset.valor ?? '';
+      b.parentElement!.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      capas.forEach((capa, nivel) => { if (!v || nivel === v) capa.addTo(mapa); else mapa.removeLayer(capa); });
+    });
+  </script>
+</Base>

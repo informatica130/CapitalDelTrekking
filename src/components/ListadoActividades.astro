@@ -1,0 +1,17 @@
+---
+import Tarjeta from './Tarjeta.astro';
+import Filtros from './Filtros.astro';
+import { actividades, url, unicos } from '../scripts/datos';
+interface Props { categoria: 'actividad' | 'atractivo' }
+const { categoria } = Astro.props;
+const lista = actividades.filter((a) => a.categoria === categoria);
+const id = `lista-${categoria}`;
+---
+<Filtros contenedor={id} opciones={[{ clave: 'tipo', etiqueta: categoria === 'actividad' ? 'Tipo de actividad' : 'Tipo de atractivo', valores: unicos(lista.map((a) => a.tipo)), tipo: 'pildoras' }]} />
+<div class="grilla" id={id}>
+  {lista.map((a) => (
+    <Tarjeta url={url.actividad(a.slug)} titulo={a.titulo} imagen={a.imagen} texto={a.extracto} chips={a.tipo ? [{ t: a.tipo, c: 'chip--sol' }] : []}
+      filtros={{ tipo: a.tipo.split(',').map((x) => x.trim()).join('|') }} />
+  ))}
+</div>
+<p class="sin-resultados" data-vacio={id}>No hay resultados con ese filtro.</p>

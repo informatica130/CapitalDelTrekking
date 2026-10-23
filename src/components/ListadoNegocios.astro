@@ -1,0 +1,20 @@
+---
+import Tarjeta from './Tarjeta.astro';
+import Filtros from './Filtros.astro';
+import { unicos, type Negocio } from '../scripts/datos';
+interface Props { lista: Negocio[]; id: string; enlace: (s: string) => string; filtro?: { clave: string; etiqueta: string; campo: (n: Negocio) => string }; icono?: string }
+const { lista, id, enlace, filtro, icono = 'tienda' } = Astro.props;
+const partes = (v: string) => v.split(',').map((x) => x.trim()).filter(Boolean);
+---
+<Filtros contenedor={id} opciones={filtro ? [{ clave: filtro.clave, etiqueta: filtro.etiqueta, valores: unicos(lista.map(filtro.campo)), tipo: 'pildoras' }] : []} />
+<div class="grilla" id={id}>
+  {lista.map((n) => {
+    const v = filtro ? filtro.campo(n) : '';
+    return (
+      <Tarjeta url={enlace(n.slug)} titulo={n.titulo} imagen={n.imagen} texto={n.extracto} icono={icono}
+        chips={partes(v).map((t) => ({ t, c: 'chip--sol' }))}
+        filtros={filtro ? { [filtro.clave]: partes(v).join('|') } : {}} />
+    );
+  })}
+</div>
+<p class="sin-resultados" data-vacio={id}>No hay resultados.</p>

@@ -1,0 +1,90 @@
+---
+import Base from '../../layouts/Base.astro';
+import Heroe from '../../components/Heroe.astro';
+import Icono from '../../components/Icono.astro';
+import Panel from '../../components/Panel.astro';
+import Galeria from '../../components/Galeria.astro';
+import MapaRuta from '../../components/MapaRuta.astro';
+import Tarjeta from '../../components/Tarjeta.astro';
+import { rutas, url, operadoresDe, vinculado, nivelMide, type Ruta } from '../../scripts/datos';
+
+export function getStaticPaths() {
+  return rutas.map((r) => ({ params: { slug: r.slug }, props: { r } }));
+}
+const { r } = Astro.props as { r: Ruta };
+const ops = operadoresDe(r.operadores);
+const iconos: Record<string, string> = { 'Información del sendero': 'ruta', 'Accesos y permisos': 'candado', 'Estacionalidad': 'nieve' };
+const relacionadas = r.relacionados.map(vinculado).filter(Boolean).slice(0, 3);
+const similares = relacionadas.length ? [] : rutas.filter((x) => x.interes === r.interes && x.slug !== r.slug).slice(0, 3);
+const mide = nivelMide(r.dificultad);
+---
+<Base titulo={r.titulo} descripcion={r.extracto} imagen={r.imagen}>
+  <Heroe titulo={r.titulo} imagen={r.imagen} volver={{ url: '/rutas-de-trekking/', texto: 'Volver a las rutas' }}>
+    {r.interes && <span class={`etiqueta etiqueta--${r.interes}`} style="position:static;display:inline-block">{r.interes}</span>}
+  </Heroe>
+  <div class="franja">
+    <div class="contenedor">
+      <Icono nombre="info" />
+      {r.resumen.map((c) => <span class="dato"><b>{c.k}:</b> {c.v}</span>)}
+    </div>
+  </div>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="indicadores">
+        {r.extension && <div class="indicador"><span>Extensión</span><b>{r.extension}</b></div>}
+        {r.duracion && <div class="indicador"><span>Duración</span><b>{r.duracion}</b></div>}
+        {r.dificultad && <div class="indicador"><span>Dificultad MIDE</span><b>{r.dificultad} </b><span class="mide" aria-hidden="true">{[1, 2, 3, 4, 5].map((n) => <i class={n <= mide ? 'on' : ''}></i>)}</span></div>}
+        {r.tipo_recorrido.length > 0 && <div class="indicador"><span>Recorrido</span><b style="text-transform:capitalize">{r.tipo_recorrido.join(', ')}</b></div>}
+      </div>
+      <div class="ficha">
+        <div>
+          <h2>{r.subtitulo || r.titulo}</h2>
+          <div class="prosa" set:html={r.cuerpo} />
+        </div>
+        <aside class="lateral">
+          {r.grupos.map((g) => <Panel titulo={g.titulo} campos={g.campos} icono={iconos[g.titulo]} />)}
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  {r.galeria.length > 0 && (
+    <section class="seccion seccion--blanca" style="padding-top:60px">
+      <div class="contenedor">
+        <div class="titulo-seccion"><span class="antetitulo">Galería</span><h2>Así se vive la ruta</h2></div>
+        <Galeria imagenes={r.galeria} titulo={r.titulo} />
+      </div>
+    </section>
+  )}
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="titulo-seccion"><span class="antetitulo">Mapa y perfil</span><h2>Cómo llegar</h2></div>
+      <MapaRuta gpx={r.gpx} coords={r.coords} titulo={r.titulo} />
+    </div>
+  </section>
+
+  {ops.length > 0 && (
+    <section class="seccion seccion--blanca">
+      <div class="contenedor">
+        <div class="titulo-seccion"><span class="antetitulo">Recorre con expertos</span><h2>Operadores que ofrecen este sendero</h2></div>
+        <div class="grilla">
+          {ops.map((o) => <Tarjeta url={url.operador(o.slug)} titulo={o.titulo} imagen={o.imagen} texto={o.extracto} icono="brujula" />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {(relacionadas.length > 0 || similares.length > 0) && (
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="titulo-seccion"><span class="antetitulo">Sigue explorando</span><h2>{relacionadas.length ? 'Relacionadas con esta ruta' : `Otras rutas para ${r.interes.toLowerCase()}`}</h2></div>
+        <div class="grilla">
+          {relacionadas.map((v) => <Tarjeta url={v!.url} titulo={v!.titulo} imagen={v!.imagen} texto={v!.extracto} />)}
+          {similares.map((x) => <Tarjeta url={url.ruta(x.slug)} titulo={x.titulo} imagen={x.imagen} texto={x.extracto} etiqueta={x.interes} />)}
+        </div>
+      </div>
+    </section>
+  )}
+</Base>

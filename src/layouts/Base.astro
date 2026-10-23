@@ -1,0 +1,140 @@
+---
+import '../styles/global.css';
+import sitio from '../data/sitio.json';
+import Icono from '../components/Icono.astro';
+
+interface Props {
+  titulo?: string;
+  descripcion?: string;
+  imagen?: string;
+}
+const { titulo, descripcion = sitio.descripcion, imagen = '/media/slider2/04.webp' } = Astro.props;
+const tituloCompleto = titulo ? `${titulo} – ${sitio.nombre}` : `${sitio.nombre} – ${sitio.lema}`;
+const ruta = Astro.url.pathname;
+const og = new URL(imagen, Astro.site ?? Astro.url).href;
+const activo = (url?: string) => (url && (url === '/' ? ruta === '/' : ruta.startsWith(url)) ? 'page' : undefined);
+const anio = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{tituloCompleto}</title>
+  <meta name="description" content={descripcion} />
+  <link rel="canonical" href={new URL(ruta, Astro.site ?? Astro.url).href} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content={sitio.nombre} />
+  <meta property="og:title" content={tituloCompleto} />
+  <meta property="og:description" content={descripcion} />
+  <meta property="og:image" content={og} />
+  <meta property="og:locale" content="es_CL" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#17191b" />
+  <link rel="icon" href="/media/2025/05/cropped-logo-icon-32x32.webp" sizes="32x32" />
+  <link rel="icon" href="/media/2025/05/cropped-logo-icon-192x192.webp" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/media/2025/05/cropped-logo-icon-180x180.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <slot name="head" />
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="contenedor">
+      <a href="/" class="marca" aria-label={`${sitio.nombre} — inicio`}>
+        <img src="/media/2025/05/logo-melipeuco-capital-del-trekking_Mesa-de-trabajo-1.svg" alt={sitio.nombre} width="180" height="46" />
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <Icono nombre="menu" />
+      </button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <ul>
+          {sitio.menu.map((item) => (
+            <li>
+              {item.hijos ? (
+                <>
+                  <button type="button" aria-expanded="false" class="sub-toggle">{item.texto}<Icono nombre="abajo" class="chev" /></button>
+                  <ul class="sub">
+                    {item.hijos.map((h) => <li><a href={h.url} aria-current={activo(h.url)}>{h.texto}</a></li>)}
+                  </ul>
+                </>
+              ) : (
+                <a href={item.url} aria-current={activo(item.url)}>{item.texto}</a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <slot />
+  </main>
+
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer__grid">
+        <div>
+          <img class="logo-pie" src="/media/2025/05/logo-footer.webp" alt={sitio.nombre} width="220" height="182" loading="lazy" />
+          <p style="margin-top:18px">{sitio.lema}</p>
+        </div>
+        <div>
+          <h4>Explora</h4>
+          <ul>{sitio.footer.map((l) => <li><a href={l.url}>{l.texto}</a></li>)}</ul>
+        </div>
+        <div>
+          <h4>Síguenos</h4>
+          <div class="redes-ficha">
+            <a href={sitio.redes.instagram} target="_blank" rel="noopener" aria-label="Instagram"><Icono nombre="instagram" /></a>
+            <a href={sitio.redes.facebook} target="_blank" rel="noopener" aria-label="Facebook"><Icono nombre="facebook" /></a>
+            <a href={sitio.redes.tiktok} target="_blank" rel="noopener" aria-label="TikTok"><Icono nombre="tiktok" /></a>
+          </div>
+          <h4 style="margin-top:28px">Contacto</h4>
+          <p><a href="/contactanos/">Escríbenos</a></p>
+        </div>
+      </div>
+      <div class="socios" aria-label="Instituciones asociadas">
+        <div class="socios__pista">
+          {[0, 1, 2, 3].map(() => <img src="/media/2025/03/lgoos-png.webp" alt="" width="752" height="148" loading="lazy" />)}
+        </div>
+      </div>
+      <div class="footer__base">
+        <span>© {anio} {sitio.nombre}</span>
+        <span>Municipalidad de Melipeuco · Araucanía Andina, Chile</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Encabezado sólido al hacer scroll
+    const header = document.getElementById('header')!;
+    const alScroll = () => header.classList.toggle('solido', window.scrollY > 40);
+    alScroll();
+    window.addEventListener('scroll', alScroll, { passive: true });
+
+    // Menú móvil
+    const toggle = document.getElementById('menuToggle')!;
+    const nav = document.getElementById('nav')!;
+    toggle.addEventListener('click', () => {
+      const abierto = nav.classList.toggle('abierto');
+      document.body.classList.toggle('menu-abierto', abierto);
+      toggle.setAttribute('aria-expanded', String(abierto));
+    });
+    document.querySelectorAll<HTMLButtonElement>('.sub-toggle').forEach((b) => {
+      b.addEventListener('click', () => {
+        const li = b.parentElement!;
+        const abierto = li.classList.toggle('abierto');
+        b.setAttribute('aria-expanded', String(abierto));
+      });
+    });
+
+    // Aparición progresiva de elementos
+    const io = new IntersectionObserver((entradas) => {
+      entradas.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.revelar').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
