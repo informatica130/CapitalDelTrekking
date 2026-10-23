@@ -14,8 +14,9 @@ interface Props {
   imagen?: string;
   zona?: keyof typeof ZONAS | string;
   headerClaro?: boolean;
+  precarga?: boolean;
 }
-const { titulo, descripcion = sitio.descripcion, imagen = '/media/slider2/04.webp', zona = 'inicio', headerClaro = false } = Astro.props;
+const { titulo, descripcion = sitio.descripcion, imagen = '/media/slider2/04.webp', zona = 'inicio', headerClaro = false, precarga = false } = Astro.props;
 const z = ZONAS[zona] ?? ZONAS.inicio;
 const tituloCompleto = titulo ? `${titulo} – ${sitio.nombre}` : `${sitio.nombre} – ${sitio.lema}`;
 const ruta = Astro.url.pathname;
@@ -53,9 +54,24 @@ const emblemasHtml = partes.letras.map((l, i) => {
   <script is:inline>
     try { const t = JSON.parse(localStorage.getItem('mct-tema')); if (t) document.documentElement.dataset.tema = t; } catch (e) {}
   </script>
+  {precarga && (
+    <script is:inline>
+      try { if (sessionStorage.getItem('mct-visto') || matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('sin-precarga'); } catch (e) { document.documentElement.classList.add('sin-precarga'); }
+    </script>
+  )}
   <slot name="head" />
 </head>
 <body>
+  {precarga && (
+    <div class="precarga" aria-hidden="true">
+      <div class="precarga__franjas">{PALETA.map((p, i) => <i style={`--i:${i};--c:${p.color}`}></i>)}</div>
+      <div class="precarga__centro">
+        <Logo variante="color" lema="claro" animado />
+        <div class="precarga__barra"><b></b></div>
+        <span class="precarga__cuenta">000</span>
+      </div>
+    </div>
+  )}
   <a class="saltar" href="#contenido">Saltar al contenido</a>
   <div class="progreso" aria-hidden="true"></div>
 
@@ -126,7 +142,10 @@ const emblemasHtml = partes.letras.map((l, i) => {
   <footer class="pie">
     <div class="pie__montes"><Montes color="var(--noche)" capas={false} /></div>
     <div class="contenedor">
-      <div class="pie__logo revelar"><Logo variante="color" lema="claro" class="logo-svg--interactivo" /></div>
+      <div class="pie__logo revelar" id="pieLogo">
+        <div class="logo3d logo3d--pie" id="pieLogo3d" aria-hidden="true"></div>
+        <Logo variante="color" lema="claro" class="logo-svg--interactivo" />
+      </div>
       <div class="pie__grid">
         <div>
           <p class="lema">{sitio.lema}</p>
@@ -178,6 +197,23 @@ const emblemasHtml = partes.letras.map((l, i) => {
     import { iniciarApp } from '../scripts/app';
     iniciarApp();
     iniciarEfectos();
+
+    // Logo 3D del pie: se carga solo cuando el visitante se acerca al final de la página
+    const pie = document.getElementById('pieLogo3d');
+    const ref = document.getElementById('pieLogo');
+    if (pie && ref && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const io = new IntersectionObserver(async ([e]) => {
+        if (!e.isIntersecting) return;
+        io.disconnect();
+        const [{ crearLogo3D, soportaWebGL }, partes, { PALETA }] = await Promise.all([
+          import('../scripts/logo3d'), import('../data/logo-partes.json'), import('../scripts/zonas'),
+        ]);
+        if (!soportaWebGL()) return;
+        const enlaces = ['/rutas-de-trekking/', '/noticias/', '/que-hacer/', '/que-visitar/', '/gastronomia/', '/guias-turisticos/', '/operadores-turisticos/', '/planifica-donde-dormir/', '/explora-melipeuco/'];
+        crearLogo3D(pie, partes.default ?? partes, { colores: PALETA.map((p) => p.color), enlaces, referencia: ref.querySelector<HTMLElement>('.logo-svg') ?? ref });
+      }, { rootMargin: '300px 0px' });
+      io.observe(ref);
+    }
   </script>
 </body>
 </html>

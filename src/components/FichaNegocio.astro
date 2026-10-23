@@ -9,7 +9,7 @@ import Galeria from './Galeria.astro';
 import Tarjeta from './Tarjeta.astro';
 import MapaRuta from './MapaRuta.astro';
 import { ZONAS } from '../scripts/zonas';
-import { url, valorCampo, NIVEL_COLOR, type Negocio, type Ruta, type Actividad } from '../scripts/datos';
+import { url, valorCampo, NIVEL_COLOR, mejorFoto, type Negocio, type Ruta, type Actividad } from '../scripts/datos';
 interface Props { n: Negocio; zona: string; listado: { url: string; texto: string }; propia: string; oferta?: { rutas: Ruta[]; actividades: Actividad[] } }
 const { n, zona, listado, propia, oferta } = Astro.props;
 const z = ZONAS[zona];
@@ -21,7 +21,7 @@ const mapsBusqueda = ubicacion ? `https://www.google.com/maps/search/?api=1&quer
 const tipo = n.clase || n.tipo || '';
 ---
 <Base titulo={n.titulo} descripcion={n.extracto || `${n.titulo} en Melipeuco`} imagen={n.imagen} zona={zona}>
-  <Heroe titulo={n.titulo} imagen={n.imagen || '/media/2024/11/pewenmapu1-scaled.webp'} zona={zona} migas={[listado, { texto: n.titulo }]}>
+  <Heroe titulo={n.titulo} imagen={mejorFoto(n) || '/media/2024/11/pewenmapu1-scaled.webp'} zona={zona} migas={[listado, { texto: n.titulo }]}>
     <div class="etiquetas" slot="arriba">{tipo.split(',').filter(Boolean).map((t) => <span class="chip chip--solido">{t.trim()}</span>)}</div>
     {n.logo && <img src={n.logo} alt={`Logo ${n.titulo}`} style="height:72px;width:auto;border-radius:16px;background:#fff;padding:8px;margin-bottom:6px" />}
     <div class="acciones">

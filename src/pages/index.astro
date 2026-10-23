@@ -44,16 +44,19 @@ const accesos = [
 const fecha = (f: string) => new Date(f + 'T12:00:00').toLocaleDateString('es-CL', { day: 'numeric', month: 'long', year: 'numeric' });
 const cinta = ['Volcanes', 'Glaciares', 'Araucarias', 'Lagunas', 'Cascadas', 'Geisers', 'Estrellas', 'Kultrun', 'Senderos'];
 ---
-<Base>
+<Base precarga>
   <section class="portada" data-portada aria-label="Bienvenida">
     <div class="portada__capa portada__fotos" data-capa="0.45">
       {inicio.slides.map((src, i) => <img src={src} alt="" class={i === 0 ? 'activa' : ''} fetchpriority={i === 0 ? 'high' : 'low'} loading={i === 0 ? 'eager' : 'lazy'} />)}
     </div>
     <div class="portada__velo"></div>
+    <div class="logo3d" id="logo3d" aria-hidden="true"></div>
     <div class="portada__contenido">
       <div>
         <h1 class="sr">Melipeuco Capital del Trekking</h1>
-        <Logo variante="color" lema="claro" animado class="logo-svg--interactivo" />
+        <div class="logo3d-caja" id="logo3dRef">
+          <Logo variante="color" lema="claro" animado class="logo-svg--interactivo" />
+        </div>
         <p class="portada__bajada">{inicio.bajada ?? `3 volcanes, glaciares milenarios, bosques de araucarias y ${rutas.length} rutas de trekking en el corazón de la Araucanía Andina.`}</p>
         <div class="acciones">
           <a class="btn btn--crema" href="/rutas-de-trekking/">Explorar las rutas <Icono nombre="flecha" /></a>
@@ -201,6 +204,22 @@ const cinta = ['Volcanes', 'Glaciares', 'Araucarias', 'Lagunas', 'Cascadas', 'Ge
   )}
 
   <script>
+    // Logo 3D (Three.js): se carga solo si hay WebGL y el visitante no pidió reducir el movimiento
+    import partes from '../data/logo-partes.json';
+    import { PALETA } from '../scripts/zonas';
+    const caja = document.getElementById('logo3d');
+    const enlaces = ['/rutas-de-trekking/', '/noticias/', '/que-hacer/', '/que-visitar/', '/gastronomia/', '/guias-turisticos/', '/operadores-turisticos/', '/planifica-donde-dormir/', '/explora-melipeuco/'];
+    if (caja && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      import('../scripts/logo3d').then(({ crearLogo3D, soportaWebGL }) => {
+        if (!soportaWebGL()) return;
+        const iniciar = () => crearLogo3D(caja, partes, { colores: PALETA.map((p) => p.color), enlaces, dispersar: true, referencia: document.getElementById('logo3dRef') ?? undefined });
+        // Si hay precarga, la entrada 3D espera a que suba el telón
+        const conPrecarga = !!document.querySelector('.precarga') && !document.documentElement.classList.contains('sin-precarga');
+        if (!conPrecarga || (window as unknown as { __precargaFin?: boolean }).__precargaFin) iniciar();
+        else document.addEventListener('precarga:fin', iniciar, { once: true });
+      }).catch(() => { /* se mantiene el logo SVG */ });
+    }
+
     // Carrusel de la portada
     const fotos = [...document.querySelectorAll<HTMLImageElement>('.portada__fotos img')];
     const puntos = [...document.querySelectorAll<HTMLButtonElement>('#puntos button')];

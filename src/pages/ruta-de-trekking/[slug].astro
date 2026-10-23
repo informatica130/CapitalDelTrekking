@@ -7,7 +7,7 @@ import Panel from '../../components/Panel.astro';
 import Galeria from '../../components/Galeria.astro';
 import MapaRuta from '../../components/MapaRuta.astro';
 import Tarjeta from '../../components/Tarjeta.astro';
-import { rutas, url, operadoresDe, vinculado, nivelMide, NIVEL_COLOR, type Ruta } from '../../scripts/datos';
+import { rutas, url, operadoresDe, vinculado, nivelMide, NIVEL_COLOR, mejorFoto, type Ruta } from '../../scripts/datos';
 
 export function getStaticPaths() {
   return rutas.map((r) => ({ params: { slug: r.slug }, props: { r } }));
@@ -27,7 +27,7 @@ const ind = [
 ].filter(Boolean) as { i: string; k: string; v: string }[];
 ---
 <Base titulo={r.titulo} descripcion={r.extracto} imagen={r.imagen} zona="rutas">
-  <Heroe titulo={r.titulo} imagen={r.imagen} zona="rutas" migas={[{ texto: 'Rutas de trekking', url: '/rutas-de-trekking/' }, { texto: r.titulo }]}>
+  <Heroe titulo={r.titulo} imagen={mejorFoto(r)} zona="rutas" migas={[{ texto: 'Rutas de trekking', url: '/rutas-de-trekking/' }, { texto: r.titulo }]}>
     <div class="etiquetas" slot="arriba">
       {r.interes && <span class="chip chip--solido" style={`--c:${NIVEL_COLOR[r.interes]}`}>{r.interes}</span>}
       {r.dificultad && <span class="chip chip--vidrio">Dificultad MIDE {r.dificultad}</span>}

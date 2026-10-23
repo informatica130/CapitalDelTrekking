@@ -13,6 +13,11 @@
   "dependencies": {
     "astro": "^5.18.2",
     "leaflet": "^1.9.4",
-    "marked": "^14.1.4"
+    "lenis": "^1.1.20",
+    "marked": "^14.1.4",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0"
   }
 }

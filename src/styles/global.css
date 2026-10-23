@@ -644,3 +644,70 @@ body.bloqueo { overflow: hidden; }
   .portada__puntos button.activa { height: 10px; width: 30px; }
   .portada .logo-svg { width: 92vw; }
 }
+
+/* ---------- Logo 3D de la portada ---------- */
+.logo3d-caja { position: relative; width: min(1000px, 92vw); margin: 0 auto; }
+.logo3d-caja .logo-svg { width: 100% !important; transition: opacity .6s; }
+.logo3d { position: absolute; inset: 0; z-index: 2; pointer-events: none; opacity: 0; transition: opacity 1s; }
+.portada__contenido { z-index: 3; }
+.logo3d canvas { width: 100% !important; height: 100% !important; display: block; }
+.logo3d.logo3d--listo { opacity: 1; }
+.portada:has(.logo3d--listo) .logo3d-caja .logo-svg { opacity: 0; }
+.portada.sobre-letra { cursor: pointer; }
+
+/* ---------- Títulos que suben palabra por palabra ---------- */
+.partir .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .1em; margin-bottom: -.1em; }
+.partir .w > span { display: inline-block; transform: translateY(110%) rotate(4deg); transform-origin: 0 100%; transition: transform 1.1s var(--ease); transition-delay: calc(var(--p) * 55ms); }
+.partir.visible .w > span { transform: none; }
+.partir em .w > span, .partir .w em { color: inherit; }
+
+/* ---------- Transición entre páginas ---------- */
+::view-transition-old(root) { animation: .65s cubic-bezier(.76, 0, .24, 1) both paginaSale; }
+::view-transition-new(root) { animation: .85s cubic-bezier(.76, 0, .24, 1) both paginaEntra; }
+@keyframes paginaSale { to { opacity: .4; transform: scale(.96) translateY(-3vh); filter: blur(2px) brightness(.7); } }
+@keyframes paginaEntra { from { clip-path: inset(100% 0 0 0 round 40px 40px 0 0); } to { clip-path: inset(0 0 0 0 round 0); } }
+
+/* ---------- Precarga (primera visita) ---------- */
+.precarga { position: fixed; inset: 0; z-index: 9500; display: grid; place-items: center; pointer-events: none; }
+.precarga__franjas { position: absolute; inset: 0; display: flex; }
+.precarga__franjas i { flex: 1; background: var(--noche); transition: transform 1s cubic-bezier(.76, 0, .24, 1); transition-delay: calc(var(--i) * 55ms); position: relative; }
+.precarga__franjas i::after { content: ""; position: absolute; inset: auto 0 0; height: 0; background: var(--c); transition: height .9s cubic-bezier(.76, 0, .24, 1); transition-delay: calc(var(--i) * 55ms); }
+.precarga.fuera .precarga__franjas i::after { height: 100%; }
+.precarga.fuera2 .precarga__franjas i { transform: translateY(-100%); }
+.precarga__centro { position: relative; z-index: 2; display: grid; justify-items: center; gap: 30px; transition: opacity .5s, transform .8s var(--ease); }
+.precarga.fuera .precarga__centro { opacity: 0; transform: translateY(-30px) scale(.95); }
+.precarga .logo-svg { width: min(620px, 82vw); }
+.precarga__cuenta { font: 800 clamp(1rem, 2vw, 1.3rem)/1 var(--f-titulo); color: #fff; letter-spacing: .3em; font-variant-numeric: tabular-nums; }
+.precarga__barra { width: min(320px, 60vw); height: 3px; border-radius: 3px; background: rgb(255 255 255 / .12); overflow: hidden; }
+.precarga__barra b { display: block; height: 100%; background: var(--arcoiris); transform-origin: 0 50%; transform: scaleX(0); }
+html.sin-precarga .precarga { display: none; }
+
+/* ---------- Emblemas que giran en 3D ---------- */
+@keyframes giro3d { 0% { transform: perspective(400px) rotateY(0); } 100% { transform: perspective(400px) rotateY(360deg); } }
+.mega a:hover .emblema, .menu-movil a:hover .emblema, .antetitulo:hover .emblema, .bloque:hover .emblema, .tarjeta:hover .tarjeta__sinfoto .emblema { animation: giro3d 1s var(--ease) both; }
+.acceso:hover .emblema { animation: giro3d 1.1s var(--ease) both; }
+.zonas__letra:hover .emblema, .zonas__letra:focus-visible .emblema { animation: giro3d 1.1s var(--ease) both; }
+.heroe__emblema { transform-style: preserve-3d; animation: emblemaFlota 7s ease-in-out infinite, emblemaEntra3d 1.6s var(--ease) .3s both; }
+@keyframes emblemaEntra3d { from { opacity: 0; transform: perspective(600px) rotateY(-180deg) scale(.4); } to { opacity: 1; transform: perspective(600px) rotateY(0) scale(1); } }
+
+/* Botones magnéticos: transición suave del desplazamiento */
+.btn, .btn-icono, .fav--grande { transition-property: transform, box-shadow, color, background, translate; }
+.btn, .btn-icono, .fav--grande { translate: 0 0; transition: transform .35s var(--ease), box-shadow .35s var(--ease), color .3s, background .3s, translate .5s var(--ease); }
+
+@media (prefers-reduced-motion: reduce) {
+  .partir .w > span { transform: none !important; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+}
+
+/* Evita desbordes horizontales por elementos que entran desde los lados */
+main { overflow-x: clip; }
+@media (max-width: 480px) {
+  .header__barra { padding: 0 6px 0 16px; gap: 8px; width: calc(100% - 16px); }
+  .marca img { height: 30px; }
+  .herramientas { gap: 4px; }
+  .herramientas .btn-icono, .btn-buscar-txt { width: 40px; height: 40px; }
+}
+/* Logo 3D del pie de página */
+.pie__logo { position: relative; }
+.logo3d--pie { position: absolute; inset: -20% -4% -20%; z-index: 1; }
+.pie__logo:has(.logo3d--listo) > .logo-svg { opacity: 0; }

@@ -6,7 +6,7 @@ import Emblema from '../../components/Emblema.astro';
 import Galeria from '../../components/Galeria.astro';
 import Tarjeta from '../../components/Tarjeta.astro';
 import MapaRuta from '../../components/MapaRuta.astro';
-import { actividades, url, operadoresDe, vinculado, type Actividad } from '../../scripts/datos';
+import { actividades, url, operadoresDe, vinculado, mejorFoto, type Actividad } from '../../scripts/datos';
 
 export function getStaticPaths() {
   return actividades.map((a) => ({ params: { slug: a.slug }, props: { a } }));
@@ -22,7 +22,7 @@ const listado = esAct ? { url: '/que-hacer/', texto: 'Qué hacer' } : { url: '/q
 const yo = url.actividad(a.slug);
 ---
 <Base titulo={a.titulo} descripcion={a.extracto} imagen={a.imagen} zona={zona}>
-  <Heroe titulo={a.titulo} imagen={a.imagen} zona={zona} migas={[listado, { texto: a.titulo }]}>
+  <Heroe titulo={a.titulo} imagen={mejorFoto(a)} zona={zona} migas={[listado, { texto: a.titulo }]}>
     <div class="etiquetas" slot="arriba">{a.tipo && <span class="chip chip--solido">{a.tipo}</span>}<span class="chip chip--vidrio">{esAct ? 'Actividad' : 'Atractivo'}</span></div>
     <div class="acciones">
       <button type="button" class="fav fav--grande" data-fav={yo} aria-pressed="false"><Icono nombre="corazon" /> <span data-fav-txt>Guardar en Mi viaje</span></button>

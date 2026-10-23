@@ -2,6 +2,7 @@
 // Cada elemento vive en su propio archivo JSON dentro de src/content/<colección>/ (editable desde /admin).
 import { marked } from 'marked';
 import inicioJson from '../data/inicio.json';
+import tamanos from '../data/imagenes.json';
 import mapaJson from '../data/mapa.json';
 
 export interface Campo { k: string; v: string }
@@ -59,6 +60,19 @@ export const inicio = inicioJson as {
   titular?: string; bajada?: string; video?: string;
 };
 export const puntosMapa = (mapaJson as { puntos: { gpx: string; lat: number; lng: number; name: string }[] }).puntos;
+
+/* ---------- Fotos ---------- */
+const TAM = tamanos as Record<string, [number, number]>;
+/** Ancho y alto reales de una imagen local. */
+export const dims = (src?: string) => (src && TAM[decodeURI(src)]) || null;
+/** La foto de mayor resolución entre la principal y la galería (prefiere horizontales), para portadas a pantalla completa. */
+export function mejorFoto(it: { imagen?: string; galeria?: string[] }): string {
+  const fotos = [it.imagen, ...(it.galeria ?? [])].filter(Boolean) as string[];
+  const ancho = (f: string) => dims(f)?.[0] ?? 0;
+  const orden = fotos.slice().sort((a, b) => ancho(b) - ancho(a));
+  const horizontal = orden.find((f) => { const d = dims(f); return d && d[0] >= d[1] && d[0] >= ancho(orden[0]) * 0.8; });
+  return horizontal ?? orden[0] ?? '';
+}
 
 export const NIVELES = ['Familiares', 'Trekkeros', 'Expertos'] as const;
 export const NIVEL_TEXTO: Record<string, string> = {
