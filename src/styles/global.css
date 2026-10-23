@@ -404,3 +404,6 @@ p { margin: 0 0 1em; }
   .revelar { opacity: 1; transform: none; }
 }
 @media (max-width: 560px) { .filtros select, .filtros input[type="search"] { width: 100%; } }
+/* El logo original es negro: se muestra en blanco sobre fondos oscuros (encabezado y portada). */
+.marca img { filter: brightness(0) invert(1); }
+.heroe__logo { filter: brightness(0) invert(1) drop-shadow(0 6px 30px rgb(0 0 0 / .45)); }
