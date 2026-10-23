@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>Gran Salto del río Alpehue</name>
+  <desc>&lt;table cellspacing="0" cellpadding="2" border="1" style="border-collapse:collapse"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;fid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;length&lt;/b&gt;&lt;/td&gt;&lt;td&gt;0.987&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-length_km&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1,5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_horas&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2h&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rango_tiempo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2 horas o menos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rang_t_cat&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-desnivel&lt;/b&gt;&lt;/td&gt;&lt;td&gt;75&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-dificultad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tipo_recorrido&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ida y vuelta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-condicion_visitacion&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Requiere acompanamiento local&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-cobro_entrada&lt;/b&gt;&lt;/td&gt;&lt;td&gt;$10.000 por grupo, incluye guia local.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estado_ruta&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Todo vehiculo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_plaza_mp_min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-nombre_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Marcelo Huenchuman&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-fono_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;569 31813905&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estacionalidad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Solo verano&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</desc>
+  <trkseg>
+    <trkpt lat="-38.928544423" lon="-71.609569892">
+      <ele>819.491</ele>
+    </trkpt>
+    <trkpt lat="-38.92836258" lon="-71.609308987">
+      <ele>815.497</ele>
+    </trkpt>
+    <trkpt lat="-38.927943552" lon="-71.608652773">
+      <ele>807.3</ele>
+    </trkpt>
+    <trkpt lat="-38.927666835" lon="-71.608518368">
+      <ele>807.665</ele>
+    </trkpt>
+    <trkpt lat="-38.927524523" lon="-71.608320713">
+      <ele>807.961</ele>
+    </trkpt>
+    <trkpt lat="-38.927382212" lon="-71.608059808">
+      <ele>808.15</ele>
+    </trkpt>
+    <trkpt lat="-38.92713712" lon="-71.607798904">
+      <ele>808.951</ele>
+    </trkpt>
+    <trkpt lat="-38.926868309" lon="-71.606929222">
+      <ele>793.091</ele>
+    </trkpt>
+    <trkpt lat="-38.927026433" lon="-71.606375788">
+      <ele>803.008</ele>
+    </trkpt>
+    <trkpt lat="-38.926923652" lon="-71.606027916">
+      <ele>789.263</ele>
+    </trkpt>
+    <trkpt lat="-38.926942292" lon="-71.605772775">
+      <ele>788.172</ele>
+    </trkpt>
+    <trkpt lat="-38.927027" lon="-71.605514">
+      <ele>795.403</ele>
+    </trkpt>
+    <trkpt lat="-38.927226913" lon="-71.603670957">
+      <ele>779.264</ele>
+    </trkpt>
+    <trkpt lat="-38.927763314" lon="-71.60301414">
+      <ele>783.258</ele>
+    </trkpt>
+    <trkpt lat="-38.928518655" lon="-71.602849935">
+      <ele>791.749</ele>
+    </trkpt>
+    <trkpt lat="-38.929058411" lon="-71.602423631">
+      <ele>806.13</ele>
+    </trkpt>
+    <trkpt lat="-38.930237328" lon="-71.601492511">
+      <ele>820.029</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

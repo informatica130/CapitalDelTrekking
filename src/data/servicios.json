@@ -210,8 +210,13 @@
   ],
   "cuerpo": "",
   "extracto": "",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2025/01/cuatro-rios-1.webp",
+  "galeria": [
+   "/media/2025/01/cuatro-rios-1.webp",
+   "/media/2025/01/cuatro-rios-2.webp",
+   "/media/2025/01/cuatro-rios-3.webp",
+   "/media/2025/01/cuatro-rios-4.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -361,7 +366,9 @@
   "extracto": "",
   "imagen": "/media/2024/11/elfogondecherquen2.webp",
   "galeria": [
-   "/media/2024/11/elfogondecherquen2.webp"
+   "/media/2024/11/elfogondecherquen2.webp",
+   "/media/2025/01/fogon-de-cherquen-2.webp",
+   "/media/2025/01/fogon-de-cherquen-1.webp"
   ],
   "grupos": [
    {
@@ -770,7 +777,10 @@
   "extracto": "",
   "imagen": "/media/2024/11/kani3-1-wpcf_1024x1024.jpg",
   "galeria": [
-   "/media/2024/11/kani3-1-wpcf_1024x1024.jpg"
+   "/media/2024/11/kani3-1-wpcf_1024x1024.jpg",
+   "/media/2025/01/kani-escalada-1.webp",
+   "/media/2025/01/kani-escalada-2.webp",
+   "/media/2025/01/kani-escalada-3.webp"
   ],
   "grupos": [
    {

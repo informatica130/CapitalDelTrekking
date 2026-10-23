@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>Circuito Laguna Icalma</name>
+  <desc>&lt;table cellspacing="0" cellpadding="2" border="1" style="border-collapse:collapse"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;fid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;41&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;length&lt;/b&gt;&lt;/td&gt;&lt;td&gt;18.578&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-length_km&lt;/b&gt;&lt;/td&gt;&lt;td&gt;19&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_horas&lt;/b&gt;&lt;/td&gt;&lt;td&gt;9h&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rango_tiempo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;dia entero&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rang_t_cat&lt;/b&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-desnivel&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1040&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-dificultad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tipo_recorrido&lt;/b&gt;&lt;/td&gt;&lt;td&gt;circuito&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-condicion_visitacion&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Autoguiable espontaneo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-cobro_entrada&lt;/b&gt;&lt;/td&gt;&lt;td&gt;No, es ribera (propiedad fiscal).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estado_ruta&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Todo vehiculo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_plaza_mp_min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-nombre_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Privados varios&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-fono_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Sin informacion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estacionalidad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Invierno con equipo de nieve&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</desc>
+  <trkseg>
+    <trkpt lat="-38.820699216" lon="-71.317027101">
+      <ele>1149.0</ele>
+    </trkpt>
+    <trkpt lat="-38.818453095" lon="-71.318365699">
+      <ele>1163.774</ele>
+    </trkpt>
+    <trkpt lat="-38.816660735" lon="-71.318320323">
+      <ele>1165.126</ele>
+    </trkpt>
+    <trkpt lat="-38.814823" lon="-71.314281842">
+      <ele>1177.595</ele>
+    </trkpt>
+    <trkpt lat="-38.81219118" lon="-71.308927451">
+      <ele>1195.045</ele>
+    </trkpt>
+    <trkpt lat="-38.80742668" lon="-71.306250256">
+      <ele>1176.258</ele>
+    </trkpt>
+    <trkpt lat="-38.803115942" lon="-71.30822412">
+      <ele>1183.08</ele>
+    </trkpt>
+    <trkpt lat="-38.802639492" lon="-71.309948415">
+      <ele>1178.688</ele>
+    </trkpt>
+    <trkpt lat="-38.803773897" lon="-71.311513894">
+      <ele>1183.121</ele>
+    </trkpt>
+    <trkpt lat="-38.800446981" lon="-71.312657389">
+      <ele>1177.049</ele>
+    </trkpt>
+    <trkpt lat="-38.794631487" lon="-71.30983272">
+      <ele>1193.854</ele>
+    </trkpt>
+    <trkpt lat="-38.791308347" lon="-71.306841895">
+      <ele>1242.503</ele>
+    </trkpt>
+    <trkpt lat="-38.787819051" lon="-71.294047808">
+      <ele>1234.8</ele>
+    </trkpt>
+    <trkpt lat="-38.782502028" lon="-71.285075331">
+      <ele>1207.746</ele>
+    </trkpt>
+    <trkpt lat="-38.778181946" lon="-71.27527207">
+      <ele>1205.794</ele>
+    </trkpt>
+    <trkpt lat="-38.777517319" lon="-71.270785832">
+      <ele>1212.231</ele>
+    </trkpt>
+    <trkpt lat="-38.775357278" lon="-71.265136495">
+      <ele>1172.307</ele>
+    </trkpt>
+    <trkpt lat="-38.770704883" lon="-71.259154844">
+      <ele>1208.189</ele>
+    </trkpt>
+    <trkpt lat="-38.770372569" lon="-71.253505507">
+      <ele>1171.153</ele>
+    </trkpt>
+    <trkpt lat="-38.771867982" lon="-71.252010094">
+      <ele>1151.867</ele>
+    </trkpt>
+    <trkpt lat="-38.77469265" lon="-71.251345466">
+      <ele>1153.625</ele>
+    </trkpt>
+    <trkpt lat="-38.779012731" lon="-71.252342408">
+      <ele>1199.244</ele>
+    </trkpt>
+    <trkpt lat="-38.782169714" lon="-71.255997861">
+      <ele>1156.112</ele>
+    </trkpt>
+    <trkpt lat="-38.784163597" lon="-71.260650256">
+      <ele>1153.326</ele>
+    </trkpt>
+    <trkpt lat="-38.786157481" lon="-71.262810297">
+      <ele>1160.264</ele>
+    </trkpt>
+    <trkpt lat="-38.792139132" lon="-71.265136495">
+      <ele>1158.509</ele>
+    </trkpt>
+    <trkpt lat="-38.801942394" lon="-71.270121204">
+      <ele>1185.534</ele>
+    </trkpt>
+    <trkpt lat="-38.805135183" lon="-71.274441546">
+      <ele>1165.395</ele>
+    </trkpt>
+    <trkpt lat="-38.806594789" lon="-71.274939756">
+      <ele>1165.63</ele>
+    </trkpt>
+    <trkpt lat="-38.808697214" lon="-71.277232182">
+      <ele>1159.512</ele>
+    </trkpt>
+    <trkpt lat="-38.808924095" lon="-71.278888413">
+      <ele>1151.874</ele>
+    </trkpt>
+    <trkpt lat="-38.8092533" lon="-71.280256779">
+      <ele>1152.775</ele>
+    </trkpt>
+    <trkpt lat="-38.810250242" lon="-71.283579919">
+      <ele>1152.176</ele>
+    </trkpt>
+    <trkpt lat="-38.811911812" lon="-71.289395413">
+      <ele>1172.155</ele>
+    </trkpt>
+    <trkpt lat="-38.812742597" lon="-71.290558511">
+      <ele>1192.288</ele>
+    </trkpt>
+    <trkpt lat="-38.813905696" lon="-71.292718552">
+      <ele>1185.824</ele>
+    </trkpt>
+    <trkpt lat="-38.815567265" lon="-71.294380122">
+      <ele>1172.726</ele>
+    </trkpt>
+    <trkpt lat="-38.817228835" lon="-71.29886636">
+      <ele>1182.965</ele>
+    </trkpt>
+    <trkpt lat="-38.81972119" lon="-71.306177267">
+      <ele>1168.531</ele>
+    </trkpt>
+    <trkpt lat="-38.820718131" lon="-71.311161976">
+      <ele>1154.433</ele>
+    </trkpt>
+    <trkpt lat="-38.820812657" lon="-71.316936349">
+      <ele>1149.11</ele>
+    </trkpt>
+    <trkpt lat="-38.820744592" lon="-71.316981725">
+      <ele>1149.0</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

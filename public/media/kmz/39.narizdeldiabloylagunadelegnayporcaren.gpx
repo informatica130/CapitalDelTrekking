@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>Naríz del Diablo y Laguna de Legnay por Carén</name>
+  <desc>&lt;table cellspacing="0" cellpadding="2" border="1" style="border-collapse:collapse"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;fid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;39&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;length&lt;/b&gt;&lt;/td&gt;&lt;td&gt;7.311&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-length_km&lt;/b&gt;&lt;/td&gt;&lt;td&gt;7,4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_horas&lt;/b&gt;&lt;/td&gt;&lt;td&gt;8h&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rango_tiempo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;dia entero&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rang_t_cat&lt;/b&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-desnivel&lt;/b&gt;&lt;/td&gt;&lt;td&gt;630&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-dificultad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2,5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tipo_recorrido&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ida y vuelta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-condicion_visitacion&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Requiere guia especializado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-cobro_entrada&lt;/b&gt;&lt;/td&gt;&lt;td&gt;$15.000 por grupo, incluye guiado local&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estado_ruta&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Solo 4x4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_plaza_mp_min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-nombre_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Valeska Jofre&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-fono_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;569 57184008&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estacionalidad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Invierno con equipo de nieve&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</desc>
+  <trkseg>
+    <trkpt lat="-38.902033663" lon="-71.54015641">
+      <ele>875.082</ele>
+    </trkpt>
+    <trkpt lat="-38.901124338" lon="-71.540636635">
+      <ele>883.444</ele>
+    </trkpt>
+    <trkpt lat="-38.899226705" lon="-71.54290149">
+      <ele>962.755</ele>
+    </trkpt>
+    <trkpt lat="-38.898477903" lon="-71.545315428">
+      <ele>1011.72</ele>
+    </trkpt>
+    <trkpt lat="-38.898432654" lon="-71.547482554">
+      <ele>1026.032</ele>
+    </trkpt>
+    <trkpt lat="-38.898982382" lon="-71.549498222">
+      <ele>1048.668</ele>
+    </trkpt>
+    <trkpt lat="-38.899776433" lon="-71.551269567">
+      <ele>1067.576</ele>
+    </trkpt>
+    <trkpt lat="-38.89996079" lon="-71.553437133">
+      <ele>1103.304</ele>
+    </trkpt>
+    <trkpt lat="-38.898341033" lon="-71.554812256">
+      <ele>1153.028</ele>
+    </trkpt>
+    <trkpt lat="-38.897272118" lon="-71.556430899">
+      <ele>1190.363</ele>
+    </trkpt>
+    <trkpt lat="-38.896416886" lon="-71.558827855">
+      <ele>1226.357</ele>
+    </trkpt>
+    <trkpt lat="-38.894981586" lon="-71.560981423">
+      <ele>1268.537</ele>
+    </trkpt>
+    <trkpt lat="-38.894897742" lon="-71.562817399">
+      <ele>1292.383</ele>
+    </trkpt>
+    <trkpt lat="-38.898591" lon="-71.562237">
+      <ele>1471.89</ele>
+    </trkpt>
+    <trkpt lat="-38.899379407" lon="-71.561332637">
+      <ele>1518.486</ele>
+    </trkpt>
+    <trkpt lat="-38.900066567" lon="-71.560263723">
+      <ele>1506.398</ele>
+    </trkpt>
+    <trkpt lat="-38.901120211" lon="-71.562844389">
+      <ele>1510.628</ele>
+    </trkpt>
+    <trkpt lat="-38.902861519" lon="-71.564485369">
+      <ele>1509.548</ele>
+    </trkpt>
+    <trkpt lat="-38.904479658" lon="-71.566997887">
+      <ele>1574.203</ele>
+    </trkpt>
+    <trkpt lat="-38.90563169" lon="-71.568023909">
+      <ele>1591.756</ele>
+    </trkpt>
+    <trkpt lat="-38.906281544" lon="-71.569288418">
+      <ele>1575.635</ele>
+    </trkpt>
+    <trkpt lat="-38.908129239" lon="-71.570448955">
+      <ele>1619.713</ele>
+    </trkpt>
+    <trkpt lat="-38.908953831" lon="-71.569914497">
+      <ele>1566.337</ele>
+    </trkpt>
+    <trkpt lat="-38.910573129" lon="-71.569845212">
+      <ele>1625.621</ele>
+    </trkpt>
+    <trkpt lat="-38.911702064" lon="-71.568173447">
+      <ele>1519.381</ele>
+    </trkpt>
+    <trkpt lat="-38.914073434" lon="-71.567985674">
+      <ele>1510.974</ele>
+    </trkpt>
+    <trkpt lat="-38.917409663" lon="-71.56546983">
+      <ele>1591.405</ele>
+    </trkpt>
+    <trkpt lat="-38.921347506" lon="-71.564540061">
+      <ele>1590.0</ele>
+    </trkpt>
+    <trkpt lat="-38.924902504" lon="-71.563172755">
+      <ele>1607.081</ele>
+    </trkpt>
+    <trkpt lat="-38.927910579" lon="-71.563336831">
+      <ele>1596.604</ele>
+    </trkpt>
+    <trkpt lat="-38.93037958" lon="-71.559726843">
+      <ele>1675.791</ele>
+    </trkpt>
+    <trkpt lat="-38.932176576" lon="-71.559563065">
+      <ele>1739.319</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

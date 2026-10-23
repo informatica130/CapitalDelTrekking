@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>Cancha La Leona</name>
+  <desc>&lt;table cellspacing="0" cellpadding="2" border="1" style="border-collapse:collapse"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;fid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;length&lt;/b&gt;&lt;/td&gt;&lt;td&gt;5.085&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-length_km&lt;/b&gt;&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_horas&lt;/b&gt;&lt;/td&gt;&lt;td&gt;8h&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rango_tiempo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;dia entero&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rang_t_cat&lt;/b&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-desnivel&lt;/b&gt;&lt;/td&gt;&lt;td&gt;224&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-dificultad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tipo_recorrido&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ida y vuelta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-condicion_visitacion&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Requiere guia especializado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-cobro_entrada&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Incluido en costo del tour. Valor tour $45.000 por grupo.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estado_ruta&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Todo vehiculo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_plaza_mp_min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-nombre_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Daniel Pincheira&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-fono_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;569 52243749&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estacionalidad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Todo el ano con indumentaria normal de trekking&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</desc>
+  <trkseg>
+    <trkpt lat="-38.772766435" lon="-71.676452229">
+      <ele>1560.192</ele>
+    </trkpt>
+    <trkpt lat="-38.773906611" lon="-71.678406817">
+      <ele>1528.572</ele>
+    </trkpt>
+    <trkpt lat="-38.775494713" lon="-71.678895463">
+      <ele>1533.7</ele>
+    </trkpt>
+    <trkpt lat="-38.778772719" lon="-71.678528978">
+      <ele>1469.333</ele>
+    </trkpt>
+    <trkpt lat="-38.781277034" lon="-71.677063038">
+      <ele>1393.526</ele>
+    </trkpt>
+    <trkpt lat="-38.782763334" lon="-71.674456921">
+      <ele>1353.038</ele>
+    </trkpt>
+    <trkpt lat="-38.784840083" lon="-71.673927554">
+      <ele>1292.093</ele>
+    </trkpt>
+    <trkpt lat="-38.786102421" lon="-71.671606482">
+      <ele>1237.688</ele>
+    </trkpt>
+    <trkpt lat="-38.786957553" lon="-71.669814777">
+      <ele>1260.142</ele>
+    </trkpt>
+    <trkpt lat="-38.788952861" lon="-71.66859316">
+      <ele>1297.76</ele>
+    </trkpt>
+    <trkpt lat="-38.792862035" lon="-71.669285409">
+      <ele>1233.07</ele>
+    </trkpt>
+    <trkpt lat="-38.79603824" lon="-71.668878204">
+      <ele>1091.015</ele>
+    </trkpt>
+    <trkpt lat="-38.797382018" lon="-71.669936938">
+      <ele>1028.895</ele>
+    </trkpt>
+    <trkpt lat="-38.799133003" lon="-71.670954953">
+      <ele>948.579</ele>
+    </trkpt>
+    <trkpt lat="-38.801494796" lon="-71.670262703">
+      <ele>850.199</ele>
+    </trkpt>
+    <trkpt lat="-38.802390648" lon="-71.671280717">
+      <ele>784.736</ele>
+    </trkpt>
+    <trkpt lat="-38.80393803" lon="-71.671036394">
+      <ele>727.769</ele>
+    </trkpt>
+    <trkpt lat="-38.804141633" lon="-71.669163248">
+      <ele>727.991</ele>
+    </trkpt>
+    <trkpt lat="-38.804589559" lon="-71.667371543">
+      <ele>696.102</ele>
+    </trkpt>
+    <trkpt lat="-38.805444691" lon="-71.664561823">
+      <ele>677.428</ele>
+    </trkpt>
+    <trkpt lat="-38.804833882" lon="-71.661670663">
+      <ele>689.025</ele>
+    </trkpt>
+    <trkpt lat="-38.805689014" lon="-71.65930887">
+      <ele>659.27</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

@@ -15,8 +15,13 @@
   ],
   "cuerpo": "<p>Actividades de montaña. Ascenso Volcanes, ski de montaña</p>",
   "extracto": "Actividades de montaña. Ascenso Volcanes, ski de montaña",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2025/11/acunabach-4.webp",
+  "galeria": [
+   "/media/2025/11/acunabach-4.webp",
+   "/media/2025/11/acunabach-1.webp",
+   "/media/2025/11/acunabach-2.webp",
+   "/media/2025/11/acunabach-3.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -53,7 +58,7 @@
    "facebook": "https://www.facebook.com/acunabach",
    "instagram": "https://www.instagram.com/acunabach"
   },
-  "logo": "",
+  "logo": "/media/2025/11/acunabach_logo.jpg",
   "servicios": []
  },
  {
@@ -203,8 +208,12 @@
   ],
   "cuerpo": "<p dir=\"ltr\">EXPANDES TOUR es una agencia local de turismo con base en Melipeuco, especializada en experiencias auténticas y personalizadas en la zona andina de La Araucanía. Como tour operador, conectamos a los viajeros con la cultura, naturaleza y paisajes únicos del territorio, promoviendo un turismo consciente, sustentable y de cercanía con las comunidades locales.</p>",
   "extracto": "EXPANDES TOUR es una agencia local de turismo con base en Melipeuco, especializada en experiencias auténticas y personalizadas en la zona andina de La Araucanía. Como…",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2025/08/expandes-3.webp",
+  "galeria": [
+   "/media/2025/08/expandes-3.webp",
+   "/media/2025/08/expandes-2.webp",
+   "/media/2025/08/expandes-1.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",
@@ -528,7 +537,10 @@
   "galeria": [
    "/media/2024/11/melitrekan2-1-wpcf_1024x1024.jpg",
    "/media/2024/11/melitrekan3.webp",
-   "/media/2024/11/melitrekan4.webp"
+   "/media/2024/11/melitrekan4.webp",
+   "/media/2025/01/meli-trekan-1.webp",
+   "/media/2025/01/meli-trekan-2.webp",
+   "/media/2025/01/meli-trekan-3.webp"
   ],
   "grupos": [
    {
@@ -565,7 +577,7 @@
    "whatsapp": "https://wa.me/+56952243749",
    "instagram": "https://www.instagram.com/melitrekan"
   },
-  "logo": "",
+  "logo": "/media/2025/01/meli-trekan-melipeuco-logo.jpg",
   "servicios": []
  },
  {

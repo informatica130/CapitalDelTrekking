@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>Mirador Cayumán de Legnay</name>
+  <desc>&lt;table cellspacing="0" cellpadding="2" border="1" style="border-collapse:collapse"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;fid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;length&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1.537&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-length_km&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1,7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_horas&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2h&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rango_tiempo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2 horas o menos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rang_t_cat&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-desnivel&lt;/b&gt;&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-dificultad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tipo_recorrido&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ida y vuelta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-condicion_visitacion&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Autoguiable con aviso&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-cobro_entrada&lt;/b&gt;&lt;/td&gt;&lt;td&gt;$2.000 por persona&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estado_ruta&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Solo 4x4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_plaza_mp_min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-nombre_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Daniel Cayuman&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-fono_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;569 34632881&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estacionalidad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Todo el ano con indumentaria normal de trekking&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</desc>
+  <trkseg>
+    <trkpt lat="-38.855906915" lon="-71.58857283">
+      <ele>531.53</ele>
+    </trkpt>
+    <trkpt lat="-38.858330529" lon="-71.58766103">
+      <ele>615.794</ele>
+    </trkpt>
+    <trkpt lat="-38.859144941" lon="-71.586805898">
+      <ele>672.942</ele>
+    </trkpt>
+    <trkpt lat="-38.861578636" lon="-71.585572594">
+      <ele>779.986</ele>
+    </trkpt>
+    <trkpt lat="-38.862931953" lon="-71.584627348">
+      <ele>840.952</ele>
+    </trkpt>
+    <trkpt lat="-38.863481681" lon="-71.583924918">
+      <ele>874.348</ele>
+    </trkpt>
+    <trkpt lat="-38.864525146" lon="-71.582161208">
+      <ele>899.257</ele>
+    </trkpt>
+    <trkpt lat="-38.864479335" lon="-71.581611481">
+      <ele>903.491</ele>
+    </trkpt>
+    <trkpt lat="-38.864158661" lon="-71.581336617">
+      <ele>914.845</ele>
+    </trkpt>
+    <trkpt lat="-38.863608933" lon="-71.581351887">
+      <ele>918.407</ele>
+    </trkpt>
+    <trkpt lat="-38.863120286" lon="-71.581642021">
+      <ele>915.211</ele>
+    </trkpt>
+    <trkpt lat="-38.862814882" lon="-71.581703102">
+      <ele>914.231</ele>
+    </trkpt>
+    <trkpt lat="-38.862020831" lon="-71.581412968">
+      <ele>920.14</ele>
+    </trkpt>
+    <trkpt lat="-38.861501643" lon="-71.581687832">
+      <ele>889.962</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

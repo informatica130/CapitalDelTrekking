@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>Mallín del Sapo</name>
+  <desc>&lt;table cellspacing="0" cellpadding="2" border="1" style="border-collapse:collapse"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;fid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;21&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;length&lt;/b&gt;&lt;/td&gt;&lt;td&gt;4.777&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-length_km&lt;/b&gt;&lt;/td&gt;&lt;td&gt;4,8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_horas&lt;/b&gt;&lt;/td&gt;&lt;td&gt;5h&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rango_tiempo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;dia entero&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rang_t_cat&lt;/b&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-desnivel&lt;/b&gt;&lt;/td&gt;&lt;td&gt;474&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-dificultad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tipo_recorrido&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ida y vuelta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-condicion_visitacion&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Autoguiable espontaneo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-cobro_entrada&lt;/b&gt;&lt;/td&gt;&lt;td&gt;No.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estado_ruta&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Solo 4x4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_plaza_mp_min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;90&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-nombre_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Privados varios&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-fono_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Sin informacion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estacionalidad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Invierno con equipo de nieve&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</desc>
+  <trkseg>
+    <trkpt lat="-38.959499024" lon="-71.613749828">
+      <ele>996.892</ele>
+    </trkpt>
+    <trkpt lat="-38.965065429" lon="-71.616462471">
+      <ele>1048.497</ele>
+    </trkpt>
+    <trkpt lat="-38.966717967" lon="-71.615961701">
+      <ele>1052.112</ele>
+    </trkpt>
+    <trkpt lat="-38.968170199" lon="-71.618014856">
+      <ele>1100.778</ele>
+    </trkpt>
+    <trkpt lat="-38.968270353" lon="-71.61941701">
+      <ele>1124.521</ele>
+    </trkpt>
+    <trkpt lat="-38.968871276" lon="-71.619617318">
+      <ele>1159.289</ele>
+    </trkpt>
+    <trkpt lat="-38.969922891" lon="-71.619066471">
+      <ele>1168.9</ele>
+    </trkpt>
+    <trkpt lat="-38.971124738" lon="-71.618014856">
+      <ele>1271.147</ele>
+    </trkpt>
+    <trkpt lat="-38.971925969" lon="-71.617063394">
+      <ele>1349.275</ele>
+    </trkpt>
+    <trkpt lat="-38.973478354" lon="-71.617213625">
+      <ele>1350.136</ele>
+    </trkpt>
+    <trkpt lat="-38.973929046" lon="-71.618515625">
+      <ele>1263.008</ele>
+    </trkpt>
+    <trkpt lat="-38.974580047" lon="-71.621269857">
+      <ele>1291.886</ele>
+    </trkpt>
+    <trkpt lat="-38.975781893" lon="-71.621069549">
+      <ele>1318.546</ele>
+    </trkpt>
+    <trkpt lat="-38.976833509" lon="-71.618966318">
+      <ele>1375.814</ele>
+    </trkpt>
+    <trkpt lat="-38.978135509" lon="-71.617163548">
+      <ele>1411.803</ele>
+    </trkpt>
+    <trkpt lat="-38.986736675" lon="-71.610086926">
+      <ele>1763.647</ele>
+    </trkpt>
+    <trkpt lat="-38.991701508" lon="-71.608575889">
+      <ele>1618.382</ele>
+    </trkpt>
+    <trkpt lat="-38.994110965" lon="-71.60937331">
+      <ele>1725.072</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

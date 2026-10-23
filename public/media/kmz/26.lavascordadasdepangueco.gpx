@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>Lavas Cordadas de Pangueco</name>
+  <desc>&lt;table cellspacing="0" cellpadding="2" border="1" style="border-collapse:collapse"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;fid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;26&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;length&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2.203&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-length_km&lt;/b&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_horas&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2,5h&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rango_tiempo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;medio dia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rang_t_cat&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-desnivel&lt;/b&gt;&lt;/td&gt;&lt;td&gt;142&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-dificultad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tipo_recorrido&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ida y vuelta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-condicion_visitacion&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Requiere guia especializado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-cobro_entrada&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Incluido en costo del tour.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estado_ruta&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Solo 4x4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_plaza_mp_min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;45&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-nombre_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;CONAF PN Conguillio&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-fono_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;56 2 28406818.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estacionalidad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Invierno con equipo de nieve&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</desc>
+  <trkseg>
+    <trkpt lat="-38.752882415" lon="-71.678806727">
+      <ele>1281.995</ele>
+    </trkpt>
+    <trkpt lat="-38.753691066" lon="-71.681207409">
+      <ele>1428.363</ele>
+    </trkpt>
+    <trkpt lat="-38.754499717" lon="-71.681738086">
+      <ele>1465.778</ele>
+    </trkpt>
+    <trkpt lat="-38.755813775" lon="-71.681712816">
+      <ele>1487.256</ele>
+    </trkpt>
+    <trkpt lat="-38.759129" lon="-71.68286">
+      <ele>1480.986</ele>
+    </trkpt>
+    <trkpt lat="-38.759398" lon="-71.682833">
+      <ele>1486.453</ele>
+    </trkpt>
+    <trkpt lat="-38.759667" lon="-71.682805">
+      <ele>1494.482</ele>
+    </trkpt>
+    <trkpt lat="-38.759935" lon="-71.682777">
+      <ele>1499.813</ele>
+    </trkpt>
+    <trkpt lat="-38.760204" lon="-71.682749">
+      <ele>1502.609</ele>
+    </trkpt>
+    <trkpt lat="-38.760473" lon="-71.682722">
+      <ele>1504.201</ele>
+    </trkpt>
+    <trkpt lat="-38.760742" lon="-71.682694">
+      <ele>1505.533</ele>
+    </trkpt>
+    <trkpt lat="-38.761011" lon="-71.682666">
+      <ele>1506.483</ele>
+    </trkpt>
+    <trkpt lat="-38.76128" lon="-71.682638">
+      <ele>1507.7</ele>
+    </trkpt>
+    <trkpt lat="-38.761549" lon="-71.682611">
+      <ele>1509.267</ele>
+    </trkpt>
+    <trkpt lat="-38.761818" lon="-71.682583">
+      <ele>1508.262</ele>
+    </trkpt>
+    <trkpt lat="-38.761962" lon="-71.682568">
+      <ele>1506.387</ele>
+    </trkpt>
+  </trkseg>
+  <trkseg>
+    <trkpt lat="-38.761962" lon="-71.682568">
+      <ele>1506.387</ele>
+    </trkpt>
+    <trkpt lat="-38.762203" lon="-71.682723">
+      <ele>1502.26</ele>
+    </trkpt>
+    <trkpt lat="-38.762445" lon="-71.682877">
+      <ele>1494.782</ele>
+    </trkpt>
+    <trkpt lat="-38.762686" lon="-71.683032">
+      <ele>1486.974</ele>
+    </trkpt>
+    <trkpt lat="-38.762927" lon="-71.683187">
+      <ele>1477.518</ele>
+    </trkpt>
+    <trkpt lat="-38.763169" lon="-71.683342">
+      <ele>1465.616</ele>
+    </trkpt>
+    <trkpt lat="-38.76341" lon="-71.683496">
+      <ele>1452.931</ele>
+    </trkpt>
+    <trkpt lat="-38.763651" lon="-71.683651">
+      <ele>1440.969</ele>
+    </trkpt>
+    <trkpt lat="-38.763893" lon="-71.683806">
+      <ele>1428.784</ele>
+    </trkpt>
+    <trkpt lat="-38.764134" lon="-71.683961">
+      <ele>1419.738</ele>
+    </trkpt>
+    <trkpt lat="-38.764375" lon="-71.684115">
+      <ele>1417.854</ele>
+    </trkpt>
+    <trkpt lat="-38.764616" lon="-71.68427">
+      <ele>1418.299</ele>
+    </trkpt>
+    <trkpt lat="-38.764858" lon="-71.684425">
+      <ele>1415.697</ele>
+    </trkpt>
+    <trkpt lat="-38.765099" lon="-71.684579">
+      <ele>1406.075</ele>
+    </trkpt>
+    <trkpt lat="-38.76534" lon="-71.684734">
+      <ele>1397.277</ele>
+    </trkpt>
+    <trkpt lat="-38.765582" lon="-71.684889">
+      <ele>1384.804</ele>
+    </trkpt>
+    <trkpt lat="-38.765823" lon="-71.685044">
+      <ele>1375.49</ele>
+    </trkpt>
+    <trkpt lat="-38.766064" lon="-71.685198">
+      <ele>1368.688</ele>
+    </trkpt>
+    <trkpt lat="-38.766306" lon="-71.685353">
+      <ele>1363.697</ele>
+    </trkpt>
+    <trkpt lat="-38.766547" lon="-71.685508">
+      <ele>1357.288</ele>
+    </trkpt>
+    <trkpt lat="-38.766788" lon="-71.685663">
+      <ele>1349.526</ele>
+    </trkpt>
+    <trkpt lat="-38.76703" lon="-71.685817">
+      <ele>1343.879</ele>
+    </trkpt>
+    <trkpt lat="-38.767271" lon="-71.685972">
+      <ele>1340.422</ele>
+    </trkpt>
+    <trkpt lat="-38.767512" lon="-71.686127">
+      <ele>1331.387</ele>
+    </trkpt>
+    <trkpt lat="-38.767754" lon="-71.686282">
+      <ele>1325.496</ele>
+    </trkpt>
+    <trkpt lat="-38.767995" lon="-71.686436">
+      <ele>1322.605</ele>
+    </trkpt>
+    <trkpt lat="-38.768236" lon="-71.686591">
+      <ele>1327.803</ele>
+    </trkpt>
+    <trkpt lat="-38.768478" lon="-71.686746">
+      <ele>1332.174</ele>
+    </trkpt>
+    <trkpt lat="-38.768719" lon="-71.686901">
+      <ele>1330.625</ele>
+    </trkpt>
+    <trkpt lat="-38.768841" lon="-71.686979">
+      <ele>1326.885</ele>
+    </trkpt>
+  </trkseg>
+  <trkseg>
+    <trkpt lat="-38.768841" lon="-71.686979">
+      <ele>1326.885</ele>
+    </trkpt>
+    <trkpt lat="-38.769562" lon="-71.68831">
+      <ele>1258.343</ele>
+    </trkpt>
+    <trkpt lat="-38.769632" lon="-71.688336">
+      <ele>1256.563</ele>
+    </trkpt>
+    <trkpt lat="-38.769843005" lon="-71.68853068">
+      <ele>1250.727</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

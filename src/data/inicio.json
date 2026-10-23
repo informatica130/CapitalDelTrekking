@@ -1,5 +1,12 @@
 {
- "slides": [],
+ "slides": [
+  "/media/slider/cache/b02f6482c77cc6c66c50eeffa46c535d/01.jpg",
+  "/media/slider/cache/b46865cbab1dbbbc388cd4fb8de4b1ad/02.jpg",
+  "/media/slider/cache/afd714feec133c365125797ddb4e91f7/03.jpg",
+  "/media/slider/cache/a670ceabbb105669a192ee83014119f0/04.jpg",
+  "/media/slider/cache/9fa00e9835264e345ac89a8fabad1f7e/05.jpg",
+  "/media/slider/cache/fbe8e86fca397dbe6bffecfe6ed2af1d/06.jpg"
+ ],
  "rutas_destacadas": [
   "obsidianas-de-molulco",
   "mirador-de-molulco",

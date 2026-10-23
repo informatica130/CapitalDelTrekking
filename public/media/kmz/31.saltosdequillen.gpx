@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>Saltos de Quillén</name>
+  <desc>&lt;table cellspacing="0" cellpadding="2" border="1" style="border-collapse:collapse"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;fid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;31&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;length&lt;/b&gt;&lt;/td&gt;&lt;td&gt;0.575&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-length_km&lt;/b&gt;&lt;/td&gt;&lt;td&gt;0,7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_horas&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1h&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rango_tiempo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2 horas o menos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rang_t_cat&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-desnivel&lt;/b&gt;&lt;/td&gt;&lt;td&gt;110&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-dificultad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1,5&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tipo_recorrido&lt;/b&gt;&lt;/td&gt;&lt;td&gt;circuito&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-condicion_visitacion&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Requiere acompanamiento local&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-cobro_entrada&lt;/b&gt;&lt;/td&gt;&lt;td&gt;$5.000 por persona&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estado_ruta&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Todo vehiculo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_plaza_mp_min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;45&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-nombre_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Juan Carlos Baeza&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-fono_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;569 94896545&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estacionalidad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Invierno con equipo de nieve&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</desc>
+  <trkseg>
+    <trkpt lat="-38.882768946" lon="-71.507048632">
+      <ele>843.523</ele>
+    </trkpt>
+    <trkpt lat="-38.88264239" lon="-71.507956464">
+      <ele>791.506</ele>
+    </trkpt>
+    <trkpt lat="-38.883210796" lon="-71.508510425">
+      <ele>738.084</ele>
+    </trkpt>
+    <trkpt lat="-38.883719804" lon="-71.508591866">
+      <ele>714.836</ele>
+    </trkpt>
+    <trkpt lat="-38.88418809" lon="-71.508459524">
+      <ele>749.095</ele>
+    </trkpt>
+    <trkpt lat="-38.8843" lon="-71.507771">
+      <ele>815.117</ele>
+    </trkpt>
+    <trkpt lat="-38.884290563" lon="-71.50768512">
+      <ele>828.127</ele>
+    </trkpt>
+    <trkpt lat="-38.884325967" lon="-71.507583189">
+      <ele>845.064</ele>
+    </trkpt>
+    <trkpt lat="-38.884152779" lon="-71.507551461">
+      <ele>839.896</ele>
+    </trkpt>
+    <trkpt lat="-38.88413119" lon="-71.507547234">
+      <ele>838.275</ele>
+    </trkpt>
+    <trkpt lat="-38.884122164" lon="-71.507784119">
+      <ele>809.287</ele>
+    </trkpt>
+    <trkpt lat="-38.884031006" lon="-71.507783883">
+      <ele>797.246</ele>
+    </trkpt>
+    <trkpt lat="-38.883792" lon="-71.507537">
+      <ele>814.644</ele>
+    </trkpt>
+    <trkpt lat="-38.883737171" lon="-71.507535959">
+      <ele>813.832</ele>
+    </trkpt>
+    <trkpt lat="-38.883673659" lon="-71.50759717">
+      <ele>807.536</ele>
+    </trkpt>
+    <trkpt lat="-38.883560874" lon="-71.507581157">
+      <ele>804.348</ele>
+    </trkpt>
+    <trkpt lat="-38.883382495" lon="-71.507474263">
+      <ele>796.215</ele>
+    </trkpt>
+    <trkpt lat="-38.882643999" lon="-71.507944925">
+      <ele>792.036</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

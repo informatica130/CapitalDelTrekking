@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>Travesía Molulco - Alpehue</name>
+  <desc>&lt;table cellspacing="0" cellpadding="2" border="1" style="border-collapse:collapse"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;fid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;42&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;length&lt;/b&gt;&lt;/td&gt;&lt;td&gt;8.178&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-length_km&lt;/b&gt;&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_horas&lt;/b&gt;&lt;/td&gt;&lt;td&gt;8h&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rango_tiempo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;dia entero&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rang_t_cat&lt;/b&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-desnivel&lt;/b&gt;&lt;/td&gt;&lt;td&gt;372&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-dificultad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tipo_recorrido&lt;/b&gt;&lt;/td&gt;&lt;td&gt;travesia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-condicion_visitacion&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Requiere guia especializado&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-cobro_entrada&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Incluido en costo del tour.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estado_ruta&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Solo 4x4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_plaza_mp_min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-nombre_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Privados varios&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-fono_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Sin informacion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estacionalidad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Invierno con equipo de nieve&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</desc>
+  <trkseg>
+    <trkpt lat="-38.918472875" lon="-71.695924204">
+      <ele>787.665</ele>
+    </trkpt>
+    <trkpt lat="-38.918445202" lon="-71.694609799">
+      <ele>791.892</ele>
+    </trkpt>
+    <trkpt lat="-38.918819232" lon="-71.693698102">
+      <ele>802.672</ele>
+    </trkpt>
+    <trkpt lat="-38.919310146" lon="-71.693400047">
+      <ele>797.821</ele>
+    </trkpt>
+    <trkpt lat="-38.919637422" lon="-71.693551997">
+      <ele>792.74</ele>
+    </trkpt>
+    <trkpt lat="-38.919964698" lon="-71.693575374">
+      <ele>790.902</ele>
+    </trkpt>
+    <trkpt lat="-38.920373793" lon="-71.693446801">
+      <ele>790.021</ele>
+    </trkpt>
+    <trkpt lat="-38.920560808" lon="-71.693014329">
+      <ele>789.475</ele>
+    </trkpt>
+    <trkpt lat="-38.921449128" lon="-71.691705225">
+      <ele>797.138</ele>
+    </trkpt>
+    <trkpt lat="-38.922185499" lon="-71.689332475">
+      <ele>808.919</ele>
+    </trkpt>
+    <trkpt lat="-38.922068615" lon="-71.688794807">
+      <ele>812.526</ele>
+    </trkpt>
+    <trkpt lat="-38.921788092" lon="-71.68825714">
+      <ele>826.015</ele>
+    </trkpt>
+    <trkpt lat="-38.921741339" lon="-71.68646881">
+      <ele>854.601</ele>
+    </trkpt>
+    <trkpt lat="-38.922734855" lon="-71.684049306">
+      <ele>838.528</ele>
+    </trkpt>
+    <trkpt lat="-38.924703417" lon="-71.678507796">
+      <ele>916.224</ele>
+    </trkpt>
+    <trkpt lat="-38.928308957" lon="-71.676304411">
+      <ele>909.108</ele>
+    </trkpt>
+    <trkpt lat="-38.929711111" lon="-71.673900718">
+      <ele>906.153</ele>
+    </trkpt>
+    <trkpt lat="-38.932916035" lon="-71.67189764">
+      <ele>950.252</ele>
+    </trkpt>
+    <trkpt lat="-38.934318189" lon="-71.668492408">
+      <ele>980.349</ele>
+    </trkpt>
+    <trkpt lat="-38.935720343" lon="-71.66388533">
+      <ele>1000.601</ele>
+    </trkpt>
+    <trkpt lat="-38.936120959" lon="-71.659077944">
+      <ele>1002.402</ele>
+    </trkpt>
+    <trkpt lat="-38.935520036" lon="-71.651265942">
+      <ele>1018.375</ele>
+    </trkpt>
+    <trkpt lat="-38.93511942" lon="-71.649262865">
+      <ele>1015.159</ele>
+    </trkpt>
+    <trkpt lat="-38.936521574" lon="-71.646458556">
+      <ele>1059.112</ele>
+    </trkpt>
+    <trkpt lat="-38.93692219" lon="-71.6398484">
+      <ele>1082.931</ele>
+    </trkpt>
+    <trkpt lat="-38.937825411" lon="-71.636171615">
+      <ele>1108.564</ele>
+    </trkpt>
+    <trkpt lat="-38.938879456" lon="-71.633963139">
+      <ele>1138.364</ele>
+    </trkpt>
+    <trkpt lat="-38.939180612" lon="-71.628843492">
+      <ele>1133.183</ele>
+    </trkpt>
+    <trkpt lat="-38.939125575" lon="-71.62562655">
+      <ele>1016.098</ele>
+    </trkpt>
+    <trkpt lat="-38.9393032" lon="-71.623859754">
+      <ele>929.14</ele>
+    </trkpt>
+    <trkpt lat="-38.937925796" lon="-71.622669799">
+      <ele>894.484</ele>
+    </trkpt>
+    <trkpt lat="-38.936907072" lon="-71.621638953">
+      <ele>849.102</ele>
+    </trkpt>
+    <trkpt lat="-38.93521225" lon="-71.621089597">
+      <ele>851.038</ele>
+    </trkpt>
+    <trkpt lat="-38.933552494" lon="-71.620376603">
+      <ele>849.588</ele>
+    </trkpt>
+    <trkpt lat="-38.931805408" lon="-71.62035672">
+      <ele>862.218</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>

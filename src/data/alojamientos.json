@@ -344,8 +344,13 @@
   ],
   "cuerpo": "<p>Cabañas ubicadas en el sector El Membrillo bajo</p>",
   "extracto": "Cabañas ubicadas en el sector El Membrillo bajo",
-  "imagen": "",
-  "galeria": [],
+  "imagen": "/media/2025/11/cabanas-kume-mapu-3.webp",
+  "galeria": [
+   "/media/2025/11/cabanas-kume-mapu-3.webp",
+   "/media/2025/11/cabanas-kume-mapu-2.webp",
+   "/media/2025/11/cabanas-kume-mapu-1.webp",
+   "/media/2025/11/cabanas-kume-mapu-4.webp"
+  ],
   "grupos": [
    {
     "titulo": "Contacto",

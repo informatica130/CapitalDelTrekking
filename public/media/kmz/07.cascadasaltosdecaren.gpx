@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="GPS Visualizer https://www.gpsvisualizer.com/" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+  <name>Cascadas Altos de Carén</name>
+  <desc>&lt;table cellspacing="0" cellpadding="2" border="1" style="border-collapse:collapse"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;fid&lt;/b&gt;&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;length&lt;/b&gt;&lt;/td&gt;&lt;td&gt;0.732&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-length_km&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_horas&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2h&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rango_tiempo&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2 horas o menos&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-rang_t_cat&lt;/b&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-desnivel&lt;/b&gt;&lt;/td&gt;&lt;td&gt;91&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-dificultad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tipo_recorrido&lt;/b&gt;&lt;/td&gt;&lt;td&gt;ida y vuelta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-condicion_visitacion&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Requiere acompanamiento local&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-cobro_entrada&lt;/b&gt;&lt;/td&gt;&lt;td&gt;$2.000 por persona.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estado_ruta&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Solo 4x4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-tiempo_plaza_mp_min&lt;/b&gt;&lt;/td&gt;&lt;td&gt;40&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-nombre_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Valeska Jofre&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-fono_administrador&lt;/b&gt;&lt;/td&gt;&lt;td&gt;569 57184008&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;-estacionalidad&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Todo el ano con indumentaria normal de trekking&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</desc>
+  <trkseg>
+    <trkpt lat="-38.903137" lon="-71.538665">
+      <ele>843.128</ele>
+    </trkpt>
+    <trkpt lat="-38.902609057" lon="-71.538618195">
+      <ele>827.35</ele>
+    </trkpt>
+    <trkpt lat="-38.902250207" lon="-71.538518939">
+      <ele>816.752</ele>
+    </trkpt>
+    <trkpt lat="-38.901960073" lon="-71.538747992">
+      <ele>831.631</ele>
+    </trkpt>
+    <trkpt lat="-38.901990614" lon="-71.539229004">
+      <ele>851.857</ele>
+    </trkpt>
+    <trkpt lat="-38.902112775" lon="-71.539480962">
+      <ele>860.92</ele>
+    </trkpt>
+    <trkpt lat="-38.902044059" lon="-71.540137582">
+      <ele>874.648</ele>
+    </trkpt>
+    <trkpt lat="-38.901571228" lon="-71.539588896">
+      <ele>860.953</ele>
+    </trkpt>
+    <trkpt lat="-38.90102859" lon="-71.539419882">
+      <ele>849.177</ele>
+    </trkpt>
+    <trkpt lat="-38.900539943" lon="-71.539503868">
+      <ele>840.575</ele>
+    </trkpt>
+    <trkpt lat="-38.900180481" lon="-71.539147037">
+      <ele>826.588</ele>
+    </trkpt>
+    <trkpt lat="-38.900173458" lon="-71.538175359">
+      <ele>799.872</ele>
+    </trkpt>
+    <trkpt lat="-38.900341431" lon="-71.537396578">
+      <ele>781.196</ele>
+    </trkpt>
+    <trkpt lat="-38.900845348" lon="-71.536778135">
+      <ele>782.872</ele>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>
