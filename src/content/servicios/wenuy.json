@@ -1,0 +1,40 @@
+{
+  "slug": "wenuy",
+  "titulo": "Wenuy",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Artesanía"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda Nº035, Melipeuco / Aurelio Letelier 512, Melipeuco, Chile"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 94029344 / 569 77787667"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.0554200016145!2d-71.6908431!3d-38.854088399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369ab5bf8225d%3A0xbbad8dbbde39ba09!2sTienda%20Wenuy!5e0!3m2!1ses-419!2scl!4v1730152355838!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Artesanía",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "farmacia-san-agustin",
+  "titulo": "Farmacia San Agustín",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Farmacia"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda 536 local 1"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 78365856"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12428.373999637719!2d-71.690927!3d-38.8532167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369239996e659%3A0x9f598854b10e5c32!2sFarmacia%20San%20Agustin!5e0!3m2!1ses-419!2scl!4v1730152699400!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Farmacia",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

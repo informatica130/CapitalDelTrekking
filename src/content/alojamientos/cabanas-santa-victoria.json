@@ -1,0 +1,93 @@
+{
+  "slug": "cabanas-santa-victoria",
+  "titulo": "Cabañas Santa Victoria",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Transferencias"
+    }
+  ],
+  "cuerpo": "Cabañas de montaña equipadas con todo lo necesario para crear una memorable estadía, rodeadas de flora y fauna silvestre en un privilegiado entorno de conservación natural que invita a disfrutar de la tranquilidad y desconexión.",
+  "imagen": "/media/2024/11/santavictoria-1.webp",
+  "galeria": [
+    "/media/2024/11/santavictoria-1.webp",
+    "/media/2024/11/santavictoria-6.webp",
+    "/media/2024/11/santavictoria-7.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Las Margaritas, sector Huechelepun."
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 94896545"
+        },
+        {
+          "k": "Email",
+          "v": "reservassanta.victoria@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://sites.google.com/view/cabanas-santa-victoria/inicio"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 94896545"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Sector Sollipulli"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "12:00 a 20:00 hrs. / 14:00 a 16:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Kitchenette, Toallas,Vajilla"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Transferencias"
+        },
+        {
+          "k": "Servicios",
+          "v": "Cocina equipada, Desayuno, Información turística, Tinajas"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3028.9922507539163!2d-71.5088691!3d-38.8821501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961315a193f2ba49%3A0xbe26f9f94cd6dae!2sCaba%C3%B1as%20Santa%20Victoria!5e1!3m2!1ses-419!2scl!4v1729779283477!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56994896545",
+    "facebook": "https://www.facebook.com/p/Caba%C3%B1as-Santa-Victoria-100063525521909/?locale=es_LA",
+    "instagram": "https://www.instagram.com/cabanas_santa.victoria/?hl=es"
+  },
+  "logo": "/media/2024/11/logocabanassantavictoria-1.jpg",
+  "servicios": [
+    "Cocina equipada",
+    "Desayuno",
+    "Información turística",
+    "Tinajas"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

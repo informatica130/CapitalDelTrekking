@@ -1,0 +1,113 @@
+{
+  "slug": "laguna-icalma",
+  "titulo": "Laguna Icalma",
+  "subtitulo": "Ruta Laguna Icalma",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "19 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "circuito"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "La laguna de Icalma se sitúa a 1.350 m.s.n.m., rodeada de montañas y antiguas araucarias, en un paisaje cultural pehuenche. Puedes dar la vuelta a la laguna por un camino ancho, con poco flujo vehícular, que resulta adecuado para recorrerlo a pie o en bicicleta. En ese recorrido encontrarás algunas playas de arenas grises y aguas tranquilas donde refrescarte o pescar. También, a lo largo de este camino vive población pehuenche que ofrece servicios como gastronomía campestre, campings, cabañas y cabalgatas.",
+  "imagen": "/media/2024/11/41.02laguna-icalma.webp",
+  "galeria": [
+    "/media/2024/11/41.02laguna-icalma.webp",
+    "/media/2024/11/41.03laguna-icalma.webp",
+    "/media/2024/11/41.04laguna-icalma.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "19 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "9h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "1040m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1150m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "circuito"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.82058443603157,
+    -71.31702418650585
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "expandes",
+    "namku-adventure",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "circuito"
+  ],
+  "gpx": "/media/kmz/41.circuitolagunaicalma.gpx",
+  "dificultad": "2",
+  "extension": "19 km",
+  "duracion": "Full day",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

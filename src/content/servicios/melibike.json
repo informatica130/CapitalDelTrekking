@@ -1,0 +1,56 @@
+{
+  "slug": "melibike",
+  "titulo": "MeliBike",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Arriendo de equipo, Rental de bicicletas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta, Transferencia"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino Internacional Icalma Km 1"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56 9 9910 5138"
+        },
+        {
+          "k": "Email",
+          "v": "melibiketour@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.melibike.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 9910 5138"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Arriendo de equipo, Rental de bicicletas",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

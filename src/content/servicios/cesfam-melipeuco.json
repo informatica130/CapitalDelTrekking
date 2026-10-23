@@ -1,0 +1,40 @@
+{
+  "slug": "cesfam-melipeuco",
+  "titulo": "CESFAM Melipeuco",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Centro de salud"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda esquina Caupolicán"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+562 452581051"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12430.13880687818!2d-71.5569293!3d-38.8431158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961315cd31f37193%3A0x9b2b13d6ef687f76!2sAmasanderia%20La%20Toya!5e0!3m2!1ses-419!2scl!4v1730152652346!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Centro de salud",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

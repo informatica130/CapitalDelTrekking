@@ -1,0 +1,15 @@
+---
+// Una letra del logo como emblema de zona (montaña, rostro, cascada, araucaria, corazón,
+// persona, animales, estrellas, kultrun).
+import partes from '../data/logo-partes.json';
+import { PALETA } from '../scripts/zonas';
+interface Props { letra: number; class?: string; color?: string; simbolo?: string; titulo?: string }
+const { letra, class: clase = '', color, simbolo = '#FFF8EC', titulo } = Astro.props;
+const l = partes.letras[letra];
+const [x, y, w, h] = l.caja;
+---
+<svg class={`emblema ${clase}`} viewBox={`${x} ${y} ${w} ${h}`} xmlns="http://www.w3.org/2000/svg" aria-hidden={titulo ? undefined : 'true'} role={titulo ? 'img' : undefined}>
+  {titulo && <title>{titulo}</title>}
+  <path class="emblema-fondo" fill={color ?? PALETA[letra].color} d={l.fondo} />
+  <path class="emblema-simbolo" fill={simbolo} d={l.simbolo} />
+</svg>

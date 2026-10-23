@@ -1,0 +1,25 @@
+{
+  "slug": "astrotour",
+  "titulo": "Astrotour",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Astroturismo"
+    }
+  ],
+  "cuerpo": "Te invitamos a disfrutar de una noche bajo las estrellas, aprendiendo de la cosmovisión mapuche de los astros. Con este tour tendrás acceso a un telescopio de excelente resolución y te guiarán con técnicas para fotografiar el cielo nocturno.",
+  "imagen": "/media/2024/11/franz-nawrath-68dhwezicig-unsplash.webp",
+  "galeria": [
+    "/media/2024/11/franz-nawrath-68dhwezicig-unsplash.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Astroturismo",
+  "publicado": true,
+  "destacado": false
+}

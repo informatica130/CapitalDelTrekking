@@ -1,0 +1,110 @@
+{
+  "slug": "mallin-del-sapo",
+  "titulo": "Mallín del Sapo",
+  "subtitulo": "Ruta Mallín del Sapo",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "9,6 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "El Mallín del Sapo es un hermoso y extenso humedal altoandino en las faldas del gran macizo del Sollipulli. La ruta que conduce a este humedal comienza en el bosque para luego atravesar laderas de acarreos volcánicos hasta llegar al mallín, en una amplia hondonada que ofrece espacio para acampar en la montaña. La ruta hasta el mallín es de unas 4 horas. Es posible visitar el mallín como parte de una travesía extendida por la cara norte del Sollipulli, conectándolo con otras rutas como el ascenso a Sollipulli por Molulco, Alpehue o por el Parque Nevados de Sollipulli o Carilafquen (Guardería CONAF). Son rutas de montaña en un territorio remoto y sin señalización, por lo que se recomienda mucho visitarlas con guías de montaña que conozcan la zona.",
+  "imagen": "/media/2024/11/mallindelsapo2-1-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/mallindelsapo2-1-wpcf_1024x1024.jpg",
+    "/media/2024/11/mallindelsapo1-1-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "9,6 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "5h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "474m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1434m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.951448018049085,
+    -71.61831772883528
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/21.mallindelsapo.gpx",
+  "dificultad": "2",
+  "extension": "9,6 km",
+  "duracion": "Full day",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

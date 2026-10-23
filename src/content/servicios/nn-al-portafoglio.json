@@ -1,0 +1,51 @@
+{
+  "slug": "nn-al-portafoglio",
+  "titulo": "NN al Portafoglio",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/52-nn02.webp",
+  "galeria": [
+    "/media/2024/11/52-nn02.webp",
+    "/media/2024/11/52-nn03.webp",
+    "/media/2024/11/52-nn04.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Barros Arana SN, plaza de Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 73393633"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 73393633"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.760595354434!2d-71.69694712405554!3d-38.85340129416803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961343ffd0a71c07%3A0x39fb70bc5d42190e!2sNN%20al%20Portafoglio%2C%20Pizzas%20y%20Burgers%2C%20Melipeuco!5e1!3m2!1ses!2scl!4v1730146936174!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56973393633",
+    "instagram": "https://www.instagram.com/nnalportafoglio/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

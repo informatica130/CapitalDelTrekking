@@ -1,0 +1,112 @@
+{
+  "slug": "cascadas-dona-laura",
+  "titulo": "Cascadas Doña Laura",
+  "subtitulo": "Ruta Cascadas Doña Laura",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "1 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "Durante el transcurso del sendero se pueden observar permanentemente el río y vistosas coloraciones en las paredes, que son dadas por afluentes de aguas termales. El recorrido cuenta con algunos miradores al valle y otros hacia las cuevas y túneles labrados por el agua en la roca. Al llegar al punto final del sendero, desde un mirador se observan dos cascadas en paralelo, de 30 metros cada una. Una corresponde al río Chufquén y la otra al río Tintil, ambos bajan desde las montañas de Huallelepun, a las faldas del volcán Sollipulli. En ciertas horas del día, el ángulo de los rayos solares forman un maravilloso arcoiris entre ambas cascadas.",
+  "imagen": "/media/2024/11/6.02cascadas-dona-laura-2-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/6.02cascadas-dona-laura-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/6.03cascadas-dona-laura-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/6.04cascadas-dona-laura-4-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "1 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "1h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "194m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "849m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "569 66183747"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.89602972210681,
+    -71.51971501647138
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "melipewunko",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/06.cascadasdonalaura.gpx",
+  "dificultad": "2",
+  "extension": "1 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

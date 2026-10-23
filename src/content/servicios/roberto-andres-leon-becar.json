@@ -1,0 +1,36 @@
+{
+  "slug": "roberto-andres-leon-becar",
+  "titulo": "Roberto Andres León Becar",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Artesanía"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Teléfono",
+          "v": "+569 78516536"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Artesanía",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

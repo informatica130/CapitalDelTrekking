@@ -1,0 +1,90 @@
+{
+  "slug": "hostal-patagonia-de-volcanes",
+  "titulo": "Hostal Patagonia de Volcanes",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Hostal"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta, Transferencia"
+    }
+  ],
+  "cuerpo": "Patagonia de Volcanes Hostal y Restaurant en Melipeuco ofrece una experiencia de alojamiento cómoda y cálida, combinada con un restaurante que destaca por su cocina local. Además, proporcionan servicios de transporte de pasajeros y turismo, facilitando la exploración de la hermosa región.",
+  "imagen": "/media/2024/11/patagoniadevolcanes02-jpg.webp",
+  "galeria": [
+    "/media/2024/11/patagoniadevolcanes02-jpg.webp",
+    "/media/2024/11/patagoniadevolcanes04.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda Nº519, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 85158018"
+        },
+        {
+          "k": "Email",
+          "v": "massa132@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.patagoniadevolcanes.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 85158018"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Aire acondicionado, Televisión, Baño privado, Toallas"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Tarjeta, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Información turística, Wi-Fi"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.1120219402715!2d-71.69136069999999!3d-38.852792699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369a516226f19%3A0x54660c409dc3a411!2sPatagonia%20de%20Volcanes!5e0!3m2!1ses-419!2scl!4v1729779633020!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56985158018",
+    "facebook": "https://web.facebook.com/patagoniadevolcanes.cl/?locale=es_LA&_rdc=1&_rdr",
+    "instagram": "https://www.instagram.com/patagoniadevolcanes/"
+  },
+  "logo": "/media/2024/11/logopatagoniadevolcanes-1.jpg",
+  "servicios": [
+    "Información turística",
+    "WI-FI"
+  ],
+  "clase": "Hostal",
+  "publicado": true,
+  "destacado": false
+}

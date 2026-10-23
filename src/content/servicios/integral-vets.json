@@ -1,0 +1,40 @@
+{
+  "slug": "integral-vets",
+  "titulo": "Integral Vets",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Farmacia Veterinaria"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda 801-B Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 86985311"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24856.974980966825!2d-71.6959217!3d-38.8525672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369d6668f4ee5%3A0xb60913acf9d178cf!2sIntegral%20Vets%20SpA!5e0!3m2!1ses-419!2scl!4v1730152710814!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Farmacia Veterinaria",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,112 @@
+{
+  "slug": "huella-del-puma",
+  "titulo": "Huella del Puma",
+  "subtitulo": "Ruta Huella del Puma",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "5 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "circuito"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "La Huella del Puma, es un circuito que te invita a explorar un paisaje solitario y andino, caracterizado por escarpadas paredes de roca granítica y majestuosas araucarias centenarias. El recorrido, que dura aproximadamente 3 horas, presenta varios tramos de pendientes pronunciadas, lo que añade un desafío adicional para los caminantes. Este sendero se encuentra dentro de la Reserva Nacional China Muerta, un lugar que, durante el otoño, se convierte en un espectáculo natural de colores vibrantes gracias al follaje de los nothofagus que cubren la región. Es una ruta perfecta para quienes buscan sumergirse en la serenidad de la montaña y disfrutar de la belleza única de la naturaleza en su máximo esplendor.",
+  "imagen": "/media/2024/11/13.02huella-del-puma.webp",
+  "galeria": [
+    "/media/2024/11/13.02huella-del-puma.webp",
+    "/media/2024/11/13.03huella-del-puma-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/13.04huella-del-puma.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "5 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "3h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "371m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1827m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "circuito"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "www.pasesparques.cl"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.73826028637765,
+    -71.51691318650585
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu",
+    "namku-adventure"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "circuito"
+  ],
+  "gpx": "/media/kmz/13.huelladelpuma.gpx",
+  "dificultad": "2",
+  "extension": "5 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

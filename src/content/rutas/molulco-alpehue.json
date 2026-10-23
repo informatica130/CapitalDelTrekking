@@ -1,0 +1,111 @@
+{
+  "slug": "molulco-alpehue",
+  "titulo": "Molulco – Alpehue",
+  "subtitulo": "Ruta Molulco – Alpehue",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "8 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "4"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "travesía"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere guía especializado (*)"
+    }
+  ],
+  "cuerpo": "Te embarcarás en una alucinante excursión de día completo que te llevará a las sierras que rodean el volcán Sollipulli. Este recorrido conecta los valles de Molulco y Alpehue a través de un hermoso bosque nativo. A lo largo del sendero, caminarás entre cumbres cubiertas de araucarias milenarias, lo que te permitirá disfrutar de vistas privilegiadas de los volcanes Sollipulli y Llaima. La ruta es muy solitaria y en algunos tramos puede ser difícil de seguir, lo que añade un desafío emocionante a la experiencia. Además, dado que el acceso a los senderos se realiza a través de terrenos privados, es necesario realizar la excursión con guías locales que conozcan bien la zona. Esta excursión es ideal para quienes buscan una experiencia inmersiva en un entorno natural espectacular, combinando belleza paisajística con un toque de aventura.",
+  "imagen": "/media/2024/11/42.02molulco-alpehue-2.jpg",
+  "galeria": [
+    "/media/2024/11/42.02molulco-alpehue-2.jpg",
+    "/media/2024/11/42.03molulco-alpehue-jpg.webp",
+    "/media/2024/11/42.04molulco-alpehue.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "8 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "8h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "372m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1143m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "4"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "travesía"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere guía especializado (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.921378281390204,
+    -71.6880582209923
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Expertos",
+  "tipo_recorrido": [
+    "travesia"
+  ],
+  "gpx": "/media/kmz/42.travesiamolulco-alpehue.gpx",
+  "dificultad": "4",
+  "extension": "8 km",
+  "duracion": "Full day",
+  "condicion": "Requiere guía especializado (*)",
+  "publicado": true,
+  "destacado": false
+}

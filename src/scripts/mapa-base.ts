@@ -22,7 +22,7 @@ export function crearMapa(el: HTMLElement, centro: [number, number] = CENTRO_MEL
   return mapa;
 }
 
-export const pin = (color = '#f3b229', tam = 18) => L.divIcon({
-  className: '', iconSize: [tam, tam], iconAnchor: [tam / 2, tam / 2],
-  html: `<div class="pin-ruta" style="width:${tam}px;height:${tam}px;background:${color}"></div>`,
+export const pin = (color = '#1F6FA8', tam = 22) => L.divIcon({
+  className: '', iconSize: [tam, tam], iconAnchor: [tam / 2, tam], popupAnchor: [0, -tam],
+  html: `<div class="pin" style="width:${tam}px;height:${tam}px;background:${color}"></div>`,
 });

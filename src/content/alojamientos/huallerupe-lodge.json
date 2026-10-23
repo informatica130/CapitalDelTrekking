@@ -1,0 +1,94 @@
+{
+  "slug": "huallerupe-lodge",
+  "titulo": "Huallerupe Lodge",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta, Transferencias"
+    }
+  ],
+  "cuerpo": "Cabañas ubicadas en sector de privilegio con bellezas naturales y vistas a la montaña y el volcán Llaima.",
+  "imagen": "/media/2024/11/huallerupelodge-1-1.webp",
+  "galeria": [
+    "/media/2024/11/huallerupelodge-1-1.webp",
+    "/media/2024/11/huallerupelodge-2.webp",
+    "/media/2024/11/huallerupelodge-4-1.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Hijuela 23, Huallerupe, Melipeuco."
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 98432326"
+        },
+        {
+          "k": "Email",
+          "v": "huallerupe.lodge@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://huallerupelodge.cl/"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 98432326"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "Lunes a Domingo 9:00 PM hrs. / Lunes a Viernes 18:30 pm - Sábado y Domingo 9:00 am - 13:00 pm hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Toallas,Vajilla"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Tarjeta, Transferencias"
+        },
+        {
+          "k": "Servicios",
+          "v": "Arriendo de bicicletas, Información turística, Tinajas, Wi-Fi"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12427.477322522682!2d-71.7019595871824!3d-38.85834799771512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369f74036f2b1%3A0xe7a19bd256cf7806!2sHuallerupe%20Lodge!5e0!3m2!1ses-419!2scl!4v1729779264305!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56998432326",
+    "facebook": "https://www.facebook.com/people/Huallerupe-Lodge/100088475851953/",
+    "instagram": "https://www.instagram.com/huallerupe_lodge/",
+    "youtube": "https://youtube.com/@huallerupelodge?feature=shared"
+  },
+  "logo": "/media/2024/11/logohuallerupe-1.jpg",
+  "servicios": [
+    "Arriendo de bicicletas",
+    "Información turística",
+    "Tinajas",
+    "WI-FI"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

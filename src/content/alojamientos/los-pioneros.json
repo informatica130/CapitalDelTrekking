@@ -1,0 +1,80 @@
+{
+  "slug": "los-pioneros",
+  "titulo": "Los Pioneros",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Hotel"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta, Transferencia"
+    }
+  ],
+  "cuerpo": "Descubre la esencia de Melipeuco en Los Pioneros, donde la aventura se encuentra con la comodidad. Ofrecemos alojamiento acogedor en cabañas y áreas de camping, una deliciosa experiencia culinaria en nuestro restaurante, y emocionantes excursiones organizadas por nuestra operadora turística. Desde explorar el Parque Nacional Conguillío hasta sumergirse en la cultura mapuche local, cada momento es una aventura inolvidable. ¡Únete a nosotros y vive Melipeuco en su máxima expresión!",
+  "imagen": "/media/2024/11/lospioneros05.webp",
+  "galeria": [
+    "/media/2024/11/lospioneros05.webp",
+    "/media/2024/11/lospioneros03.webp",
+    "/media/2024/11/lospioneros02.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Km 1 Camino Melipeuco - Icalma NºS/N, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 68483775"
+        },
+        {
+          "k": "Email",
+          "v": "centroturisticolospioneros@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://www.lospioneros.cl/"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 68483775"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Tarjeta, Transferencia"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24858.33469308109!2d-71.70291988348734!3d-38.848676240974406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369ba40d6fbe7%3A0x5ff59be34a9e617e!2sLos%20Pioneros%20Restaurante!5e0!3m2!1ses-419!2scl!4v1729780335951!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56968483775",
+    "facebook": "https://web.facebook.com/lospionerosmelipeuco?locale=es_LA",
+    "instagram": "https://www.instagram.com/lospionerosmco/"
+  },
+  "logo": "/media/2024/11/logolospioneros-1.jpg",
+  "servicios": [],
+  "clase": "Hotel",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,87 @@
+{
+  "slug": "agroturismo-los-riscos",
+  "titulo": "Agroturismo Los Riscos",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Transferencia"
+    }
+  ],
+  "cuerpo": "Agroturismo Los Riscos es el destino ideal para quienes buscan una experiencia auténtica y enriquecedora en plena naturaleza. Con una variedad de espacios y actividades, este lugar es perfecto para familias, grupos de amigos y aventureros que desean conectar con la vida rural y disfrutar de la serenidad del campo.",
+  "imagen": "/media/2024/11/agroturismolosriscos03-1-wpcf_853x1024.jpg",
+  "galeria": [
+    "/media/2024/11/agroturismolosriscos03-1-wpcf_853x1024.jpg",
+    "/media/2024/11/agroturismolosriscos02-1.jpg",
+    "/media/2024/11/agroturismolosriscos01-1-wpcf_853x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino internacional Icalma, Km. 11, sector Tracura"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 3394 2013"
+        },
+        {
+          "k": "Email",
+          "v": "agroturismolosriscos@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 33942013"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino Icalma Orilla Río"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Kitchenette, Refrigerador, Toallas, Vajilla"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Estacionamiento, Sala de Reuniones"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2338.7920795388072!2d-71.5612778!3d-38.841639799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961315d597c2bbb1%3A0xadf96e3f345e5285!2sAgroturismo%20Los%20Riscos!5e1!3m2!1ses-419!2scl!4v1729779117351!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56933942013",
+    "facebook": "https://web.facebook.com/p/Agroturismo-Los-Riscos-100066644513324/?_rdc=1&_rdr",
+    "instagram": "https://www.instagram.com/agroturismolosriscos/?next=%2Fjhunliik%2Ffeed%2F&hl=af"
+  },
+  "logo": "/media/2024/11/logoagroturismolosriscos-1.jpg",
+  "servicios": [
+    "Estacionamiento",
+    "Sala de Reuniones"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

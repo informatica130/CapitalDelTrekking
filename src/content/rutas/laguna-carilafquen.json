@@ -1,0 +1,112 @@
+{
+  "slug": "laguna-carilafquen",
+  "titulo": "Laguna Carilafquén",
+  "subtitulo": "Ruta Laguna Carilafquén",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "0,5 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "circuito"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "En el Parque Natural y Lodge de Montaña Nevados de Sollipulli, encontrarás este sendero familiar que rodea una serena laguna cordillerana. A medida que caminas, te rodearás de antiguas araucarias y coigües, creando un ambiente tranquilo y natural. Durante tu recorrido, tendrás la oportunidad de avistar diversas especies de avifauna acuática que habitan la laguna. El sendero es accesible y está bien adaptado para todos los miembros de la familia. Además, el lugar ofrece buen acceso vehicular y cuenta con servicios como estacionamientos, baños, una cafetería y un restaurante cercanos, asegurando que tu visita sea cómoda y placentera.",
+  "imagen": "/media/2024/11/44.02laguna-carilafquen.webp",
+  "galeria": [
+    "/media/2024/11/44.02laguna-carilafquen.webp",
+    "/media/2024/11/44.03laguna-carilafquen.webp",
+    "/media/2024/11/44.04laguna-carilafquen-2-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "0,5 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "0,5h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "10m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1150m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "circuito"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "569 79097685"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.92218896812177,
+    -71.485522
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu",
+    "araucania-backcountry"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "circuito"
+  ],
+  "gpx": "/media/kmz/44.lagunacarilafquen.gpx",
+  "dificultad": "1",
+  "extension": "0,5 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

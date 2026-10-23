@@ -1,0 +1,90 @@
+{
+  "slug": "cabanas-conguillio",
+  "titulo": "Cabañas Conguillio",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Transferencia"
+    }
+  ],
+  "cuerpo": "Cabañas y domos modernas y funcionales con un estilo minimalista, equipadas y rodeadas de bosque nativo. Cada cabaña y domo cuentan con tinajas privadas como servicio adicional. Las instalaciones se destacan principalmente por la privacidad y tranquilidad que te brindan una desconexión de la ciudad y conexión con la naturaleza.",
+  "imagen": "/media/2024/11/cabanasconguillio-5-1-jpg.webp",
+  "galeria": [
+    "/media/2024/11/cabanasconguillio-5-1-jpg.webp",
+    "/media/2024/11/cabanasconguillio-9-1.webp",
+    "/media/2024/11/cabanasconguillio-11-1.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Ruta Melipeuco-Conguillio km 4"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 73582671"
+        },
+        {
+          "k": "Email",
+          "v": "cabanasconguillio@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.cabanasconguillio.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 73582671"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Sector Conguillio"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Kitchenette, Aire acondicionado,Wi-Fi, Minibar, Toallas, Vajilla"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Estacionamiento"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24246.122088657514!2d-71.69621408351249!3d-38.840540891086526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961341da602d87ad%3A0xd09c2861e1d1cd9b!2sCaba%C3%B1as%20Conguillio!5e1!3m2!1ses-419!2scl!4v1729779302175!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56973582671",
+    "facebook": "https://www.facebook.com/cabanasconguillio/?locale=es_LA",
+    "instagram": "https://www.instagram.com/cabanasconguillio/?hl=es"
+  },
+  "logo": "/media/2024/11/logocabanasconguillio-1.jpg",
+  "servicios": [
+    "Estacionamiento"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

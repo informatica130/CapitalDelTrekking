@@ -1,0 +1,27 @@
+{
+  "slug": "muestra-cultural-parador-turistico",
+  "titulo": "Muestra Cultural Parador Turístico",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Cultural / Sala de exposición museográfica"
+    }
+  ],
+  "cuerpo": "Esta exposición te ayudará a comprender las culturas de la araucanía andina y los procesos históricos que llevaron a su conformación. La muestra reune un conjunto de artefactos y expresiones materiales de las culturas mapuche y colona, que convergen en este territorio. También contiene una selección de fotografías antiguas que dan cuenta del pasado local. En el mismo edificio, existe una oficina de información turística, y vitrinas con venta de artesanías y productos locales.",
+  "imagen": "/media/2025/01/museo-historico-melipeuco-3.webp",
+  "galeria": [
+    "/media/2025/01/museo-historico-melipeuco-3.webp",
+    "/media/2025/01/museo-historico-melipeuco-2.webp",
+    "/media/2025/01/museo-historico-melipeuco-1.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8949.881133485995!2d-71.7065269700672!3d-38.856001217672066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369da36d1dd87%3A0xe56e1acc31c812d0!2sParador%20Tur%C3%ADstico%20de%20Melipeuco!5e1!3m2!1ses-419!2scl!4v1728490132353!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Cultural / Sala de exposición museográfica",
+  "publicado": true,
+  "destacado": false
+}

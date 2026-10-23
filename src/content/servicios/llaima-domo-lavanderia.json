@@ -1,0 +1,40 @@
+{
+  "slug": "llaima-domo-lavanderia",
+  "titulo": "Llaima Domo Lavandería",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Lavandería"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Ruta S-337 Km 3, Melipeuco,"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 96374351"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24857.21628748368!2d-71.7118728!3d-38.8518767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961342139d8ded1f%3A0xc2216a01927264be!2sLlaimadomo%20lodge!5e0!3m2!1ses-419!2scl!4v1730152565955!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Lavandería",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

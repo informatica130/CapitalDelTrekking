@@ -1,0 +1,111 @@
+{
+  "slug": "saltos-caren-alto",
+  "titulo": "Saltos Carén Alto",
+  "subtitulo": "Ruta Saltos Carén Alto",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "1 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "3"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere acompañamiento local (*)"
+    }
+  ],
+  "cuerpo": "En este circuito te esperan tres impresionantes cascadas, cada una conectada por distintos senderos que llevan a lo más profundo de una quebrada misteriosa y llena de vida. Te adentrarás por caminos angostos, rodeados de exuberante vegetación, donde a cada paso sentirás cómo el paisaje se va transformando. A lo largo de la ruta, encontrarás rincones escondidos ideales para descansar, tomar un respiro y admirar la biodiversidad del lugar: aves que surcan el cielo, árboles nativos que susurran con el viento, y flores silvestres que colorean el entorno. El sonido constante del agua, con su poderoso caudal, se convierte en una sinfonía natural que acompaña tu caminar, interrumpiendo suavemente el silencio. Al llegar a cada cascada, descubrirás que algunos de los pozones de agua cristalina están habilitados para bañarse, ofreciéndote un oasis refrescante donde sumergirte y sentirte en total conexión con la naturaleza.",
+  "imagen": "/media/2024/11/7.02cascadas-alto-de-caren-2-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/7.02cascadas-alto-de-caren-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/7.03cascadas-alto-de-caren-2-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "1 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "2h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "91m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "877m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "3"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "569 57184008"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere acompañamiento local (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.90187158406281,
+    -71.54005445767056
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu",
+    "araucania-backcountry"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/07.cascadasaltosdecaren.gpx",
+  "dificultad": "3",
+  "extension": "1 km",
+  "duracion": "Medio día",
+  "condicion": "Requiere acompañamiento local (*)",
+  "publicado": true,
+  "destacado": false
+}

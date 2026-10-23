@@ -5,9 +5,9 @@ import ListadoNegocios from '../components/ListadoNegocios.astro';
 import { servicios, url } from '../scripts/datos';
 const img = '/media/2024/11/47.labaita01-jpg.webp';
 ---
-<Base titulo="Gastronomía" descripcion="Restaurantes, pastelerías y sabores locales de Melipeuco." imagen={img}>
-  <Heroe titulo="Vive la" destacado="gastronomía" imagen={img} bajada="Cocina local, sabores mapuche, pastelería y heladería artesanal." />
-  <section class="seccion"><div class="contenedor">
-    <ListadoNegocios lista={servicios.filter((s) => s.seccion === 'gastronomia')} id="lista-gastronomia" enlace={url.servicio} icono="plato" filtro={{ clave: 'tipo', etiqueta: 'Tipo', campo: (n) => n.tipo ?? '' }} />
+<Base titulo="Gastronomía" zona="gastronomia" descripcion="Restaurantes, pastelerías y sabores locales de Melipeuco." imagen={img}>
+  <Heroe titulo="Vive la" destacado="gastronomía" zona="gastronomia" imagen={img} migas={[{ texto: 'Gastronomía' }]} bajada="Cocina local, sabores mapuche, pastelería y heladería artesanal." />
+  <section class="seccion" style="padding-top:40px"><div class="contenedor">
+    <ListadoNegocios lista={servicios.filter((s) => s.seccion === 'gastronomia')} id="lista-gastronomia" enlace={url.servicio} letra={4} filtro={{ clave: 'tipo', etiqueta: 'Tipo', campo: (n) => n.tipo ?? '' }} />
   </div></section>
 </Base>

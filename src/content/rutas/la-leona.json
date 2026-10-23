@@ -1,0 +1,109 @@
+{
+  "slug": "la-leona",
+  "titulo": "La Leona",
+  "subtitulo": "Ruta La Leona",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "6 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "4"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere guía especializado (*)"
+    }
+  ],
+  "cuerpo": "Este sendero comienza en territorio de la comunidad mapuche Melivilu-Melirayén, donde se respira historia y tradición. Desde hace generaciones, los habitantes locales han subido a estas serranías para recolectar piñones, una costumbre ancestral que todavía se mantiene viva. La ruta asciende con rapidez, ofreciendo desde el inicio espectaculares vistas al valle del río Truful Truful. A medida que avanzas, el sendero bordea un impresionante rodal de rocas, añadiendo un toque de desafío a la caminata. Finalmente, llegarás a una extensa meseta alargada, un lugar ideal para detenerte, disfrutar del paisaje y acampar bajo la sombra protectora de las majestuosas araucarias.",
+  "imagen": "/media/2024/11/5.02cancha-leona-2-wpcf_1024x960.jpg",
+  "galeria": [
+    "/media/2024/11/5.02cancha-leona-2-wpcf_1024x960.jpg",
+    "/media/2024/11/5.03cancha-leona-4-wpcf_1024x962.jpg",
+    "/media/2024/11/5.04cancha-leona.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "6 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "8h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "224m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "867m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "4"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "569 52243749"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere guía especializado (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.805850516083574,
+    -71.65059456814598
+  ],
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "interes": "Expertos",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/05.canchalaleona.gpx",
+  "dificultad": "4",
+  "extension": "6 km",
+  "duracion": "Full day",
+  "condicion": "Requiere guía especializado (*)",
+  "publicado": true,
+  "destacado": false
+}

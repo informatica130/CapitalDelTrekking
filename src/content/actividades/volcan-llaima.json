@@ -1,0 +1,30 @@
+{
+  "slug": "volcan-llaima",
+  "titulo": "Volcán Llaima",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Natural / Volcán"
+    }
+  ],
+  "cuerpo": "El Llaima es un impresionante estratovolcán que se eleva a 3.125 metros de altitud y abarca un área basal de 500 kilómetros cuadrados. Esta imponente cumbre domina la zona de Melipeuco y el Parque Nacional Conguillío. Su vasta superficie de glaciares y la presencia de cerca de 40 cráteres adventicios lo convierten en uno de los volcanes más activos de Sudamérica. El Llaima ofrece un escenario excepcional para observar la formación de paisajes volcánicos de gran riqueza geológica., atractivo se ve complementado por los bosques que cubren sus laderas, donde crecen coigües y araucarias ancestrales.",
+  "imagen": "/media/2024/11/19.vn-llaima-pewen-mapu1.webp",
+  "galeria": [
+    "/media/2024/11/19.vn-llaima-pewen-mapu1.webp",
+    "/media/2024/11/llaima_panorama_19.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d194308.902630294!2d-71.8107926!3d-38.7156684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96134563e84cc625%3A0x32fabbb2cb9b27df!2sLlaima!5e1!3m2!1ses-419!2scl!4v1728489347296!5m2!1ses-419!2scl",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu",
+    "araucania-backcountry"
+  ],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Natural / Volcán",
+  "publicado": true,
+  "destacado": false
+}

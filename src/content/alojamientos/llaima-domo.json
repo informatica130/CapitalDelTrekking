@@ -1,0 +1,72 @@
+{
+  "slug": "llaima-domo",
+  "titulo": "Llaima Domo",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Lodge"
+    }
+  ],
+  "cuerpo": "Llaima Domo es un glamping que ofrece una experiencia de descanso en contacto con la naturaleza, combinando la sensación de acampar con comodidades modernas. Cada domo cuenta con baño privado, aire acondicionado y tinaja de agua caliente. También ofrecemos casas rodantes totalmente equipadas con terraza y tinajas.",
+  "imagen": "/media/2024/11/llaimadomos-4-1.webp",
+  "galeria": [
+    "/media/2024/11/llaimadomos-4-1.webp",
+    "/media/2024/11/llaimadomos-1-1.webp",
+    "/media/2024/11/llaimadomos-2-1.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Ruta S-337 Km 3 El Membrillo NºS/N, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 96374351"
+        },
+        {
+          "k": "Email",
+          "v": "llaimadomo@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.llaimadomo.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 96374351"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Sector El Membrillo Bajo"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 19:00 hrs."
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22634.744474035273!2d-71.69647469363831!3d-38.837523046867275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961342139d8ded1f%3A0xc2216a01927264be!2sLlaimadomo%20lodge!5e0!3m2!1ses-419!2scl!4v1729802545008!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56996374351",
+    "facebook": "https://web.facebook.com/llaimadomo?locale=es_LA",
+    "instagram": "https://www.instagram.com/llaimadomo/"
+  },
+  "logo": "",
+  "servicios": [],
+  "clase": "Lodge",
+  "publicado": true,
+  "destacado": false
+}

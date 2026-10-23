@@ -1,112 +1,148 @@
 # Melipeuco Capital del Trekking — sitio web
 
-Nuevo sitio web de **Melipeuco Capital del Trekking**, construido desde cero con [Astro](https://astro.build)
-a partir de todo el contenido del sitio anterior (WordPress) `melipeucocapitaldeltrekking.cl`.
+Sitio oficial de turismo de **Melipeuco Capital del Trekking**, construido con [Astro](https://astro.build) a partir
+de todo el contenido del sitio anterior (WordPress). Es un sitio **estático**: no necesita base de datos ni PHP,
+carga muy rápido y se puede publicar en cualquier hosting. Incluye un **panel de administración** en `/admin/`
+para editar los contenidos sin tocar código.
 
-Es un sitio **estático**: no necesita base de datos ni PHP, carga muy rápido y se puede publicar en
-cualquier hosting (servidor municipal, Netlify, Vercel, Cloudflare Pages, GitHub Pages, etc.).
+## Identidad: el logo desarmado
+
+El logo vectorizado se separó en sus 9 letras-símbolo, y cada una es la identidad (color + emblema) de una zona del sitio:
+
+| Letra | Símbolo | Color | Zona del sitio |
+|---|---|---|---|
+| M | montaña y río | `#1F6FA8` glaciar | Rutas de trekking |
+| E | rostro | `#E2683C` terracota | Noticias, Contacto |
+| L | cascada | `#16A0A8` turquesa | Qué hacer |
+| I | araucaria | `#2F7D4A` bosque | Qué visitar |
+| P | corazón | `#D23B4A` copihue | Gastronomía, Mi viaje |
+| E | persona | `#E9A92B` sol | Guías turísticos |
+| U | animales | `#8A5A3B` tierra | Operadores, Servicios complementarios |
+| C | estrellas | `#3E3E9A` noche | Dónde dormir |
+| O | kultrun | `#7A3E91` violeta | Explora Melipeuco, Mapa |
+
+Archivos de marca en `public/marca/`:
+
+- `logo-color.svg`: logo en colores, para fondos claros.
+- `logo-color-claro.svg`: logo en colores, para fondos oscuros.
+- `logo-blanco.svg` y `logo-negro.svg`: versiones de una sola tinta.
+- `emblema-0.svg` … `emblema-8.svg`: cada letra por separado.
+- `logo-original.svg`: el archivo vectorial original.
+
+En el código, `src/components/Logo.astro` dibuja el logo animado (las letras caen una a una, luego aparecen los
+símbolos y el lema) y `src/components/Emblema.astro` dibuja una sola letra. Los colores están en `src/scripts/zonas.ts`.
+
+## Diseño, animaciones y profundidad
+
+- **Portada con profundidad**: fotos, capas de cordillera y logo que se mueven a distinta velocidad al hacer scroll (parallax).
+- **«Cada letra es una puerta»**: al hacer scroll, el logo se desarma y cada letra se convierte en el acceso a su zona.
+- **Fila horizontal de rutas**: la sección queda fija y las tarjetas se desplazan de lado mientras bajas.
+- Títulos que suben palabra por palabra, emblemas flotantes en cada página y fotos que aparecen como cortina.
+- Tarjetas con inclinación 3D y brillo al pasar el mouse, y contadores animados.
+- Barra de progreso de lectura en los colores del logo y botón «volver arriba» con anillo de avance.
+- Transiciones suaves entre páginas, que el navegador hace solo (View Transitions).
+- Encabezado flotante tipo vidrio que se esconde al bajar y reaparece al subir, con mega menú de emblemas.
+- Menú móvil a pantalla completa con apertura circular.
+- **Modo claro y oscuro**: sigue la preferencia del sistema y se puede cambiar con el botón de la luna.
+- Las animaciones se desactivan si el visitante tiene activada la opción «reducir movimiento» en su equipo.
+
+## Funciones
+
+- **Buscador global** (botón *Buscar*, `Ctrl K` o la tecla `/`): busca rutas, actividades, alojamientos, guías, servicios y noticias, y se maneja con el teclado.
+- **Mi viaje** (`/mi-viaje/`): el visitante guarda con ❤️ lo que le interesa. La lista queda guardada en su navegador y se puede enviar por WhatsApp o imprimir.
+- **Clima en vivo** de Melipeuco y pronóstico de 5 días (Open-Meteo, sin clave de API).
+- **Filtros instantáneos** en todos los listados (nivel, dificultad MIDE, tipo, especialidad…), con conteo, cambio entre vista de cuadrícula y de lista, y URL compartible (por ejemplo, `/rutas-de-trekking/?interes=Familiares`).
+- **Rutas**: mapa satelital, topográfico y de calles con el track GPX, perfil de elevación interactivo animado y descarga del GPX.
+- **Mapa general** (`/mapa/`): las 44 rutas coloreadas por nivel. Al tocar un punto se dibuja el track con zoom animado.
+- **Fichas de negocios**: botones de WhatsApp y llamada, redes sociales, galería, mapa y, en los operadores, las rutas que ofrecen.
+- Botones de compartir (usa el menú nativo del teléfono) e imprimir (con una versión limpia de la ficha).
+- Galería con visor a pantalla completa, que se maneja con el teclado y con gestos de deslizar.
+- SEO: las mismas URL del sitio anterior, Open Graph, `sitemap.xml` y `robots.txt`.
 
 ## Contenido migrado
 
-| Sección | Cantidad | Datos | URL |
-|---|---|---|---|
-| Rutas de trekking | 44 | ficha técnica, MIDE, nivel, galería, track GPX, mapa, perfil de elevación, operadores | `/ruta-de-trekking/<slug>/` |
-| Actividades (Qué hacer) | 18 | tipo, descripción, galería, mapa, operadores | `/actividad-atractivo/<slug>/` |
-| Atractivos (Qué visitar) | 23 | tipo, descripción, galería, mapa | `/actividad-atractivo/<slug>/` |
-| Alojamientos | 27 | clase, contacto, pagos, servicios, redes, galería | `/donde-dormir/<slug>/` |
-| Operadores turísticos | 13 | contacto, redes, galería, rutas/actividades que ofrecen | `/operador-turistico/<slug>/` |
-| Gastronomía y servicios complementarios | 47 | tipo, contacto, redes, galería | `/servicio-restaurante/<slug>/` |
-| Guías turísticos | 25 | especialidad, dirección, certificaciones, contacto | `/guias-turisticos/` |
-| Noticias | 3 | entradas del blog | `/<slug>/` |
-| Páginas | — | Inicio, Explora Melipeuco, Contáctanos, Mapa de senderos | |
+| Colección | Cantidad | Carpeta |
+|---|---|---|
+| Rutas de trekking | 44 | `src/content/rutas/` |
+| Actividades y atractivos | 41 | `src/content/actividades/` |
+| Alojamientos | 27 | `src/content/alojamientos/` |
+| Operadores turísticos | 13 | `src/content/operadores/` |
+| Gastronomía y servicios | 47 | `src/content/servicios/` |
+| Guías turísticos | 25 | `src/content/guias/` |
+| Noticias | 3 | `src/content/noticias/` |
 
-Además: unas 750 imágenes y logos del sitio original y los 44 tracks GPX.
+Cada elemento es un archivo JSON propio, y su descripción está en Markdown. La configuración general está en `src/data/`:
 
-**Se conservan las mismas URL del sitio anterior**, así los enlaces existentes y el posicionamiento en
-Google siguen funcionando.
-
-### Funciones nuevas
-
-- Filtros instantáneos y buscador en todos los listados (nivel, dificultad MIDE, tipo de recorrido, tipo de alojamiento, especialidad, etc.). Los filtros se pueden enlazar, por ejemplo `/rutas-de-trekking/?interes=Familiares`.
-- Mapa por ruta con capas satelital, topográfica y de calles, el track GPX dibujado y un **perfil de elevación interactivo**. El track GPX se puede descargar.
-- **Mapa general de senderos** (`/mapa/`) con las 44 rutas, coloreadas por nivel.
-- Galería de fotos con visor a pantalla completa (se maneja con el teclado o con gestos).
-- Animaciones: entrada del logo, carrusel con efecto Ken Burns, aparición de secciones al hacer scroll, contadores animados, franja animada de logos institucionales y logo del pie de página flotando. Respetan la preferencia de "reducir movimiento" del sistema.
-- Diseño adaptado a celulares, metadatos para redes sociales (Open Graph), `sitemap.xml` y `robots.txt` automáticos.
-
-## Requisitos
-
-- Node.js 18.20 o superior (recomendado: 20 o 22)
+- `sitio.json`: menú, pie de página, redes y contacto.
+- `inicio.json`: portada.
+- `mapa.json`: puntos del mapa general.
 
 ## Uso
 
+Requiere Node.js 18.20 o superior (se recomienda 20 o 22).
+
 ```bash
-npm install        # instalar dependencias (solo la primera vez)
+npm install        # instalar dependencias (la primera vez)
 npm run dev        # servidor de desarrollo en http://localhost:4321
-npm run build      # genera el sitio final en la carpeta dist/
-npm run preview    # revisa localmente el sitio ya generado
+npm run build      # genera el sitio final en dist/
+npm run preview    # revisa el sitio generado
 ```
 
-Para publicar, sube el contenido de `dist/` al hosting.
+## Panel de administración (`/admin/`)
 
-## Cómo editar el contenido
+El panel usa [Decap CMS](https://decapcms.org), que es libre y gratuito. Permite:
 
-Todo el contenido está en archivos JSON dentro de `src/data/`:
+- crear, editar, ocultar y eliminar rutas, actividades, alojamientos, operadores, servicios, guías y noticias;
+- subir fotos y tracks GPX;
+- editar la portada (carrusel, rutas destacadas e imperdibles), el menú, el pie de página, las redes y los puntos del mapa.
 
-| Archivo | Contenido |
-|---|---|
-| `sitio.json` | nombre, lema, redes sociales, menú, enlaces del pie, correo y formulario de contacto |
-| `inicio.json` | fotos del carrusel, rutas destacadas e "Imperdibles" de la portada |
-| `rutas.json` | rutas de trekking |
-| `actividades.json` | actividades (`"categoria": "actividad"`) y atractivos (`"categoria": "atractivo"`) |
-| `alojamientos.json` | dónde dormir |
-| `operadores.json` | operadores turísticos |
-| `servicios.json` | gastronomía (`"seccion": "gastronomia"`) y complementarios (`"seccion": "complementarios"`) |
-| `guias.json` | guías turísticos |
-| `noticias.json` | noticias |
-| `mapa.json` | puntos y tracks del mapa general |
+Cada guardado es un *commit* en GitHub, así queda un historial completo y se puede deshacer cualquier cambio.
+Está activado el **flujo editorial**: los cambios pasan por Borrador → En revisión → Listo, y recién se publican
+al aprobarlos. Para publicar sin revisión, elimina `publish_mode: editorial_workflow` de `public/admin/config.yml`.
 
-### Agregar una ruta nueva
+### Editar en tu computador (sin configurar nada más)
 
-1. Copia las fotos a `public/media/...` y el track a `public/media/kmz/nombre.gpx`.
-2. Agrega un objeto a `src/data/rutas.json`. Puedes copiar una ruta existente y cambiar sus valores:
-   - `slug`: la URL, en minúsculas y con guiones (`laguna-nueva`)
-   - `interes`: `Familiares`, `Trekkeros` o `Expertos`
-   - `cuerpo`: la descripción, en HTML (`<p>…</p>`)
-   - `imagen`, `galeria`, `gpx`: rutas que empiezan con `/media/...`
-   - `coords`: `[latitud, longitud]` del punto de inicio
-   - `operadores`: lista de `slug` de operadores que ofrecen la ruta
-3. Si quieres que aparezca en el mapa general, agrégala también a `mapa.json`.
-4. Ejecuta `npm run build`.
+```bash
+npm run dev                # en una terminal
+npx decap-server           # en otra terminal
+```
 
-Los alojamientos, servicios, operadores, actividades y noticias se agregan igual.
+Abre `http://localhost:4321/admin/`, entra con «Iniciar sesión» y edita. Los cambios se escriben en los archivos
+locales; después haz *commit* y *push*.
 
-### Formulario de contacto
+### Editar en línea (en el sitio publicado)
 
-Por defecto, el formulario abre el programa de correo del visitante con el mensaje listo, dirigido a
-`email_contacto` en `sitio.json`. Para recibir los mensajes directamente, crea un formulario en un
-servicio como Formspree, Getform o uno propio, y escribe su URL en `formulario_endpoint`.
+El panel inicia sesión con GitHub, y para eso necesita un servicio OAuth:
 
-> **Revisa** que `email_contacto` (`turismo@munimelipeuco.cl`) sea la casilla correcta; es un valor provisional.
+- **Si el sitio se publica en Netlify**: conecta el repositorio y, en *Site configuration → Access & security → OAuth*, instala el proveedor de GitHub. No hay que tocar nada más.
+- **En otro hosting** (servidor municipal, Cloudflare, Vercel…): instala un pequeño servidor OAuth para Decap CMS; hay opciones libres que se publican en minutos, por ejemplo en Cloudflare Workers. Luego escribe su dirección en `base_url` dentro de `public/admin/config.yml`.
 
-## Estructura del proyecto
+Cada editor necesita una cuenta de GitHub con permiso de escritura en el repositorio `informatica130/CapitalDelTrekking`.
+
+> El panel guarda en la rama **`main`** (`backend.branch` en `public/admin/config.yml`). Si publicas desde otra rama, cámbiala ahí.
+
+> En las galerías, el panel no muestra la miniatura de las fotos migradas que están en subcarpetas (`/media/2024/11/…`). Es una limitación de Decap con imágenes existentes en subcarpetas: la foto sigue en la lista y en el sitio se ve bien. Las fotos nuevas se suben a `public/media/` y se ven normalmente.
+
+## Estructura
 
 ```
 src/
-  data/          contenidos (JSON)
-  layouts/       plantilla general (encabezado, menú, pie)
-  components/    tarjetas, galería, mapas, filtros, fichas, iconos
+  content/       contenidos editables (un JSON por elemento)
+  data/          portada, configuración general, mapa y logo desarmado
+  layouts/       plantilla general (encabezado, menús, buscador, pie)
+  components/    Logo, Emblema, tarjetas, galería, mapas, filtros, clima, fichas
   pages/         páginas y plantillas de cada tipo de contenido
-  scripts/       acceso a datos, lectura de GPX y mapas
-  styles/        estilos globales (colores y tipografías en :root)
-public/media/    imágenes, logos y tracks GPX migrados
-herramientas/migracion/  scripts que extrajeron el contenido del sitio anterior
+  scripts/       datos, zonas y colores, efectos de scroll, buscador y Mi viaje, GPX y mapas
+  styles/        sistema de diseño (global.css)
+public/
+  admin/         panel de administración (Decap CMS)
+  marca/         logo en sus variantes y emblemas
+  media/         imágenes y tracks GPX migrados
+herramientas/migracion/   scripts que extrajeron el contenido del sitio anterior
 ```
 
-## Notas de la migración
+## Pendientes antes de publicar
 
-- Las 3 noticias del sitio anterior eran **entradas de prueba** (texto "Lorem ipsum"). Se migraron tal cual para que el sistema de noticias funcione: reemplázalas por noticias reales o bórralas de `noticias.json`. El sitio original no publicaba su fecha, así que se les asignó enero de 2025.
-- Varias fichas del sitio original venían con campos vacíos o en blanco (por ejemplo "Distancia desde la plaza: KM"). Esos campos se omiten, y cuando falta la foto se muestra un ícono.
-- Las fichas de guías sin foto muestran las iniciales del guía.
-- Los mapas usan capas públicas (Esri, OpenTopoMap y OpenStreetMap), sin claves de API.
-- Los scripts de `herramientas/migracion/` sirven para volver a extraer el contenido mientras el sitio anterior siga en línea. Se ejecutan con Python 3 y BeautifulSoup: `crawl.py` → `extract.py` / `guias.py` → `assets.py` → `download.py` → `transform.py`.
+- Las 3 noticias migradas eran **entradas de prueba** («Lorem ipsum»). Reemplázalas o elimínalas desde el panel.
+- Confirma el correo de contacto (`turismo@munimelipeuco.cl` es provisional) en *Configuración del sitio → Datos generales*.
+- Para recibir los mensajes del formulario directamente, configura un *endpoint* (por ejemplo, Formspree) en el mismo lugar. Si queda vacío, el formulario abre el correo del visitante.

@@ -1,0 +1,61 @@
+{
+  "slug": "la-baita-conguillio",
+  "titulo": "La Baita Conguillío",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/47.labaita02-jpg.webp",
+  "galeria": [
+    "/media/2024/11/47.labaita02-jpg.webp",
+    "/media/2024/11/47.labaita03.webp",
+    "/media/2024/11/47.labaita04.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino Laguna Verde Km 18"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 97332442"
+        },
+        {
+          "k": "Email",
+          "v": "Reservas@labaitaconguillio.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.labaitaconguillio.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 97332442"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95757.91969348148!2d-71.74159975234231!3d-38.789734116787876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613412aa77fc159%3A0x4518bae699ba80e6!2sLa%20Baita%20Conguillio!5e1!3m2!1ses!2scl!4v1730146839694!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56997332442",
+    "facebook": "https://www.facebook.com/LaBaitaConguillio1/",
+    "instagram": "https://www.instagram.com/la_baita_conguillio/",
+    "youtube": "https://www.youtube.com/@labaitaconguillio3664"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

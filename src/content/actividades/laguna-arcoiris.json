@@ -1,0 +1,25 @@
+{
+  "slug": "laguna-arcoiris",
+  "titulo": "Laguna Arcoíris",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Natural / Lagos y lagunas"
+    }
+  ],
+  "cuerpo": "Esta laguna debe su nombre a los múltiples tonos que reflejan sus aguas, atrapadas entre los piroclastos de una antigua erupción del Llaima. Decorada con escultóricos troncos de árboles muertos, la laguna se encuentra inmersa en una mixtura de bosques y depósitos volcánicos, con el Volcán Llaima como telón de fondo. En este lugar, se condensa la belleza del Parque Nacional Conguillio, ofreciendo uno de los paisajes más icónicos del Sur de Chile.",
+  "imagen": "/media/2024/11/14.laguna-arcoiris2.webp",
+  "galeria": [
+    "/media/2024/11/14.laguna-arcoiris2.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48628.072948096386!2d-71.6580335!3d-38.6407904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961349407473844f%3A0x18d94e3fbcd05b4e!2sLaguna%20Arco%C3%ADris!5e1!3m2!1ses-419!2scl!4v1728489603237!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Natural / Lagos y lagunas",
+  "publicado": true,
+  "destacado": false
+}

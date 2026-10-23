@@ -1,0 +1,113 @@
+{
+  "slug": "laguna-arcoiris",
+  "titulo": "Laguna Arcoíris",
+  "subtitulo": "Ruta Laguna Arcoíris",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "2,2 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "circuito"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "La Laguna Arcoiris, uno de los lugares más apreciados del Parque Nacional Conguillío, es una laguna de múltiples colores que fascina a todos sus visitantes. Rodeada por coladas de lava y un escorial volcánico, y con troncos sumergidos en sus aguas, este paisaje evoca imágenes de la era jurásica, cuando los dinosaurios dominaban la Tierra. El circuito que rodea la laguna tiene una duración de aproximadamente 45 minutos y no presenta grandes pendientes, lo que lo convierte en una opción ideal para toda la familia. Es un recorrido perfecto para disfrutar de la tranquilidad y la singular belleza natural de este rincón del parque.",
+  "imagen": "/media/2024/11/14.02laguna-arcoiris-2-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/14.02laguna-arcoiris-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/14.03laguna-arcoiris.webp",
+    "/media/2024/11/14.04laguna-arcoiris-2-wpcf_1024x800.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "2,2 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "0,5h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "84m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1100m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "circuito"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "www.pasesparques.cl"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.6724974143971,
+    -71.62141054232943
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "nuke-mawida",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "circuito"
+  ],
+  "gpx": "/media/kmz/14.lagunaarcoiris.gpx",
+  "dificultad": "1",
+  "extension": "2,2 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

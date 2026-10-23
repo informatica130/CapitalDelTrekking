@@ -1,0 +1,63 @@
+{
+  "slug": "likan-kura",
+  "titulo": "Likan Kura",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "P. Aguirre Cerda #294"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+569 82500730"
+    }
+  ],
+  "cuerpo": "Agencia de turismo local que durante años se ha especializado en actividades de ecoturismo y turismo aventura en Melipeuco. Recorriendo ríos y montañas, brindando seguridad y las mejores experiencias al aire libre. Su equipo está compuesto por profesionales en Turismo Aventura, guías locales y certificados que están en constante capacitación. Tour operador comprometido con el cuidado del medio ambiente a través de un turismo sustentable y sostenible en el tiempo, bajo los principios de «No deje Rastro».",
+  "imagen": "/media/2024/11/likan-kura-4.webp",
+  "galeria": [
+    "/media/2024/11/likan-kura-4.webp",
+    "/media/2024/11/likan-kura-10.webp",
+    "/media/2024/11/likan-kura-19.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "P. Aguirre Cerda #294"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 82500730"
+        },
+        {
+          "k": "Email",
+          "v": "likankura.turismo@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://turismolikankura.cl/"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 82500730"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.067944469617!2d-71.6943161!3d-38.8538017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96136905a71a9975%3A0xf8d7247054139e82!2sAgencia%20Turismo%20Likan%20Kura!5e0!3m2!1ses-419!2scl!4v1729111362489!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56982500730",
+    "facebook": "https://www.facebook.com/turismo.likankura",
+    "instagram": "https://www.instagram.com/turismolikankura/",
+    "youtube": "https://www.youtube.com/@turismolikankuramelipeuco6206"
+  },
+  "logo": "/media/2024/11/logo-likankura.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

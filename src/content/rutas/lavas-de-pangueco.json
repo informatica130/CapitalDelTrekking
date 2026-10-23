@@ -1,0 +1,112 @@
+{
+  "slug": "lavas-de-pangueco",
+  "titulo": "Lavas de Pangueco",
+  "subtitulo": "Ruta Lavas de Pangueco",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "6 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "4"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere guía especializado (*)"
+    }
+  ],
+  "cuerpo": "El sector de Pangueco se encuentra en el flanco menos explorado del Volcán Llaima. Un sinuoso camino vehicular te llevará hasta los 1,200 metros sobre el nivel del mar. Desde allí, tras caminar aproximadamente 3 kilómetros, podrás llegar a una colada de lava de tipo ‘Aa’, conocida por su textura acordonada. Esta ruta es una excelente opción para iniciarse en ambientes volcánicos, proporcionando una introducción accesible a las características únicas de los paisajes volcánicos. Durante el recorrido, disfrutarás de amplias vistas del valle del Llaima, que te permitirán apreciar la majestuosidad del entorno natural. Es una caminata ideal para aquellos que desean explorar la geología volcánica y disfrutar de un paisaje impresionante sin enfrentarse a una ruta demasiado exigente.",
+  "imagen": "/media/2024/11/26.02lavas-pangueco.webp",
+  "galeria": [
+    "/media/2024/11/26.02lavas-pangueco.webp",
+    "/media/2024/11/26.03lavas-pangueco.webp",
+    "/media/2024/11/26.04lavas-pangueco.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "6 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "2,5h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "142m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1082m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "4"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "56 2 28406818."
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere guía especializado (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.76945424818662,
+    -71.68856245767056
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Expertos",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/26.lavascordadasdepangueco.gpx",
+  "dificultad": "4",
+  "extension": "6 km",
+  "duracion": "Medio día",
+  "condicion": "Requiere guía especializado (*)",
+  "publicado": true,
+  "destacado": false
+}

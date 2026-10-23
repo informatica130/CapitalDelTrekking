@@ -5,9 +5,9 @@ import ListadoNegocios from '../components/ListadoNegocios.astro';
 import { operadores, url } from '../scripts/datos';
 const img = '/media/2024/11/40.01truful-truful-jpg.webp';
 ---
-<Base titulo="Operadores turísticos" descripcion="Agencias y operadores locales de turismo aventura en Melipeuco." imagen={img}>
-  <Heroe titulo="Operadores" destacado="turísticos" imagen={img} bajada="Agencias locales que te guían a volcanes, ríos, glaciares y bosques de araucarias." />
-  <section class="seccion"><div class="contenedor">
-    <ListadoNegocios lista={operadores} id="lista-operadores" enlace={url.operador} icono="brujula" />
+<Base titulo="Operadores turísticos" zona="operadores" descripcion="Agencias y operadores locales de turismo aventura en Melipeuco." imagen={img}>
+  <Heroe titulo="Operadores" destacado="turísticos" zona="operadores" imagen={img} migas={[{ texto: 'Operadores turísticos' }]} bajada="Agencias locales que te guían a volcanes, ríos, glaciares y bosques de araucarias." />
+  <section class="seccion" style="padding-top:40px"><div class="contenedor">
+    <ListadoNegocios lista={operadores} id="lista-operadores" enlace={url.operador} letra={6} />
   </div></section>
 </Base>

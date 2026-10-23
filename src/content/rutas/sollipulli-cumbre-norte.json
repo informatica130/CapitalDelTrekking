@@ -1,0 +1,112 @@
+{
+  "slug": "sollipulli-cumbre-norte",
+  "titulo": "Sollipulli cumbre norte",
+  "subtitulo": "Ruta Sollipulli cumbre norte",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "10,6 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "4"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere guía especializado (*)"
+    }
+  ],
+  "cuerpo": "La ruta hacia la cumbre norte del volcán Sollipulli te llevará a alcanzar una altitud de 2,282 metros sobre el nivel del mar. Desde esta cumbre, tendrás una vista impresionante del extenso glaciar que cubre la caldera volcánica, que se extiende por 4 kilómetros en su eje mayor. Esta cumbre es factible de realizar en una sola jornada de marcha, y no requiere conocimientos ni equipamiento técnico avanzado. Sin embargo, es esencial llevar calzado de montaña adecuado debido al terreno volcánico abrasivo. La ruta ofrece una experiencia accesible para quienes buscan una caminata de montaña con vistas panorámicas a un glaciar espectacular, sin necesidad de una preparación técnica compleja.",
+  "imagen": "/media/2024/11/34.02sollipulli-norte.webp",
+  "galeria": [
+    "/media/2024/11/34.02sollipulli-norte.webp",
+    "/media/2024/11/34.03sollipulli-norte.webp",
+    "/media/2024/11/34.04sollipulli-norte-2-wpcf_1024x960.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "10,6 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "8h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "1132m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "2282m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "4"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "56 452298149"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere guía especializado (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Requiere equipamiento de alta montaña"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.917425135514314,
+    -71.49418063859392
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Expertos",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/34.vn.sollipullicumbrenorte.gpx",
+  "dificultad": "4",
+  "extension": "10,6 km",
+  "duracion": "Full day",
+  "condicion": "Requiere guía especializado (*)",
+  "publicado": true,
+  "destacado": false
+}

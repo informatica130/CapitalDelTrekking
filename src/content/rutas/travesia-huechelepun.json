@@ -1,0 +1,108 @@
+{
+  "slug": "travesia-huechelepun",
+  "titulo": "Travesía Huechelepún",
+  "subtitulo": "Ruta Travesía Huechelepún",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "37,2 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Dos o más días"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "4"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "travesía"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere guía especializado (*)"
+    }
+  ],
+  "cuerpo": "Esta expedición de 3 días está diseñada para personas con experiencia en senderismo que buscan una aventura desafiante en un entorno montañoso. La ruta atraviesa un cordón de montaña entre el camino a Icalma y las faldas del volcán Sollipulli, discurriendo principalmente por los filos de ese cordón. A lo largo del trayecto, serás testigo de majestuosas panorámicas, rodeado por bosques de araucarias que se alzan imponentes en el paisaje. Esta es una ruta remota, sin señalización o demarcaciones, lo que añade un nivel extra de dificultad. Por esta razón, es fundamental realizarla con guías locales que conozcan bien la zona y puedan orientarte durante el recorrido, asegurando no solo una travesía segura, sino también una experiencia enriquecedora en contacto directo con la montaña.",
+  "imagen": "/media/2024/11/11.02huechelepun-2-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/11.02huechelepun-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/11.03huechelepun.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "37,2 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "3d"
+        },
+        {
+          "k": "Desnivel",
+          "v": "685m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1570m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "4"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "travesía"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere guía especializado (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.850716135454306,
+    -71.47286735582357
+  ],
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "interes": "Expertos",
+  "tipo_recorrido": [
+    "travesia"
+  ],
+  "gpx": "/media/kmz/11.travesiahuechelepun-loncotriuque.gpx",
+  "dificultad": "4",
+  "extension": "37,2 km",
+  "duracion": "Dos o más días",
+  "condicion": "Requiere guía especializado (*)",
+  "publicado": true,
+  "destacado": false
+}

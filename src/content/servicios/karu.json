@@ -1,0 +1,56 @@
+{
+  "slug": "karu",
+  "titulo": "Karü",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Arriendo de equipo, Artesanía, Rental de bicicletas, Restaurante"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/51-karu2.webp",
+  "galeria": [
+    "/media/2024/11/51-karu2.webp",
+    "/media/2024/11/51-karu3.webp",
+    "/media/2024/11/51-karu4.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Av. Pedro Aguirre Cerda 294"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56 9 8733 3742"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 8733 3742"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.744694441428!2d-71.6968621240653!3d-38.85377957173346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369a8f7077453%3A0x1d340765f0b479f5!2zS2Fyw7wgLSBDYWZldGVyw61hLCBIZWxhZGVyw61hLCBBcnRlc2Fuw61hcyB5IEFydMOtY3Vsb3MgT3V0ZG9vcnMu!5e1!3m2!1ses!2scl!4v1730146907190!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56987333742",
+    "facebook": "https://www.facebook.com/karuOutdoors",
+    "instagram": "https://www.instagram.com/karu_espirituverde"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Arriendo de equipo, Artesanía, Rental de bicicletas, Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

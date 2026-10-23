@@ -1,0 +1,112 @@
+{
+  "slug": "saltos-de-quillen",
+  "titulo": "Saltos de Quillén",
+  "subtitulo": "Ruta Saltos de Quillén",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "1,4 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2,5"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "circuito"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere acompañamiento local (*)"
+    }
+  ],
+  "cuerpo": "Esta ruta te lleva a descubrir dos impresionantes cascadas, cada una con más de 50 metros de desnivel, ubicadas en medio de un bosque antiguo que se mantiene en excelente estado de conservación. Al llegar al principal atractivo, el mirador del Salto de Quillén, tendrás la oportunidad de acercarte bastante a la base de la cascada y sentir la fuerza y la frescura del agua de cerca. El sendero está bien señalizado y tiene forma de circuito, lo que facilita la navegación. Para llegar al mirador, descenderás abruptamente y luego deberás subir para regresar al punto inicial. A lo largo del recorrido, encontrarás áreas de descanso y mesas de picnic, así como escaleras y barandas para mayor seguridad y comodidad. La señalización a lo largo del sendero te ayudará a mantenerte en el camino correcto y disfrutar de una experiencia segura y placentera.",
+  "imagen": "/media/2024/11/31.02saltos-quilen.webp",
+  "galeria": [
+    "/media/2024/11/31.02saltos-quilen.webp",
+    "/media/2024/11/31.03saltos-quilen-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/31.04saltos-quilen-2-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "1,4 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "1h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "110m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "840m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2,5"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "circuito"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "569 94896545"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere acompañamiento local (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.881475909667586,
+    -71.50464953354937
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "melipewunko",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "circuito"
+  ],
+  "gpx": "/media/kmz/31.saltosdequillen.gpx",
+  "dificultad": "2,5",
+  "extension": "1,4 km",
+  "duracion": "Medio día",
+  "condicion": "Requiere acompañamiento local (*)",
+  "publicado": true,
+  "destacado": false
+}

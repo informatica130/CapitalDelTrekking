@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "astro": "^5.18.2",
-    "leaflet": "^1.9.4"
+    "leaflet": "^1.9.4",
+    "marked": "^14.1.4"
   }
 }

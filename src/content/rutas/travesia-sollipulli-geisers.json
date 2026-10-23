@@ -1,0 +1,110 @@
+{
+  "slug": "travesia-sollipulli-geisers",
+  "titulo": "Travesía Sollipulli – Geisers",
+  "subtitulo": "Ruta Travesía Sollipulli – Geisers",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "22 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Dos o más días"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "4"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "travesía"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere guía especializado (*)"
+    }
+  ],
+  "cuerpo": "Esta travesía de dos días te ofrece una experiencia completa de trekking y aventura. Comenzarás acampando a los pies del glaciar en el volcán Sollipulli, para luego emprender el descenso por el cañón de Alpehue, una actividad que incluye elementos de canyoning. A lo largo del recorrido, te encontrarás con geositios y geoformas volcánicas únicas y disfrutarás de termas naturales que añaden un toque especial a la travesía. La ruta abarca 21 kilómetros y presenta un importante desnivel, por lo que es fundamental estar preparado con equipo adecuado para acampar y progresar por el glaciar. Debido a su extensión y la naturaleza exigente del terreno, esta travesía es recomendada para personas con experiencia en caminatas de largo aliento y en travesías andinas, así como para quienes estén en buen estado físico. La combinación de trekking y canyoning en un entorno volcánico espectacular garantiza una aventura memorable.",
+  "imagen": "/media/2024/11/36.02sollipulli-alpehue-2-wpcf_1024x922.jpg",
+  "galeria": [
+    "/media/2024/11/36.02sollipulli-alpehue-2-wpcf_1024x922.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "22 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "16h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "1050m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "2250m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "4"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "travesía"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "56 452298149"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere guía especializado (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Requiere equipamiento de alta montaña"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.91752530656699,
+    -71.49345107779446
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu",
+    "araucania-backcountry"
+  ],
+  "relacionados": [],
+  "interes": "Expertos",
+  "tipo_recorrido": [
+    "travesia"
+  ],
+  "gpx": "/media/kmz/36.travesiasollipulli-alpehue.gpx",
+  "dificultad": "4",
+  "extension": "22 km",
+  "duracion": "Dos o más días",
+  "condicion": "Requiere guía especializado (*)",
+  "publicado": true,
+  "destacado": false
+}

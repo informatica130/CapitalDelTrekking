@@ -1,0 +1,23 @@
+{
+  "slug": "laguna-galletue",
+  "titulo": "Laguna Galletué",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Natural / Lagos y lagunas"
+    }
+  ],
+  "cuerpo": "La laguna andina de Galletué se encuentra a 1150 m.s.n.m., y resulta representativa del paisaje pehuenche, con horizontes amplios salpicados de araucarias. Para llegar a ella se debe remontar la cordillera por las rutas de Icalma o China Muerta.",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48599.83985498411!2d-71.3088901!3d-38.6823817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961326a1bf5324ab%3A0xd4ad1623565d0d0c!2sGalletu%C3%A9%20Lake!5e1!3m2!1ses-419!2scl!4v1728489845534!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Natural / Lagos y lagunas",
+  "publicado": true,
+  "destacado": false
+}

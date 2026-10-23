@@ -1,0 +1,68 @@
+{
+  "slug": "expandes",
+  "titulo": "Expandes",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Av. Pedro Aguirre Cerda 402"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+56 9 5096 2736"
+    }
+  ],
+  "cuerpo": "EXPANDES TOUR es una agencia local de turismo con base en Melipeuco, especializada en experiencias auténticas y personalizadas en la zona andina de La Araucanía. Como tour operador, conectamos a los viajeros con la cultura, naturaleza y paisajes únicos del territorio, promoviendo un turismo consciente, sustentable y de cercanía con las comunidades locales.",
+  "imagen": "/media/2025/08/expandes-3.webp",
+  "galeria": [
+    "/media/2025/08/expandes-3.webp",
+    "/media/2025/08/expandes-2.webp",
+    "/media/2025/08/expandes-1.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Av. Pedro Aguirre Cerda 402"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56 9 5096 2736"
+        },
+        {
+          "k": "Email",
+          "v": "contacto@expandestour.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.expandestour.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 5096 2736"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1098.522910655791!2d-71.69300161226424!3d-38.85325108894768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96136991220fff1f%3A0xce7c980158184a6d!2sCuatrorios_boutique%20Tienda%20de%20recuerdos%2C%20Agencia%20de%20turismo%2C%20Rental%20y%20Traslados!5e0!3m2!1sen!2scl!4v1756134651932!5m2!1sen!2scl",
+  "operadores": [
+    "laguna-icalma",
+    "mirador-sierra-nevada"
+  ],
+  "relacionados": [
+    "laguna-icalma",
+    "mirador-sierra-nevada"
+  ],
+  "redes": {
+    "whatsapp": "https://wa.me/+56950962736",
+    "facebook": "https://www.facebook.com/profile.php?id=61572356504333",
+    "instagram": "http://instagram.com/expandestour"
+  },
+  "logo": "/media/2025/08/expandes_logo.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

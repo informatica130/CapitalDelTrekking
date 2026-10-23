@@ -1,0 +1,61 @@
+{
+  "slug": "kani-escalada",
+  "titulo": "Kani Escalada",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Camino Carén S/N, Km 18, Puente Ceballos"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+569 20497486"
+    }
+  ],
+  "cuerpo": "Emprendimiento enfocado en escalada en roca. Salidas guiadas, cursos y talleres.",
+  "imagen": "/media/2024/11/kani2-1.webp",
+  "galeria": [
+    "/media/2024/11/kani2-1.webp",
+    "/media/2024/11/kani3-1-wpcf_1024x1024.jpg",
+    "/media/2024/11/kani4.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino Carén S/N, Km 18, Puente Ceballos"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 20497486"
+        },
+        {
+          "k": "Email",
+          "v": "kaniescalada@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://linktr.ee/kaniescalada"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 20497486"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d747.1502938119665!2d-71.5380224!3d-38.8809754!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDUyJzQ5LjgiUyA3McKwMzInMTYuNCJX!5e1!3m2!1ses-419!2scl!4v1729111572410!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56920497486",
+    "instagram": "https://www.instagram.com/kaniescalada/"
+  },
+  "logo": "/media/2024/11/logo-kani-escalada.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

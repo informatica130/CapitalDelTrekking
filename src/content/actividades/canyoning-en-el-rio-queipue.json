@@ -1,0 +1,29 @@
+{
+  "slug": "canyoning-en-el-rio-queipue",
+  "titulo": "Canyoning en el río Queipúe",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Canyoning"
+    }
+  ],
+  "cuerpo": "Si buscas llevar tu trekking a un nuevo nivel, el canyoning en el río Queipue es una experiencia que no te puedes perder. Este recorrido te sorprenderá con su impresionante paisaje geotermal y sus columnas basálticas que parecen sacadas de la era prehistórica. Durante el exigente trayecto, podrás admirar fumarolas y géiseres en su estado más puro. A mitad del camino, disfrutarás de un merecido descanso en termas naturales, y más adelante, experimentarás la emoción de explorar el cañón mientras caminas por dentro del río.",
+  "imagen": "/media/2024/09/2.01alpehue.webp",
+  "galeria": [
+    "/media/2024/09/2.01alpehue.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49618.52540390803!2d-71.67693972587587!3d-38.98889393270797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96136d13057789cf%3A0x64f8b5fd3d7932bd!2sTermas%20de%20Alpehue!5e0!3m2!1ses-419!2scl!4v1729104027552!5m2!1ses-419!2scl",
+  "operadores": [
+    "trekan-mapu",
+    "namku-adventure",
+    "melipewunko"
+  ],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Canyoning",
+  "publicado": true,
+  "destacado": false
+}

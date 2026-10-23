@@ -1,0 +1,28 @@
+{
+  "slug": "rafting-en-rio-truful-truful",
+  "titulo": "Rafting en río Truful Truful",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Rafting"
+    }
+  ],
+  "cuerpo": "Embárcate en una emocionante jornada de rafting por las aguas del río Truful Truful. Navega por sus emocionantes rápidos y observa la avifauna ribereña en los remansos. Siente la adrenalina de las aguas blancas y aprende técnicas de remo en una aventura que no te puedes perder. ¡Es una experiencia que debes vivir!",
+  "imagen": "/media/2024/11/rafting3.webp",
+  "galeria": [
+    "/media/2024/11/rafting3.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12432.927437622935!2d-71.66189270408523!3d-38.82715052171999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961341007828441d%3A0x8229e0001dd10d6d!2sRafting%20R%C3%ADo%20Truful%20Truful%20(inicio)!5e0!3m2!1ses-419!2scl!4v1729104573985!5m2!1ses-419!2scl",
+  "operadores": [
+    "namku-adventure",
+    "likan-kura"
+  ],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Rafting",
+  "publicado": true,
+  "destacado": false
+}

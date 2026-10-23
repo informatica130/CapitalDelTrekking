@@ -1,0 +1,52 @@
+{
+  "slug": "rosetta",
+  "titulo": "Rosetta",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino Melipeuco-Icalma Km 1."
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 77686475"
+        },
+        {
+          "k": "Email",
+          "v": "emileth.guidottit@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 77686475"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11959.6411612345!2d-71.69446768718895!3d-38.8498399477444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369e76103de5b%3A0x937e1dbe8e2ee009!2sRosetta%20Cafeter%C3%ADa%20Pastas%20y%20Cr%C3%AApes!5e1!3m2!1ses!2scl!4v1730146819401!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56977686475",
+    "facebook": "https://www.facebook.com/p/Rosetta-Cafeter%C3%ADa-y-Creper%C3%ADa-100054527557378/?_rdr",
+    "instagram": "https://www.instagram.com/rosetta.cafeteria.creperia/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

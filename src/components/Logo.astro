@@ -1,0 +1,26 @@
+---
+// Logo de Melipeuco Capital del Trekking desarmado en sus 9 letras-símbolo.
+// variante: color (cada letra con su color de zona) | blanco | negro
+// animado: las letras caen una a una, luego aparecen sus símbolos y el lema.
+import partes from '../data/logo-partes.json';
+import { PALETA } from '../scripts/zonas';
+interface Props { variante?: 'color' | 'blanco' | 'negro'; lema?: 'oscuro' | 'claro' | false; animado?: boolean; class?: string; titulo?: string }
+const { variante = 'color', lema = 'claro', animado = false, class: clase = '', titulo = 'Melipeuco Capital del Trekking' } = Astro.props;
+const fondo = (i: number) => (variante === 'color' ? PALETA[i].color : variante === 'blanco' ? '#FFFFFF' : '#17191B');
+const simbolo = variante === 'blanco' ? '#17191B' : '#FFF8EC';
+const colorLema = lema === 'oscuro' ? '#17191B' : '#FFFFFF';
+const vb = lema ? '0 0 1036 265' : '0 0 1036 162';
+---
+<svg class={`logo-svg ${animado ? 'logo-svg--animado' : ''} ${clase}`} viewBox={vb} role="img" aria-label={titulo} xmlns="http://www.w3.org/2000/svg">
+  <title>{titulo}</title>
+  {partes.letras.map((l, i) => {
+    const [x, y, w, h] = l.caja;
+    return (
+      <g class="logo-letra" style={`--i:${i};transform-origin:${x + w / 2}px ${y + h}px`}>
+        <path class="logo-fondo" fill={fondo(i)} d={l.fondo} />
+        <path class="logo-simbolo" fill={simbolo} d={l.simbolo} style={`transform-origin:${x + w / 2}px ${y + h / 2}px`} />
+      </g>
+    );
+  })}
+  {lema && <g class="logo-lema" fill={colorLema}>{partes.lema.map((d) => <path d={d} />)}</g>}
+</svg>

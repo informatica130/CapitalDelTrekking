@@ -1,0 +1,36 @@
+{
+  "slug": "narbus",
+  "titulo": "Narbus",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Agencia de buses"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda 773"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.1476414241533!2d-71.6881461!3d-38.8519773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369e0d54c4c5f%3A0xd171e9c6c523bd7d!2sAv.%20Pedro%20Aguirre%20Cerda%20773%2C%204900158%20Melipeuco%2C%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1730152593729!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Agencia de buses",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

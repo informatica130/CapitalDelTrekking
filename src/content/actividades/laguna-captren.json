@@ -1,0 +1,25 @@
+{
+  "slug": "laguna-captren",
+  "titulo": "Laguna Captrén",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Natural / Lagos y lagunas"
+    }
+  ],
+  "cuerpo": "Esta hermosa laguna se ubica en el sector norte del Parque Nacional Conguillio. Su origen se asocia a las erupciones de los volcanes circundantes y está rodeada de bosques de lengas, ñires, cipreses de la cordillera, lleuques y araucarias. Su entorno la convierte en un escenario propicio para la observación de aves.",
+  "imagen": "/media/2024/11/chile-2796196-1.webp",
+  "galeria": [
+    "/media/2024/11/chile-2796196-1.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48628.542204907135!2d-71.7333662!3d-38.6400988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96134ee4c4ee318b%3A0x2ff9d9dcf32ef0c6!2sLaguna%20Captren!5e1!3m2!1ses-419!2scl!4v1728489628381!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Natural / Lagos y lagunas",
+  "publicado": true,
+  "destacado": false
+}

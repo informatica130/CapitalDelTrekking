@@ -1,0 +1,114 @@
+{
+  "slug": "sendero-de-chile",
+  "titulo": "Sendero de Chile",
+  "subtitulo": "Ruta Sendero de Chile",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "14 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "travesía"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "La ruta Senderos de Chile Tramo Truful Truful se extiende por poco más de 7 kilómetros y presenta una baja dificultad, lo que lo hace accesible desde la ruta vehicular al Parque Nacional Conguillio. A lo largo de la caminata, seguirás el lecho del río Truful Truful, disfrutando de una amplia perspectiva del valle del Llaima que te permitirá apreciar la belleza del paisaje circundante. El recorrido atraviesa zonas de lahar y escorial, que pueden ser bastante soleadas durante el verano, así que asegúrate de llevar protección solar y agua suficiente. El sendero finaliza cerca del salto del Truful Truful y del Geositio con el mismo nombre, donde podrás disfrutar de vistas adicionales y del entorno geológico interesante. Esta ruta ofrece una experiencia natural accesible con vistas panorámicas y un final espectacular en uno de los puntos destacados del parque.",
+  "imagen": "/media/2025/01/sendero-de-chile-truful-4.webp",
+  "galeria": [
+    "/media/2025/01/sendero-de-chile-truful-4.webp",
+    "/media/2025/01/sendero-de-chile-truful-5.webp",
+    "/media/2025/01/sendero-de-chile-truful-3.webp",
+    "/media/2025/01/sendero-de-chile-truful-2.webp",
+    "/media/2025/01/sendero-de-chile-truful-1.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "14 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "3h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "149m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "683m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "travesía"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "www.pasesparques.cl"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.831863887100276,
+    -71.65828481349413
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "travesia"
+  ],
+  "gpx": "/media/kmz/33.senderodechiletrufultruful.gpx",
+  "dificultad": "2",
+  "extension": "14 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

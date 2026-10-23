@@ -1,0 +1,89 @@
+{
+  "slug": "cabanas-pinon-house",
+  "titulo": "Cabañas Piñon House",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta, Transferencia"
+    }
+  ],
+  "cuerpo": "Cabañas para 2 personas, completamente equipadas, a un costado de camino principal y distante a 6 km. de Melipeuco y a 6 km. del acceso al parque Conguillio.",
+  "imagen": "/media/2024/11/pinonhouse1.webp",
+  "galeria": [
+    "/media/2024/11/pinonhouse1.webp",
+    "/media/2024/11/pinonhouse3.webp",
+    "/media/2024/11/pinonhouse4.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Ruta R-925S, KM 2.95"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56963454011"
+        },
+        {
+          "k": "Email",
+          "v": "pinonbikemelipeuco@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 63454011"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Sector Conguillio"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00-21:00 hrs. / 9:00-12:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Toallas, Baño privado, Vajilla"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Tarjeta, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Arriendo de bicicletas, Cocina equipada, Estacionamiento, Tinajas, Wi-Fi"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.644544965682!2d-71.661521!3d-38.817697200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96134fe2cee74173%3A0xb8ddb80302f2b9c5!2zQ2FiYcOxYXMgUGnDsW9uIEhvdXNl!5e0!3m2!1ses-419!2scl!4v1729779412345!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56963454011",
+    "instagram": "https://www.instagram.com/cabanaspinonhouse/?igsh=MThyZWY3OHRwNXZmdA%3D%3D"
+  },
+  "logo": "/media/2024/11/logopinonhouse-1.jpg",
+  "servicios": [
+    "Arriendo de bicicletas",
+    "Cocina equipada",
+    "Estacionamiento",
+    "Tinajas",
+    "WI-FI"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

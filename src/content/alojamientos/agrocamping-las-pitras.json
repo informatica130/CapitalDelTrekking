@@ -1,0 +1,79 @@
+{
+  "slug": "agrocamping-las-pitras",
+  "titulo": "Agrocamping Las Pitras",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Camping"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Transferencia"
+    }
+  ],
+  "cuerpo": "Servicio de camping y servicio de alimentación. Además de traslados a puntos turísticos en vehículo 4×4.",
+  "imagen": "/media/2024/11/agrocampinlaspitras-4-1.webp",
+  "galeria": [
+    "/media/2024/11/agrocampinlaspitras-4-1.webp",
+    "/media/2024/11/agrocampinlaspitras-2-1.webp",
+    "/media/2024/11/agrocampinlaspitras-1.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Sector Carén KM 18"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 73440217"
+        },
+        {
+          "k": "Email",
+          "v": "cordovablanca62@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 73440217"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Acceso a río, Estacionamiento"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.8688788088125!2d-71.5357833240639!3d-38.881241671727544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613154a78a3d5b3%3A0xf346a0cd563bf612!2sCamping%26Agroturismo%20Las%20Pitras!5e0!3m2!1ses-419!2scl!4v1729780404663!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56973440217",
+    "facebook": "https://web.facebook.com/AgrocampingLasPitrasMelipeuco/?_rdc=1&_rdr",
+    "instagram": "https://www.instagram.com/agrocampinglaspitrasmelipeuco/"
+  },
+  "logo": "/media/2024/11/logolaspitrasdemelipeuco-1.jpg",
+  "servicios": [
+    "Acceso a río",
+    "Estacionamiento"
+  ],
+  "clase": "Camping",
+  "publicado": true,
+  "destacado": false
+}

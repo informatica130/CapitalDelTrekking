@@ -1,170 +1,218 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icono from '../components/Icono.astro';
+import Logo from '../components/Logo.astro';
+import Emblema from '../components/Emblema.astro';
+import Montes from '../components/Montes.astro';
+import FotoCard from '../components/FotoCard.astro';
 import Tarjeta from '../components/Tarjeta.astro';
-import { inicio, porSlug, rutas, actividades, alojamientos, operadores, servicios, guias, noticias, NIVELES, NIVEL_TEXTO, url } from '../scripts/datos';
+import Clima from '../components/Clima.astro';
+import partes from '../data/logo-partes.json';
+import { inicio, porSlug, rutas, actividades, alojamientos, operadores, servicios, guias, noticias, NIVELES, NIVEL_TEXTO, NIVEL_COLOR, url } from '../scripts/datos';
+import { PALETA, ZONAS } from '../scripts/zonas';
 
-const destacadas = inicio.rutas_destacadas.map((s) => porSlug.rutas.get(s)).filter(Boolean).slice(0, 4);
-const imperdibles = inicio.imperdibles.map((s) => porSlug.actividades.get(s)).filter(Boolean).slice(0, 4);
-const fotoNivel = (n: string) => rutas.find((r) => r.interes === n && r.imagen)?.imagen ?? '';
-const fotoDe = (lista: { imagen: string }[]) => lista.find((x) => x.imagen)?.imagen ?? '';
-const servTuristicos = [
-  { titulo: 'Dónde comer', url: '/gastronomia/', icono: 'plato', imagen: fotoDe(servicios.filter((s) => s.seccion === 'gastronomia')), n: servicios.filter((s) => s.seccion === 'gastronomia').length },
-  { titulo: 'Guías turísticos', url: '/guias-turisticos/', icono: 'persona', imagen: '/media/2024/11/3.01salto-chufquen.jpg', n: guias.length },
-  { titulo: 'Dónde dormir', url: '/planifica-donde-dormir/', icono: 'cama', imagen: fotoDe(alojamientos), n: alojamientos.length },
-  { titulo: 'Tour operadores', url: '/operadores-turisticos/', icono: 'brujula', imagen: fotoDe(operadores), n: operadores.length },
+const destacadas = [
+  ...inicio.rutas_destacadas.map((s) => porSlug.rutas.get(s)),
+  ...rutas.filter((r) => r.destacado),
+  ...rutas.filter((r) => r.imagen),
+].filter((r, i, a) => r && a.findIndex((x) => x?.slug === r.slug) === i).slice(0, 8);
+const imperdibles = [...inicio.imperdibles.map((s) => porSlug.actividades.get(s)), ...actividades.filter((a) => a.destacado)]
+  .filter((a, i, l) => a && l.findIndex((x) => x?.slug === a.slug) === i).slice(0, 5);
+const fotoNivel = (n: string) => rutas.filter((r) => r.interes === n && r.imagen)[1]?.imagen ?? rutas.find((r) => r.interes === n)?.imagen ?? '';
+
+// Zonas del logo desarmado: cada letra lleva a su sección
+const destinos = [
+  { url: '/rutas-de-trekking/', nombre: 'Rutas de trekking', n: rutas.length },
+  { url: '/noticias/', nombre: 'Noticias', n: noticias.length },
+  { url: '/que-hacer/', nombre: 'Qué hacer', n: actividades.filter((a) => a.categoria === 'actividad').length },
+  { url: '/que-visitar/', nombre: 'Qué visitar', n: actividades.filter((a) => a.categoria === 'atractivo').length },
+  { url: '/gastronomia/', nombre: 'Gastronomía', n: servicios.filter((s) => s.seccion === 'gastronomia').length },
+  { url: '/guias-turisticos/', nombre: 'Guías', n: guias.length },
+  { url: '/operadores-turisticos/', nombre: 'Operadores', n: operadores.length },
+  { url: '/planifica-donde-dormir/', nombre: 'Dónde dormir', n: alojamientos.length },
+  { url: '/explora-melipeuco/', nombre: 'Explora', n: 0 },
+];
+const ANCHO = 1036;
+const letras = partes.letras.map((l, i) => ({ ...PALETA[i], ...destinos[i], i, x: (l.caja[0] / ANCHO) * 100, w: (l.caja[2] / ANCHO) * 100 }));
+
+const accesos = [
+  { zona: ZONAS.alojamientos, titulo: 'Dónde dormir', texto: 'Cabañas, hostales, lodges y camping.', url: '/planifica-donde-dormir/', n: alojamientos.length },
+  { zona: ZONAS.gastronomia, titulo: 'Dónde comer', texto: 'Cocina local y sabores de la Araucanía.', url: '/gastronomia/', n: servicios.filter((s) => s.seccion === 'gastronomia').length },
+  { zona: ZONAS.guias, titulo: 'Guías turísticos', texto: 'Guías locales para cada aventura.', url: '/guias-turisticos/', n: guias.length },
+  { zona: ZONAS.operadores, titulo: 'Tour operadores', texto: 'Agencias locales de turismo aventura.', url: '/operadores-turisticos/', n: operadores.length },
 ];
 const fecha = (f: string) => new Date(f + 'T12:00:00').toLocaleDateString('es-CL', { day: 'numeric', month: 'long', year: 'numeric' });
+const cinta = ['Volcanes', 'Glaciares', 'Araucarias', 'Lagunas', 'Cascadas', 'Geisers', 'Estrellas', 'Kultrun', 'Senderos'];
 ---
 <Base>
-  <section class="heroe heroe--alto" aria-label="Bienvenida">
-    <div class="carrusel" id="carrusel">
+  <section class="portada" data-portada aria-label="Bienvenida">
+    <div class="portada__capa portada__fotos" data-capa="0.45">
       {inicio.slides.map((src, i) => <img src={src} alt="" class={i === 0 ? 'activa' : ''} fetchpriority={i === 0 ? 'high' : 'low'} loading={i === 0 ? 'eager' : 'lazy'} />)}
     </div>
-    <div class="contenedor">
-      <span class="logo-brillo"><img class="heroe__logo logo-anim" src="/media/2025/05/logo-melipeuco-capital-del-trekking_Mesa-de-trabajo-1.svg" alt="Melipeuco Capital del Trekking" width="520" height="130" /></span>
-      <p class="bajada revelar visible">3 volcanes, glaciares milenarios, bosques de araucarias y {rutas.length} rutas de trekking en el corazón de la Araucanía Andina.</p>
-      <p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
-        <a class="btn" href="/rutas-de-trekking/">Explorar rutas <Icono nombre="flecha" /></a>
-        <a class="btn btn--borde" href="/mapa/">Ver mapa de senderos</a>
-      </p>
+    <div class="portada__velo"></div>
+    <div class="portada__contenido">
+      <div>
+        <h1 class="sr">Melipeuco Capital del Trekking</h1>
+        <Logo variante="color" lema="claro" animado class="logo-svg--interactivo" />
+        <p class="portada__bajada">{inicio.bajada ?? `3 volcanes, glaciares milenarios, bosques de araucarias y ${rutas.length} rutas de trekking en el corazón de la Araucanía Andina.`}</p>
+        <div class="acciones">
+          <a class="btn btn--crema" href="/rutas-de-trekking/">Explorar las rutas <Icono nombre="flecha" /></a>
+          <a class="btn btn--borde" href="/mapa/"><Icono nombre="mapa" /> Mapa de senderos</a>
+        </div>
+      </div>
     </div>
-    <div class="carrusel__puntos" id="puntos">
+    <div class="portada__montes"><Montes color="var(--papel)" /></div>
+    <div class="portada__puntos" id="puntos">
       {inicio.slides.map((_, i) => <button type="button" class={i === 0 ? 'activa' : ''} aria-label={`Foto ${i + 1}`}></button>)}
     </div>
-    <a href="#descubre" class="scroll-hint" aria-label="Bajar"><Icono nombre="abajo" /></a>
+    <a href="#zonas" class="bajar" aria-label="Bajar"></a>
   </section>
 
-  <section class="seccion" id="descubre">
-    <div class="contenedor">
-      <div class="titulo-seccion revelar">
-        <span class="antetitulo">Descubre</span>
-        <h2>{rutas.length} rutas de trekking</h2>
-        <p>Que te permitirán recorrer volcanes imponentes, bosques de araucarias y glaciares milenarios.</p>
+  <div class="cinta" style="--z:var(--tinta);background:var(--tinta);color:var(--papel)" aria-hidden="true">
+    <div class="cinta__pista">
+      {[0, 1].map(() => cinta.map((t, i) => <><span>{t}</span><Emblema letra={i} /></>))}
+    </div>
+  </div>
+
+  <section class="zonas" id="zonas" data-desarme>
+    <div class="zonas__alto">
+      <div class="zonas__escena">
+        <div class="zonas__titulo revelar">
+          <span class="antetitulo" style="justify-content:center">Nueve letras, nueve mundos</span>
+          <h2>Cada letra de <em style="font-style:normal;background:var(--arcoiris);-webkit-background-clip:text;background-clip:text;color:transparent">Melipeuco</em> es una puerta</h2>
+          <p>Montañas, rostros, cascadas, araucarias, corazón, personas, animales, estrellas y el kultrun. Elige por dónde empezar.</p>
+        </div>
+        <div class="zonas__letras">
+          {letras.map((l) => (
+            <a class="zonas__letra" href={l.url} style={`left:${l.x}%;width:${l.w}%`} data-x={l.x} data-w={l.w} aria-label={`${l.nombre}: ${l.simbolo}`}>
+              <Emblema letra={l.i} />
+              <span class="zonas__nombre"><b style={`color:${l.color}`}>{l.nombre}</b><small>{l.n ? `${l.n} · ` : ''}{l.simbolo}</small></span>
+            </a>
+          ))}
+        </div>
       </div>
-      <div class="grilla grilla--4">
-        {destacadas.map((r, i) => (
-          <a href={url.ruta(r!.slug)} class={`tarjeta-foto revelar revelar-d${i}`}>
-            {r!.imagen && <img src={r!.imagen} alt="" loading="lazy" />}
-            <span class={`etiqueta etiqueta--${r!.interes}`}>{r!.interes}</span>
-            <div class="tarjeta-foto__txt"><h3>{r!.titulo}</h3><p>{r!.extracto}</p></div>
-          </a>
-        ))}
-      </div>
-      <p class="centro"><a class="btn btn--verde" href="/rutas-de-trekking/">Todas las rutas <Icono nombre="flecha" /></a></p>
     </div>
   </section>
 
-  <section class="seccion seccion--oscura">
+  <section class="horizontal" data-horizontal style="--z:var(--montana)">
+    <div class="horizontal__pista">
+      <div class="horizontal__cabeza cabeza cabeza--fila">
+        <div>
+          <span class="antetitulo"><Emblema letra={0} />Descubre</span>
+          <h2>{rutas.length} rutas de trekking <em>entre volcanes y glaciares</em></h2>
+        </div>
+        <a class="btn btn--zona" href="/rutas-de-trekking/">Todas las rutas <Icono nombre="flecha" /></a>
+      </div>
+      <div class="horizontal__fila">
+        {destacadas.map((r, i) => (
+          <FotoCard url={url.ruta(r!.slug)} titulo={r!.titulo} imagen={r!.imagen} texto={r!.extracto} etiqueta={{ t: `${r!.interes} · ${r!.extension}` }} color={NIVEL_COLOR[r!.interes]} d={i % 4} />
+        ))}
+      </div>
+      <div class="horizontal__barra"><i></i></div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--papel2">
     <div class="contenedor">
-      <div class="titulo-seccion revelar">
+      <div class="cabeza cabeza--centro revelar">
         <span class="antetitulo">Trekking para todas y todos</span>
-        <h2>Encontrarás rutas de diferentes niveles de dificultad… <strong>hay una para ti</strong></h2>
+        <h2>Rutas de diferentes niveles… <em>hay una para ti</em></h2>
       </div>
       <div class="niveles">
         {NIVELES.map((n, i) => (
-          <a class={`nivel nivel--${n} revelar revelar-d${i}`} href={`/rutas-de-trekking/?interes=${n}`}>
+          <a class="nivel revelar" style={`--c:${NIVEL_COLOR[n]};--d:${i}`} href={`/rutas-de-trekking/?interes=${n}`} data-tilt="8">
             {fotoNivel(n) && <img src={fotoNivel(n)} alt="" loading="lazy" />}
-            <span class="montes">{Array.from({ length: i + 1 }).map(() => <Icono nombre="montana" />)}</span>
+            <span class="nivel__montes" aria-hidden="true">{[0, 1, 2].map((k) => <i class={k <= i ? 'on' : ''}></i>)}</span>
+            <span class="nivel__num">{rutas.filter((r) => r.interes === n).length}</span>
             <h3>{n}</h3>
             <p>{NIVEL_TEXTO[n]}</p>
-            <p style="margin-top:10px;font-weight:700">{rutas.filter((r) => r.interes === n).length} rutas →</p>
+            <span class="chip chip--vidrio">Ver rutas <Icono nombre="flecha" /></span>
           </a>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" style="--z:var(--cascada)">
+    <div class="contenedor">
+      <div class="cabeza cabeza--fila revelar">
+        <div>
+          <span class="antetitulo"><Emblema letra={2} />Imperdibles</span>
+          <h2>Lugares que <em>no puedes dejar de vivir</em></h2>
+        </div>
+        <a class="btn btn--zona" href="/que-hacer/">Todas las actividades <Icono nombre="flecha" /></a>
+      </div>
+      <div class="grilla grilla--4">
+        {imperdibles.slice(0, 4).map((a, i) => (
+          <FotoCard url={url.actividad(a!.slug)} titulo={a!.titulo} imagen={a!.imagen} texto={a!.extracto} etiqueta={{ t: a!.tipo }} color={PALETA[a!.categoria === 'actividad' ? 2 : 3].color} d={i} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--tinta" style="--z:var(--persona)">
+    <div class="contenedor clima">
+      <div class="revelar revelar--izq">
+        <span class="antetitulo">Prepara tu salida</span>
+        <h2 style="color:#fff">El tiempo hoy <em>en Melipeuco</em></h2>
+        <Clima />
+      </div>
+      <div class="cifras revelar revelar--der">
+        <div class="cifra"><b data-contar="3">3</b><span>volcanes: Llaima, Sollipulli y Sierra Nevada</span></div>
+        <div class="cifra"><b data-contar="250" data-sufijo=" km">250 km</b><span>de senderos</span></div>
+        <div class="cifra"><b data-contar={rutas.length}>{rutas.length}</b><span>rutas de trekking</span></div>
+        <div class="cifra"><b data-contar="45" data-sufijo="%">45%</b><span>de la comuna son áreas silvestres protegidas</span></div>
       </div>
     </div>
   </section>
 
   <section class="seccion">
     <div class="contenedor">
-      <div class="titulo-seccion revelar">
-        <span class="antetitulo">Imperdibles</span>
-        <h2>Hay lugares que simplemente <strong>no puedes dejar de visitar</strong></h2>
-      </div>
-      <div class="grilla grilla--4">
-        {imperdibles.map((a, i) => (
-          <a href={url.actividad(a!.slug)} class={`tarjeta-foto revelar revelar-d${i}`}>
-            {a!.imagen && <img src={a!.imagen} alt="" loading="lazy" />}
-            <span class="etiqueta">{a!.tipo}</span>
-            <div class="tarjeta-foto__txt"><h3>{a!.titulo}</h3><p>{a!.extracto}</p></div>
-          </a>
-        ))}
-      </div>
-      <p class="centro"><a class="btn btn--verde" href="/que-hacer/">Todas las actividades <Icono nombre="flecha" /></a></p>
-    </div>
-  </section>
-
-  <section class="seccion seccion--bosque">
-    <div class="contenedor">
-      <div class="cifras revelar">
-        <div class="cifra"><b data-contar="3">3</b><span>volcanes</span></div>
-        <div class="cifra"><b data-contar="250">250</b><span>km de senderos</span></div>
-        <div class="cifra"><b data-contar={rutas.length}>{rutas.length}</b><span>rutas de trekking</span></div>
-        <div class="cifra"><b data-contar="45" data-sufijo="%">45%</b><span>de áreas silvestres protegidas</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="seccion seccion--blanca">
-    <div class="contenedor">
-      <div class="titulo-seccion revelar">
+      <div class="cabeza cabeza--centro revelar">
         <span class="antetitulo">Servicios turísticos</span>
-        <h2>Una oferta diversa para tu estadía en Melipeuco</h2>
+        <h2>Todo para tu estadía <em>en Melipeuco</em></h2>
       </div>
-      <div class="grilla grilla--4">
-        {servTuristicos.map((s) => (
-          <Tarjeta url={s.url} titulo={s.titulo} imagen={s.imagen} icono={s.icono} chips={[{ t: `${s.n} registros`, c: 'chip--sol' }]} />
+      <div class="accesos">
+        {accesos.map((a, i) => (
+          <a class="acceso revelar" href={a.url} style={`--c:${a.zona.color};--d:${i}`}>
+            <Emblema letra={a.zona.letra} />
+            <span class="acceso__n" data-contar={a.n}>{a.n}</span>
+            <div><h3>{a.titulo}</h3><p>{a.texto}</p></div>
+          </a>
         ))}
       </div>
     </div>
   </section>
 
   {noticias.length > 0 && (
-    <section class="seccion">
+    <section class="seccion seccion--papel2" style="--z:var(--rostro)">
       <div class="contenedor">
-        <div class="titulo-seccion revelar">
-          <span class="antetitulo">Actualidad</span>
-          <h2>Noticias de Melipeuco</h2>
+        <div class="cabeza cabeza--fila revelar">
+          <div><span class="antetitulo"><Emblema letra={1} />Actualidad</span><h2>Noticias de <em>Melipeuco</em></h2></div>
+          <a class="btn btn--zona" href="/noticias/">Ver todas <Icono nombre="flecha" /></a>
         </div>
         <div class="grilla">
-          {noticias.slice(0, 3).map((n) => (
-            <Tarjeta url={url.noticia(n.slug)} titulo={n.titulo} imagen={n.imagen} texto={n.extracto} icono="camara" chips={[{ t: fecha(n.fecha) }, { t: n.categoria, c: 'chip--verde' }]} />
+          {noticias.slice(0, 3).map((n, i) => (
+            <Tarjeta url={url.noticia(n.slug)} titulo={n.titulo} imagen={n.imagen} texto={n.extracto} letra={1} d={i} chips={[{ t: fecha(n.fecha) }, { t: n.categoria }]} />
           ))}
         </div>
-        <p class="centro"><a class="btn btn--verde" href="/noticias/">Ver todas las noticias</a></p>
       </div>
     </section>
   )}
 
   <script>
-    // Carrusel de fotos del inicio
-    const fotos = [...document.querySelectorAll<HTMLImageElement>('#carrusel img')];
+    // Carrusel de la portada
+    const fotos = [...document.querySelectorAll<HTMLImageElement>('.portada__fotos img')];
     const puntos = [...document.querySelectorAll<HTMLButtonElement>('#puntos button')];
-    let actual = 0;
-    let timer: number | undefined;
+    let actual = 0; let timer = 0;
     const ir = (n: number) => {
       fotos[actual]?.classList.remove('activa'); puntos[actual]?.classList.remove('activa');
       actual = (n + fotos.length) % fotos.length;
-      const img = fotos[actual];
-      img.classList.remove('activa'); void img.offsetWidth; img.classList.add('activa');
+      const img = fotos[actual]; img.classList.remove('activa'); void img.offsetWidth; img.classList.add('activa');
       puntos[actual]?.classList.add('activa');
     };
-    const iniciar = () => { clearInterval(timer); timer = window.setInterval(() => ir(actual + 1), 6500); };
+    const iniciar = () => { clearInterval(timer); timer = window.setInterval(() => ir(actual + 1), 7000); };
     puntos.forEach((p, i) => p.addEventListener('click', () => { ir(i); iniciar(); }));
     if (fotos.length > 1) iniciar();
-
-    // Contadores animados
-    const contar = (el: HTMLElement) => {
-      const fin = Number(el.dataset.contar); const suf = el.dataset.sufijo ?? '';
-      const t0 = performance.now();
-      const paso = (t: number) => {
-        const p = Math.min(1, (t - t0) / 1600);
-        el.textContent = Math.round(fin * (1 - Math.pow(1 - p, 3))) + suf;
-        if (p < 1) requestAnimationFrame(paso);
-      };
-      requestAnimationFrame(paso);
-    };
-    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { contar(e.target as HTMLElement); io.unobserve(e.target); } }), { threshold: .5 });
-    document.querySelectorAll<HTMLElement>('[data-contar]').forEach((el) => io.observe(el));
   </script>
 </Base>

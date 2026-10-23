@@ -2,10 +2,10 @@
 import Icono from './Icono.astro';
 interface Props { titulo: string; icono?: string; campos: { k: string; v: string }[] }
 const { titulo, icono = 'info', campos } = Astro.props;
-const enlace = (v: string) => /^https?:\/\//.test(v) ? v : /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? `mailto:${v}` : null;
+const enlace = (v: string) => (/^https?:\/\//.test(v) ? v : /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? `mailto:${v}` : null);
 ---
 {campos.length > 0 && (
-  <div class="panel">
+  <div class="panel revelar">
     <h3><Icono nombre={icono} />{titulo}</h3>
     <dl class="campos">
       {campos.map(({ k, v }) => {

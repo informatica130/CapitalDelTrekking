@@ -1,0 +1,56 @@
+{
+  "slug": "rosten",
+  "titulo": "Rösten",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Pastelería, Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/41.rosten02.webp",
+  "galeria": [
+    "/media/2024/11/41.rosten02.webp",
+    "/media/2024/11/41.rosten03-jpg.webp",
+    "/media/2024/11/41.rosten04-jpg.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Av. Pedro Aguirre Cerda #511"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56 9 7388 5032"
+        },
+        {
+          "k": "Email",
+          "v": "rosten.emporio@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 7388 5032"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2989.7943689188555!2d-71.69485582406537!3d-38.85259782173359!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96136973dcb0d2d7%3A0xf457e4d7585a18b2!2sR%C3%B6sten%20Emporio%20Cafeter%C3%ADa!5e1!3m2!1ses!2scl!4v1730146447666!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56973885032",
+    "facebook": "https://www.facebook.com/cafeteria.rosten.emporio",
+    "instagram": "https://www.instagram.com/rosten.emporio/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Pastelería, Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

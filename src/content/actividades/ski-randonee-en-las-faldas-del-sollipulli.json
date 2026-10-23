@@ -1,0 +1,29 @@
+{
+  "slug": "ski-randonee-en-las-faldas-del-sollipulli",
+  "titulo": "Ski Randonee en las faldas del Sollipulli",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Ski randonee"
+    }
+  ],
+  "cuerpo": "Las largas laderas del volcán Sollipulli te esperan para una aventura de ski o snowboard fuera de pista, con opciones de distinto grado de dificultad y un gran dominio esquiable. Vive la emoción de deslizarte por las laderas del volcán en una experiencia única e inolvidable.",
+  "imagen": "/media/2024/11/caption.webp",
+  "galeria": [
+    "/media/2024/11/caption.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96787.75952375105!2d-71.5840883!3d-38.9846577!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613126437e79fd9%3A0xc5c751b90365bf5e!2sSollipulli!5e1!3m2!1ses-419!2scl!4v1728489208833!5m2!1ses-419!2scl",
+  "operadores": [
+    "trekan-mapu",
+    "pewen-mapu",
+    "araucania-backcountry"
+  ],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Ski randonee",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "relmucura",
+  "titulo": "Relmucura",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Bed & Breakfast"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta, Transferencia"
+    }
+  ],
+  "cuerpo": "Relmucura es un acogedor emprendimiento familiar mapuche campesino. Que ofrece una variedad de opciones de alojamiento, incluyendo hospedaje, agrocamping y cabañas, todos diseñados para brindar una experiencia de tranquilidad y conexión con la naturaleza. Ubicados frente al majestuoso Volcán Llaima y rodeados de un entorno natural impresionante, sus alojamientos permiten a los visitantes disfrutar de paisajes únicos y relajantes.",
+  "imagen": "/media/2024/11/relmucura01.webp",
+  "galeria": [
+    "/media/2024/11/relmucura01.webp",
+    "/media/2024/11/relmucura-3.webp",
+    "/media/2024/11/relmucura-1-jpg.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Km. 1 Camino Internacional (Melipeuco - Icalma) NºS/N, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 94242454"
+        },
+        {
+          "k": "Email",
+          "v": "turismorelmucura@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.relmucura.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 94242454"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "14:30-22:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Aire acondicionado, Televisión, Wi-FI, Desayuno íncluido (sólo en hospedaje),"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Tarjeta, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Acceso a río, Arriendo de bicicletas, Estacionamiento, Información turística, Wi-Fi"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6214.285200784857!2d-71.6931383!3d-38.8520927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369e4679a5789%3A0x895c2ea54e38b2d1!2sHospedaje%20y%20Camping%20Relmucura!5e0!3m2!1ses!2scl!4v1729779647899!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56994242454",
+    "facebook": "https://web.facebook.com/relmucura?locale=es_LA",
+    "instagram": "https://www.instagram.com/relmucura/"
+  },
+  "logo": "",
+  "servicios": [
+    "Acceso a río",
+    "Arriendo de bicicletas",
+    "Estacionamiento",
+    "Información turística",
+    "WI-FI"
+  ],
+  "clase": "Bed & Breakfast",
+  "publicado": true,
+  "destacado": false
+}

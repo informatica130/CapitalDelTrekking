@@ -1,0 +1,26 @@
+{
+  "slug": "volcan-sierra-nevada",
+  "titulo": "Volcán Sierra Nevada",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Natural / Volcán"
+    }
+  ],
+  "cuerpo": "Este volcán extinto, que se eleva a 2.554 m.s.n.m., forma parte del Parque Nacional Conguillio y se alza sobre la hermosa laguna Conguillio, que refleja su imponente magnitud. Se puede acceder al volcán a través de una ruta de trekking de dificultad media, que atraviesa bosques de araucarias y coihues y para los más experimentados, existe la opción de continuar la excursión hasta la cumbre, lo que requiere una emocionante travesía por el glaciar.",
+  "imagen": "/media/2024/11/25.sierra-nevada-cumbre-hostal-siete-colores.webp",
+  "galeria": [
+    "/media/2024/11/25.sierra-nevada-cumbre-hostal-siete-colores.webp",
+    "/media/2024/11/sierra-nevada-likankura.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d97291.33601860296!2d-71.7056523!3d-38.6148513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96134a033bd4c453%3A0x19e24631230543bb!2sSierra%20Nevada!5e1!3m2!1ses-419!2scl!4v1728489408306!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Natural / Volcán",
+  "publicado": true,
+  "destacado": false
+}

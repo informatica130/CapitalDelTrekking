@@ -1,0 +1,10 @@
+---
+// Siluetas de cordillera en capas (dibujo propio). Cada capa puede moverse con distinta velocidad.
+interface Props { color?: string; capas?: boolean; class?: string }
+const { color = 'var(--papel)', capas = true, class: clase = '' } = Astro.props;
+---
+<svg class={clase} viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+  {capas && <path class="portada__monte" data-capa="-0.12" fill={color} fill-opacity=".28" d="M0 170 L90 120 L150 140 L240 70 L300 105 L360 80 L420 120 L520 40 L600 100 L680 86 L760 130 L860 60 L930 95 L1000 72 L1080 118 L1180 50 L1260 100 L1330 84 L1440 120 V260 H0Z" />}
+  {capas && <path class="portada__monte" data-capa="-0.06" fill={color} fill-opacity=".55" d="M0 200 L120 150 L200 175 L300 120 L380 160 L470 128 L560 170 L650 118 L720 150 L820 110 L900 160 L990 130 L1080 168 L1170 120 L1260 160 L1350 140 L1440 170 V260 H0Z" />}
+  <path fill={color} d="M0 236 L80 214 L160 228 L260 196 L340 222 L440 200 L540 230 L640 206 L720 226 L820 198 L920 228 L1020 206 L1120 230 L1220 204 L1320 226 L1440 210 V260 H0Z" />
+</svg>

@@ -1,0 +1,109 @@
+{
+  "slug": "lagunas-del-llaima",
+  "titulo": "Lagunas del Llaima",
+  "subtitulo": "Ruta Lagunas del Llaima",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "4 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "circuito"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable con permiso (*)"
+    }
+  ],
+  "cuerpo": "En el sector de El Membrillo, cerca del agrocamping Lagunas del Llaima, encontrarás este sendero familiar y plano que es perfecto para todos. El recorrido se desarrolla a través de praderas y un pequeño bosquecito, brindándote una experiencia agradable y accesible para todos los miembros de la familia. El sendero comienza y termina junto a una tranquila laguna de aguas bajas, que es ideal para refrescarse después de la caminata. La calma y el entorno natural te permiten disfrutar de un paseo relajado mientras aprecias el paisaje circundante. Es una opción excelente para pasar un día en familia, combinando un paseo fácil con la posibilidad de relajarse junto al agua.",
+  "imagen": "/media/2024/11/43.02lagunas-llaima.webp",
+  "galeria": [
+    "/media/2024/11/43.02lagunas-llaima.webp",
+    "/media/2024/11/43.03lagunas-llaima-2-wpcf_960x1024.jpg",
+    "/media/2024/11/43.04lagunas-llaima.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "4 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "1h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "110m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "650m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "circuito"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "569 83541887"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable con permiso (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.83137488644001,
+    -71.69061454232944
+  ],
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "circuito"
+  ],
+  "gpx": "/media/kmz/43.lagunasdelllaima.gpx",
+  "dificultad": "1",
+  "extension": "4 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable con permiso (*)",
+  "publicado": true,
+  "destacado": false
+}

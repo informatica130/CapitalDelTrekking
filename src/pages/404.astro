@@ -1,9 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import Heroe from '../components/Heroe.astro';
+import Icono from '../components/Icono.astro';
 ---
-<Base titulo="Página no encontrada">
-  <Heroe titulo="Te saliste" destacado="del sendero" imagen="/media/slider2/11melipeuco32-jpeg.webp" bajada="La página que buscas no existe o cambió de lugar.">
-    <p style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="/">Volver al inicio</a><a class="btn btn--borde" href="/rutas-de-trekking/">Ver rutas</a></p>
+<Base titulo="Página no encontrada" zona="explora">
+  <Heroe titulo="Te saliste" destacado="del sendero" zona="explora" imagen="/media/slider2/11melipeuco32-jpeg.webp" bajada="La página que buscas no existe o cambió de lugar.">
+    <div class="acciones">
+      <a class="btn btn--crema" href="/">Volver al inicio</a>
+      <button class="btn btn--borde" type="button" data-buscar-abrir><Icono nombre="buscar" /> Buscar en el sitio</button>
+    </div>
   </Heroe>
 </Base>

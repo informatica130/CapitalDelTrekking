@@ -1,0 +1,17 @@
+---
+import Icono from './Icono.astro';
+import Emblema from './Emblema.astro';
+interface Props { url: string; titulo: string; imagen?: string; texto?: string; etiqueta?: { t: string; c?: string }; color?: string; letra?: number; d?: number }
+const { url, titulo, imagen, texto, etiqueta, color, letra = 0, d = 0 } = Astro.props;
+---
+<a href={url} class="foto-card revelar" data-tilt="7" style={`--d:${d};${color ? `--c:${color}` : ''}`}>
+  {imagen ? <img src={imagen} alt="" loading="lazy" decoding="async" /> : <div class="tarjeta__sinfoto" style="background:var(--c)"><Emblema letra={letra} /></div>}
+  <div class="tarjeta__arriba">
+    {etiqueta ? <span class="chip chip--vidrio">{etiqueta.t}</span> : <span></span>}
+    <button type="button" class="fav" data-fav={url} aria-pressed="false" aria-label="Guardar en Mi viaje"><Icono nombre="corazon" /></button>
+  </div>
+  <div class="foto-card__txt">
+    <h3>{titulo}</h3>
+    {texto && <p><span>{texto}</span></p>}
+  </div>
+</a>

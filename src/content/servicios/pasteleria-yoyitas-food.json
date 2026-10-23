@@ -1,0 +1,40 @@
+{
+  "slug": "pasteleria-yoyitas-food",
+  "titulo": "Pastelería Yoyita’s Food",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Pastelería"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda 448"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 89535071"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12428.344975779322!2d-71.692437!3d-38.8533828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369001136144b%3A0xd21c81ad4f3f3b92!2sPasteler%C3%ADa%20Yoyita's%20Food!5e0!3m2!1ses-419!2scl!4v1730152680809!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Pastelería",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,107 @@
+{
+  "slug": "mallin-chileno",
+  "titulo": "Mallín Chileno",
+  "subtitulo": "Ruta Mallín Chileno",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "11 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "El Paso Mallín Chileno es una antigua y recóndita ruta que bordea el Volcán Sollipulli por el este. En tiempos pasados, fue utilizada por contrabandistas para cruzar la frontera hacia Argentina. A lo largo de su recorrido, atraviesas un humedal alto andino, conocido como mallín, que da nombre a la ruta. La ruta está flanqueada en gran parte por un río, lo que proporciona numerosos lugares ideales para descansar durante tu caminata. La presencia del río no solo añade belleza al paisaje, sino que también ofrece un ambiente relajante y refrescante a medida que avanzas. Esta ruta te permitirá disfrutar de un entorno natural impresionante, mientras exploras una vía histórica en un entorno de alta montaña.",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "11 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "4h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "120m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1450m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.93781395924319,
+    -71.46193545767056
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/28.pasomallinchileno.gpx",
+  "dificultad": "2",
+  "extension": "11 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

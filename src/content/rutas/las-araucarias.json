@@ -1,0 +1,113 @@
+{
+  "slug": "las-araucarias",
+  "titulo": "Las Araucarias",
+  "subtitulo": "Ruta Las Araucarias",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "1,6 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "Este sendero interpretativo y familiar te ofrece la oportunidad de caminar entre grandes araucarias, los majestuosos árboles que caracterizan la región. Con su corta duración, es ideal para recorrer con niños pequeños, quienes podrán disfrutar de un entorno natural seguro y accesible. Además, el sendero está diseñado para actividades de apreciación ambiental, proporcionando información sobre la flora y fauna local a través de paneles interpretativos y señalización. A lo largo de tu recorrido, aprenderás sobre la importancia de las araucarias en el ecosistema y la biodiversidad del área, mientras disfrutas de una caminata tranquila y educativa. Es una excelente opción para combinar el disfrute al aire libre con la educación ambiental en familia.",
+  "imagen": "/media/2024/11/17.02las-araucarias-2-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/17.02las-araucarias-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/17.03las-araucarias-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/17.04las-araucarias-4-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "1,6 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "1h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "66m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1188m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "www.pasesparques.cl"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.65133337107047,
+    -71.65093000000002
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "melipewunko",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/17.lasaraucarias.gpx",
+  "dificultad": "1",
+  "extension": "1,6 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

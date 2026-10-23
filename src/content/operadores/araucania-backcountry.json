@@ -1,0 +1,73 @@
+{
+  "slug": "araucania-backcountry",
+  "titulo": "Araucanía Backcountry",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Terrenos de Huechelepun en 4 Coihues, Melipeuco,"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+569 34428325"
+    }
+  ],
+  "cuerpo": "Agencia de turismo aventura local de Melipeuco. Amantes de los deportes de nieve, brindan experiencias como trekking, clases y excursiones de ski randonee y snowboard / splitboard, recreación, entre otros. Además imparten cursos de avalanchas y seguridad en nieve para seguir fomentando la cultura del deporte blanco.",
+  "imagen": "/media/2024/11/araucaniabackcountry2.webp",
+  "galeria": [
+    "/media/2024/11/araucaniabackcountry2.webp",
+    "/media/2024/11/araucaniabackcountry3.webp",
+    "/media/2024/11/araucaniabackcountry4.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Terrenos de Huechelepun en 4 Coihues, Melipeuco,"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 34428325"
+        },
+        {
+          "k": "Email",
+          "v": "araucania.backcountry@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56934428325"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17568.448938046782!2d-71.51335047646603!3d-38.88528018208102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96136928486bd91b%3A0x5012165ab29e615e!2sAraucan%C3%ADa%20BackCountry%20-%20Expediciones%20Melipeuco!5e0!3m2!1ses-419!2scl!4v1729111475659!5m2!1ses-419!2scl",
+  "operadores": [
+    "laguna-carilafquen",
+    "travesia-sollipulli-geisers",
+    "cruce-glaciar-sollipulli",
+    "saltos-caren-alto",
+    "llaima-cumbre",
+    "batea-mahuida"
+  ],
+  "relacionados": [
+    "batea-mahuida",
+    "cruce-glaciar-sollipulli",
+    "laguna-carilafquen",
+    "llaima-cumbre",
+    "saltos-caren-alto",
+    "travesia-sollipulli-geisers"
+  ],
+  "redes": {
+    "whatsapp": "https://wa.me/+56934428325",
+    "facebook": "https://www.facebook.com/AraucaniaBackcountry",
+    "instagram": "https://www.instagram.com/araucaniabackcountry.cl/",
+    "youtube": "https://www.youtube.com/watch?v=rEdSz9348nE"
+  },
+  "logo": "/media/2024/11/logo-araucania-backcountry.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

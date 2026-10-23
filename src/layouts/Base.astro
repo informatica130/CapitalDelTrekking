@@ -2,24 +2,38 @@
 import '../styles/global.css';
 import sitio from '../data/sitio.json';
 import Icono from '../components/Icono.astro';
+import Emblema from '../components/Emblema.astro';
+import Logo from '../components/Logo.astro';
+import Montes from '../components/Montes.astro';
+import partes from '../data/logo-partes.json';
+import { ZONAS, PALETA, estiloZona } from '../scripts/zonas';
 
 interface Props {
   titulo?: string;
   descripcion?: string;
   imagen?: string;
+  zona?: keyof typeof ZONAS | string;
+  headerClaro?: boolean;
 }
-const { titulo, descripcion = sitio.descripcion, imagen = '/media/slider2/04.webp' } = Astro.props;
+const { titulo, descripcion = sitio.descripcion, imagen = '/media/slider2/04.webp', zona = 'inicio', headerClaro = false } = Astro.props;
+const z = ZONAS[zona] ?? ZONAS.inicio;
 const tituloCompleto = titulo ? `${titulo} – ${sitio.nombre}` : `${sitio.nombre} – ${sitio.lema}`;
 const ruta = Astro.url.pathname;
 const og = new URL(imagen, Astro.site ?? Astro.url).href;
 const activo = (url?: string) => (url && (url === '/' ? ruta === '/' : ruta.startsWith(url)) ? 'page' : undefined);
 const anio = new Date().getFullYear();
+const planos = sitio.menu.flatMap((m) => (m.hijos ? m.hijos : [{ ...m, desc: '' }]));
+// Emblemas en miniatura para el buscador (SVG en línea, uno por letra)
+const emblemasHtml = partes.letras.map((l, i) => {
+  const [x, y, w, h] = l.caja;
+  return `<svg class="emblema" viewBox="${x} ${y} ${w} ${h}"><path fill="${PALETA[i].color}" d="${l.fondo}"/><path fill="#FFF8EC" d="${l.simbolo}"/></svg>`;
+});
 ---
 <!doctype html>
-<html lang="es-CL">
+<html lang="es-CL" style={estiloZona(z)}>
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>{tituloCompleto}</title>
   <meta name="description" content={descripcion} />
   <link rel="canonical" href={new URL(ruta, Astro.site ?? Astro.url).href} />
@@ -30,110 +44,140 @@ const anio = new Date().getFullYear();
   <meta property="og:image" content={og} />
   <meta property="og:locale" content="es_CL" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#17191b" />
-  <link rel="icon" href="/media/2025/05/cropped-logo-icon.webp" type="image/webp" />
+  <meta name="theme-color" content={z.oscuro} />
+  <link rel="icon" href="/marca/emblema-8.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/media/2025/05/cropped-logo-icon.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script is:inline>
+    try { const t = JSON.parse(localStorage.getItem('mct-tema')); if (t) document.documentElement.dataset.tema = t; } catch (e) {}
+  </script>
   <slot name="head" />
 </head>
 <body>
-  <header class="header" id="header">
-    <div class="contenedor">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <div class="progreso" aria-hidden="true"></div>
+
+  <header class={`header ${headerClaro ? 'header--claro' : ''}`}>
+    <div class="header__barra">
       <a href="/" class="marca" aria-label={`${sitio.nombre} — inicio`}>
-        <img src="/media/2025/05/logo-melipeuco-capital-del-trekking_Mesa-de-trabajo-1.svg" alt={sitio.nombre} width="180" height="46" />
+        <img class="m-claro" src="/marca/logo-color-claro.svg" alt="" width="156" height="40" />
+        <img class="m-oscuro" src="/marca/logo-color.svg" alt="" width="156" height="40" />
       </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
-        <Icono nombre="menu" />
-      </button>
-      <nav class="nav" id="nav" aria-label="Principal">
+      <nav class="nav" aria-label="Principal">
         <ul>
           {sitio.menu.map((item) => (
             <li>
               {item.hijos ? (
                 <>
-                  <button type="button" aria-expanded="false" class="sub-toggle">{item.texto}<Icono nombre="abajo" class="chev" /></button>
-                  <ul class="sub">
-                    {item.hijos.map((h) => <li><a href={h.url} aria-current={activo(h.url)}>{h.texto}</a></li>)}
-                  </ul>
+                  <button type="button" class="nav__link sub-toggle" aria-expanded="false" aria-current={item.hijos.some((h) => activo(h.url)) ? 'page' : undefined}>
+                    {item.texto}<Icono nombre="abajo" class="chev" />
+                  </button>
+                  <div class="mega">
+                    {item.hijos.map((h) => {
+                      const zh = ZONAS[h.zona] ?? z;
+                      return (
+                        <a href={h.url} aria-current={activo(h.url)} style={`--mz:${zh.color}`}>
+                          <Emblema letra={zh.letra} />
+                          <b>{h.texto}</b>
+                          <small>{h.desc}</small>
+                        </a>
+                      );
+                    })}
+                  </div>
                 </>
               ) : (
-                <a href={item.url} aria-current={activo(item.url)}>{item.texto}</a>
+                <a class="nav__link" href={item.url} aria-current={activo(item.url)}>{item.texto}</a>
               )}
             </li>
           ))}
         </ul>
       </nav>
+      <div class="herramientas">
+        <button class="btn-buscar-txt" type="button" data-buscar-abrir aria-label="Buscar en el sitio"><Icono nombre="buscar" /><span>Buscar</span><kbd>Ctrl K</kbd></button>
+        <a class="btn-icono" href="/mi-viaje/" aria-label="Mi viaje" title="Mi viaje"><Icono nombre="corazon" /><span class="contador-viaje">0</span></a>
+        <button class="btn-icono" type="button" data-tema-btn aria-label="Cambiar tema claro/oscuro" title="Tema claro / oscuro"><Icono nombre="luna" /></button>
+        <button class="btn-icono menu-toggle" type="button" data-menu-abrir aria-label="Abrir menú" aria-expanded="false" aria-controls="menuMovil"><Icono nombre="menu" /></button>
+      </div>
     </div>
   </header>
+
+  <div class="menu-movil" id="menuMovil" role="dialog" aria-modal="true" aria-label="Menú">
+    <div class="menu-movil__top">
+      <img src="/marca/logo-color-claro.svg" alt={sitio.nombre} width="156" height="40" />
+      <button class="btn-icono" type="button" data-menu-cerrar aria-label="Cerrar menú"><Icono nombre="cerrar" /></button>
+    </div>
+    <ul>
+      <li><a href="/" style="--i:0"><Emblema letra={0} />Inicio</a></li>
+      {planos.map((h, i) => <li><a href={h.url} style={`--i:${i + 1}`}><Emblema letra={(ZONAS[h.zona] ?? z).letra} />{h.texto}</a></li>)}
+      <li><a href="/contactanos/" style={`--i:${planos.length + 1}`}><Emblema letra={1} />Contáctanos</a></li>
+    </ul>
+    <div class="menu-movil__pie">
+      <button class="btn btn--crema btn--chico" type="button" data-buscar-abrir data-menu-cerrar><Icono nombre="buscar" /> Buscar</button>
+      <a class="btn btn--borde btn--chico" href="/mi-viaje/" style="color:#fff"><Icono nombre="corazon" /> Mi viaje</a>
+    </div>
+  </div>
 
   <main id="contenido">
     <slot />
   </main>
 
-  <footer class="footer">
+  <footer class="pie">
+    <div class="pie__montes"><Montes color="var(--noche)" capas={false} /></div>
     <div class="contenedor">
-      <div class="footer__grid">
+      <div class="pie__logo revelar"><Logo variante="color" lema="claro" class="logo-svg--interactivo" /></div>
+      <div class="pie__grid">
         <div>
-          <img class="logo-pie" src="/media/2025/05/logo-footer.webp" alt={sitio.nombre} width="220" height="182" loading="lazy" />
-          <p style="margin-top:18px">{sitio.lema}</p>
-        </div>
-        <div>
-          <h4>Explora</h4>
-          <ul>{sitio.footer.map((l) => <li><a href={l.url}>{l.texto}</a></li>)}</ul>
-        </div>
-        <div>
-          <h4>Síguenos</h4>
-          <div class="redes-ficha">
+          <p class="lema">{sitio.lema}</p>
+          <p>{sitio.descripcion}</p>
+          <div class="redes" style="margin-top:20px">
             <a href={sitio.redes.instagram} target="_blank" rel="noopener" aria-label="Instagram"><Icono nombre="instagram" /></a>
             <a href={sitio.redes.facebook} target="_blank" rel="noopener" aria-label="Facebook"><Icono nombre="facebook" /></a>
             <a href={sitio.redes.tiktok} target="_blank" rel="noopener" aria-label="TikTok"><Icono nombre="tiktok" /></a>
           </div>
-          <h4 style="margin-top:28px">Contacto</h4>
-          <p><a href="/contactanos/">Escríbenos</a></p>
         </div>
+        {sitio.footer.map((col) => (
+          <div>
+            <h4>{col.titulo}</h4>
+            <ul>{col.enlaces.map((l) => <li><a href={l.url}>{l.texto}</a></li>)}</ul>
+          </div>
+        ))}
       </div>
       <div class="socios" aria-label="Instituciones asociadas">
         <div class="socios__pista">
           {[0, 1, 2, 3].map(() => <img src="/media/2025/03/lgoos-png.webp" alt="" width="752" height="148" loading="lazy" />)}
         </div>
       </div>
-      <div class="footer__base">
-        <span>© {anio} {sitio.nombre}</span>
-        <span>Municipalidad de Melipeuco · Araucanía Andina, Chile</span>
+      <div class="pie__base">
+        <span>© {anio} {sitio.nombre} · Municipalidad de Melipeuco, Araucanía Andina</span>
+        <span><a href="/contactanos/">Contacto</a> · <a href="/sitemap.xml">Mapa del sitio</a> · <a href="/admin/" rel="nofollow">Administrar sitio</a></span>
       </div>
     </div>
   </footer>
 
+  <button class="arriba" type="button" aria-label="Volver arriba">
+    <svg class="aro" viewBox="0 0 54 54"><circle cx="27" cy="27" r="24" /></svg>
+    <svg class="flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
+  </button>
+
+  <div class="buscador" id="buscador" hidden role="dialog" aria-modal="true" aria-label="Buscar en el sitio" data-emblemas={JSON.stringify(emblemasHtml)}>
+    <div class="buscador__caja">
+      <div class="buscador__campo">
+        <Icono nombre="buscar" />
+        <input type="search" placeholder="Busca rutas, lugares, alojamientos, guías…" aria-label="Buscar" autocomplete="off" />
+        <kbd>Esc</kbd>
+      </div>
+      <div class="buscador__res" role="listbox"></div>
+      <div class="buscador__pie"><span><kbd>↑</kbd> <kbd>↓</kbd> navegar</span><span><kbd>Enter</kbd> abrir</span><span><kbd>Ctrl K</kbd> buscar desde cualquier página</span></div>
+    </div>
+  </div>
+
   <script>
-    // Encabezado sólido al hacer scroll
-    const header = document.getElementById('header')!;
-    const alScroll = () => header.classList.toggle('solido', window.scrollY > 40);
-    alScroll();
-    window.addEventListener('scroll', alScroll, { passive: true });
-
-    // Menú móvil
-    const toggle = document.getElementById('menuToggle')!;
-    const nav = document.getElementById('nav')!;
-    toggle.addEventListener('click', () => {
-      const abierto = nav.classList.toggle('abierto');
-      document.body.classList.toggle('menu-abierto', abierto);
-      toggle.setAttribute('aria-expanded', String(abierto));
-    });
-    document.querySelectorAll<HTMLButtonElement>('.sub-toggle').forEach((b) => {
-      b.addEventListener('click', () => {
-        const li = b.parentElement!;
-        const abierto = li.classList.toggle('abierto');
-        b.setAttribute('aria-expanded', String(abierto));
-      });
-    });
-
-    // Aparición progresiva de elementos
-    const io = new IntersectionObserver((entradas) => {
-      entradas.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.revelar').forEach((el) => io.observe(el));
+    import { iniciarEfectos } from '../scripts/efectos';
+    import { iniciarApp } from '../scripts/app';
+    iniciarApp();
+    iniciarEfectos();
   </script>
 </body>
 </html>

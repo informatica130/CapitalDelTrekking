@@ -1,0 +1,92 @@
+{
+  "slug": "nidos-de-melipeuco",
+  "titulo": "Nidos de Melipeuco",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta, Transferencia"
+    }
+  ],
+  "cuerpo": "Nidos de Melipeuco es un lugar especial donde se fusionan naturaleza y confort. Situado en cuatro hectáreas de rica biodiversidad, ofrece mucho más que un simple descanso: es un refugio creado con amor y respeto por el entorno natural.",
+  "imagen": "/media/2024/11/nidosdemelipeuco2-jpg.webp",
+  "galeria": [
+    "/media/2024/11/nidosdemelipeuco2-jpg.webp",
+    "/media/2024/11/nidosdemelipeuco3-jpg.webp",
+    "/media/2024/11/nidosdemelipeuco4.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "S-365, Melipeuco, IX Región, Chile, Melipeuco, Chile"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 50363617"
+        },
+        {
+          "k": "Email",
+          "v": "Info@nidosdemelipeuco.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://nidosdemelipeuco.cl/"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 50363617"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "14:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Frigobar, Hervidor, Calefacción, Tinaja privada"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Tarjeta, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Estacionamiento, Piscina, Tinajas"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.8532923212706!2d-71.68446108844603!3d-38.835820593021616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613410fecb3360b%3A0x2ab0957f301c1457!2sNidos%20de%20Melipeuco!5e0!3m2!1ses-419!2scl!4v1729779450629!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56950363617",
+    "facebook": "https://web.facebook.com/nidosdemelipeuco/?_rdc=1&_rdr",
+    "instagram": "https://www.instagram.com/nidosdemelipeuco/"
+  },
+  "logo": "/media/2024/11/logonidosdemelipeuco-1.jpg",
+  "servicios": [
+    "Estacionamiento",
+    "Piscina",
+    "Tinajas"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

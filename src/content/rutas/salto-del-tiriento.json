@@ -1,0 +1,113 @@
+{
+  "slug": "salto-del-tiriento",
+  "titulo": "Salto del Tiriento",
+  "subtitulo": "Ruta Salto del Tiriento",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "0,6 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "En las nacientes del río Biobío, inmerso en la cordillera pehuenche, descubrirás el hermoso Salto del Tiriento. Este salto de agua está rodeado de imponentes araucarias y ñirres, creando un entorno natural impresionante. Para llegar al salto, el sendero de 15 minutos de caminata suave te llevará bordeando el río Tiriento. Durante el otoño, el paisaje se transforma en un espectáculo de colores vibrantes, convirtiéndose en un escenario ideal para los amantes de la fotografía. En verano, podrás disfrutar de los pozones del río, que te ofrecen la oportunidad perfecta para refrescarte y relajarte. Esta caminata corta te permite experimentar la belleza del salto y el entorno natural circundante, sin necesidad de una jornada extenuante.",
+  "imagen": "/media/2024/11/38.02salto-tiriento-2-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/38.02salto-tiriento-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/38.03salto-tiriento.webp",
+    "/media/2024/11/38.04salto-tiriento.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "0,6 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "1h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "68m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1268m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.697517945175264,
+    -71.42151252377639
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "melipewunko",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/38.saltodeltiriento.gpx",
+  "dificultad": "1",
+  "extension": "0,6 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "la-dona",
+  "titulo": "La Doña",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Artesanía"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Teléfono",
+          "v": "+569 77787667"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Artesanía",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

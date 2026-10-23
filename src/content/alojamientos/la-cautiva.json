@@ -1,0 +1,88 @@
+{
+  "slug": "la-cautiva",
+  "titulo": "La Cautiva",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Transferencia"
+    }
+  ],
+  "cuerpo": "Ubicadas en un entorno tranquilo y rodeadas de naturaleza, estas cabañas son el lugar perfecto para desconectarte del estrés diario y disfrutar del ambiente sereno que ofrece la región. Ven a conectar con la naturaleza y disfrutar de una estancia inigualable en un ambiente que te hará sentir como en casa.",
+  "imagen": "/media/2024/11/lacautiva-2-1.webp",
+  "galeria": [
+    "/media/2024/11/lacautiva-2-1.webp",
+    "/media/2024/11/lacautiva-3-1.webp",
+    "/media/2024/11/lacautiva-4-1.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Sector El Membrillo"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 93474794"
+        },
+        {
+          "k": "Email",
+          "v": "flopy.olivares.g@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 93474794"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Kitchenette,Minibar, Aire acondicionado, Aire acondicionado,Vajilla"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Cocina equipada, Estacionamiento, Tinajas"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.510143300294!2d-71.6883008!3d-38.8436781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961343e6b6819f83%3A0x1f29085a70bed016!2sCABA%C3%91AS%20LA%20CAUTIVA%2C%20Melipeuco!5e0!3m2!1ses-419!2scl!4v1729779495012!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56993474794",
+    "facebook": "https://www.facebook.com/lacautivamelipeuco/?locale=es_LA",
+    "instagram": "https://www.instagram.com/lacautivamelipeuco/"
+  },
+  "logo": "/media/2024/11/logolacautiva-1.jpg",
+  "servicios": [
+    "Cocina equipada",
+    "Estacionamiento",
+    "Tinajas"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

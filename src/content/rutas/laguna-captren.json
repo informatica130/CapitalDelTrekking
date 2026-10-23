@@ -1,0 +1,112 @@
+{
+  "slug": "laguna-captren",
+  "titulo": "Laguna Captrén",
+  "subtitulo": "Ruta Laguna Captrén",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "5,2 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta / travesía"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "Ubicado en el sector norte del Parque Nacional Conguillío, este sendero circular te lleva alrededor de la tranquila Laguna Captrén, permitiéndote disfrutar de magníficas vistas del imponente Volcán Llaima y de los frondosos bosques nativos que lo rodean. A lo largo del recorrido, tendrás la oportunidad de adentrarte en un entorno natural de gran belleza, donde la flora y fauna local se manifiestan en su máximo esplendor. Este sendero es especialmente recomendado para los amantes del avistamiento de aves, ya que es común observar especies emblemáticas como el carpintero negro, el chucao o el pitío, entre muchas otras. Con una duración aproximada de una hora y sin grandes pendientes, esta ruta es amigable para todo público, desde familias con niños pequeños hasta personas mayores. Es perfecta para quienes buscan una caminata tranquila, en la que puedan conectarse con la naturaleza y disfrutar de un paisaje único que combina la majestuosidad de los volcanes con la serenidad de los lagos y bosques.",
+  "imagen": "/media/2024/11/15.02laguna-captren-4-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/15.02laguna-captren-4-wpcf_1024x1024.jpg",
+    "/media/2024/11/15.03laguna-captren-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/15.04laguna-captren-2-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "5,2 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "1h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "50m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1282m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta / travesía"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "www.pasesparques.cl"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.64180227352653,
+    -71.70364004063408
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "ida y vuelta travesia"
+  ],
+  "gpx": "/media/kmz/15.lagunacaptren.gpx",
+  "dificultad": "1",
+  "extension": "5,2 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

@@ -2,11 +2,12 @@
 import Base from '../../layouts/Base.astro';
 import Heroe from '../../components/Heroe.astro';
 import Icono from '../../components/Icono.astro';
+import Emblema from '../../components/Emblema.astro';
 import Panel from '../../components/Panel.astro';
 import Galeria from '../../components/Galeria.astro';
 import MapaRuta from '../../components/MapaRuta.astro';
 import Tarjeta from '../../components/Tarjeta.astro';
-import { rutas, url, operadoresDe, vinculado, nivelMide, type Ruta } from '../../scripts/datos';
+import { rutas, url, operadoresDe, vinculado, nivelMide, NIVEL_COLOR, type Ruta } from '../../scripts/datos';
 
 export function getStaticPaths() {
   return rutas.map((r) => ({ params: { slug: r.slug }, props: { r } }));
@@ -17,30 +18,44 @@ const iconos: Record<string, string> = { 'Información del sendero': 'ruta', 'Ac
 const relacionadas = r.relacionados.map(vinculado).filter(Boolean).slice(0, 3);
 const similares = relacionadas.length ? [] : rutas.filter((x) => x.interes === r.interes && x.slug !== r.slug).slice(0, 3);
 const mide = nivelMide(r.dificultad);
+const yo = url.ruta(r.slug);
+const ind = [
+  r.extension && { i: 'ruta', k: 'Extensión', v: r.extension },
+  r.duracion && { i: 'reloj', k: 'Duración', v: r.duracion },
+  r.tipo_recorrido.length && { i: 'brujula', k: 'Recorrido', v: r.tipo_recorrido.join(', ') },
+  r.condicion && { i: 'persona', k: 'Condición', v: r.condicion },
+].filter(Boolean) as { i: string; k: string; v: string }[];
 ---
-<Base titulo={r.titulo} descripcion={r.extracto} imagen={r.imagen}>
-  <Heroe titulo={r.titulo} imagen={r.imagen} volver={{ url: '/rutas-de-trekking/', texto: 'Volver a las rutas' }}>
-    {r.interes && <span class={`etiqueta etiqueta--${r.interes}`} style="position:static;display:inline-block">{r.interes}</span>}
-  </Heroe>
-  <div class="franja">
-    <div class="contenedor">
-      <Icono nombre="info" />
-      {r.resumen.map((c) => <span class="dato"><b>{c.k}:</b> {c.v}</span>)}
+<Base titulo={r.titulo} descripcion={r.extracto} imagen={r.imagen} zona="rutas">
+  <Heroe titulo={r.titulo} imagen={r.imagen} zona="rutas" migas={[{ texto: 'Rutas de trekking', url: '/rutas-de-trekking/' }, { texto: r.titulo }]}>
+    <div class="etiquetas" slot="arriba">
+      {r.interes && <span class="chip chip--solido" style={`--c:${NIVEL_COLOR[r.interes]}`}>{r.interes}</span>}
+      {r.dificultad && <span class="chip chip--vidrio">Dificultad MIDE {r.dificultad}</span>}
     </div>
-  </div>
+    <div class="acciones">
+      <button type="button" class="fav fav--grande" data-fav={yo} aria-pressed="false"><Icono nombre="corazon" /> <span data-fav-txt>Guardar en Mi viaje</span></button>
+      <a class="btn btn--crema" href="#mapa"><Icono nombre="mapa" /> Ver mapa y perfil</a>
+      <button class="btn-icono" type="button" data-compartir aria-label="Compartir"><Icono nombre="compartir" /></button>
+      <button class="btn-icono" type="button" data-imprimir aria-label="Imprimir ficha"><Icono nombre="imprimir" /></button>
+    </div>
+  </Heroe>
 
-  <section class="seccion">
+  <section class="seccion" style="padding-top:0">
     <div class="contenedor">
       <div class="indicadores">
-        {r.extension && <div class="indicador"><span>Extensión</span><b>{r.extension}</b></div>}
-        {r.duracion && <div class="indicador"><span>Duración</span><b>{r.duracion}</b></div>}
-        {r.dificultad && <div class="indicador"><span>Dificultad MIDE</span><b>{r.dificultad} </b><span class="mide" aria-hidden="true">{[1, 2, 3, 4, 5].map((n) => <i class={n <= mide ? 'on' : ''}></i>)}</span></div>}
-        {r.tipo_recorrido.length > 0 && <div class="indicador"><span>Recorrido</span><b style="text-transform:capitalize">{r.tipo_recorrido.join(', ')}</b></div>}
+        {ind.map((x, i) => <div class="indicador revelar" style={`--d:${i}`}><Icono nombre={x.i} /><span>{x.k}</span><b>{x.v}</b></div>)}
+        {r.dificultad && (
+          <div class="indicador revelar" style={`--d:${ind.length}`}>
+            <Icono nombre="montana" /><span>Dificultad MIDE</span><b>{r.dificultad} de 5</b>
+            <span class="mide" aria-hidden="true">{[1, 2, 3, 4, 5].map((n) => <i class={n <= mide ? 'on' : ''}></i>)}</span>
+          </div>
+        )}
       </div>
       <div class="ficha">
-        <div>
+        <div class="revelar">
+          <span class="antetitulo"><Emblema letra={0} />El sendero</span>
           <h2>{r.subtitulo || r.titulo}</h2>
-          <div class="prosa" set:html={r.cuerpo} />
+          <div class="prosa" set:html={r.html} />
         </div>
         <aside class="lateral">
           {r.grupos.map((g) => <Panel titulo={g.titulo} campos={g.campos} icono={iconos[g.titulo]} />)}
@@ -50,28 +65,26 @@ const mide = nivelMide(r.dificultad);
   </section>
 
   {r.galeria.length > 0 && (
-    <section class="seccion seccion--blanca" style="padding-top:60px">
+    <section class="seccion seccion--papel2">
       <div class="contenedor">
-        <div class="titulo-seccion"><span class="antetitulo">Galería</span><h2>Así se vive la ruta</h2></div>
+        <div class="cabeza revelar"><span class="antetitulo">Galería</span><h2>Así se vive <em>la ruta</em></h2></div>
         <Galeria imagenes={r.galeria} titulo={r.titulo} />
       </div>
     </section>
   )}
 
-  <section class="seccion">
+  <section class="seccion" id="mapa">
     <div class="contenedor">
-      <div class="titulo-seccion"><span class="antetitulo">Mapa y perfil</span><h2>Cómo llegar</h2></div>
+      <div class="cabeza revelar"><span class="antetitulo">Mapa y perfil de elevación</span><h2>Cómo <em>llegar</em></h2></div>
       <MapaRuta gpx={r.gpx} coords={r.coords} titulo={r.titulo} />
     </div>
   </section>
 
   {ops.length > 0 && (
-    <section class="seccion seccion--blanca">
+    <section class="seccion seccion--zona">
       <div class="contenedor">
-        <div class="titulo-seccion"><span class="antetitulo">Recorre con expertos</span><h2>Operadores que ofrecen este sendero</h2></div>
-        <div class="grilla">
-          {ops.map((o) => <Tarjeta url={url.operador(o.slug)} titulo={o.titulo} imagen={o.imagen} texto={o.extracto} icono="brujula" />)}
-        </div>
+        <div class="cabeza revelar"><span class="antetitulo">Recorre con expertos</span><h2>Operadores que <em>ofrecen este sendero</em></h2></div>
+        <div class="grilla">{ops.map((o, i) => <Tarjeta url={url.operador(o.slug)} titulo={o.titulo} imagen={o.imagen} texto={o.extracto} letra={6} d={i} />)}</div>
       </div>
     </section>
   )}
@@ -79,10 +92,10 @@ const mide = nivelMide(r.dificultad);
   {(relacionadas.length > 0 || similares.length > 0) && (
     <section class="seccion">
       <div class="contenedor">
-        <div class="titulo-seccion"><span class="antetitulo">Sigue explorando</span><h2>{relacionadas.length ? 'Relacionadas con esta ruta' : `Otras rutas para ${r.interes.toLowerCase()}`}</h2></div>
+        <div class="cabeza revelar"><span class="antetitulo">Sigue explorando</span><h2>{relacionadas.length ? 'Relacionadas con esta ruta' : <>Otras rutas para <em>{r.interes.toLowerCase()}</em></>}</h2></div>
         <div class="grilla">
-          {relacionadas.map((v) => <Tarjeta url={v!.url} titulo={v!.titulo} imagen={v!.imagen} texto={v!.extracto} />)}
-          {similares.map((x) => <Tarjeta url={url.ruta(x.slug)} titulo={x.titulo} imagen={x.imagen} texto={x.extracto} etiqueta={x.interes} />)}
+          {relacionadas.map((v, i) => <Tarjeta url={v!.url} titulo={v!.titulo} imagen={v!.imagen} texto={v!.extracto} d={i} />)}
+          {similares.map((x, i) => <Tarjeta url={url.ruta(x.slug)} titulo={x.titulo} imagen={x.imagen} texto={x.extracto} d={i} etiqueta={{ t: x.interes, c: NIVEL_COLOR[x.interes] }} />)}
         </div>
       </div>
     </section>

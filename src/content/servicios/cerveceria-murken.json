@@ -1,0 +1,48 @@
+{
+  "slug": "cerveceria-murken",
+  "titulo": "Cervecería Mürken",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Teléfono",
+          "v": "+569 63099057"
+        },
+        {
+          "k": "Email",
+          "v": "claudiomatusmelivilu@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 63099057"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56963099057",
+    "facebook": "https://www.facebook.com/p/Cervecer%C3%ADa-M%C3%BCrken-100063605032889/?locale=es_LA",
+    "instagram": "https://www.instagram.com/cerveceriamurken/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

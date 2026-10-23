@@ -1,0 +1,56 @@
+{
+  "slug": "heladeria-silvestre",
+  "titulo": "Heladería Silvestre",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/42.heladeriasilvestre02.webp",
+  "galeria": [
+    "/media/2024/11/42.heladeriasilvestre02.webp",
+    "/media/2024/11/42.heladeriasilvestre03.webp",
+    "/media/2024/11/42.heladeriasilvestre04-jpg.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Ruta S-61"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 65837544"
+        },
+        {
+          "k": "Email",
+          "v": "Heladeriasilvestre@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 65837544"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23920.483239484394!2d-71.6993406834948!3d-38.84626834100756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961341c07545cee9%3A0x6b7f7833e9a22082!2sHeladeria%20Silvestre!5e1!3m2!1ses!2scl!4v1730146637528!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56965837544",
+    "facebook": "https://www.facebook.com/Heladeriasilvestre/",
+    "instagram": "https://www.instagram.com/heladeriasilvestre/?hl=es"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

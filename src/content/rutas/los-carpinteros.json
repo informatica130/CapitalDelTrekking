@@ -1,0 +1,113 @@
+{
+  "slug": "los-carpinteros",
+  "titulo": "Los Carpinteros",
+  "subtitulo": "Ruta Los Carpinteros",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "9,6 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "Este sendero te ofrece una inmersión profunda de entre 3 a 4 horas en la vida silvestre del Parque Conguillío. Con desniveles suaves, el recorrido te llevará a través de un hermoso bosque, donde uno de los principales atractivos es la imponente ‘Araucaria Madre’. Este ejemplar sobresaliente destaca por su tamaño y longevidad, siendo uno de los más antiguos y majestuosos del área. Mientras avanzas por el sendero, tendrás la oportunidad de observar la rica avifauna del bosque. Es común que encuentres a varios pájaros carpinteros en su hábitat natural, contribuyendo a la experiencia sonora y visual del recorrido. La combinación de un entorno natural cautivador y la presencia de especies locales te permitirá disfrutar de una caminata relajante y enriquecedora. Este sendero es perfecto para quienes desean conectar con la naturaleza y explorar la biodiversidad de uno de los parques más emblemáticos de la región",
+  "imagen": "/media/2024/11/20.02los-carpinteros-4-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/20.02los-carpinteros-4-wpcf_1024x1024.jpg",
+    "/media/2024/11/20.03los-carpinteros.webp",
+    "/media/2024/11/20.04los-carpinteros.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "9,6 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "3h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "88m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1380m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "www.pasesparques.cl"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.65080008929912,
+    -71.65052027670573
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "melipewunko",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/20.loscarpinteros.gpx",
+  "dificultad": "1",
+  "extension": "9,6 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

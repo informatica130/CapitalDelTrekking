@@ -1,0 +1,48 @@
+{
+  "slug": "pewen-mapu",
+  "titulo": "Pewen Mapu",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Arriendo de equipo"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/raquetas-nieve-jpg.webp",
+  "galeria": [
+    "/media/2024/11/raquetas-nieve-jpg.webp",
+    "/media/2024/11/carpa-jpg.webp",
+    "/media/2024/11/bastones-jpg.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Santa María de Llaima s/n (km 6.5 desde puente medina, camino a termas balboa)."
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 92863765"
+        },
+        {
+          "k": "Página web",
+          "v": "wwwpewenmapu.cl"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Arriendo de equipo",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

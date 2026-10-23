@@ -1,0 +1,112 @@
+{
+  "slug": "las-vertientes",
+  "titulo": "Las Vertientes",
+  "subtitulo": "Ruta Las Vertientes",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "1,6 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "circuito"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "Este sendero, que puedes recorrer en menos de una hora, es ideal para toda la familia debido a su leve pendiente y fácil acceso. Con una ruta amigable para todas las edades, es perfecto para una caminata relajada, especialmente si estás acompañado de niños pequeños o personas mayores. A lo largo del sendero, encontrarás infografías diseñadas para ofrecerte información detallada sobre la ecología del Parque Nacional. Estas interpretaciones te ayudarán a comprender mejor la diversidad de la flora y fauna local, así como los procesos naturales que sustentan el ecosistema del parque. Situado a un costado del camino de acceso al parque, este sendero sirve como una excelente introducción al entorno natural que te espera. Es una forma ideal de familiarizarte con el parque antes de aventurarte en rutas más largas y desafiantes. Su corta duración y el acceso fácil te permitirán disfrutar de un primer contacto con la belleza del área mientras te preparas para explorar más a fondo el parque.",
+  "imagen": "/media/2024/11/18.02las-vertientes.webp",
+  "galeria": [
+    "/media/2024/11/18.02las-vertientes.webp",
+    "/media/2024/11/18.03las-vertientes.webp",
+    "/media/2024/11/18.04las-vertientes-2-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "1,6 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "1h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "26m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "763m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "circuito"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "www.pasesparques.cl"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.76665315300983,
+    -71.63400515906261
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "circuito"
+  ],
+  "gpx": "/media/kmz/18.lasvertientes.gpx",
+  "dificultad": "1",
+  "extension": "1,6 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

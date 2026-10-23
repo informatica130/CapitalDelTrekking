@@ -1,0 +1,111 @@
+{
+  "slug": "mirador-cayuman",
+  "titulo": "Mirador Cayumán",
+  "subtitulo": "Ruta Mirador Cayumán",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "3,4 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable con permiso (*)"
+    }
+  ],
+  "cuerpo": "El sendero del Mirador Cayuman de Legnay es una caminata breve que te lleva a través de terrenos pertenecientes a una comunidad mapuche. A medida que asciendes, alcanzarás un portezuelo situado entre dos circos glaciares, desde donde disfrutarás de impresionantes vistas del Valle de Melipeuco y del imponente Volcán Sollipulli. Este sendero forma parte del circuito del geoparque Kutralkura, conocido por sus vistas privilegiadas de geoformas volcánicas. A lo largo del recorrido, te maravillarás con las formaciones geológicas del Sollipulli y los circos glaciares que lo rodean. La corta duración del sendero y sus vistas panorámicas lo convierten en una excelente opción para una caminata rápida pero memorable, ideal para quienes desean explorar el paisaje volcánico y glaciar sin dedicar mucho tiempo.",
+  "imagen": "/media/2024/11/22.02mirador-cayuman-2-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/22.02mirador-cayuman-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/22.03mirador-cayuman-2-wpcf_811x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "3,4 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "2h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "30m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "900m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "569 34632881"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable con permiso (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.85573837105613,
+    -71.58896445767057
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/22.miradorcayumandelegnay.gpx",
+  "dificultad": "1",
+  "extension": "3,4 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable con permiso (*)",
+  "publicado": true,
+  "destacado": false
+}

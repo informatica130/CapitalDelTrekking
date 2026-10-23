@@ -1,0 +1,26 @@
+{
+  "slug": "cerro-batea-mahuida",
+  "titulo": "Cerro Batea Mahuida",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Natural / Cerro"
+    }
+  ],
+  "cuerpo": "Batea Mahuida es un cerro situado en la frontera con Argentina, en las cercanías de la laguna Icalma. Una de sus principales características es su suave pendiente, que facilita el acceso a su cumbre en todas las épocas del año. Desde la cima, disfrutarás de una vista panorámica que abarca numerosas cumbres, la laguna de Icalma y la vasta pampa trasandina con los lagos Moquehue y Aluminé.",
+  "imagen": "/media/2024/11/1.batea-mahuida-araucania-backcountry.webp",
+  "galeria": [
+    "/media/2024/11/1.batea-mahuida-araucania-backcountry.webp",
+    "/media/2024/11/bateamahuida2-1-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12126.749044707816!2d-71.19277799999999!3d-38.818888449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96131e2779318dfd%3A0xda66695b84ba59a5!2sVolc%C3%A1n%20Batea%20Mahuida!5e1!3m2!1ses-419!2scl!4v1728489467498!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Natural / Cerro",
+  "publicado": true,
+  "destacado": false
+}

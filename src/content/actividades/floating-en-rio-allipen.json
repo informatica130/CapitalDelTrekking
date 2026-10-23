@@ -1,0 +1,28 @@
+{
+  "slug": "floating-en-rio-allipen",
+  "titulo": "Floating en río Allipén",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Floating"
+    }
+  ],
+  "cuerpo": "Floating consiste en descender una sección de un río en una balsa inflable, tal como el rafting, pero con mucho menor grado de turbulencia. Por ello, es una actividad segura para toda la familia, con una ligera dosis de adrenalina y sin riesgos. Navegando aguas abajo por el río Allipén, te llenarás de la vitalidad del principal cauce de Melipeuco, y podrás observar aves acuáticas. Incluso, con un poco de suerte, puede que divises a un escabullizo huillín (la nutria de río nativa).",
+  "imagen": "/media/2024/11/rafting5.webp",
+  "galeria": [
+    "/media/2024/11/rafting5.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6213.29745727282!2d-71.70232915181006!3d-38.8633970825168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613690033bc89e9%3A0x3bfd8477d78f19bc!2scancha%20rio%20allipen!5e0!3m2!1ses-419!2scl!4v1729104640175!5m2!1ses-419!2scl",
+  "operadores": [
+    "namku-adventure",
+    "likan-kura"
+  ],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Floating",
+  "publicado": true,
+  "destacado": false
+}

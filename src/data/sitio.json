@@ -10,31 +10,163 @@
     "tiktok": "https://www.tiktok.com/@capitaldeltrekking"
   },
   "menu": [
-    { "texto": "Inicio", "url": "/" },
-    { "texto": "Explora Melipeuco", "url": "/explora-melipeuco/" },
-    { "texto": "Experiencias", "hijos": [
-      { "texto": "Qué hacer", "url": "/que-hacer/" },
-      { "texto": "Qué visitar", "url": "/que-visitar/" }
-    ]},
-    { "texto": "Rutas de Trekking", "url": "/rutas-de-trekking/" },
-    { "texto": "Planifica", "hijos": [
-      { "texto": "Operadores turísticos", "url": "/operadores-turisticos/" },
-      { "texto": "Dónde dormir", "url": "/planifica-donde-dormir/" },
-      { "texto": "Guías turísticos", "url": "/guias-turisticos/" }
-    ]},
-    { "texto": "Servicios", "hijos": [
-      { "texto": "Complementarios", "url": "/complementarios/" },
-      { "texto": "Gastronomía", "url": "/gastronomia/" }
-    ]},
-    { "texto": "Mapa", "url": "/mapa/" }
+    {
+      "texto": "Explora",
+      "hijos": [
+        {
+          "texto": "Explora Melipeuco",
+          "url": "/explora-melipeuco/",
+          "zona": "explora",
+          "desc": "Cómo llegar, clima y territorio"
+        },
+        {
+          "texto": "Mapa de senderos",
+          "url": "/mapa/",
+          "zona": "mapa",
+          "desc": "Las 44 rutas con sus tracks GPX"
+        },
+        {
+          "texto": "Noticias",
+          "url": "/noticias/",
+          "zona": "noticias",
+          "desc": "Novedades de la comuna"
+        }
+      ]
+    },
+    {
+      "texto": "Rutas de Trekking",
+      "url": "/rutas-de-trekking/",
+      "zona": "rutas"
+    },
+    {
+      "texto": "Experiencias",
+      "hijos": [
+        {
+          "texto": "Qué hacer",
+          "url": "/que-hacer/",
+          "zona": "que-hacer",
+          "desc": "Montañismo, canyoning, rafting y más"
+        },
+        {
+          "texto": "Qué visitar",
+          "url": "/que-visitar/",
+          "zona": "que-visitar",
+          "desc": "Volcanes, lagos y parques nacionales"
+        }
+      ]
+    },
+    {
+      "texto": "Planifica",
+      "hijos": [
+        {
+          "texto": "Dónde dormir",
+          "url": "/planifica-donde-dormir/",
+          "zona": "alojamientos",
+          "desc": "Cabañas, hostales, lodges y camping"
+        },
+        {
+          "texto": "Operadores turísticos",
+          "url": "/operadores-turisticos/",
+          "zona": "operadores",
+          "desc": "Agencias locales de aventura"
+        },
+        {
+          "texto": "Guías turísticos",
+          "url": "/guias-turisticos/",
+          "zona": "guias",
+          "desc": "Guías locales certificados"
+        }
+      ]
+    },
+    {
+      "texto": "Servicios",
+      "hijos": [
+        {
+          "texto": "Gastronomía",
+          "url": "/gastronomia/",
+          "zona": "gastronomia",
+          "desc": "Restaurantes y sabores locales"
+        },
+        {
+          "texto": "Complementarios",
+          "url": "/complementarios/",
+          "zona": "complementarios",
+          "desc": "Artesanía, arriendo, salud y más"
+        }
+      ]
+    }
   ],
   "footer": [
-    { "texto": "Rutas de trekking", "url": "/rutas-de-trekking/" },
-    { "texto": "Atractivos", "url": "/que-visitar/" },
-    { "texto": "Actividades", "url": "/que-hacer/" },
-    { "texto": "Servicios Turísticos", "url": "/complementarios/" },
-    { "texto": "Descubre Melipeuco", "url": "/explora-melipeuco/" },
-    { "texto": "Noticias", "url": "/noticias/" },
-    { "texto": "Contáctanos", "url": "/contactanos/" }
+    {
+      "titulo": "Descubre",
+      "enlaces": [
+        {
+          "texto": "Rutas de trekking",
+          "url": "/rutas-de-trekking/"
+        },
+        {
+          "texto": "Qué visitar",
+          "url": "/que-visitar/"
+        },
+        {
+          "texto": "Qué hacer",
+          "url": "/que-hacer/"
+        },
+        {
+          "texto": "Mapa de senderos",
+          "url": "/mapa/"
+        }
+      ]
+    },
+    {
+      "titulo": "Planifica",
+      "enlaces": [
+        {
+          "texto": "Dónde dormir",
+          "url": "/planifica-donde-dormir/"
+        },
+        {
+          "texto": "Gastronomía",
+          "url": "/gastronomia/"
+        },
+        {
+          "texto": "Operadores turísticos",
+          "url": "/operadores-turisticos/"
+        },
+        {
+          "texto": "Guías turísticos",
+          "url": "/guias-turisticos/"
+        },
+        {
+          "texto": "Servicios complementarios",
+          "url": "/complementarios/"
+        }
+      ]
+    },
+    {
+      "titulo": "Melipeuco",
+      "enlaces": [
+        {
+          "texto": "Explora Melipeuco",
+          "url": "/explora-melipeuco/"
+        },
+        {
+          "texto": "Noticias",
+          "url": "/noticias/"
+        },
+        {
+          "texto": "Mi viaje",
+          "url": "/mi-viaje/"
+        },
+        {
+          "texto": "Contáctanos",
+          "url": "/contactanos/"
+        }
+      ]
+    }
+  ],
+  "coordenadas": [
+    -38.8522,
+    -71.6932
   ]
 }

@@ -1,7 +1,7 @@
 ---
 import FichaNegocio from '../../components/FichaNegocio.astro';
-import { operadores, ofertaDe, type Negocio } from '../../scripts/datos';
+import { operadores, ofertaDe, url, type Negocio } from '../../scripts/datos';
 export function getStaticPaths() { return operadores.map((n) => ({ params: { slug: n.slug }, props: { n } })); }
 const { n } = Astro.props as { n: Negocio };
 ---
-<FichaNegocio n={n} icono="brujula" oferta={ofertaDe(n.slug)} volver={{ url: '/operadores-turisticos/', texto: 'Volver a Operadores turísticos' }} />
+<FichaNegocio n={n} zona="operadores" propia={url.operador(n.slug)} oferta={ofertaDe(n.slug)} listado={{ url: '/operadores-turisticos/', texto: 'Operadores turísticos' }} />

@@ -1,0 +1,91 @@
+{
+  "slug": "cabanas-meli-road",
+  "titulo": "Cabañas Meli Road",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo y Transferencia"
+    }
+  ],
+  "cuerpo": "Meliroad Cabañas es una experiencia diseñada para sumergirte en la naturaleza de la Araucanía Andina, entre árboles nativos, pinos fragantes y el murmullo del río Truful Truful. En este entorno, el geoparque Kutralkura con sus rocas volcánicas ofrece un paisaje único donde la naturaleza se abre paso cada día. Nuestras cabañas están dispuestas con el espacio necesario para disfrutar del bosque y los senderos que conducen al Salto Truful y al Observatorio de Estrellas por la noche. Además, hemos creado un marco perfecto para capturar momentos especiales, con un columpio ubicado en un lugar que permite disfrutar del entorno. Este columpio, situado al final de un breve paseo por un pequeño bosque nativo, ofrece una experiencia única con un peso máximo permitido de 100 kg.",
+  "imagen": "/media/2024/11/meliroad02.webp",
+  "galeria": [
+    "/media/2024/11/meliroad02.webp",
+    "/media/2024/11/meliroad03.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Ruta Melipeuco-Conguillio km 1.24"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 83123275"
+        },
+        {
+          "k": "Email",
+          "v": "meliroadconguillio@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.meliroad.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 83123275"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Toalla de mano, Baño privado, Calefacción, Servicio de limpieza"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo y Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Arriendo de bicicletas, Cocina equipada, Tinajas, Wi-Fi"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.071973930348!2d-71.66113742406641!3d-38.83081247173828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961341fba91fe839%3A0x64a3ec3538f66d0f!2sMeliroad%20Caba%C3%B1as%20%26%20Senderos!5e0!3m2!1ses-419!2scl!4v1729779691429!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56983123275",
+    "instagram": "https://www.instagram.com/meliroadcabanas/?hl=es-la"
+  },
+  "logo": "/media/2024/11/logomeliroad-1.jpg",
+  "servicios": [
+    "Arriendo de bicicletas",
+    "Cocina equipada",
+    "Tinajas",
+    "WI-FI"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "los-troncos",
+  "titulo": "Los Troncos",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/36.lostroncos02.webp",
+  "galeria": [
+    "/media/2024/11/36.lostroncos02.webp",
+    "/media/2024/11/36.lostroncos03.webp",
+    "/media/2024/11/36.lostroncos04-jpg.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda #352"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+562 45581088"
+        },
+        {
+          "k": "Email",
+          "v": "moises_malp@hotmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "(45) 581088"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2989.7827779709305!2d-71.69574317406537!3d-38.852873571733575!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369ddc58740c5%3A0x84950a8342f3fb7a!2sLos%20Troncos!5e1!3m2!1ses!2scl!4v1730146094660!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+(45)581088",
+    "facebook": "https://www.facebook.com/p/Restaurant-Los-Troncos-100054634382402/?locale=es_LA"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

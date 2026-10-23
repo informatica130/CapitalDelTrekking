@@ -11,17 +11,17 @@ const destino = coords ? `https://www.google.com/maps/dir/?api=1&destination=${c
     <svg viewBox="0 0 800 200" preserveAspectRatio="none" role="img" aria-label="Perfil de elevación">
       <defs>
         <linearGradient id="gradPerfil" x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0" stop-color="#1f4a33" stop-opacity=".55" />
-          <stop offset="1" stop-color="#1f4a33" stop-opacity=".05" />
+          <stop offset="0" stop-color="var(--z)" stop-opacity=".5" />
+          <stop offset="1" stop-color="var(--z)" stop-opacity=".03" />
         </linearGradient>
       </defs>
       <g class="eje"></g><path class="area" /><path class="linea" /><line class="cursor" y1="0" y2="200" visibility="hidden" />
     </svg>
   </div>
 )}
-<div class="acciones-mapa">
-  {destino && <a class="btn btn--verde" href={destino} target="_blank" rel="noopener"><Icono nombre="coche" /> Cómo llegar</a>}
-  {gpx && <a class="btn btn--borde" style="color:var(--bosque)" href={gpx} download><Icono nombre="descarga" /> Descargar track GPX</a>}
+<div class="acciones" style="justify-content:center;margin-top:22px">
+  {destino && <a class="btn btn--zona" href={destino} target="_blank" rel="noopener"><Icono nombre="coche" /> Cómo llegar</a>}
+  {gpx && <a class="btn btn--borde" href={gpx} download><Icono nombre="descarga" /> Descargar track GPX</a>}
 </div>
 <script>
   import L from 'leaflet';
@@ -33,13 +33,14 @@ const destino = coords ? `https://www.google.com/maps/dir/?api=1&destination=${c
     const lat = parseFloat(el.dataset.lat ?? ''), lng = parseFloat(el.dataset.lng ?? '');
     const centro: [number, number] | undefined = Number.isNaN(lat) ? undefined : [lat, lng];
     const mapa = crearMapa(el, centro, 12);
-    if (centro) L.marker(centro, { icon: pin('#f3b229', 20) }).addTo(mapa).bindPopup(`<b>${el.dataset.titulo}</b><br>Punto de inicio`);
+    const zona = getComputedStyle(document.documentElement).getPropertyValue('--z').trim() || '#1F6FA8';
+    if (centro) L.marker(centro, { icon: pin(zona, 22) }).addTo(mapa).bindPopup(`<b>${el.dataset.titulo}</b><br>Punto de inicio`);
 
     const gpx = el.dataset.gpx;
     if (gpx) {
       leerGpx(gpx).then((segs) => {
         if (!segs.length) return;
-        const capa = L.featureGroup(segs.map((s) => L.polyline(s.map((p) => [p.lat, p.lng]), { color: '#f3b229', weight: 5, opacity: .95 }))).addTo(mapa);
+        const capa = L.featureGroup(segs.map((s) => L.polyline(s.map((p) => [p.lat, p.lng]), { color: '#FFD166', weight: 5, opacity: 1 }))).addTo(mapa);
         L.featureGroup(segs.map((s) => L.polyline(s.map((p) => [p.lat, p.lng]), { color: '#17191b', weight: 9, opacity: .35 }))).addTo(mapa).bringToBack();
         mapa.fitBounds(capa.getBounds(), { padding: [30, 30] });
         dibujarPerfil(segs.flat(), mapa);
@@ -65,7 +66,9 @@ const destino = coords ? `https://www.google.com/maps/dir/?api=1&destination=${c
     const y = (e: number) => H - pad - ((e - lo) / (hi - lo)) * (H - pad - 8);
     const linea = conEle.map((p, i) => `${i ? 'L' : 'M'}${x(p.dist).toFixed(1)},${y(p.ele!).toFixed(1)}`).join('');
     const svg = caja.querySelector('svg')!;
-    svg.querySelector('.linea')!.setAttribute('d', linea);
+    const trazo = svg.querySelector<SVGPathElement>('.linea')!;
+    trazo.setAttribute('d', linea);
+    trazo.style.setProperty('--largo', String(Math.ceil(trazo.getTotalLength())));
     svg.querySelector('.area')!.setAttribute('d', `${linea}L${W},${H - pad}L0,${H - pad}Z`);
     const eje = svg.querySelector('.eje')!;
     let marcas = '';
@@ -75,7 +78,7 @@ const destino = coords ? `https://www.google.com/maps/dir/?api=1&destination=${c
     }
     eje.innerHTML = marcas;
     const cursor = svg.querySelector('.cursor')!;
-    const marcador = L.circleMarker([conEle[0].lat, conEle[0].lng], { radius: 7, color: '#fff', fillColor: '#1f4a33', fillOpacity: 1, weight: 3 });
+    const marcador = L.circleMarker([conEle[0].lat, conEle[0].lng], { radius: 7, color: '#fff', fillColor: getComputedStyle(document.documentElement).getPropertyValue('--z').trim(), fillOpacity: 1, weight: 3 });
     svg.addEventListener('mousemove', (ev) => {
       const b = svg.getBoundingClientRect();
       const d = conEle[0].dist + ((ev.clientX - b.left) / b.width) * total;

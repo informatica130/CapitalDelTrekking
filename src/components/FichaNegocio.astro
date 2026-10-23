@@ -2,41 +2,47 @@
 import Base from '../layouts/Base.astro';
 import Heroe from './Heroe.astro';
 import Icono from './Icono.astro';
+import Emblema from './Emblema.astro';
 import Panel from './Panel.astro';
 import Redes from './Redes.astro';
 import Galeria from './Galeria.astro';
 import Tarjeta from './Tarjeta.astro';
 import MapaRuta from './MapaRuta.astro';
-import { url, valorCampo, type Negocio, type Ruta, type Actividad } from '../scripts/datos';
-interface Props { n: Negocio; volver: { url: string; texto: string }; icono?: string; oferta?: { rutas: Ruta[]; actividades: Actividad[] } }
-const { n, volver, icono = 'tienda', oferta } = Astro.props;
+import { ZONAS } from '../scripts/zonas';
+import { url, valorCampo, NIVEL_COLOR, type Negocio, type Ruta, type Actividad } from '../scripts/datos';
+interface Props { n: Negocio; zona: string; listado: { url: string; texto: string }; propia: string; oferta?: { rutas: Ruta[]; actividades: Actividad[] } }
+const { n, zona, listado, propia, oferta } = Astro.props;
+const z = ZONAS[zona];
 const iconos: Record<string, string> = { 'Contacto': 'telefono', 'Información del lugar': 'pin' };
 const ubicacion = n.grupos.flatMap((g) => g.campos).find((c) => c.k === 'Ubicación')?.v ?? '';
 const tel = valorCampo(n.grupos.find((g) => g.titulo === 'Contacto')?.campos ?? [], 'Teléfono').replace(/[^\d+]/g, '');
-const whatsapp = n.redes.whatsapp;
+const whatsapp = n.redes?.whatsapp;
 const mapsBusqueda = ubicacion ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${n.titulo}, ${ubicacion}`)}` : '';
+const tipo = n.clase || n.tipo || '';
 ---
-<Base titulo={n.titulo} descripcion={n.extracto || `${n.titulo} en Melipeuco`} imagen={n.imagen}>
-  <Heroe titulo={n.titulo} imagen={n.imagen || '/media/2024/11/pewenmapu1-scaled.webp'} volver={volver}>
-    {n.logo && <img src={n.logo} alt={`Logo ${n.titulo}`} style="height:70px;width:auto;margin-top:14px;border-radius:10px;background:#fff;padding:6px" />}
+<Base titulo={n.titulo} descripcion={n.extracto || `${n.titulo} en Melipeuco`} imagen={n.imagen} zona={zona}>
+  <Heroe titulo={n.titulo} imagen={n.imagen || '/media/2024/11/pewenmapu1-scaled.webp'} zona={zona} migas={[listado, { texto: n.titulo }]}>
+    <div class="etiquetas" slot="arriba">{tipo.split(',').filter(Boolean).map((t) => <span class="chip chip--solido">{t.trim()}</span>)}</div>
+    {n.logo && <img src={n.logo} alt={`Logo ${n.titulo}`} style="height:72px;width:auto;border-radius:16px;background:#fff;padding:8px;margin-bottom:6px" />}
+    <div class="acciones">
+      {whatsapp && <a class="btn btn--crema" href={whatsapp} target="_blank" rel="noopener"><Icono nombre="whatsapp" /> WhatsApp</a>}
+      {tel.length >= 8 && <a class="btn btn--borde" href={`tel:${tel}`}><Icono nombre="telefono" /> Llamar</a>}
+      <button type="button" class="fav fav--grande" data-fav={propia} aria-pressed="false"><Icono nombre="corazon" /> <span data-fav-txt>Guardar en Mi viaje</span></button>
+      <button class="btn-icono" type="button" data-compartir aria-label="Compartir"><Icono nombre="compartir" /></button>
+    </div>
   </Heroe>
-  {n.resumen.length > 0 && <div class="franja"><div class="contenedor"><Icono nombre="info" />{n.resumen.map((c) => <span class="dato"><b>{c.k}:</b> {c.v}</span>)}</div></div>}
 
   <section class="seccion">
     <div class="contenedor">
       <div class="ficha">
-        <div>
-          <span class="antetitulo" style="font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;color:var(--sol-osc)">Conócenos</span>
+        <div class="revelar">
+          <span class="antetitulo"><Emblema letra={z.letra} />Conócenos</span>
           <h2>{n.subtitulo && n.subtitulo !== 'Conócenos' ? n.subtitulo : n.titulo}</h2>
-          {n.cuerpo ? <div class="prosa" set:html={n.cuerpo} /> : <p style="color:var(--texto-suave)">Contáctanos para más información sobre nuestros servicios.</p>}
-          <p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
-            {whatsapp && <a class="btn" href={whatsapp} target="_blank" rel="noopener"><Icono nombre="whatsapp" /> Escribir por WhatsApp</a>}
-            {tel.length >= 8 && <a class="btn btn--verde" href={`tel:${tel}`}><Icono nombre="telefono" /> Llamar</a>}
-          </p>
+          {n.cuerpo ? <div class="prosa" set:html={n.html} /> : <p class="prosa">Contáctanos para conocer más sobre nuestros servicios.</p>}
           {n.servicios.length > 0 && (
-            <div style="margin-top:36px">
+            <div style="margin-top:40px">
               <h3>Servicios</h3>
-              <div class="servicios-iconos">{n.servicios.map((s) => <span>{s}</span>)}</div>
+              <div class="servicios-lista">{n.servicios.map((s) => <span>{s}</span>)}</div>
             </div>
           )}
         </div>
@@ -49,31 +55,28 @@ const mapsBusqueda = ubicacion ? `https://www.google.com/maps/search/?api=1&quer
   </section>
 
   {n.galeria.length > 0 && (
-    <section class="seccion seccion--blanca" style="padding-top:60px">
-      <div class="contenedor"><Galeria imagenes={n.galeria} titulo={n.titulo} /></div>
-    </section>
+    <section class="seccion seccion--papel2"><div class="contenedor">
+      <div class="cabeza revelar"><span class="antetitulo">Galería</span><h2>Conoce <em>el lugar</em></h2></div>
+      <Galeria imagenes={n.galeria} titulo={n.titulo} />
+    </div></section>
   )}
 
   {oferta && (oferta.rutas.length > 0 || oferta.actividades.length > 0) && (
-    <section class="seccion">
-      <div class="contenedor">
-        <div class="titulo-seccion"><span class="antetitulo">Experiencias</span><h2>Rutas y actividades que ofrecemos</h2></div>
-        <div class="grilla">
-          {oferta.rutas.map((r) => <Tarjeta url={url.ruta(r.slug)} titulo={r.titulo} imagen={r.imagen} texto={r.extracto} etiqueta={r.interes} />)}
-          {oferta.actividades.map((a) => <Tarjeta url={url.actividad(a.slug)} titulo={a.titulo} imagen={a.imagen} texto={a.extracto} chips={[{ t: a.tipo, c: 'chip--sol' }]} />)}
-        </div>
+    <section class="seccion seccion--zona"><div class="contenedor">
+      <div class="cabeza revelar"><span class="antetitulo">Experiencias</span><h2>Rutas y actividades <em>que ofrecemos</em></h2></div>
+      <div class="grilla">
+        {oferta.rutas.map((r, i) => <Tarjeta url={url.ruta(r.slug)} titulo={r.titulo} imagen={r.imagen} texto={r.extracto} d={i} etiqueta={{ t: r.interes, c: NIVEL_COLOR[r.interes] }} />)}
+        {oferta.actividades.map((a, i) => <Tarjeta url={url.actividad(a.slug)} titulo={a.titulo} imagen={a.imagen} texto={a.extracto} letra={2} d={i} etiqueta={{ t: a.tipo }} />)}
       </div>
-    </section>
+    </div></section>
   )}
 
   {(n.mapa_embed || n.coords || ubicacion) && (
-    <section class="seccion seccion--blanca">
-      <div class="contenedor">
-        <div class="titulo-seccion"><span class="antetitulo">Ubicación</span><h2>Dónde estamos</h2>{ubicacion && <p><b>Estamos en:</b> {ubicacion}</p>}</div>
-        {n.mapa_embed ? <iframe class="embed-mapa" src={n.mapa_embed} loading="lazy" referrerpolicy="no-referrer-when-downgrade" title={`Mapa de ${n.titulo}`} allowfullscreen></iframe>
-          : n.coords ? <MapaRuta coords={n.coords} titulo={n.titulo} />
-          : <p class="centro"><a class="btn btn--verde" href={mapsBusqueda} target="_blank" rel="noopener"><Icono nombre="pin" /> Ver en Google Maps</a></p>}
-      </div>
-    </section>
+    <section class="seccion"><div class="contenedor">
+      <div class="cabeza revelar"><span class="antetitulo">Ubicación</span><h2>Dónde <em>estamos</em></h2>{ubicacion && <p>{ubicacion}</p>}</div>
+      {n.mapa_embed ? <iframe class="embed-mapa" src={n.mapa_embed} loading="lazy" referrerpolicy="no-referrer-when-downgrade" title={`Mapa de ${n.titulo}`} allowfullscreen></iframe>
+        : n.coords ? <MapaRuta coords={n.coords} titulo={n.titulo} />
+        : <a class="btn btn--zona" href={mapsBusqueda} target="_blank" rel="noopener"><Icono nombre="pin" /> Abrir en Google Maps</a>}
+    </div></section>
   )}
 </Base>

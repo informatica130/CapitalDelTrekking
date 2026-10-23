@@ -1,0 +1,111 @@
+{
+  "slug": "sierra-nevada-cumbre",
+  "titulo": "Sierra Nevada cumbre",
+  "subtitulo": "Ruta Sierra Nevada cumbre",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "22 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "4"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere guía especializado (*)"
+    }
+  ],
+  "cuerpo": "Si tienes experiencia en alta montaña, esta ascensión es una opción espectacular para ti. Te llevarás a una cumbre de 2,554 metros sobre el nivel del mar, donde te espera una belleza escénica sobresaliente. La ruta comienza compartiendo parte del camino con el sendero del Mirador de Sierra Nevada, pero luego se adentra en terreno de alta montaña, lo que añade un desafío adicional a la caminata. El último tramo de la ascensión requiere el uso de equipo especializado y técnicas de marcha glaciar. Debido a la complejidad de este tramo, es esencial realizar la ruta con guías especializados en alta montaña, quienes te proporcionarán la orientación y el apoyo necesarios para garantizar tu seguridad y éxito en la cumbre. Prepárate para una experiencia exigente pero increíblemente gratificante en un entorno de alta montaña.",
+  "imagen": "/media/2025/01/cumbre-volan-sierra-nevada-galeria-1.webp",
+  "galeria": [
+    "/media/2025/01/cumbre-volan-sierra-nevada-galeria-1.webp",
+    "/media/2025/01/cumbre-volan-sierra-nevada-galeria-2.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "22 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "10h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "1399m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "2554m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "4"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "56 2 28406818."
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere guía especializado (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Requiere equipamiento de alta montaña"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.64930287619569,
+    -71.61927865789087
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Expertos",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/25.vn.sierranevadacumbrenorte.gpx",
+  "dificultad": "4",
+  "extension": "22 km",
+  "duracion": "Full day",
+  "condicion": "Requiere guía especializado (*)",
+  "publicado": true,
+  "destacado": false
+}

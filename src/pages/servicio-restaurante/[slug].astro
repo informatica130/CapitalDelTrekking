@@ -1,8 +1,8 @@
 ---
 import FichaNegocio from '../../components/FichaNegocio.astro';
-import { servicios, type Negocio } from '../../scripts/datos';
+import { servicios, url, type Negocio } from '../../scripts/datos';
 export function getStaticPaths() { return servicios.map((n) => ({ params: { slug: n.slug }, props: { n } })); }
 const { n } = Astro.props as { n: Negocio };
-const volver = n.seccion === 'gastronomia' ? { url: '/gastronomia/', texto: 'Volver a Gastronomía' } : { url: '/complementarios/', texto: 'Volver a Servicios complementarios' };
+const gastro = n.seccion === 'gastronomia';
 ---
-<FichaNegocio n={n} icono={n.seccion === 'gastronomia' ? 'plato' : 'tienda'} volver={volver} />
+<FichaNegocio n={n} zona={gastro ? 'gastronomia' : 'complementarios'} propia={url.servicio(n.slug)} listado={gastro ? { url: '/gastronomia/', texto: 'Gastronomía' } : { url: '/complementarios/', texto: 'Servicios complementarios' }} />

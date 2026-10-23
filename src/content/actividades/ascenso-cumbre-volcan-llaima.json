@@ -1,0 +1,30 @@
+{
+  "slug": "ascenso-cumbre-volcan-llaima",
+  "titulo": "Ascenso cumbre volcán Llaima",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Montañismo"
+    }
+  ],
+  "cuerpo": "¿Te gustaría aventurarte en la ascensión de volcanes? El volcán Sollipulli ocupará el primer lugar en tu lista. Esta ruta, abierta durante todo el año y con diversas modalidades de ascenso, se convertirá en tu favorita y querrás explorarla una y otra vez. El esfuerzo de la subida será recompensado al alcanzar la cima, donde la impresionante vista de su glaciar de más de 12 kilómetros cuadrados te impulsará a descubrir más volcanes en Melipeuco.",
+  "imagen": "/media/2024/11/19.vn-llaima-pewen-mapu1.webp",
+  "galeria": [
+    "/media/2024/11/19.vn-llaima-pewen-mapu1.webp",
+    "/media/2024/11/19.vn-llaima-pewen-mapu.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d194308.902630294!2d-71.8107926!3d-38.7156684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96134563e84cc625%3A0x32fabbb2cb9b27df!2sLlaima!5e1!3m2!1ses-419!2scl!4v1728489347296!5m2!1ses-419!2scl",
+  "operadores": [
+    "namku-adventure",
+    "melipewunko",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Montañismo",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,28 +1,25 @@
 ---
 import Base from '../layouts/Base.astro';
 import Heroe from '../components/Heroe.astro';
-import { puntosMapa, rutas, url } from '../scripts/datos';
-// Une cada punto del mapa con su ficha de ruta (por nombre de archivo GPX o por nombre).
-const norm = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+import { puntosMapa, rutas, url, NIVEL_COLOR, NIVELES } from '../scripts/datos';
+const norm = (t: string) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
 const puntos = puntosMapa.map((p) => {
   const r = rutas.find((x) => x.gpx && x.gpx.split('/').pop() === p.gpx.split('/').pop())
     ?? rutas.find((x) => norm(x.titulo) === norm(p.name))
     ?? rutas.find((x) => norm(p.name).includes(norm(x.titulo)) || norm(x.titulo).includes(norm(p.name)));
-  return { ...p, url: r ? url.ruta(r.slug) : '', nivel: r?.interes ?? '', titulo: r?.titulo ?? p.name };
+  return { ...p, url: r ? url.ruta(r.slug) : '', nivel: r?.interes ?? '', titulo: r?.titulo ?? p.name, km: r?.extension ?? '', img: r?.imagen ?? '' };
 });
 ---
-<Base titulo="Mapa de senderos" descripcion="Mapa interactivo con las rutas de trekking de Melipeuco y sus tracks GPX.">
-  <Heroe titulo="Mapa de" destacado="senderos" imagen="/media/slider2/04.webp" bajada="Toca un sendero para ver su recorrido y abrir su ficha con el perfil de elevación." />
-  <section class="seccion">
+<Base titulo="Mapa de senderos" zona="mapa" descripcion="Mapa interactivo con las rutas de trekking de Melipeuco y sus tracks GPX.">
+  <Heroe titulo="Mapa de" destacado="senderos" zona="mapa" imagen="/media/slider2/04.webp" bajo migas={[{ texto: 'Mapa de senderos' }]} bajada="Toca un sendero para ver su recorrido y abrir su ficha con el perfil de elevación." />
+  <section class="seccion" style="padding-top:30px">
     <div class="contenedor">
-      <div class="pildoras" id="nivelesMapa" style="margin-bottom:20px">
-        <button type="button" aria-pressed="true" data-valor="">Todas</button>
-        <button type="button" aria-pressed="false" data-valor="Familiares">Familiares</button>
-        <button type="button" aria-pressed="false" data-valor="Trekkeros">Trekkeros</button>
-        <button type="button" aria-pressed="false" data-valor="Expertos">Expertos</button>
+      <div class="pildoras" id="nivelesMapa">
+        <button type="button" aria-pressed="true" data-valor="">Todas <small>{puntos.length}</small></button>
+        {NIVELES.map((n) => <button type="button" aria-pressed="false" data-valor={n} style={`--c:${NIVEL_COLOR[n]}`}>{n} <small>{puntos.filter((p) => p.nivel === n).length}</small></button>)}
       </div>
-      <div class="mapa mapa--grande" id="mapaGeneral" data-puntos={JSON.stringify(puntos)}></div>
-      <p class="paginacion-nota" style="margin-top:14px">Haz clic en un punto para ver el recorrido completo. Datos GPX referenciales: verifica siempre las condiciones en terreno.</p>
+      <div class="mapa mapa--grande" id="mapaGeneral" data-puntos={JSON.stringify(puntos)} data-colores={JSON.stringify(NIVEL_COLOR)}></div>
+      <p class="contador-res" style="margin-top:14px">Datos GPX referenciales: verifica siempre las condiciones en terreno.</p>
     </div>
   </section>
   <script>
@@ -30,21 +27,26 @@ const puntos = puntosMapa.map((p) => {
     import { crearMapa, pin } from '../scripts/mapa-base';
     import { leerGpx } from '../scripts/gpx';
     const el = document.getElementById('mapaGeneral')!;
-    const puntos = JSON.parse(el.dataset.puntos!) as { gpx: string; lat: number; lng: number; name: string; url: string; nivel: string; titulo: string }[];
+    const puntos = JSON.parse(el.dataset.puntos!) as { gpx: string; lat: number; lng: number; url: string; nivel: string; titulo: string; km: string; img: string }[];
+    const colores = JSON.parse(el.dataset.colores!) as Record<string, string>;
     const mapa = crearMapa(el, [-38.82, -71.6], 10);
-    const colores: Record<string, string> = { Familiares: '#3f9a5b', Trekkeros: '#1f6f9f', Expertos: '#c0392b' };
     const capas = new Map<string, L.LayerGroup>();
     let trackActivo: L.Layer | null = null;
     const marcadores = puntos.map((p) => {
-      const m = L.marker([p.lat, p.lng], { icon: pin(colores[p.nivel] ?? '#f3b229', 16), title: p.titulo });
-      m.bindPopup(`<b>${p.titulo}</b>${p.nivel ? `<br>${p.nivel}` : ''}${p.url ? `<br><a href="${p.url}">Ver ficha de la ruta →</a>` : ''}`);
+      const color = colores[p.nivel] ?? '#7A3E91';
+      const m = L.marker([p.lat, p.lng], { icon: pin(color, 22), title: p.titulo });
+      m.bindPopup(`${p.img ? `<img src="${p.img}" alt="" style="width:220px;height:120px;object-fit:cover;border-radius:10px;margin-bottom:8px">` : ''}<b>${p.titulo}</b><br>${[p.nivel, p.km].filter(Boolean).join(' · ')}${p.url ? `<br><a href="${p.url}">Ver ficha de la ruta →</a>` : ''}`, { maxWidth: 240 });
       m.on('click', async () => {
         if (trackActivo) mapa.removeLayer(trackActivo);
         try {
           const segs = await leerGpx(p.gpx);
-          trackActivo = L.featureGroup(segs.map((s) => L.polyline(s.map((q) => [q.lat, q.lng]), { color: colores[p.nivel] ?? '#f3b229', weight: 5 }))).addTo(mapa);
-          mapa.fitBounds((trackActivo as L.FeatureGroup).getBounds(), { padding: [40, 40], maxZoom: 14 });
-          m.openPopup();
+          const g = L.featureGroup([
+            ...segs.map((s) => L.polyline(s.map((q) => [q.lat, q.lng]), { color: '#000', weight: 9, opacity: .25 })),
+            ...segs.map((s) => L.polyline(s.map((q) => [q.lat, q.lng]), { color, weight: 5 })),
+          ]).addTo(mapa);
+          trackActivo = g;
+          mapa.flyToBounds(g.getBounds(), { padding: [50, 50], maxZoom: 14, duration: 1.2 });
+          setTimeout(() => m.openPopup(), 1250);
         } catch { /* sin track */ }
       });
       if (!capas.has(p.nivel)) capas.set(p.nivel, L.layerGroup().addTo(mapa));

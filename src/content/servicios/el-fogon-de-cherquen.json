@@ -1,0 +1,72 @@
+{
+  "slug": "el-fogon-de-cherquen",
+  "titulo": "El Fogón de Cherquen",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Agroelaborados"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/elfogondecherquen2.webp",
+  "galeria": [
+    "/media/2024/11/elfogondecherquen2.webp",
+    "/media/2025/01/fogon-de-cherquen-2.webp",
+    "/media/2025/01/fogon-de-cherquen-1.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino a Cherquén s/n"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56 9 9015 7875"
+        },
+        {
+          "k": "Email",
+          "v": "elfogondecherquen@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.elfogondecherquen.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 9015 7875"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Servicios",
+          "v": "Atención en Francés, Atención en Inglés, Experiencias gastronómicas, Productos artesanales, Sala de Reuniones, Souvenirs"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.126975444414!2d-71.78952382406314!3d-38.89821157172393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961367a6dd7c1671%3A0x81f1798684361f17!2sEl%20Fog%C3%B3n%20de%20Cherqu%C3%A9n!5e0!3m2!1ses-419!2scl!4v1730152412100!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [
+    "Atención en Francés",
+    "Atención en Inglés",
+    "Experiencias gastronómicas",
+    "Productos artesanales",
+    "Sala de Reuniones",
+    "Souvenirs"
+  ],
+  "tipo": "Agroelaborados",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

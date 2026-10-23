@@ -1,0 +1,56 @@
+{
+  "slug": "trekan-mapu",
+  "titulo": "Trekan Mapu",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Ruta S 575 km 2,8, Sector Sahuelhue, Melipeuco"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+569 87871287"
+    }
+  ],
+  "cuerpo": "Servicio de Guiado a los lugares más emblemáticos de la comuna de Melipeuco",
+  "imagen": "/media/2024/11/trekanmapu1.webp",
+  "galeria": [
+    "/media/2024/11/trekanmapu1.webp",
+    "/media/2024/11/trekanmapu3.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Ruta S 575 km 2,8, Sector Sahuelhue, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 87871287"
+        },
+        {
+          "k": "Email",
+          "v": "turismoaraucania11@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56987871287"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24856.227414575453!2d-71.6136432!3d-38.8547063!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96136be16f31d62b%3A0xd5b5fdd09d5b2e35!2sTurismo%20Araucania%20Chile!5e0!3m2!1ses-419!2scl!4v1729111518327!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56987871287",
+    "instagram": "https://www.instagram.com/turismoaraucaniachile?igsh=MWN5a205M2F4YWp5aQ=="
+  },
+  "logo": "/media/2024/11/logo-trekan-mapu.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

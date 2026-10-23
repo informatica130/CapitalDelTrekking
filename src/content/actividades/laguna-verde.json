@@ -1,0 +1,25 @@
+{
+  "slug": "laguna-verde",
+  "titulo": "Laguna Verde",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Natural / Lagos y lagunas"
+    }
+  ],
+  "cuerpo": "Al interior del Parque Nacional Conguillio, se encuentra este bello cuerpo de agua de tonalidades verdes, formado por el apresamiento de aguas generado por erupciones del volcán Llaima. La laguna se encuentra rodeada de escorias volcánicas y bosque nativo. Puedes recorrer la laguna por un sendero plano y breve que rodea su ribera. Por su abundante vegetación, es un sitio muy adecuado para la observación de aves.",
+  "imagen": "/media/2024/11/franz-nawrath-umzb469xiai-unsplash.webp",
+  "galeria": [
+    "/media/2024/11/franz-nawrath-umzb469xiai-unsplash.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24301.889619546597!2d-71.6354823!3d-38.6765807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961347c5d030e941%3A0xb0f00dd6779ee4d!2sLaguna%20Quilillo%20O%20Verde!5e1!3m2!1ses-419!2scl!4v1728489911489!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Natural / Lagos y lagunas",
+  "publicado": true,
+  "destacado": false
+}

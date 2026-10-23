@@ -1,0 +1,112 @@
+{
+  "slug": "laguna-caren-alto",
+  "titulo": "Laguna Carén Alto",
+  "subtitulo": "Ruta Laguna Carén Alto",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "7,4 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2,5"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere guía especializado (*)"
+    }
+  ],
+  "cuerpo": "La Nariz del Diablo es una cumbre escarpada que sobresale entre las serranías que rodean la caldera del Sollipulli. Debe su nombre al afilado aspecto de su formación de rocas de basalto columnar. Cercano a él se encuentra la Laguna Carén alto, tambien conocida como Laguna Legnay, una laguna semicircular inmersa en bosques de araucarias. La ruta que lleva a estos hitos se interna por bosques de raulí y antiguos campos abiertos por los colonos del siglo XX. Es posible realizar esta ruta con acompañamiento de Don Leonardo, quien nos narra, en sus propios recuerdos, la historia reciente del habitar humano de este territorio. La ruta tiene abundantes puntos para cargar agua, y pendientes moderadas que permiten avanzar de manera segura hasta un ambiente altoandino con vistas gloriosas a distintos valles y sierras de Melipeuco.",
+  "imagen": "/media/2024/11/39.02nariz-del-diablo-2-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/39.02nariz-del-diablo-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/39.03nariz-del-diablo-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/39.04nariz-del-diablo.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "7,4 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "8h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "630m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1515m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2,5"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "569 86662958"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere guía especializado (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.901879933485226,
+    -71.54001154232942
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "melipeuco-extreme",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/39.narizdeldiabloylagunadelegnayporcaren.gpx",
+  "dificultad": "2,5",
+  "extension": "7,4 km",
+  "duracion": "Full day",
+  "condicion": "Requiere guía especializado (*)",
+  "publicado": true,
+  "destacado": false
+}

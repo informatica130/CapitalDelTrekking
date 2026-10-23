@@ -5,9 +5,9 @@ import Tarjeta from '../../components/Tarjeta.astro';
 import { noticias, url } from '../../scripts/datos';
 const fecha = (f: string) => new Date(f + 'T12:00:00').toLocaleDateString('es-CL', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
-<Base titulo="Noticias" descripcion="Noticias y novedades de Melipeuco Capital del Trekking.">
-  <Heroe titulo="Noticias de" destacado="Melipeuco" imagen="/media/slider2/04.webp" />
+<Base titulo="Noticias" zona="noticias" descripcion="Noticias y novedades de Melipeuco Capital del Trekking.">
+  <Heroe titulo="Noticias de" destacado="Melipeuco" zona="noticias" imagen="/media/slider2/04.webp" bajo migas={[{ texto: 'Noticias' }]} />
   <section class="seccion"><div class="contenedor"><div class="grilla">
-    {noticias.map((n) => <Tarjeta url={url.noticia(n.slug)} titulo={n.titulo} imagen={n.imagen} texto={n.extracto} icono="camara" chips={[{ t: fecha(n.fecha) }, { t: n.categoria, c: 'chip--verde' }]} />)}
+    {noticias.map((n, i) => <Tarjeta url={url.noticia(n.slug)} titulo={n.titulo} imagen={n.imagen} texto={n.extracto} letra={1} d={i} chips={[{ t: fecha(n.fecha) }, { t: n.categoria }]} />)}
   </div></div></section>
 </Base>

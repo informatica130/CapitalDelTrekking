@@ -1,0 +1,111 @@
+{
+  "slug": "cerro-huallerupe",
+  "titulo": "Cerro Huallerupe",
+  "subtitulo": "Ruta Cerro Huallerupe",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "12 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "3"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "Cerro Huallerupe es una de las cumbres más cercanas a Melipeuco urbano, ofreciendo una excursión físicamente desafiante de día completo desde el poblado. Al comienzo, el sendero transcurre por una plantación forestal exótica, dando paso al bosque nativo a medida que se asciende, para llegar a una cumbre de vegetación rala y afloramientos rocosos. La ruta transcurre por un camino maderero hasta bastante arriba, y luego está marcada por motos, por lo que resulta fácil seguirla. Desde la cumbre se obtiene una gran vista a la parte alta del Allipén y sus distintos cajones, así como al trazado urbano de Melipeuco y el majestuoso volcán Llaima. El cerro Huallerupe está directamente sobre el núcleo urbano de Melipeuco, por lo que es un muy buen panorama diario si no se cuenta con vehículo.",
+  "imagen": "/media/2024/11/12.02cerro-huallerupe-3-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/12.02cerro-huallerupe-3-wpcf_1024x1024.jpg",
+    "/media/2024/11/12.03cerro-huallerupe-4-wpcf_1024x1024.jpg",
+    "/media/2024/11/12.04cerro-huallerupe-2-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "12 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "7h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "1000m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1540m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "3"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.8695968784586,
+    -71.69442635582357
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/12.cerrohuallerupe.gpx",
+  "dificultad": "3",
+  "extension": "12 km",
+  "duracion": "Full day",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

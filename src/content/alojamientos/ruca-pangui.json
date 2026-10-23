@@ -1,0 +1,87 @@
+{
+  "slug": "ruca-pangui",
+  "titulo": "Ruca Pangui",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Transferencia"
+    }
+  ],
+  "cuerpo": "Cabañas con tinaja de agua caliente totalmente privadas e ilimitadas, rodeadas de naturaleza ideal para descansar. Además contamos con arriendo de equipos para disfrutar de la montaña.",
+  "imagen": "/media/2024/11/rucapangui2.webp",
+  "galeria": [
+    "/media/2024/11/rucapangui2.webp",
+    "/media/2024/11/rucapangui4.webp",
+    "/media/2024/11/rucapangui5.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino internacional icalma km 19"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56983005756"
+        },
+        {
+          "k": "Email",
+          "v": "cernatoledo92@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 83005756"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 13:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Tinaja privada, Calefacción, Vajilla"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Cocina equipada, Tinajas"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59123.861992509155!2d-71.55376288565418!3d-38.84814078138809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961315fa7e07701d%3A0xa876a82785e40032!2sCaba%C3%B1as%20Ruca%20Pangui!5e0!3m2!1ses!2scl!4v1729780005735!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56983005756",
+    "facebook": "https://www.facebook.com/profile.php?id=100063609039491",
+    "instagram": "https://www.instagram.com/agroturismo_rucapangui/"
+  },
+  "logo": "/media/2024/11/logorucapangui1-1.jpg",
+  "servicios": [
+    "Cocina equipada",
+    "Tinajas"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

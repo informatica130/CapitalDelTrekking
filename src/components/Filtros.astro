@@ -1,25 +1,40 @@
 ---
-// Filtros del lado del cliente para listados: cada elemento con [data-item] y atributos data-<clave>.
-interface Opcion { clave: string; etiqueta: string; valores: string[]; tipo?: 'pildoras' | 'select' }
-interface Props { opciones: Opcion[]; buscador?: boolean; contenedor: string }
-const { opciones, buscador = true, contenedor } = Astro.props;
+// Filtros instantáneos para listados: los elementos llevan [data-item] y atributos data-<clave>.
+import Icono from './Icono.astro';
+import Emblema from './Emblema.astro';
+interface Opcion { clave: string; etiqueta: string; valores: string[]; tipo?: 'pildoras' | 'select'; colores?: Record<string, string>; conteo?: Record<string, number> }
+interface Props { opciones: Opcion[]; buscador?: boolean; contenedor: string; letra?: number; vista?: boolean }
+const { opciones, buscador = true, contenedor, letra = 0, vista = true } = Astro.props;
+const selects = opciones.filter((o) => o.tipo !== 'pildoras');
+const pildoras = opciones.filter((o) => o.tipo === 'pildoras');
 ---
 <div class="filtros" data-filtros={contenedor}>
-  {buscador && <input type="search" placeholder="Buscar por nombre…" aria-label="Buscar" data-buscar />}
-  {opciones.filter((o) => o.tipo !== 'pildoras').map((o) => (
-    <select data-clave={o.clave} aria-label={o.etiqueta}>
-      <option value="">{o.etiqueta}: todos</option>
-      {o.valores.map((v) => <option value={v}>{v}</option>)}
-    </select>
-  ))}
+  {buscador && <label class="filtros__buscar"><Icono nombre="buscar" /><span class="sr">Buscar</span><input type="search" placeholder="Buscar por nombre o palabra…" data-buscar /></label>}
+  {selects.length > 0 && (
+    <div class="filtros__selects">
+      {selects.map((o) => (
+        <select data-clave={o.clave} aria-label={o.etiqueta}>
+          <option value="">{o.etiqueta}</option>
+          {o.valores.map((v) => <option value={v}>{v}</option>)}
+        </select>
+      ))}
+    </div>
+  )}
+  {vista && (
+    <div class="vista" role="group" aria-label="Vista">
+      <button type="button" aria-pressed="true" data-vista="grilla" aria-label="Ver en cuadrícula"><Icono nombre="grilla" /></button>
+      <button type="button" aria-pressed="false" data-vista="lista" aria-label="Ver en lista"><Icono nombre="lista" /></button>
+    </div>
+  )}
 </div>
-{opciones.filter((o) => o.tipo === 'pildoras').map((o) => (
-  <div class="pildoras" data-pildoras={o.clave} data-para={contenedor} role="group" aria-label={o.etiqueta} style="margin:-14px 0 36px">
+{pildoras.map((o) => (
+  <div class="pildoras" data-pildoras={o.clave} data-para={contenedor} role="group" aria-label={o.etiqueta}>
     <button type="button" aria-pressed="true" data-valor="">Todas</button>
-    {o.valores.map((v) => <button type="button" aria-pressed="false" data-valor={v}>{v}</button>)}
+    {o.valores.map((v) => <button type="button" aria-pressed="false" data-valor={v} style={o.colores?.[v] ? `--c:${o.colores[v]}` : ''}>{v}{o.conteo?.[v] !== undefined && <small>{o.conteo[v]}</small>}</button>)}
   </div>
 ))}
-<p class="contador-res" data-contador={contenedor}></p>
+<p class="contador-res" data-contador={contenedor} aria-live="polite"></p>
+<div class="sin-resultados" data-vacio={contenedor}><Emblema letra={letra} /><p>No hay resultados con esos filtros. Prueba con otra combinación.</p></div>
 <script>
   document.querySelectorAll<HTMLElement>('[data-filtros]').forEach((caja) => {
     const id = caja.dataset.filtros!;
@@ -32,8 +47,6 @@ const { opciones, buscador = true, contenedor } = Astro.props;
     const selects = [...caja.querySelectorAll<HTMLSelectElement>('select[data-clave]')];
     const grupos = [...document.querySelectorAll<HTMLElement>(`[data-pildoras][data-para="${id}"]`)];
     const estado: Record<string, string> = {};
-
-    // Estado inicial desde la URL (?interes=Familiares, etc.)
     const params = new URLSearchParams(location.search);
     selects.forEach((s) => { const v = params.get(s.dataset.clave!); if (v) s.value = v; });
     grupos.forEach((g) => {
@@ -41,33 +54,38 @@ const { opciones, buscador = true, contenedor } = Astro.props;
       estado[g.dataset.pildoras!] = v;
       g.querySelectorAll<HTMLButtonElement>('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.valor === v)));
     });
-
-    const norm = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+    if (buscar && params.get('q')) buscar.value = params.get('q')!;
+    const norm = (t: string) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const textos = items.map((el) => norm(el.textContent ?? ''));
     const aplicar = () => {
-      const q = norm(buscar?.value ?? '');
-      const filtros: [string, string][] = [
-        ...selects.map((s) => [s.dataset.clave!, s.value] as [string, string]),
-        ...Object.entries(estado),
-      ].filter(([, v]) => v);
+      const q = norm(buscar?.value ?? '').trim();
+      const filtros = [...selects.map((s) => [s.dataset.clave!, s.value] as [string, string]), ...Object.entries(estado)].filter(([, v]) => v);
       let n = 0;
-      items.forEach((el) => {
-        const okTexto = !q || norm(el.textContent ?? '').includes(q);
-        const okFiltros = filtros.every(([k, v]) => (el.dataset[k] ?? '').split('|').includes(v));
-        const ok = okTexto && okFiltros;
+      items.forEach((el, i) => {
+        const ok = (!q || q.split(/\s+/).every((p) => textos[i].includes(p))) && filtros.every(([k, v]) => (el.dataset[k] ?? '').split('|').includes(v));
         el.classList.toggle('oculto', !ok);
         if (ok) { n++; el.classList.add('visible'); }
       });
       if (contador) contador.textContent = `${n} resultado${n === 1 ? '' : 's'}`;
       if (vacio) vacio.style.display = n ? 'none' : 'block';
+      // Mantener los filtros en la URL para poder compartirlos
+      const u = new URL(location.href);
+      filtros.length ? filtros.forEach(([k, v]) => u.searchParams.set(k, v)) : null;
+      [...selects.map((s) => s.dataset.clave!), ...Object.keys(estado)].forEach((k) => { if (!filtros.find(([kk]) => kk === k)) u.searchParams.delete(k); });
+      q ? u.searchParams.set('q', q) : u.searchParams.delete('q');
+      history.replaceState(null, '', u);
     };
     buscar?.addEventListener('input', aplicar);
     selects.forEach((s) => s.addEventListener('change', aplicar));
     grupos.forEach((g) => g.addEventListener('click', (e) => {
-      const b = (e.target as HTMLElement).closest('button');
-      if (!b) return;
+      const b = (e.target as HTMLElement).closest('button'); if (!b) return;
       estado[g.dataset.pildoras!] = b.dataset.valor ?? '';
       g.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
       aplicar();
+    }));
+    caja.querySelectorAll<HTMLButtonElement>('[data-vista]').forEach((b) => b.addEventListener('click', () => {
+      lista.classList.toggle('lista-vista-lista', b.dataset.vista === 'lista');
+      caja.querySelectorAll('[data-vista]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
     }));
     aplicar();
   });

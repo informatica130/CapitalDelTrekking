@@ -1,0 +1,113 @@
+{
+  "slug": "llaima-cumbre",
+  "titulo": "Llaima cumbre",
+  "subtitulo": "Ruta Llaima cumbre",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "14 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "4"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere guía especializado (*)"
+    }
+  ],
+  "cuerpo": "Ascender al volcán Llaima, que alcanza los 3,125 metros sobre el nivel del mar, es una experiencia clásica para los aficionados al montañismo de volcanes en el sur de Chile. Desde la cumbre, disfrutarás de una vista panorámica de 360°, donde podrás observar otras cumbres destacadas como Sierra Nevada, Lonquimay, Tolhuaca, Rucapillan, Lanín y Mocho-Choshuenco. La ruta hacia la cima es extensa y requiere una jornada completa de marcha. Debido a la altitud, el desnivel acumulado y la inclinación del terreno, necesitarás equipamiento técnico de montaña, como crampones, piolet y casco. Cuando la nieve es abundante, la ruta también se convierte en una atractiva opción para el descenso en Randonne. Dado que esta es una ruta de montañismo y no de trekking, es fundamental contar con experiencia previa en montañismo y equipo adecuado. Se recomienda encarecidamente realizar esta ascensión con guías de montaña experimentados para garantizar tu seguridad y aprovechar al máximo esta desafiante y espectacular aventura.",
+  "imagen": "/media/2024/11/19.02volcan-llaima-norte-4-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/19.02volcan-llaima-norte-4-wpcf_1024x1024.jpg",
+    "/media/2024/11/19.03volcan-llaima-norte-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/19.04volcan-llaima-norte-2-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "14 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "9h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "1834m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "3125m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "4"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin Información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere guía especializado (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Requiere equipamiento de alta montaña"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.642052972205946,
+    -71.70552618650586
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "nuke-mawida",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Expertos",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/19.vn.llaimacumbreporcaranorte.gpx",
+  "dificultad": "4",
+  "extension": "14 km",
+  "duracion": "Full day",
+  "condicion": "Requiere guía especializado (*)",
+  "publicado": true,
+  "destacado": false
+}

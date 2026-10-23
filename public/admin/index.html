@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Administrar · Melipeuco Capital del Trekking</title>
+  <link rel="icon" href="/marca/emblema-8.svg" type="image/svg+xml" />
+  <style>
+    body { margin: 0; background: #f4efe6; }
+    #cargando { position: fixed; inset: 0; display: grid; place-items: center; font: 600 16px system-ui, sans-serif; color: #17191b; }
+    #cargando img { width: 260px; margin: 0 auto 18px; display: block; animation: latir 1.6s ease-in-out infinite; }
+    @keyframes latir { 50% { transform: scale(1.04); opacity: .8; } }
+  </style>
+</head>
+<body>
+  <div id="cargando"><div><img src="/marca/logo-color.svg" alt="" />Cargando el panel de administración…</div></div>
+  <script src="https://unpkg.com/decap-cms@3.3.3/dist/decap-cms.js"></script>
+  <script>
+    document.getElementById('cargando').remove();
+    // Vista previa con los estilos y tipografías del sitio
+    CMS.registerPreviewStyle('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;600;700&display=swap');
+    CMS.registerPreviewStyle('/admin/vista-previa.css');
+  </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "slug": "cuatro-rios",
+  "titulo": "Cuatro Ríos",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Tiendas de Autor"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2025/01/cuatro-rios-1.webp",
+  "galeria": [
+    "/media/2025/01/cuatro-rios-1.webp",
+    "/media/2025/01/cuatro-rios-2.webp",
+    "/media/2025/01/cuatro-rios-3.webp",
+    "/media/2025/01/cuatro-rios-4.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda #402"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56 9 5096 2736"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 5096 2736"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Tarjeta"
+        },
+        {
+          "k": "Servicios",
+          "v": "Arriendo de equipamiento, Rent a car, Souvenirs"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.085536257542!2d-71.69266499999999!3d-38.853398999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369ddc2eb169b%3A0x14e599d876f189c5!2sAv.%20Pedro%20Aguirre%20Cerda%20402%2C%204900000%20Melipeuco%2C%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1730152450674!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [
+    "Arriendo de equipamiento",
+    "Rent a car",
+    "Souvenirs"
+  ],
+  "tipo": "Tiendas de Autor",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

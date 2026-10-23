@@ -1,0 +1,58 @@
+{
+  "slug": "ruta-al-conguillio",
+  "titulo": "Ruta al Conguillio",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/32.rutaalconguillio02.webp",
+  "galeria": [
+    "/media/2024/11/32.rutaalconguillio02.webp",
+    "/media/2024/11/32.rutaalconguillio03.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino a Conguillio km 10"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 56346982"
+        },
+        {
+          "k": "Email",
+          "v": "psolemt@hotmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.rutaalconguillio.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 56346982"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.513939995953!2d-71.65055782405902!3d-38.78785329033498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96134108737824ad%3A0x469d980a43d84faf!2sRuta%20al%20Conguillio!5e1!3m2!1ses!2scl!4v1730144990890!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56956346982",
+    "instagram": "https://www.instagram.com/rutaalconguillio.oficial/?hl=es"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

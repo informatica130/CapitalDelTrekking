@@ -1,0 +1,31 @@
+{
+  "slug": "ski-randonee-en-pastos-blancos",
+  "titulo": "Ski Randonee en Pastos Blancos",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Ski randonee"
+    }
+  ],
+  "cuerpo": "En esta ruta fuera de pista, contemplarás la majestuosidad del volcán Llaima mientras te adentras en un paisaje esculpido por la fuerza volcánica. Deslízate por las pendientes formadas por conos adventicios, adaptadas a todos los niveles de esquí. Su vasto manto blanco te guiará hacia vistas panorámicas de la Laguna Verde, Arcoiris y el lago Conguillío, ofreciéndote una perspectiva única y emocionante del territorio del Parque Nacional Conguillio.",
+  "imagen": "/media/2025/01/ski-randonee-en-pastos-blancos-galeria-1.webp",
+  "galeria": [
+    "/media/2025/01/ski-randonee-en-pastos-blancos-galeria-1.webp",
+    "/media/2025/01/ski-randonee-en-pastos-blancos-galeria-2.webp",
+    "/media/2025/01/ski-randonee-en-pastos-blancos-galeria-3.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d20950.115415780703!2d-71.63769682756731!3d-38.689025734653185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDQxJzE5LjIiUyA3McKwMzcnMjIuNiJX!5e0!3m2!1ses-419!2scl!4v1729103656645!5m2!1ses-419!2scl",
+  "operadores": [
+    "trekan-mapu",
+    "pewen-mapu",
+    "araucania-backcountry"
+  ],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Ski randonee",
+  "publicado": true,
+  "destacado": false
+}

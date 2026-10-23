@@ -1,0 +1,26 @@
+{
+  "slug": "lago-conguillio",
+  "titulo": "Lago Conguillio",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Natural / Lagos y lagunas"
+    }
+  ],
+  "cuerpo": "Inmerso en el área silvestre protegida que lleva su nombre, este lago de aguas azul cristalinas y suave oleaje es el mayor cuerpo de agua dentro del Parque Nacional Conguillio. Al norte, está flanqueado por la Sierra Nevada, y cuando las aguas están en calma, reflejan su perfil, creando una impresionante simetría en el paisaje. Además, su ribera cuenta con una amplia y soleada playa, ideal para bañarse, practicar kayak o SUP, y disfrutar de diversas actividades al aire libre.",
+  "imagen": "/media/2024/11/IMG_1894.webp",
+  "galeria": [
+    "/media/2024/11/IMG_1894.webp",
+    "/media/2024/11/conguillio-araucania-backcountry.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24316.5213502027!2d-71.63922760000001!3d-38.633465349999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613491ef5ec6459%3A0xae75d9370735d369!2sLaguna%20Conguillio!5e1!3m2!1ses-419!2scl!4v1728489512720!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Natural / Lagos y lagunas",
+  "publicado": true,
+  "destacado": false
+}

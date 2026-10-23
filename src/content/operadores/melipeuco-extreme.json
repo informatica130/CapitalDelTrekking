@@ -1,0 +1,63 @@
+{
+  "slug": "melipeuco-extreme",
+  "titulo": "Melipeuco Extreme",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Sector Huechelepun km 25, camino volcan Sollipulli, Melipeuco"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+569 85096085 - 56977289848"
+    }
+  ],
+  "cuerpo": "17 años en el rubro. Su principal actividad es el canopy más alto de Chile. Con una altura máxima aproximada de 220 metros, y longitud de 520m. A sus servicios se incorporan cabañas completamente equipadas, para entregar una experiencia única a sus visitantes.",
+  "imagen": "/media/2024/11/melipeucoextreme2.webp",
+  "galeria": [
+    "/media/2024/11/melipeucoextreme2.webp",
+    "/media/2024/11/melipeucoextreme3-jpg.webp",
+    "/media/2024/11/melipeucoextreme4.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Sector Huechelepun km 25, camino volcan Sollipulli, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 85096085 - 56977289848"
+        },
+        {
+          "k": "Email",
+          "v": "melipeucoextreme@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56985096085 - 56977289848"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198809.73654803264!2d-71.77094550201996!3d-38.869040437112055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961313468d5d05af%3A0xac4b19feb7c92677!2sMelipeuco%20Extreme%20-%20CANOPY!5e0!3m2!1ses-419!2scl!4v1729111271221!5m2!1ses-419!2scl",
+  "operadores": [
+    "laguna-caren-alto"
+  ],
+  "relacionados": [
+    "laguna-caren-alto"
+  ],
+  "redes": {
+    "whatsapp": "https://wa.me/+56985096085-56977289848",
+    "facebook": "https://www.facebook.com/p/Melipeuco-Extreme-100064581764100/?locale=es_LA",
+    "instagram": "https://www.instagram.com/melipeucoextreme/",
+    "youtube": "https://www.youtube.com/watch?v=5bgrmW3HwFY"
+  },
+  "logo": "/media/2024/11/logo-melipeuco-extreme.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "mirador-de-molulco",
+  "titulo": "Mirador de Molulco",
+  "subtitulo": "Ruta Mirador de Molulco",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "13 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "Inmersa en una de las sierras sobre el valle de Molulco, accederás a esta laguna a través de un camino vehicular de montaña. Dependiendo de las condiciones del barro o la nieve en el camino, podrás acortar bastante el tramo a pie. En un punto intermedio, encontrarás un notable divisadero desde el cual tendrás una vista amplia del valle de Molulco. Allí, podrás observar astillas de obsidiana, que evidencian que en tiempos prehistóricos el lugar fue un taller lítico y probablemente un punto de vigilancia. Al continuar por el sendero, que atraviesa un bosque relicto de coigües y araucarias, llegarás a una meseta donde te espera una tranquila laguna cordillerana, hogar de aves acuáticas como caiquenes y patos silvestres. Dado que el acceso se encuentra en terrenos privados, es necesario realizar la visita con guías locales.",
+  "imagen": "/media/2024/11/16.02laguna-el-mirador.webp",
+  "galeria": [
+    "/media/2024/11/16.02laguna-el-mirador.webp",
+    "/media/2024/11/16.03laguna-el-mirador.webp",
+    "/media/2024/11/16.04laguna-el-mirador.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "13 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "3h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "238m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1466m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.925723974152184,
+    -71.70074537301171
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/16.lagunaelmiradordemolulco.gpx",
+  "dificultad": "1",
+  "extension": "13 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

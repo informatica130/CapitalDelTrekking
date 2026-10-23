@@ -1,0 +1,82 @@
+{
+  "slug": "la-querencia-de-llaima",
+  "titulo": "La Querencia de Llaima",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Transferencia"
+    }
+  ],
+  "cuerpo": "La Querencia del Llaima es el destino perfecto para toda la familia. Aquí, cada integrante puede descansar, disfrutar y desconectarse en un entorno natural único. Sus cabañas están situadas cerca del río y rodeadas de cascadas, ofreciendo un ambiente tranquilo y revitalizante en contacto con la naturaleza.",
+  "imagen": "/media/2024/11/laquerenciadelllaima02-1-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/laquerenciadelllaima02-1-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Hijuela 6, Santa María del Llaima"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 58252613"
+        },
+        {
+          "k": "Email",
+          "v": "laquerenciadelllaima2019@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 58252613"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Cocina equipada, Estacionamiento, Tinajas"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.4934032923566!2d-71.7798766!3d-38.866951799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961367b382ee3255%3A0x7dfdce500896005c!2sLa%20Querencia%20de%20Llaima!5e0!3m2!1ses-419!2scl!4v1729779482276!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56958252613",
+    "facebook": "https://www.facebook.com/profile.php?id=100057590853559",
+    "instagram": "https://www.instagram.com/laquerenciadellaima/"
+  },
+  "logo": "/media/2024/11/logolaquerenciadelllaima-1.jpg",
+  "servicios": [
+    "Cocina equipada",
+    "Estacionamiento",
+    "Tinajas"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

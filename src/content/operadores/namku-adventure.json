@@ -1,0 +1,77 @@
+{
+  "slug": "namku-adventure",
+  "titulo": "Ñamku Adventure",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Anibal Pincheira 479, Melipeuco"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+569 92065414"
+    }
+  ],
+  "cuerpo": "Agencia de turismo local que brindamos experiencias de turismo aventura. Su objetivo es que tu visita en el territorio de Melipeuco sea inolvidable.",
+  "imagen": "/media/2024/11/namku2.webp",
+  "galeria": [
+    "/media/2024/11/namku2.webp",
+    "/media/2024/11/namku3.webp",
+    "/media/2024/11/namku4.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Anibal Pincheira 479, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 92065414"
+        },
+        {
+          "k": "Email",
+          "v": "namkuadventure@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://taplink.cc/namku"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56992065414"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12428.61551742336!2d-71.6924259!3d-38.8518345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96136999b54d95df%3A0x162439a253843f4c!2s%C3%91amku%20Adventure!5e0!3m2!1ses-419!2scl!4v1729111173619!5m2!1ses-419!2scl",
+  "operadores": [
+    "laguna-verde",
+    "salto-del-tiriento",
+    "truful-truful",
+    "laguna-icalma",
+    "cruce-glaciar-sollipulli",
+    "mirador-cayuman"
+  ],
+  "relacionados": [
+    "cruce-glaciar-sollipulli",
+    "laguna-icalma",
+    "laguna-verde",
+    "mirador-cayuman",
+    "salto-del-tiriento",
+    "truful-truful"
+  ],
+  "redes": {
+    "whatsapp": "https://wa.me/+56992065414",
+    "facebook": "https://es-la.facebook.com/turismonamku/about/",
+    "instagram": "https://www.instagram.com/namkuadventure/?hl=es",
+    "youtube": "https://www.youtube.com/@namkuadventure-melipeucona7621"
+  },
+  "logo": "/media/2024/11/logo-namku-adventure.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

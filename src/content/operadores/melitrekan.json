@@ -1,0 +1,64 @@
+{
+  "slug": "melitrekan",
+  "titulo": "Melitrekan",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Km 1R-925-S, Camino al P.N. Conguillio"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+56 9 8186 0948"
+    }
+  ],
+  "cuerpo": "**«Aventura y naturaleza en el corazón de la Araucanía Andina»**\n\nCon Melitrekan no solo visitas Melipeuco: lo recorres, lo sientes, y lo vives. Somos un emprendimiento familiar, creado para compartir con viajeros el espíritu libre y salvaje de estas tierras.\n\nGuiamos experiencias auténticas en la naturaleza: trekking por los senderos más lindos de la región, kayak en lagos cristalinos, encuentros con la cultura local y paisajes que te dejarán sin aliento. Apostamos por un turismo sustentable, con un profundo respeto por el entorno y las comunidades que lo habitan. Por eso, trabajamos con grupos pequeños, en servicios privados y semiprivados, asegurando un impacto mínimo y una experiencia más cercana y personalizada.\n\nNuestra pasión es mostrarte lo que no todos ven, de forma responsable, aventurera y con el corazón puesto en cada detalle. Cada ruta es una historia, y cada paso o remada con Melitrekan es una conexión con lo esencial.",
+  "imagen": "/media/2024/11/melitrekan2-1-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/melitrekan2-1-wpcf_1024x1024.jpg",
+    "/media/2024/11/melitrekan3.webp",
+    "/media/2024/11/melitrekan4.webp",
+    "/media/2025/01/meli-trekan-1.webp",
+    "/media/2025/01/meli-trekan-2.webp",
+    "/media/2025/01/meli-trekan-3.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Km 1R-925-S, Camino al P.N. Conguillio"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56 9 8186 0948"
+        },
+        {
+          "k": "Email",
+          "v": "melitrekan@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://linktr.ee/meli.trekan"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 5224 3749"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24860.12503119062!2d-71.6834278!3d-38.8435525!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x29f1f62e35c9947b%3A0x7035747d8642e93a!2sMelitrekan!5e0!3m2!1ses-419!2scl!4v1729111552575!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56952243749",
+    "instagram": "https://www.instagram.com/melitrekan"
+  },
+  "logo": "/media/2025/01/meli-trekan-melipeuco-logo.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

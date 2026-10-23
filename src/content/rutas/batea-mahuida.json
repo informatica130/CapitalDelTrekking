@@ -1,0 +1,113 @@
+{
+  "slug": "batea-mahuida",
+  "titulo": "Batea Mahuida",
+  "subtitulo": "Ruta Batea Mahuida",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "5,8 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "El nombre mapuzugun de este cerro hace referencia a la forma de esta montaña que asemeja una ancha batea. Batea Mahuida es un cerro situado sobre la línea fronteriza Chile – Argentina. Su forma particular de plano inclinado está asociada a la erosión glaciar que afectó la zona durante la última glaciación. Esta meseta permite alcanzar una cumbre de mínima dificultad técnica, con una gran recompensa en cuanto a la panorámica. El ascenso tiene una pendiente suave y desde la cumbre se divisan 8 volcanes y una extensa vista a la pampa trasandina y a la cordillera, salpicada de lagos de origen glaciar como Icalma, Galletué, Aluminé y Moquehue. El sendero está bien marcado y hay buena visibilidad hacia la cumbre. En invierno es un buen panorama de caminata sobre raquetas para quienes se estén iniciando en trekking en nieve. En verano el sendero se puede recorrer en mountain bike y cabalgatas.",
+  "imagen": "/media/2024/11/1.02batea-mahuida-4-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/1.02batea-mahuida-4-wpcf_1024x1024.jpg",
+    "/media/2024/11/1.03batea-mahuida-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/1.04batea-mahuida-2-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "5,8 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "4h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "381m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1892m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.77794040192631,
+    -71.22272043037897
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "nuke-mawida",
+    "pewen-mapu",
+    "araucania-backcountry"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/2024/11/01.bateamahuida.gpx",
+  "dificultad": "2",
+  "extension": "5,8 km",
+  "duracion": "Full day",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

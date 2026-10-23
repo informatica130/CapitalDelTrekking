@@ -1,0 +1,30 @@
+{
+  "slug": "ascenso-cumbre-sierra-nevada",
+  "titulo": "Ascenso cumbre Sierra Nevada",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Montañismo"
+    }
+  ],
+  "cuerpo": "Si los miradores de Sierra Nevada te han maravillado con sus impresionantes vistas, ¡imagina la experiencia de observarlas desde la cima! Este volcán extinto, que se eleva a 2.554 metros sobre el nivel del mar, requiere guías especializados debido a la dificultad de su ruta. Durante la ascensión, podrás disfrutar del glaciar Sierra Nevada y admirar otras imponentes cumbres de la región. La vista panorámica hacia el Parque Nacional Conguillío te dejará sin aliento.",
+  "imagen": "/media/2024/11/randonee-araucania-backcountry.webp",
+  "galeria": [
+    "/media/2024/11/randonee-araucania-backcountry.webp",
+    "/media/2024/11/sierranevada-namku.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59318.5595371363!2d-71.66068196811459!3d-38.613278205410865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96134a033bd4c453%3A0x19e24631230543bb!2sSierra%20Nevada!5e0!3m2!1ses-419!2scl!4v1729104059503!5m2!1ses-419!2scl",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu",
+    "araucania-backcountry"
+  ],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Montañismo",
+  "publicado": true,
+  "destacado": false
+}

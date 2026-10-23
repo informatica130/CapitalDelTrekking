@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Heroe from '../../components/Heroe.astro';
 import Icono from '../../components/Icono.astro';
+import Emblema from '../../components/Emblema.astro';
 import Galeria from '../../components/Galeria.astro';
 import Tarjeta from '../../components/Tarjeta.astro';
 import MapaRuta from '../../components/MapaRuta.astro';
@@ -11,56 +12,69 @@ export function getStaticPaths() {
   return actividades.map((a) => ({ params: { slug: a.slug }, props: { a } }));
 }
 const { a } = Astro.props as { a: Actividad };
+const esAct = a.categoria === 'actividad';
+const zona = esAct ? 'que-hacer' : 'que-visitar';
+const letra = esAct ? 2 : 3;
 const ops = operadoresDe(a.operadores);
 const relacionadas = a.relacionados.map(vinculado).filter(Boolean);
-const otras = relacionadas.length ? [] : actividades.filter((x) => x.categoria === a.categoria && x.slug !== a.slug && x.tipo === a.tipo).slice(0, 3);
-const listado = a.categoria === 'actividad' ? { url: '/que-hacer/', texto: 'Volver a Qué hacer' } : { url: '/que-visitar/', texto: 'Volver a Qué visitar' };
+const otras = relacionadas.length ? [] : actividades.filter((x) => x.categoria === a.categoria && x.slug !== a.slug).sort((x) => (x.tipo === a.tipo ? -1 : 1)).slice(0, 3);
+const listado = esAct ? { url: '/que-hacer/', texto: 'Qué hacer' } : { url: '/que-visitar/', texto: 'Qué visitar' };
+const yo = url.actividad(a.slug);
 ---
-<Base titulo={a.titulo} descripcion={a.extracto} imagen={a.imagen}>
-  <Heroe titulo={a.titulo} imagen={a.imagen} volver={listado} />
-  <div class="franja"><div class="contenedor"><Icono nombre="info" />{a.resumen.map((c) => <span class="dato"><b>{c.k}:</b> {c.v}</span>)}</div></div>
+<Base titulo={a.titulo} descripcion={a.extracto} imagen={a.imagen} zona={zona}>
+  <Heroe titulo={a.titulo} imagen={a.imagen} zona={zona} migas={[listado, { texto: a.titulo }]}>
+    <div class="etiquetas" slot="arriba">{a.tipo && <span class="chip chip--solido">{a.tipo}</span>}<span class="chip chip--vidrio">{esAct ? 'Actividad' : 'Atractivo'}</span></div>
+    <div class="acciones">
+      <button type="button" class="fav fav--grande" data-fav={yo} aria-pressed="false"><Icono nombre="corazon" /> <span data-fav-txt>Guardar en Mi viaje</span></button>
+      <button class="btn-icono" type="button" data-compartir aria-label="Compartir"><Icono nombre="compartir" /></button>
+    </div>
+  </Heroe>
 
   <section class="seccion">
     <div class="contenedor">
-      <div class="titulo-seccion"><span class="antetitulo">{a.categoria === 'actividad' ? 'Actividad' : 'Atractivo'}</span><h2>{a.subtitulo || 'La experiencia'}</h2></div>
-      <div style="max-width:820px;margin:0 auto 48px" class="prosa" set:html={a.cuerpo} />
-      <Galeria imagenes={a.galeria} titulo={a.titulo} />
+      <div class="dos-col" style="align-items:start">
+        <div class="revelar">
+          <span class="antetitulo"><Emblema letra={letra} />{a.subtitulo || 'La experiencia'}</span>
+          <h2>{esAct ? <>Vive <em>{a.titulo.toLowerCase()}</em></> : <>Descubre <em>{a.titulo}</em></>}</h2>
+          <div class="prosa" set:html={a.html} />
+        </div>
+        {a.galeria[0] && <div class="foto-marco revelar revelar--der"><img src={a.galeria[1] ?? a.galeria[0]} alt="" loading="lazy" data-parallax="0.08" /><Emblema letra={letra} /></div>}
+      </div>
     </div>
   </section>
 
+  {a.galeria.length > 1 && (
+    <section class="seccion seccion--papel2"><div class="contenedor">
+      <div class="cabeza revelar"><span class="antetitulo">Galería</span><h2>En <em>imágenes</em></h2></div>
+      <Galeria imagenes={a.galeria} titulo={a.titulo} />
+    </div></section>
+  )}
+
   {(a.mapa_embed || a.coords) && (
-    <section class="seccion seccion--blanca">
-      <div class="contenedor">
-        <div class="titulo-seccion"><span class="antetitulo">Ubicación</span><h2>Dónde está</h2></div>
-        {a.mapa_embed ? <iframe class="embed-mapa" src={a.mapa_embed} loading="lazy" referrerpolicy="no-referrer-when-downgrade" title={`Mapa de ${a.titulo}`} allowfullscreen></iframe> : <MapaRuta coords={a.coords} titulo={a.titulo} />}
-      </div>
-    </section>
+    <section class="seccion"><div class="contenedor">
+      <div class="cabeza revelar"><span class="antetitulo">Ubicación</span><h2>Dónde <em>está</em></h2></div>
+      {a.mapa_embed ? <iframe class="embed-mapa" src={a.mapa_embed} loading="lazy" referrerpolicy="no-referrer-when-downgrade" title={`Mapa de ${a.titulo}`} allowfullscreen></iframe> : <MapaRuta coords={a.coords} titulo={a.titulo} />}
+    </div></section>
   )}
 
   {ops.length > 0 && (
-    <section class="seccion">
-      <div class="contenedor">
-        <div class="titulo-seccion"><span class="antetitulo">Vívelo con locales</span><h2>Operadores que ofrecen esta experiencia</h2></div>
-        <div class="grilla">{ops.map((o) => <Tarjeta url={url.operador(o.slug)} titulo={o.titulo} imagen={o.imagen} texto={o.extracto} icono="brujula" />)}</div>
-      </div>
-    </section>
+    <section class="seccion seccion--zona"><div class="contenedor">
+      <div class="cabeza revelar"><span class="antetitulo">Vívelo con locales</span><h2>Operadores que <em>ofrecen esta experiencia</em></h2></div>
+      <div class="grilla">{ops.map((o, i) => <Tarjeta url={url.operador(o.slug)} titulo={o.titulo} imagen={o.imagen} texto={o.extracto} letra={6} d={i} />)}</div>
+    </div></section>
   )}
 
-  <section class="seccion seccion--oscura">
-    <div class="contenedor">
-      <div class="titulo-seccion">
+  {(relacionadas.length > 0 || otras.length > 0) && (
+    <section class="seccion"><div class="contenedor">
+      <div class="cabeza revelar">
         <span class="antetitulo">Sigue explorando</span>
-        <h2>Otras actividades relacionadas</h2>
+        <h2>Otras experiencias <em>relacionadas</em></h2>
         <p>Este es tu lienzo, y Melipeuco te invita a pintarlo con tus huellas y emociones.</p>
       </div>
-      {(relacionadas.length || otras.length) ? (
-        <div class="grilla">
-          {relacionadas.map((v) => <Tarjeta url={v!.url} titulo={v!.titulo} imagen={v!.imagen} texto={v!.extracto} />)}
-          {otras.map((x) => <Tarjeta url={url.actividad(x.slug)} titulo={x.titulo} imagen={x.imagen} texto={x.extracto} chips={[{ t: x.tipo, c: 'chip--sol' }]} />)}
-        </div>
-      ) : (
-        <p class="centro"><a class="btn" href={listado.url}>Ver todas</a></p>
-      )}
-    </div>
-  </section>
+      <div class="grilla">
+        {relacionadas.map((v, i) => <Tarjeta url={v!.url} titulo={v!.titulo} imagen={v!.imagen} texto={v!.extracto} letra={letra} d={i} />)}
+        {otras.map((x, i) => <Tarjeta url={url.actividad(x.slug)} titulo={x.titulo} imagen={x.imagen} texto={x.extracto} letra={letra} d={i} etiqueta={{ t: x.tipo }} />)}
+      </div>
+    </div></section>
+  )}
 </Base>

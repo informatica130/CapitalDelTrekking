@@ -1,0 +1,67 @@
+{
+  "slug": "kani-escalada",
+  "titulo": "Kani Escalada",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Arriendo de equipo, Escalada"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/kani3-1-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/kani3-1-wpcf_1024x1024.jpg",
+    "/media/2025/01/kani-escalada-1.webp",
+    "/media/2025/01/kani-escalada-2.webp",
+    "/media/2025/01/kani-escalada-3.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Teléfono",
+          "v": "+56 9 2049 7486"
+        },
+        {
+          "k": "Email",
+          "v": "kaniescalada@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 2049 7486"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Servicios",
+          "v": "Atención en Inglés, Cocina apta para celíacos, Excursiones o paseos guiados, Experiencias gastronómicas, Menú vegano, Menú vegetariano, Servicio de excursiones, Servicio de transportes"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [
+    "Atención en Inglés",
+    "Cocina apta para celíacos",
+    "Excursiones o paseos guiados",
+    "Experiencias gastronómicas",
+    "Menú vegano",
+    "Menú vegetariano",
+    "Servicio de excursiones",
+    "Servicio de transportes"
+  ],
+  "tipo": "Arriendo de equipo, Escalada",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

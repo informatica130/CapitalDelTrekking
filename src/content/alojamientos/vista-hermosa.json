@@ -1,0 +1,93 @@
+{
+  "slug": "vista-hermosa",
+  "titulo": "Vista Hermosa",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo"
+    }
+  ],
+  "cuerpo": "Aledaña al Parque Nacional Conguillio, Vista Hermosa ofrece cabañas confortables para 2 a 8 personas, construidas con maderas nativas y pino Oregón, en perfecta armonía con el entorno natural. Disfruta de un refugio acogedor en el corazón del bosque nativo, con vistas al impresionante Valle de la Luna y al Volcán Llaima.",
+  "imagen": "/media/2024/11/vistahermosa.webp",
+  "galeria": [
+    "/media/2024/11/vistahermosa.webp",
+    "/media/2024/11/vistahermosa01.webp",
+    "/media/2024/11/vistahermosa02-jpg.webp",
+    "/media/2024/11/vistahermosa03-jpg.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino A Conguillio (Cruce) NºKM. 12 , Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56994441630"
+        },
+        {
+          "k": "Email",
+          "v": "myarur@vistahermosaconguillio.cl"
+        },
+        {
+          "k": "Página web",
+          "v": "www.vistahermosaconguillio.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 94441630"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Sector Conguillio"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 a 20:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Kitchenette, Toallas,Amenities,Desayunos"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo"
+        },
+        {
+          "k": "Servicios",
+          "v": "Cocina equipada, Estacionamiento, Piscina"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.016570478932!2d-71.62742192407075!3d-38.740381971758005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961346d9e39c986f%3A0x63a1f3731c7ca0b4!2sVista%20Hermosa%20Conguillio!5e0!3m2!1ses-419!2scl!4v1729779393723!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56994441630",
+    "facebook": "https://web.facebook.com/VistaHermosaConguillio/?_rdc=1&_rdr",
+    "instagram": "https://www.instagram.com/vistahermosaconguillio/"
+  },
+  "logo": "/media/2024/11/logovistahermosa.jpg",
+  "servicios": [
+    "Cocina equipada",
+    "Estacionamiento",
+    "Piscina"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

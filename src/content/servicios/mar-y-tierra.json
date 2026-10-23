@@ -1,0 +1,56 @@
+{
+  "slug": "mar-y-tierra",
+  "titulo": "Mar y Tierra",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/38.marytierra02.webp",
+  "galeria": [
+    "/media/2024/11/38.marytierra02.webp",
+    "/media/2024/11/38.marytierra03-jpg.webp",
+    "/media/2024/11/38.marytierra04-jpg.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda #183"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 21792701"
+        },
+        {
+          "k": "Email",
+          "v": "gonzalo@gohan.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 21792701"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.773795201377!2d-71.69697667406537!3d-38.85308727173347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613692e516498bf%3A0x6d7e1082f1adb67a!2sMar%20y%20Tierra%20Restaurante!5e1!3m2!1ses!2scl!4v1730146343067!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56921792701",
+    "facebook": "https://www.facebook.com/p/Mar-y-Tierra-100064133291244/",
+    "instagram": "https://www.instagram.com/restaurantemar_ytierra/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

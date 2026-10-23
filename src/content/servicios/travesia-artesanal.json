@@ -1,0 +1,56 @@
+{
+  "slug": "travesia-artesanal",
+  "titulo": "Travesia Artesanal",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/43.travesiaartesanal02.webp",
+  "galeria": [
+    "/media/2024/11/43.travesiaartesanal02.webp",
+    "/media/2024/11/43.travesiaartesanal03.webp",
+    "/media/2024/11/43.travesiaartesanal04.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Ruta S-61"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 94441630"
+        },
+        {
+          "k": "Email",
+          "v": "julietta.carrasco@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 94441630"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23920.70049102233!2d-71.69803133349677!3d-38.84562219101646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613413f01210191%3A0x65fab8d63601ba9!2sTraves%C3%ADa%20Artesanal!5e1!3m2!1ses!2scl!4v1730146662435!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56994441630",
+    "facebook": "https://www.facebook.com/travesia.cerveza.artesanal/?locale=es_LA",
+    "instagram": "https://www.instagram.com/travesiaartesanal/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

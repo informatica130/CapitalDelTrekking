@@ -1,0 +1,40 @@
+{
+  "slug": "vulcanizacion-rivas",
+  "titulo": "Vulcanización Rivas",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Vulcanización"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Aurelio Letelier"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 90837074"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d194.19029017927122!2d-71.6927531!3d-38.8543351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613698b8f9459a9%3A0x28931840ce6e1548!2sVulcanizaci%C3%B3n%20Rivas%20en%20Melipeuco!5e0!3m2!1ses-419!2scl!4v1730152525490!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Vulcanización",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "cruce-glaciar-sollipulli",
+  "titulo": "Cruce glaciar Sollipulli",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Montañismo"
+    }
+  ],
+  "cuerpo": "Te imaginas caminando dentro del cráter de un volcán? Podrás observar la inmensidad del glaciar Sollipulli desde el interior de su caldera y sentir cómo crepita el hielo con tus pasos en el vasto paisaje blanco. Sus sutiles grietas te permitirán apreciar su fragilidad y la belleza del hielo color turquesa. Esta experiencia sobrecogedora te conectará con la de la naturaleza profunda, internándote en la frágil inmensidad de este glaciar que alcanza 600 metros de espesor.",
+  "imagen": "/media/2024/11/365469727_298285412719374_8632170259809662844_n.webp",
+  "galeria": [
+    "/media/2024/11/365469727_298285412719374_8632170259809662844_n.webp",
+    "/media/2024/11/melipewunko3.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96787.75952375105!2d-71.5840883!3d-38.9846577!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613126437e79fd9%3A0xc5c751b90365bf5e!2sSollipulli!5e1!3m2!1ses-419!2scl!4v1728489208833!5m2!1ses-419!2scl",
+  "operadores": [
+    "melipewunko",
+    "pewen-mapu",
+    "araucania-backcountry"
+  ],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Montañismo",
+  "publicado": true,
+  "destacado": false
+}

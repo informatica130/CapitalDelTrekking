@@ -2,48 +2,62 @@
 import Base from '../layouts/Base.astro';
 import Heroe from '../components/Heroe.astro';
 import Icono from '../components/Icono.astro';
+import Emblema from '../components/Emblema.astro';
+import Clima from '../components/Clima.astro';
+import { rutas } from '../scripts/datos';
 const img = '/media/2024/11/namku3-jpg.webp';
 const temuco = 'https://www.google.com/maps/dir/Temuco,+Araucan%C3%ADa/Melipeuco,+Araucan%C3%ADa/';
 const aeropuerto = 'https://www.google.com/maps/dir/Aeropuerto+Araucan%C3%ADa,+Freire/Melipeuco,+Araucan%C3%ADa/';
 ---
-<Base titulo="Explora Melipeuco" descripcion="Cómo llegar a Melipeuco, clima, mapa y todo lo que necesitas para preparar tus rutas." imagen={img}>
-  <Heroe titulo="Explora" destacado="Melipeuco" imagen={img} />
+<Base titulo="Explora Melipeuco" zona="explora" descripcion="Cómo llegar a Melipeuco, clima, mapa y todo lo que necesitas para preparar tus rutas." imagen={img}>
+  <Heroe titulo="Explora" destacado="Melipeuco" zona="explora" imagen={img} migas={[{ texto: 'Explora Melipeuco' }]} bajada="Sal del camino, toma el sendero." />
 
   <section class="seccion">
     <div class="contenedor dos-col">
-      <div class="revelar">
-        <span class="antetitulo" style="font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;color:var(--sol-osc)">Bienvenida</span>
-        <h2>Explora senderos <strong style="color:var(--bosque)">que cuentan historias</strong></h2>
-        <p>En Melipeuco encontrarás 3 volcanes, glaciares y 250 km de rutas de trekking que te permitirán acceder a uno de los paisajes más prístinos de la Araucanía Andina. Aquí, el 45,53% de la superficie comunal corresponden a Áreas Silvestres Protegidas. Adicionalmente, Melipeuco es parte de la Reserva de la Biósfera Araucarias, del Geoparque Kutralkura y del territorio SIPAN.</p>
-        <p>Bienvenido a Melipeuco, donde la naturaleza cobra vida y cada rincón es una invitación a vivir experiencias únicas de trekking. Sumérgete en la esencia misma de la aventura en la Capital del Trekking, un destino que despierta tus sentidos. Sal del camino, toma el sendero.</p>
+      <div class="revelar revelar--izq">
+        <span class="antetitulo"><Emblema letra={8} />Bienvenida</span>
+        <h2>Senderos <em>que cuentan historias</em></h2>
+        <div class="prosa">
+          <p>En Melipeuco encontrarás 3 volcanes, glaciares y 250 km de rutas de trekking que te permitirán acceder a uno de los paisajes más prístinos de la Araucanía Andina. Aquí, el 45,53% de la superficie comunal corresponden a Áreas Silvestres Protegidas. Adicionalmente, Melipeuco es parte de la Reserva de la Biósfera Araucarias, del Geoparque Kutralkura y del territorio SIPAN.</p>
+          <p>Bienvenido a Melipeuco, donde la naturaleza cobra vida y cada rincón es una invitación a vivir experiencias únicas de trekking. Sumérgete en la esencia misma de la aventura en la Capital del Trekking, un destino que despierta tus sentidos.</p>
+        </div>
       </div>
-      <div class="foto-redonda revelar revelar-d2"><img src="/media/2024/11/IMG_1952-1.webp" alt="Paisaje de Melipeuco" loading="lazy" /></div>
+      <div class="foto-marco revelar revelar--der"><img src="/media/2024/11/IMG_1952-1.webp" alt="Paisaje de Melipeuco" loading="lazy" data-parallax="0.08" /><Emblema letra={3} /></div>
     </div>
   </section>
 
-  <section class="seccion seccion--oscura">
+  <section class="seccion seccion--tinta">
     <div class="contenedor">
-      <div class="titulo-seccion"><span class="antetitulo">Planifica tu viaje</span><h2>Encuentra tu camino <strong>en la Capital del Trekking</strong></h2></div>
-      <div class="info-bloques">
-        <div class="info-bloque revelar">
-          <h3><Icono nombre="coche" />¿Cómo llegar?</h3>
-          <p>Melipeuco se encuentra a unos 115 km de Temuco al este, y toda la ruta de acceso está pavimentada.</p>
-          <p><a href={temuco} target="_blank" rel="noopener">Desde Temuco por la ruta 5</a>: en la ruta 5, a la altura de Padre Las Casas se toma la salida a Cunco por la <strong>ruta S-51</strong> al este, luego se empalma con la ruta S-61 y se continúa unos 40 km al este, hasta llegar a Melipeuco.</p>
-          <p><a href={aeropuerto} target="_blank" rel="noopener">Desde el aeropuerto regional de la Araucanía</a>: tomar la ruta 5 al sur, avanzar por esta durante 11 km hasta la salida a ruta S-199 dirección a Villarrica y Cunco. En 8,7 km tomar ruta Freire – Allipén/S-61 y continuar por unos 80 km hasta Melipeuco.</p>
+      <div class="cabeza revelar"><span class="antetitulo">Planifica tu viaje</span><h2 style="color:#fff">Encuentra tu camino <em>en la Capital del Trekking</em></h2></div>
+      <div class="bloques">
+        <div class="bloque revelar" style="--d:0">
+          <Emblema letra={0} />
+          <h3>¿Cómo llegar?</h3>
+          <p>Melipeuco se encuentra a unos 115 km al este de Temuco, y toda la ruta de acceso está pavimentada.</p>
+          <p><a href={temuco} target="_blank" rel="noopener">Desde Temuco por la ruta 5</a>: a la altura de Padre Las Casas se toma la salida a Cunco por la <strong>ruta S-51</strong> al este; luego se empalma con la ruta S-61 y se continúa unos 40 km al este hasta Melipeuco.</p>
+          <p><a href={aeropuerto} target="_blank" rel="noopener">Desde el aeropuerto de la Araucanía</a>: tomar la ruta 5 al sur 11 km hasta la salida a la ruta S-199 hacia Villarrica y Cunco. A los 8,7 km tomar la ruta Freire – Allipén/S-61 y continuar unos 80 km hasta Melipeuco.</p>
         </div>
-        <div class="info-bloque revelar revelar-d1">
-          <h3><Icono nombre="sol" />El tiempo</h3>
-          <p>El clima de montaña cambia rápido. Revisa el pronóstico antes de salir y lleva siempre capas de abrigo, cortaviento y agua.</p>
-          <p><a href="https://forecast7.com/es/n38d85n71d69/melipeuco/" target="_blank" rel="noopener">Ver pronóstico de Melipeuco →</a></p>
-          <p><a href="https://www.meteochile.gob.cl/" target="_blank" rel="noopener">Dirección Meteorológica de Chile →</a></p>
-        </div>
-        <div class="info-bloque revelar revelar-d2">
-          <h3><Icono nombre="mapa" />Prepárate para las rutas</h3>
-          <p>Consulta el mapa con los {44} senderos, descarga los tracks GPX y revisa la dificultad (escala MIDE) de cada ruta antes de salir.</p>
-          <p><a href="/mapa/">Abrir mapa de senderos →</a></p>
+        <div class="bloque revelar" style="--d:1">
+          <Emblema letra={8} />
+          <h3>Mapa de senderos</h3>
+          <p>Consulta las {rutas.length} rutas sobre el mapa, descarga sus tracks GPX y revisa la dificultad (escala MIDE) antes de salir.</p>
+          <p><a href="/mapa/">Abrir el mapa →</a></p>
           <p><a href="/guias-turisticos/">Contratar un guía local →</a></p>
         </div>
+        <div class="bloque revelar" style="--d:2">
+          <Emblema letra={5} />
+          <h3>Antes de salir</h3>
+          <p>Avisa tu ruta y hora de regreso, lleva agua, capas de abrigo, cortaviento y protector solar. En montaña el clima cambia rápido.</p>
+          <p><a href="https://www.meteochile.gob.cl/" target="_blank" rel="noopener">Dirección Meteorológica de Chile →</a></p>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--zona">
+    <div class="contenedor clima">
+      <div class="revelar"><span class="antetitulo">En vivo</span><h2>El tiempo <em>hoy</em></h2><p style="font-size:1.1rem;opacity:.9">Pronóstico de cinco días para el pueblo de Melipeuco. En los volcanes y en altura las temperaturas son mucho más bajas.</p></div>
+      <div class="revelar revelar--der"><Clima /></div>
     </div>
   </section>
 </Base>

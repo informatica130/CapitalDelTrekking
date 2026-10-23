@@ -2,37 +2,45 @@
 import Base from '../layouts/Base.astro';
 import Heroe from '../components/Heroe.astro';
 import Icono from '../components/Icono.astro';
+import Emblema from '../components/Emblema.astro';
 import sitio from '../data/sitio.json';
 const img = '/media/2024/11/pewenmapu1-scaled.webp';
 ---
-<Base titulo="Contáctanos" descripcion="Escríbenos para resolver tus dudas sobre turismo en Melipeuco." imagen={img}>
-  <Heroe titulo="Contáctanos" imagen={img} />
+<Base titulo="Contáctanos" zona="contacto" descripcion="Escríbenos para resolver tus dudas sobre turismo en Melipeuco." imagen={img}>
+  <Heroe titulo="Contáctanos" zona="contacto" imagen={img} bajo migas={[{ texto: 'Contáctanos' }]} bajada="Queremos saber de ti." />
   <section class="seccion">
     <div class="contenedor dos-col" style="align-items:start">
-      <div>
-        <h2>Queremos saber de ti</h2>
-        <p style="font-size:1.1rem">Completa el formulario y te responderemos a la brevedad posible. También, nos puedes seguir en nuestras redes sociales:</p>
-        <div class="redes-ficha" style="margin-top:20px">
+      <div class="revelar revelar--izq">
+        <span class="antetitulo"><Emblema letra={1} />Conversemos</span>
+        <h2>Queremos <em>saber de ti</em></h2>
+        <p class="prosa">Completa el formulario y te responderemos a la brevedad posible. También nos puedes seguir en nuestras redes sociales.</p>
+        <div class="redes" style="margin-top:22px">
           <a href={sitio.redes.instagram} target="_blank" rel="noopener" aria-label="Instagram"><Icono nombre="instagram" /></a>
           <a href={sitio.redes.facebook} target="_blank" rel="noopener" aria-label="Facebook"><Icono nombre="facebook" /></a>
           <a href={sitio.redes.tiktok} target="_blank" rel="noopener" aria-label="TikTok"><Icono nombre="tiktok" /></a>
         </div>
       </div>
-      <div class="panel">
+      <div class="panel revelar revelar--der" style="padding:clamp(24px,4vw,40px)">
         <form class="form" id="formContacto" data-endpoint={sitio.formulario_endpoint} data-email={sitio.email_contacto}>
-          <label>Nombre<input name="nombre" autocomplete="given-name" placeholder="Escribe tu nombre" required /></label>
+          <div class="fila">
+            <label>Nombre<input name="nombre" autocomplete="name" placeholder="Tu nombre" required /></label>
+            <label>Teléfono<input name="telefono" type="tel" autocomplete="tel" placeholder="+56 9 …" /></label>
+          </div>
           <label>Correo electrónico<input name="email" type="email" autocomplete="email" placeholder="tu@correo.cl" required /></label>
-          <label>Teléfono<input name="telefono" type="tel" autocomplete="tel" placeholder="+56 9 …" /></label>
+          <label>Motivo
+            <select name="motivo">
+              <option>Consulta turística</option><option>Quiero aparecer en el directorio</option><option>Actualizar datos de mi negocio</option><option>Prensa</option><option>Otro</option>
+            </select>
+          </label>
           <label>Mensaje<textarea name="mensaje" placeholder="¿En qué te podemos ayudar?" required></textarea></label>
-          <button class="btn btn--verde" type="submit">Enviar mensaje <Icono nombre="flecha" /></button>
+          <button class="btn btn--zona" type="submit">Enviar mensaje <Icono nombre="flecha" /></button>
           <p class="ok" role="status">¡Gracias! Recibimos tu mensaje y te responderemos pronto.</p>
         </form>
       </div>
     </div>
   </section>
   <script>
-    // Si hay un endpoint configurado (p. ej. Formspree o un servicio propio), se envía por POST;
-    // si no, se abre el cliente de correo con el mensaje listo.
+    // Con un endpoint configurado (Formspree, Getform o propio) se envía por POST; si no, se abre el correo.
     const f = document.getElementById('formContacto') as HTMLFormElement;
     f.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -42,8 +50,8 @@ const img = '/media/2024/11/pewenmapu1-scaled.webp';
         const r = await fetch(endpoint, { method: 'POST', body: datos, headers: { Accept: 'application/json' } }).catch(() => null);
         if (r?.ok) { f.reset(); (f.querySelector('.ok') as HTMLElement).style.display = 'block'; return; }
       }
-      const cuerpo = `Nombre: ${datos.get('nombre')}\nCorreo: ${datos.get('email')}\nTeléfono: ${datos.get('telefono')}\n\n${datos.get('mensaje')}`;
-      location.href = `mailto:${f.dataset.email}?subject=${encodeURIComponent('Contacto desde el sitio web')}&body=${encodeURIComponent(cuerpo)}`;
+      const cuerpo = `Nombre: ${datos.get('nombre')}\nCorreo: ${datos.get('email')}\nTeléfono: ${datos.get('telefono')}\nMotivo: ${datos.get('motivo')}\n\n${datos.get('mensaje')}`;
+      location.href = `mailto:${f.dataset.email}?subject=${encodeURIComponent(`[Sitio web] ${datos.get('motivo')}`)}&body=${encodeURIComponent(cuerpo)}`;
     });
   </script>
 </Base>

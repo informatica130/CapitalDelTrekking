@@ -1,0 +1,36 @@
+{
+  "slug": "banco-estado",
+  "titulo": "Banco Estado",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Banco"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda 0200"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12428.075456045814!2d-71.700573!3d-38.8549252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369da36d1dd87%3A0xe56e1acc31c812d0!2sParador%20Tur%C3%ADstico%20de%20Melipeuco!5e0!3m2!1ses-419!2scl!4v1730152617284!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Banco",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

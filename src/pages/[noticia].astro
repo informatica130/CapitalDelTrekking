@@ -2,6 +2,7 @@
 // Las noticias conservan la URL del sitio original (/<slug>/).
 import Base from '../layouts/Base.astro';
 import Heroe from '../components/Heroe.astro';
+import Icono from '../components/Icono.astro';
 import Tarjeta from '../components/Tarjeta.astro';
 import { noticias, url, type Noticia } from '../scripts/datos';
 export function getStaticPaths() { return noticias.map((n) => ({ params: { noticia: n.slug }, props: { n } })); }
@@ -9,15 +10,16 @@ const { n } = Astro.props as { n: Noticia };
 const fecha = new Date(n.fecha + 'T12:00:00').toLocaleDateString('es-CL', { day: 'numeric', month: 'long', year: 'numeric' });
 const otras = noticias.filter((x) => x.slug !== n.slug).slice(0, 3);
 ---
-<Base titulo={n.titulo} descripcion={n.extracto} imagen={n.imagen}>
-  <Heroe titulo={n.titulo} imagen={n.imagen} volver={{ url: '/noticias/', texto: 'Volver a Noticias' }}>
-    <p class="noticia-fecha" style="color:#fff">{fecha} · {n.categoria}</p>
+<Base titulo={n.titulo} descripcion={n.extracto} imagen={n.imagen} zona="noticias">
+  <Heroe titulo={n.titulo} imagen={n.imagen} zona="noticias" migas={[{ texto: 'Noticias', url: '/noticias/' }, { texto: n.titulo }]}>
+    <div class="etiquetas" slot="arriba"><span class="chip chip--solido"><Icono nombre="calendario" /> {fecha}</span><span class="chip chip--vidrio">{n.categoria}</span></div>
+    <div class="acciones"><button class="btn-icono" type="button" data-compartir aria-label="Compartir"><Icono nombre="compartir" /></button></div>
   </Heroe>
-  <section class="seccion"><div class="contenedor"><article class="prosa" style="max-width:780px;margin:auto" set:html={n.cuerpo} /></div></section>
+  <section class="seccion"><div class="contenedor"><article class="prosa revelar" style="max-width:780px;margin:auto" set:html={n.html} /></div></section>
   {otras.length > 0 && (
-    <section class="seccion seccion--blanca"><div class="contenedor">
-      <div class="titulo-seccion"><h2>Otras noticias</h2></div>
-      <div class="grilla">{otras.map((o) => <Tarjeta url={url.noticia(o.slug)} titulo={o.titulo} imagen={o.imagen} texto={o.extracto} icono="camara" />)}</div>
+    <section class="seccion seccion--papel2"><div class="contenedor">
+      <div class="cabeza revelar"><h2>Otras <em>noticias</em></h2></div>
+      <div class="grilla">{otras.map((o, i) => <Tarjeta url={url.noticia(o.slug)} titulo={o.titulo} imagen={o.imagen} texto={o.extracto} letra={1} d={i} />)}</div>
     </div></section>
   )}
 </Base>

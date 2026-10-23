@@ -1,0 +1,60 @@
+{
+  "slug": "los-pioneros",
+  "titulo": "Los Pioneros",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/48.lospioneros02.webp",
+  "galeria": [
+    "/media/2024/11/48.lospioneros02.webp",
+    "/media/2024/11/48.lospioneros03-jpg.webp",
+    "/media/2024/11/48.lospioneros04.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino Melipeuco - Icalma Km 1."
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 68483775"
+        },
+        {
+          "k": "Email",
+          "v": "centroturisticolospioneros@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://www.lospioneros.cl/"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 68483775"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23919.673617430886!2d-71.70291988348734!3d-38.848676240974406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369ba40d6fbe7%3A0x5ff59be34a9e617e!2sLos%20Pioneros%20Restaurante!5e1!3m2!1ses!2scl!4v1730146862700!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56968483775",
+    "facebook": "https://www.facebook.com/lospionerosmelipeuco",
+    "instagram": "https://www.instagram.com/lospionerosmco"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

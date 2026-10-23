@@ -1,0 +1,75 @@
+{
+  "slug": "melipewunko",
+  "titulo": "Melipewünko",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Pedro Aguirre Cerda N°250, Melipeuco"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+569 49313389"
+    }
+  ],
+  "cuerpo": "Emprendimiento turístico familiar que se dedica a brindar experiencias al aire libre de la mano de guias locales del valle del Llaima (Melipeuco). Realiza sus activades con respeto y rescatando la cultura local en cada salida, a travez de sus relatos. Cuenta con equipo óptimos para que la experiencia del visitante sea segura y de calidad.",
+  "imagen": "/media/2024/11/melipewunko2.webp",
+  "galeria": [
+    "/media/2024/11/melipewunko2.webp",
+    "/media/2024/11/melipewunko3.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda N°250, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 49313389"
+        },
+        {
+          "k": "Email",
+          "v": "info.melipewunko@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://melipewunko.cl/"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56949313389"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3107.103956938918!2d-71.69643857406534!3d-38.85297732173348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369dc3a952a0b%3A0xcfb2bf97e893ef5d!2sS-61%2C%20Melipeuco%2C%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1729111312547!5m2!1ses-419!2scl",
+  "operadores": [
+    "salto-del-tiriento",
+    "saltos-de-quillen",
+    "salto-chufquen-palomo",
+    "cascadas-dona-laura",
+    "las-araucarias",
+    "los-carpinteros"
+  ],
+  "relacionados": [
+    "cascadas-dona-laura",
+    "las-araucarias",
+    "los-carpinteros",
+    "salto-chufquen-palomo",
+    "salto-del-tiriento",
+    "saltos-de-quillen"
+  ],
+  "redes": {
+    "whatsapp": "https://wa.me/+56949313389",
+    "facebook": "https://www.facebook.com/Melipewunko.cl/",
+    "instagram": "https://www.instagram.com/turismo_melipewunko/?hl=es-la"
+  },
+  "logo": "/media/2024/11/logo-melipewunko.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

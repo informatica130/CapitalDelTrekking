@@ -1,0 +1,54 @@
+{
+  "slug": "marcella",
+  "titulo": "Marcella",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/35.marcella02.webp",
+  "galeria": [
+    "/media/2024/11/35.marcella02.webp",
+    "/media/2024/11/35.marcella03-jpg.webp",
+    "/media/2024/11/35.marcella04.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda #586"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 41563714"
+        },
+        {
+          "k": "Email",
+          "v": "yasnaalvial@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 41563714"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.8008379617604!2d-71.69432402406534!3d-38.85244392173373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369e7505bfd59%3A0x6222deab029cef89!2sMarcella%20Restaurante!5e1!3m2!1ses!2scl!4v1730146061793!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56941563714"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

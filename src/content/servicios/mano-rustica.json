@@ -1,0 +1,44 @@
+{
+  "slug": "mano-rustica",
+  "titulo": "Mano Rústica",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Souvenir"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/manorustica01.webp",
+  "galeria": [
+    "/media/2024/11/manorustica01.webp",
+    "/media/2024/11/manorustica02.webp",
+    "/media/2024/11/manorustica03.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino Internacional Icalma, Sector Tracura Km 16 Nº16, Tracura"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 36455274 / 569 76515741"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3107.1773151101893!2d-71.516204!3d-38.851298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDUxJzA0LjciUyA3McKwMzAnNTguMyJX!5e0!3m2!1ses-419!2scl!4v1730152339303!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Souvenir",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

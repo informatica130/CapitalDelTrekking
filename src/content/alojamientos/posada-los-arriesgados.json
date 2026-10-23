@@ -1,0 +1,79 @@
+{
+  "slug": "posada-los-arriesgados",
+  "titulo": "Posada Los Arriesgados",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Bed & Breakfast"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo y Transferencia"
+    }
+  ],
+  "cuerpo": "Empresa familiar que ofrece a sus visitantes servicios de alojamiento, alimentación, tours y excursiones, todo esto acompañado por el clima familiar que solo puede entregar o brindar personas que habitan en este entorno.",
+  "imagen": "/media/2024/11/losarriesgados-1.webp",
+  "galeria": [
+    "/media/2024/11/losarriesgados-1.webp",
+    "/media/2024/11/losarriesgados-2.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Santa María de Llaima S/N, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 90133855"
+        },
+        {
+          "k": "Email",
+          "v": "losarriesgados@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://arriesgados.wixsite.com/inicio"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 90133855"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "16:00 hrs. / 13:00 hrs."
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo y Transferencia"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.164183531837!2d-71.77139568844403!3d-38.87448529528438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961367e40c73b137%3A0xb2526c7c02662d94!2sPosada%20Los%20Arriesgados!5e0!3m2!1ses!2scl!4v1729779679712!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56990133855",
+    "facebook": "https://www.facebook.com/losarriesgados/?locale=es_LA",
+    "instagram": "https://www.instagram.com/posadalosarriesgados/"
+  },
+  "logo": "/media/2024/11/logoposadalosarriesgados-1.jpg",
+  "servicios": [],
+  "clase": "Bed & Breakfast",
+  "publicado": true,
+  "destacado": false
+}

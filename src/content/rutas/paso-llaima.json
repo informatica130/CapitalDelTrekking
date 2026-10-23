@@ -1,0 +1,107 @@
+{
+  "slug": "paso-llaima",
+  "titulo": "Paso Llaima",
+  "subtitulo": "Ruta Paso Llaima",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "6 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "Inmersa en la cordillera al este del Sollipulli, esta ruta tiene una historia fascinante como antigua vía de contrabando de ganado y mercadería entre Argentina y Chile. Hoy en día, se ha convertido en una huella vehicular apta para vehículos 4×4 durante el verano. A medida que recorres esta ruta, te adentrarás en un entorno natural impresionante, rodeado de grandes bosques de araucarias y coigües. El trayecto te ofrece una inmersión profunda en la belleza de la cordillera, combinando la historia de la ruta con el esplendor del paisaje forestal. Es una excelente opción para quienes buscan explorar un área con rica historia y disfrutar de la majestuosidad de los bosques andinos.",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "6 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "4h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "144m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1474m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.93783899482286,
+    -71.4619032711647
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/27.pasollaima.gpx",
+  "dificultad": "2",
+  "extension": "6 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

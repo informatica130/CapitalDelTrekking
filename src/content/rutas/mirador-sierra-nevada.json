@@ -1,0 +1,113 @@
+{
+  "slug": "mirador-sierra-nevada",
+  "titulo": "Mirador Sierra Nevada",
+  "subtitulo": "Ruta Mirador Sierra Nevada",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "12 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2,5"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "El Mirador de Sierra Nevada es una de las rutas más aventureras e icónicas del Parque Nacional Conguillío. Este sendero lleva a internarse en el bosque hacia el norte, ascendiendo casi 600 metros de desnivel sobre terreno irregular. Debido a la exigencia física del recorrido, es importante que te encuentres en buen estado físico para disfrutar plenamente de la caminata. El esfuerzo de ascender se ve generosamente recompensado con vistas impresionantes de la cumbre del volcán Sierra Nevada y del lago Conguillio. A medida que avanzas, el paisaje se enmarca con las majestuosas araucarias, que añaden un toque imponente a las vistas panorámicas. Esta ruta es ideal para quienes buscan una experiencia desafiante y gratificante en uno de los entornos naturales más espectaculares del parque.",
+  "imagen": "/media/2024/11/23.02sierra-nevada-2-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/23.02sierra-nevada-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/23.03sierra-nevada.webp",
+    "/media/2024/11/23.04sierra-nevada.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "12 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "6h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "524m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1682m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2,5"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "www.pasesparques.cl"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.649369908500475,
+    -71.61515878514096
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "expandes",
+    "namku-adventure",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/23.miradorsierranevada.gpx",
+  "dificultad": "2,5",
+  "extension": "12 km",
+  "duracion": "Full day",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,87 @@
+{
+  "slug": "lemulen",
+  "titulo": "Lemulen",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Transferencia"
+    }
+  ],
+  "cuerpo": "Cabañas cercanas al Parque Nacional Conguillio, con una espectacular vista al Volcán Llaima. Ideal para disfrutar de la naturaleza y su encanto.",
+  "imagen": "/media/2024/11/lemulen-4.webp",
+  "galeria": [
+    "/media/2024/11/lemulen-4.webp",
+    "/media/2024/11/lemulen-5-1.webp",
+    "/media/2024/11/lemulen-6-1.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Ruta 925 S Camino A Conguillio NºKm 1.5, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 61821217"
+        },
+        {
+          "k": "Email",
+          "v": "contactolemulen@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.lemulen.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 61821217"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco Urbano"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Tinajas, TV"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24861.926545371934!2d-71.6789467!3d-38.8383962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961341f14b2e662f%3A0x52bf39ec11ab54fe!2sAlojamiento%20Turistico%20Lemulen%20Limitada!5e0!3m2!1ses-419!2scl!4v1729779465153!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56961821217",
+    "facebook": "https://web.facebook.com/cabanaslemulen?locale=es_LA",
+    "instagram": "https://www.instagram.com/lemulencabanas/"
+  },
+  "logo": "/media/2024/11/logolemulen-1.jpg",
+  "servicios": [
+    "Tinajas",
+    "TV"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

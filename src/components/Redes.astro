@@ -3,13 +3,11 @@ import Icono from './Icono.astro';
 interface Props { redes: Record<string, string>; titulo?: string }
 const { redes, titulo = 'Nuestras redes' } = Astro.props;
 const orden = ['whatsapp', 'instagram', 'facebook', 'tiktok', 'youtube', 'web'];
-const items = orden.filter((k) => redes[k]).map((k) => [k, redes[k]] as const);
+const items = orden.filter((k) => redes?.[k]).map((k) => [k, redes[k]] as const);
 ---
 {items.length > 0 && (
-  <div class="panel">
+  <div class="panel revelar">
     <h3><Icono nombre="web" />{titulo}</h3>
-    <div class="redes-ficha">
-      {items.map(([k, u]) => <a href={u} target="_blank" rel="noopener" aria-label={k}><Icono nombre={k} /></a>)}
-    </div>
+    <div class="redes">{items.map(([k, u]) => <a href={u} target="_blank" rel="noopener" aria-label={k}><Icono nombre={k} /></a>)}</div>
   </div>
 )}

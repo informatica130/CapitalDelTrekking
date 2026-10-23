@@ -1,0 +1,108 @@
+{
+  "slug": "salto-de-alpehue",
+  "titulo": "Salto de Alpehue",
+  "subtitulo": "Ruta Salto de Alpehue",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "3 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "3"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere acompañamiento local (*)"
+    }
+  ],
+  "cuerpo": "El sendero hacia el Gran Salto del río Alpehue es corto pero ofrece una experiencia emocionante. Aunque la distancia total del recorrido es de solo 1.5 kilómetros de ida, para llegar al salto tendrás que remontar unos 100 metros aguas arriba por el caudaloso río Alpehue. Este tramo sólo es posible durante los meses de verano y otoño, cuando el caudal del río es más manejable. Una vez que llegues al salto, te quedarás asombrado por el impresionante caudal de agua que se precipita desde una estrecha apertura en una majestuosa bóveda de lavas columnares. La combinación de la fuerza del agua y el entorno geológico crea un espectáculo sobrecogedor. Dado que el sendero incluye la remontada del río, es esencial realizar la caminata con el acompañamiento de guías locales que conocen bien la ruta. Esta aventura combina elementos de trekking y canyoning, proporcionando una experiencia única y desafiante en un entorno natural impresionante.",
+  "imagen": "/media/2024/11/32.02gran-salto-alpehue.webp",
+  "galeria": [
+    "/media/2024/11/32.02gran-salto-alpehue.webp",
+    "/media/2024/11/32.03gran-salto-alpehue.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "3 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "2h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "75m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "825m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "3"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "+56 9 4233 265"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere acompañamiento local (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Solo verano, con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.92842228618635,
+    -71.60962491534114
+  ],
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/32.gransaltodelrioalpehue.gpx",
+  "dificultad": "3",
+  "extension": "3 km",
+  "duracion": "Medio día",
+  "condicion": "Requiere acompañamiento local (*)",
+  "publicado": true,
+  "destacado": false
+}

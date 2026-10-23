@@ -1,0 +1,30 @@
+{
+  "slug": "nevados-de-sollipulli",
+  "titulo": "Nevados de Sollipulli",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Natural / Volcán"
+    }
+  ],
+  "cuerpo": "El volcán Sollipulli, caracterizado por su impresionante caldera que posee un diámetro promedio de 4 km, se ubicada entre los volcanes Llaima y Villarrica, dos de los más activos de Sudamérica. En su interior, alberga un glaciar de aproximadamente 2 kilómetros cúbicos que cubre un área total de 12,5 km cuadrados. El Sollipulli está rodeado por varios cráteres y conos de piroclastos, algunos de los cuales presentan coladas de lavas, como los conos Redondo y Chufquén.",
+  "imagen": "/media/2024/11/sollipulli_amanecer.webp",
+  "galeria": [
+    "/media/2024/11/sollipulli_amanecer.webp",
+    "/media/2024/11/sollipulli_travesia.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96787.75952375105!2d-71.5840883!3d-38.9846577!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613126437e79fd9%3A0xc5c751b90365bf5e!2sSollipulli!5e1!3m2!1ses-419!2scl!4v1728489208833!5m2!1ses-419!2scl",
+  "operadores": [
+    "namku-adventure",
+    "melipewunko",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Natural / Volcán",
+  "publicado": true,
+  "destacado": false
+}

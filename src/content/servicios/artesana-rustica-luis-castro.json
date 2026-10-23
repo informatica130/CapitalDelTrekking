@@ -1,0 +1,36 @@
+{
+  "slug": "artesana-rustica-luis-castro",
+  "titulo": "Artesana rustica Luis Castro",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Artesanía"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Teléfono",
+          "v": "+569 66504633"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Artesanía",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

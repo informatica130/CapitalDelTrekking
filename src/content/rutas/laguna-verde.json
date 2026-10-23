@@ -1,0 +1,112 @@
+{
+  "slug": "laguna-verde",
+  "titulo": "Laguna Verde",
+  "subtitulo": "Ruta Laguna Verde",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "0,8 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "A través del sendero Ensenada de aproximadamente 1 hora, ubicado en el Parque Conguillio, te lleva por un hermoso bosque nativo. A medida que avanzas, disfrutarás de la tranquilidad del entorno natural. Al final del recorrido, llegarás a la ensenada de la Laguna Quililo, también conocida como Laguna Verde. Desde este punto, te esperan majestuosas panorámicas de los cordones montañosos del parque, que ofrecen vistas impresionantes del paisaje circundante. La combinación del bosque y las vistas a la laguna crea una experiencia breve pero gratificante, ideal para quienes buscan una caminata rápida con recompensas visuales en un entorno natural excepcional.",
+  "imagen": "/media/2024/11/37.02laguna-verde.webp",
+  "galeria": [
+    "/media/2024/11/37.02laguna-verde.webp",
+    "/media/2024/11/37.03laguna-verde.webp",
+    "/media/2024/11/37.04laguna-verde.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "0,8 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "1h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "18m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1024m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "www.pasesparques.cl"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.69570146192299,
+    -71.62534245767056
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu",
+    "namku-adventure"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/37.lagunaverde.gpx",
+  "dificultad": "1",
+  "extension": "0,8 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

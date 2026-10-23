@@ -1,0 +1,113 @@
+{
+  "slug": "cruce-glaciar-sollipulli",
+  "titulo": "Cruce Glaciar Sollipulli",
+  "subtitulo": "Ruta Cruce Glaciar Sollipulli",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "10,5 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "4"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere guía especializado (*)"
+    }
+  ],
+  "cuerpo": "Esta ruta te lleva a ascender el volcán Sollipulli por su flanco norte. Una vez que llegues a la caldera, te adentrarás en su vasto interior, atravesando una extensión glaciar de 4 kilómetros de diámetro. Para navegar por el glaciar, deberás utilizar equipo especializado como crampones y piolet debido a las condiciones técnicas del terreno. Después de cruzar el glaciar, te dirigirás hacia el lado opuesto de la caldera, donde encontrarás la cumbre sur. Este es el punto más elevado del complejo volcánico, alcanzando una altitud de 2,690 metros sobre el nivel del mar. La ruta ofrece una combinación única de desafíos técnicos y vistas impresionantes, culminando en la conquista de la cumbre sur del volcán Sollipulli.",
+  "imagen": "/media/2024/11/35.02sollipulli-cumbre-jpg.webp",
+  "galeria": [
+    "/media/2024/11/35.02sollipulli-cumbre-jpg.webp",
+    "/media/2024/11/35.03sollipulli-cumbre.webp",
+    "/media/2024/11/35.04sollipulli-cumbre.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "10,5 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "8h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "138m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "671m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "4"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "569 79097685"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere guía especializado (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Requiere equipamiento de alta montaña"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.923595317374826,
+    -71.48679245767055
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu",
+    "araucania-backcountry"
+  ],
+  "relacionados": [],
+  "interes": "Expertos",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/35.vn.sollipulliglaciardelcraterycumbresur.gpx",
+  "dificultad": "4",
+  "extension": "10,5 km",
+  "duracion": "Full day",
+  "condicion": "Requiere guía especializado (*)",
+  "publicado": true,
+  "destacado": false
+}

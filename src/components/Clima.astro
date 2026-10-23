@@ -1,0 +1,49 @@
+---
+// Clima en vivo de Melipeuco (Open-Meteo, sin clave de API). Se muestra al cargar la página.
+import Icono from './Icono.astro';
+import sitio from '../data/sitio.json';
+const [lat, lng] = sitio.coordenadas;
+---
+<div class="clima__panel" data-clima={`${lat},${lng}`}>
+  <div class="clima__ahora">
+    <span class="clima__icono" data-c-icono><Icono nombre="solnube" /></span>
+    <div>
+      <div class="clima__temp"><span data-c-temp>–</span>°</div>
+      <div class="clima__desc" data-c-desc>Cargando el tiempo en Melipeuco…</div>
+    </div>
+  </div>
+  <div class="clima__datos">
+    <span>Sensación <b data-c-sens>–</b></span><span>Viento <b data-c-viento>–</b></span><span>Humedad <b data-c-hum>–</b></span>
+  </div>
+  <div class="clima__dias" data-c-dias></div>
+  <p style="margin:16px 0 0;font-size:.78rem;opacity:.6">Datos: Open-Meteo · Melipeuco, 450 m s. n. m. Las condiciones en altura pueden variar mucho.</p>
+  <template data-c-iconos>
+    <span data-k="sol"><Icono nombre="sol" /></span><span data-k="solnube"><Icono nombre="solnube" /></span><span data-k="nube"><Icono nombre="nube" /></span>
+    <span data-k="niebla"><Icono nombre="niebla" /></span><span data-k="lluvia"><Icono nombre="lluvia" /></span><span data-k="nieve"><Icono nombre="nieve" /></span><span data-k="tormenta"><Icono nombre="tormenta" /></span>
+  </template>
+</div>
+<script>
+  const caja = document.querySelector<HTMLElement>('[data-clima]');
+  if (caja) {
+    const [lat, lng] = caja.dataset.clima!.split(',');
+    const iconos = caja.querySelector<HTMLTemplateElement>('[data-c-iconos]')!.content;
+    const icono = (k: string) => iconos.querySelector(`[data-k="${k}"]`)?.innerHTML ?? '';
+    const tipo = (c: number): [string, string] =>
+      c === 0 ? ['sol', 'Despejado'] : c <= 2 ? ['solnube', 'Parcialmente nublado'] : c === 3 ? ['nube', 'Nublado'] :
+      c <= 48 ? ['niebla', 'Niebla'] : c <= 67 || (c >= 80 && c <= 82) ? ['lluvia', 'Lluvia'] : c <= 77 || c === 85 || c === 86 ? ['nieve', 'Nieve'] : ['tormenta', 'Tormenta'];
+    const q = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=America%2FSantiago&forecast_days=5`;
+    fetch(q).then((r) => r.json()).then((d) => {
+      const c = d.current; const [k, t] = tipo(c.weather_code);
+      caja.querySelector('[data-c-temp]')!.textContent = String(Math.round(c.temperature_2m));
+      caja.querySelector('[data-c-desc]')!.textContent = t;
+      caja.querySelector('[data-c-icono]')!.innerHTML = icono(k);
+      caja.querySelector('[data-c-sens]')!.textContent = `${Math.round(c.apparent_temperature)}°`;
+      caja.querySelector('[data-c-viento]')!.textContent = `${Math.round(c.wind_speed_10m)} km/h`;
+      caja.querySelector('[data-c-hum]')!.textContent = `${c.relative_humidity_2m}%`;
+      caja.querySelector('[data-c-dias]')!.innerHTML = d.daily.time.map((f: string, i: number) => {
+        const dia = i === 0 ? 'Hoy' : new Date(f + 'T12:00:00').toLocaleDateString('es-CL', { weekday: 'short' });
+        return `<div class="clima__dia"><small>${dia}</small>${icono(tipo(d.daily.weather_code[i])[0])}<b>${Math.round(d.daily.temperature_2m_max[i])}°</b><small>${Math.round(d.daily.temperature_2m_min[i])}°</small></div>`;
+      }).join('');
+    }).catch(() => { caja.querySelector('[data-c-desc]')!.textContent = 'No pudimos cargar el pronóstico.'; });
+  }
+</script>

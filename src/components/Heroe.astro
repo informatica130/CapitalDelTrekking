@@ -1,14 +1,34 @@
 ---
-import Icono from './Icono.astro';
-interface Props { titulo: string; destacado?: string; imagen?: string; bajada?: string; volver?: { url: string; texto: string } }
-const { titulo, destacado, imagen, bajada, volver } = Astro.props;
+import Emblema from './Emblema.astro';
+import { ZONAS } from '../scripts/zonas';
+interface Props {
+  titulo: string; destacado?: string; imagen?: string; bajada?: string; zona?: string;
+  migas?: { texto: string; url?: string }[]; bajo?: boolean; emblema?: boolean;
+}
+const { titulo, destacado, imagen, bajada, zona = 'inicio', migas = [], bajo = false, emblema = true } = Astro.props;
+const z = ZONAS[zona] ?? ZONAS.inicio;
+// Cada palabra del título sube por separado
+let p = 0;
+const palabras = (t: string) => t.split(/\s+/).filter(Boolean).map((w) => ({ w, p: p++ }));
+const linea1 = palabras(titulo);
+const linea2 = destacado ? palabras(destacado) : [];
 ---
-<section class="heroe">
-  {imagen && <div class="heroe__img"><img src={imagen} alt="" fetchpriority="high" /></div>}
+<section class={`heroe ${bajo ? 'heroe--bajo' : ''}`}>
+  {imagen && <div class="heroe__img" data-parallax="-0.18"><img src={imagen} alt="" fetchpriority="high" /></div>}
   <div class="contenedor">
-    {volver && <a class="volver" href={volver.url}><Icono nombre="volver" class="" /> {volver.texto}</a>}
-    <h1 class="logo-anim">{titulo}{destacado && <><br /><strong>{destacado}</strong></>}</h1>
-    {bajada && <p class="bajada">{bajada}</p>}
+    {migas.length > 0 && (
+      <ol class="migas" aria-label="Estás en">
+        <li><a href="/">Inicio</a></li>
+        {migas.map((m) => <li>{m.url ? <a href={m.url}>{m.texto}</a> : <span aria-current="page">{m.texto}</span>}</li>)}
+      </ol>
+    )}
+    <slot name="arriba" />
+    <h1>
+      {linea1.map(({ w, p }) => <><span class="palabra"><span style={`--p:${p}`}>{w}</span></span>{' '}</>)}
+      {linea2.length > 0 && <><br /><em>{linea2.map(({ w, p }) => <><span class="palabra"><span style={`--p:${p}`}>{w}</span></span>{' '}</>)}</em></>}
+    </h1>
+    {bajada && <p class="heroe__bajada">{bajada}</p>}
     <slot />
+    {emblema && <Emblema letra={z.letra} class="heroe__emblema" />}
   </div>
 </section>

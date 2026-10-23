@@ -2,19 +2,21 @@
 import Tarjeta from './Tarjeta.astro';
 import Filtros from './Filtros.astro';
 import { unicos, type Negocio } from '../scripts/datos';
-interface Props { lista: Negocio[]; id: string; enlace: (s: string) => string; filtro?: { clave: string; etiqueta: string; campo: (n: Negocio) => string }; icono?: string }
-const { lista, id, enlace, filtro, icono = 'tienda' } = Astro.props;
-const partes = (v: string) => v.split(',').map((x) => x.trim()).filter(Boolean);
+interface Props { lista: Negocio[]; id: string; enlace: (s: string) => string; letra: number; filtro?: { clave: string; etiqueta: string; campo: (n: Negocio) => string } }
+const { lista, id, enlace, letra, filtro } = Astro.props;
+const partes = (v: string) => (v ?? '').split(',').map((x) => x.trim()).filter(Boolean);
+const valores = filtro ? unicos(lista.map(filtro.campo)) : [];
+const conteo = filtro ? Object.fromEntries(valores.map((v) => [v, lista.filter((n) => partes(filtro.campo(n)).includes(v)).length])) : {};
 ---
-<Filtros contenedor={id} opciones={filtro ? [{ clave: filtro.clave, etiqueta: filtro.etiqueta, valores: unicos(lista.map(filtro.campo)), tipo: 'pildoras' }] : []} />
+<Filtros contenedor={id} letra={letra} opciones={filtro ? [{ clave: filtro.clave, etiqueta: filtro.etiqueta, valores, tipo: 'pildoras', conteo }] : []} />
 <div class="grilla" id={id}>
-  {lista.map((n) => {
+  {lista.map((n, i) => {
     const v = filtro ? filtro.campo(n) : '';
+    const p = partes(v);
     return (
-      <Tarjeta url={enlace(n.slug)} titulo={n.titulo} imagen={n.imagen} texto={n.extracto} icono={icono}
-        chips={partes(v).map((t) => ({ t, c: 'chip--sol' }))}
-        filtros={filtro ? { [filtro.clave]: partes(v).join('|') } : {}} />
+      <Tarjeta url={enlace(n.slug)} titulo={n.titulo} imagen={n.imagen} texto={n.extracto} letra={letra} d={i}
+        etiqueta={p[0] ? { t: p[0] } : undefined} chips={p.slice(1).map((t) => ({ t }))}
+        filtros={filtro ? { [filtro.clave]: p.join('|') } : {}} />
     );
   })}
 </div>
-<p class="sin-resultados" data-vacio={id}>No hay resultados.</p>

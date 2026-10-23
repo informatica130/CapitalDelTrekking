@@ -1,0 +1,1113 @@
+# Panel de administración (Decap CMS) — Melipeuco Capital del Trekking
+# Cada cambio guardado aquí se convierte en un commit en el repositorio y el sitio se vuelve a publicar.
+backend:
+  name: github
+  repo: informatica130/CapitalDelTrekking
+  branch: main
+  # base_url: https://tu-servidor-oauth.ejemplo.cl   # necesario si el sitio NO está en Netlify (ver README)
+  commit_messages:
+    create: Crear {{collection}} «{{slug}}»
+    update: Actualizar {{collection}} «{{slug}}»
+    delete: Eliminar {{collection}} «{{slug}}»
+    uploadMedia: Subir imagen «{{path}}»
+    deleteMedia: Eliminar imagen «{{path}}»
+# Permite editar en local con `npx decap-server` (ver README)
+local_backend: true
+locale: es
+site_url: https://melipeucocapitaldeltrekking.cl
+logo_url: /marca/logo-color.svg
+media_folder: public/media
+public_folder: /media
+publish_mode: editorial_workflow
+collections:
+- name: rutas
+  label: Rutas de trekking
+  label_singular: Ruta
+  description: Las fichas de rutas con su track GPX, mapa y perfil de elevación.
+  folder: src/content/rutas
+  extension: json
+  format: json
+  create: true
+  delete: true
+  slug: '{{fields.slug}}'
+  identifier_field: titulo
+  summary: '{{titulo}} · {{interes}} · {{fields.extension}}'
+  sortable_fields:
+  - titulo
+  - interes
+  - dificultad
+  view_groups:
+  - label: Nivel
+    field: interes
+  view_filters:
+  - label: Familiares
+    field: interes
+    pattern: Familiares
+  - label: Trekkeros
+    field: interes
+    pattern: Trekkeros
+  - label: Expertos
+    field: interes
+    pattern: Expertos
+  - label: Ocultas
+    field: publicado
+    pattern: false
+  fields:
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Dirección web (slug)
+    name: slug
+    widget: string
+    pattern:
+    - ^[a-z0-9]+(?:-[a-z0-9]+)*$
+    - Solo minúsculas, números y guiones
+    hint: 'Ej.: laguna-captren. Forma parte de la URL; no lo cambies si la página ya está publicada.'
+  - label: Publicado
+    name: publicado
+    widget: boolean
+    default: true
+    hint: Desactívalo para ocultar la ficha sin borrarla.
+  - label: Destacado en portada
+    name: destacado
+    widget: boolean
+    default: false
+    required: false
+  - label: Nivel
+    name: interes
+    widget: select
+    options:
+    - Familiares
+    - Trekkeros
+    - Expertos
+  - label: Subtítulo
+    name: subtitulo
+    widget: string
+    required: false
+  - label: Imagen principal
+    name: imagen
+    widget: image
+    required: false
+    choose_url: true
+  - label: Descripción
+    name: cuerpo
+    widget: markdown
+    required: false
+    buttons:
+    - bold
+    - italic
+    - link
+    - heading-two
+    - heading-three
+    - bulleted-list
+    - numbered-list
+    - quote
+  - label: Extensión
+    name: extension
+    widget: string
+    required: false
+    hint: 'Ej.: 5,8 km'
+  - label: Duración
+    name: duracion
+    widget: string
+    required: false
+    hint: 'Ej.: Full day, 4 h'
+  - label: Dificultad (escala MIDE 1-5)
+    name: dificultad
+    widget: select
+    options:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    required: false
+  - label: Condición
+    name: condicion
+    widget: string
+    required: false
+    hint: 'Ej.: Autoguiable, Con guía'
+  - label: Tipo de recorrido
+    name: tipo_recorrido
+    widget: select
+    multiple: true
+    options:
+    - ida y vuelta
+    - circuito
+    - travesia
+    - ida y vuelta travesia
+    required: false
+  - label: Track GPX
+    name: gpx
+    widget: file
+    required: false
+  - label: Coordenadas [latitud, longitud]
+    name: coords
+    widget: list
+    required: false
+    hint: 'Dos números: latitud y longitud (ej. -38.85 y -71.69). Se usan para el mapa.'
+    field:
+      label: Valor
+      name: valor
+      widget: number
+      value_type: float
+  - label: Datos destacados (franja superior)
+    name: resumen
+    widget: list
+    required: false
+    summary: '{{fields.k}}: {{fields.v}}'
+    fields:
+    - label: Dato
+      name: k
+      widget: string
+    - label: Valor
+      name: v
+      widget: string
+  - label: Bloques de información
+    name: grupos
+    widget: list
+    required: false
+    summary: '{{fields.titulo}}'
+    fields:
+    - label: Título del bloque
+      name: titulo
+      widget: string
+    - label: Campos
+      name: campos
+      widget: list
+      summary: '{{fields.k}}: {{fields.v}}'
+      fields:
+      - label: Campo
+        name: k
+        widget: string
+      - label: Valor
+        name: v
+        widget: string
+  - label: Galería de fotos
+    name: galeria
+    widget: list
+    required: false
+    field:
+      label: Foto
+      name: foto
+      widget: image
+      choose_url: true
+  - label: Operadores que la ofrecen
+    name: operadores
+    widget: relation
+    collection: operadores
+    search_fields:
+    - titulo
+    value_field: slug
+    display_fields:
+    - titulo
+    multiple: true
+    required: false
+  - label: Rutas relacionadas
+    name: relacionados
+    widget: relation
+    collection: rutas
+    search_fields:
+    - titulo
+    value_field: slug
+    display_fields:
+    - titulo
+    multiple: true
+    required: false
+  - label: Mapa de Google (URL de inserción)
+    name: mapa_embed
+    widget: string
+    required: false
+    hint: 'Opcional. En Google Maps: Compartir → Insertar un mapa → copiar solo la URL del src.'
+- name: actividades
+  label: Actividades y atractivos
+  label_singular: Actividad o atractivo
+  description: «Actividad» aparece en Qué hacer; «Atractivo» en Qué visitar.
+  folder: src/content/actividades
+  extension: json
+  format: json
+  create: true
+  delete: true
+  slug: '{{fields.slug}}'
+  identifier_field: titulo
+  summary: '{{titulo}} · {{categoria}} · {{tipo}}'
+  view_groups:
+  - label: Categoría
+    field: categoria
+  view_filters:
+  - label: Qué hacer
+    field: categoria
+    pattern: actividad
+  - label: Qué visitar
+    field: categoria
+    pattern: atractivo
+  fields:
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Dirección web (slug)
+    name: slug
+    widget: string
+    pattern:
+    - ^[a-z0-9]+(?:-[a-z0-9]+)*$
+    - Solo minúsculas, números y guiones
+    hint: 'Ej.: laguna-captren. Forma parte de la URL; no lo cambies si la página ya está publicada.'
+  - label: Publicado
+    name: publicado
+    widget: boolean
+    default: true
+    hint: Desactívalo para ocultar la ficha sin borrarla.
+  - label: Destacado en portada
+    name: destacado
+    widget: boolean
+    default: false
+    required: false
+  - label: Categoría
+    name: categoria
+    widget: select
+    options:
+    - label: Actividad (Qué hacer)
+      value: actividad
+    - label: Atractivo (Qué visitar)
+      value: atractivo
+  - label: Tipo
+    name: tipo
+    widget: string
+    hint: 'Ej.: Montañismo, Canyoning, Natural, Cultural'
+  - label: Subtítulo
+    name: subtitulo
+    widget: string
+    required: false
+  - label: Imagen principal
+    name: imagen
+    widget: image
+    required: false
+    choose_url: true
+  - label: Descripción
+    name: cuerpo
+    widget: markdown
+    required: false
+    buttons:
+    - bold
+    - italic
+    - link
+    - heading-two
+    - heading-three
+    - bulleted-list
+    - numbered-list
+    - quote
+  - label: Datos destacados (franja superior)
+    name: resumen
+    widget: list
+    required: false
+    summary: '{{fields.k}}: {{fields.v}}'
+    fields:
+    - label: Dato
+      name: k
+      widget: string
+    - label: Valor
+      name: v
+      widget: string
+  - label: Galería de fotos
+    name: galeria
+    widget: list
+    required: false
+    field:
+      label: Foto
+      name: foto
+      widget: image
+      choose_url: true
+  - label: Coordenadas [latitud, longitud]
+    name: coords
+    widget: list
+    required: false
+    hint: 'Dos números: latitud y longitud (ej. -38.85 y -71.69). Se usan para el mapa.'
+    field:
+      label: Valor
+      name: valor
+      widget: number
+      value_type: float
+  - label: Mapa de Google (URL de inserción)
+    name: mapa_embed
+    widget: string
+    required: false
+    hint: 'Opcional. En Google Maps: Compartir → Insertar un mapa → copiar solo la URL del src.'
+  - label: Operadores que la ofrecen
+    name: operadores
+    widget: relation
+    collection: operadores
+    search_fields:
+    - titulo
+    value_field: slug
+    display_fields:
+    - titulo
+    multiple: true
+    required: false
+  - label: Rutas relacionadas
+    name: relacionados
+    widget: relation
+    collection: rutas
+    search_fields:
+    - titulo
+    value_field: slug
+    display_fields:
+    - titulo
+    multiple: true
+    required: false
+- name: alojamientos
+  label: Dónde dormir
+  label_singular: Alojamiento
+  folder: src/content/alojamientos
+  extension: json
+  format: json
+  create: true
+  delete: true
+  slug: '{{fields.slug}}'
+  identifier_field: titulo
+  summary: '{{titulo}} · {{clase}}'
+  view_groups:
+  - label: Tipo
+    field: clase
+  fields:
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Dirección web (slug)
+    name: slug
+    widget: string
+    pattern:
+    - ^[a-z0-9]+(?:-[a-z0-9]+)*$
+    - Solo minúsculas, números y guiones
+    hint: 'Ej.: laguna-captren. Forma parte de la URL; no lo cambies si la página ya está publicada.'
+  - label: Publicado
+    name: publicado
+    widget: boolean
+    default: true
+    hint: Desactívalo para ocultar la ficha sin borrarla.
+  - label: Destacado en portada
+    name: destacado
+    widget: boolean
+    default: false
+    required: false
+  - label: Tipo de alojamiento
+    name: clase
+    widget: string
+    hint: 'Ej.: Cabañas, Hostal, Lodge, Camping, Bed & Breakfast'
+  - label: Subtítulo
+    name: subtitulo
+    widget: string
+    required: false
+  - label: Imagen principal
+    name: imagen
+    widget: image
+    required: false
+    choose_url: true
+  - label: Logo del negocio
+    name: logo
+    widget: image
+    required: false
+  - label: Descripción
+    name: cuerpo
+    widget: markdown
+    required: false
+    buttons:
+    - bold
+    - italic
+    - link
+    - heading-two
+    - heading-three
+    - bulleted-list
+    - numbered-list
+    - quote
+  - label: Datos destacados (franja superior)
+    name: resumen
+    widget: list
+    required: false
+    summary: '{{fields.k}}: {{fields.v}}'
+    fields:
+    - label: Dato
+      name: k
+      widget: string
+    - label: Valor
+      name: v
+      widget: string
+  - label: Bloques de información
+    name: grupos
+    widget: list
+    required: false
+    summary: '{{fields.titulo}}'
+    fields:
+    - label: Título del bloque
+      name: titulo
+      widget: string
+    - label: Campos
+      name: campos
+      widget: list
+      summary: '{{fields.k}}: {{fields.v}}'
+      fields:
+      - label: Campo
+        name: k
+        widget: string
+      - label: Valor
+        name: v
+        widget: string
+  - label: Servicios que ofrece
+    name: servicios
+    widget: list
+    required: false
+    hint: 'Ej.: Wifi, Estacionamiento, Desayuno'
+  - label: Redes y contacto rápido
+    name: redes
+    widget: object
+    required: false
+    collapsed: true
+    fields:
+    - label: WhatsApp (enlace https://wa.me/569…)
+      name: whatsapp
+      widget: string
+      required: false
+    - label: Instagram
+      name: instagram
+      widget: string
+      required: false
+    - label: Facebook
+      name: facebook
+      widget: string
+      required: false
+    - label: TikTok
+      name: tiktok
+      widget: string
+      required: false
+    - label: YouTube
+      name: youtube
+      widget: string
+      required: false
+    - label: Sitio web
+      name: web
+      widget: string
+      required: false
+  - label: Galería de fotos
+    name: galeria
+    widget: list
+    required: false
+    field:
+      label: Foto
+      name: foto
+      widget: image
+      choose_url: true
+  - label: Coordenadas [latitud, longitud]
+    name: coords
+    widget: list
+    required: false
+    hint: 'Dos números: latitud y longitud (ej. -38.85 y -71.69). Se usan para el mapa.'
+    field:
+      label: Valor
+      name: valor
+      widget: number
+      value_type: float
+  - label: Mapa de Google (URL de inserción)
+    name: mapa_embed
+    widget: string
+    required: false
+    hint: 'Opcional. En Google Maps: Compartir → Insertar un mapa → copiar solo la URL del src.'
+- name: operadores
+  label: Operadores turísticos
+  label_singular: Operador
+  folder: src/content/operadores
+  extension: json
+  format: json
+  create: true
+  delete: true
+  slug: '{{fields.slug}}'
+  identifier_field: titulo
+  fields:
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Dirección web (slug)
+    name: slug
+    widget: string
+    pattern:
+    - ^[a-z0-9]+(?:-[a-z0-9]+)*$
+    - Solo minúsculas, números y guiones
+    hint: 'Ej.: laguna-captren. Forma parte de la URL; no lo cambies si la página ya está publicada.'
+  - label: Publicado
+    name: publicado
+    widget: boolean
+    default: true
+    hint: Desactívalo para ocultar la ficha sin borrarla.
+  - label: Destacado en portada
+    name: destacado
+    widget: boolean
+    default: false
+    required: false
+  - label: Subtítulo
+    name: subtitulo
+    widget: string
+    required: false
+  - label: Imagen principal
+    name: imagen
+    widget: image
+    required: false
+    choose_url: true
+  - label: Logo del negocio
+    name: logo
+    widget: image
+    required: false
+  - label: Descripción
+    name: cuerpo
+    widget: markdown
+    required: false
+    buttons:
+    - bold
+    - italic
+    - link
+    - heading-two
+    - heading-three
+    - bulleted-list
+    - numbered-list
+    - quote
+  - label: Datos destacados (franja superior)
+    name: resumen
+    widget: list
+    required: false
+    summary: '{{fields.k}}: {{fields.v}}'
+    fields:
+    - label: Dato
+      name: k
+      widget: string
+    - label: Valor
+      name: v
+      widget: string
+  - label: Bloques de información
+    name: grupos
+    widget: list
+    required: false
+    summary: '{{fields.titulo}}'
+    fields:
+    - label: Título del bloque
+      name: titulo
+      widget: string
+    - label: Campos
+      name: campos
+      widget: list
+      summary: '{{fields.k}}: {{fields.v}}'
+      fields:
+      - label: Campo
+        name: k
+        widget: string
+      - label: Valor
+        name: v
+        widget: string
+  - label: Servicios que ofrece
+    name: servicios
+    widget: list
+    required: false
+    hint: 'Ej.: Wifi, Estacionamiento, Desayuno'
+  - label: Redes y contacto rápido
+    name: redes
+    widget: object
+    required: false
+    collapsed: true
+    fields:
+    - label: WhatsApp (enlace https://wa.me/569…)
+      name: whatsapp
+      widget: string
+      required: false
+    - label: Instagram
+      name: instagram
+      widget: string
+      required: false
+    - label: Facebook
+      name: facebook
+      widget: string
+      required: false
+    - label: TikTok
+      name: tiktok
+      widget: string
+      required: false
+    - label: YouTube
+      name: youtube
+      widget: string
+      required: false
+    - label: Sitio web
+      name: web
+      widget: string
+      required: false
+  - label: Galería de fotos
+    name: galeria
+    widget: list
+    required: false
+    field:
+      label: Foto
+      name: foto
+      widget: image
+      choose_url: true
+  - label: Coordenadas [latitud, longitud]
+    name: coords
+    widget: list
+    required: false
+    hint: 'Dos números: latitud y longitud (ej. -38.85 y -71.69). Se usan para el mapa.'
+    field:
+      label: Valor
+      name: valor
+      widget: number
+      value_type: float
+  - label: Mapa de Google (URL de inserción)
+    name: mapa_embed
+    widget: string
+    required: false
+    hint: 'Opcional. En Google Maps: Compartir → Insertar un mapa → copiar solo la URL del src.'
+- name: servicios
+  label: Gastronomía y servicios
+  label_singular: Servicio
+  description: «Gastronomía» aparece en Dónde comer; «Complementarios» en Servicios complementarios.
+  folder: src/content/servicios
+  extension: json
+  format: json
+  create: true
+  delete: true
+  slug: '{{fields.slug}}'
+  identifier_field: titulo
+  summary: '{{titulo}} · {{tipo}}'
+  view_groups:
+  - label: Sección
+    field: seccion
+  view_filters:
+  - label: Gastronomía
+    field: seccion
+    pattern: gastronomia
+  - label: Complementarios
+    field: seccion
+    pattern: complementarios
+  fields:
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Dirección web (slug)
+    name: slug
+    widget: string
+    pattern:
+    - ^[a-z0-9]+(?:-[a-z0-9]+)*$
+    - Solo minúsculas, números y guiones
+    hint: 'Ej.: laguna-captren. Forma parte de la URL; no lo cambies si la página ya está publicada.'
+  - label: Publicado
+    name: publicado
+    widget: boolean
+    default: true
+    hint: Desactívalo para ocultar la ficha sin borrarla.
+  - label: Destacado en portada
+    name: destacado
+    widget: boolean
+    default: false
+    required: false
+  - label: Sección
+    name: seccion
+    widget: select
+    options:
+    - label: Gastronomía
+      value: gastronomia
+    - label: Servicios complementarios
+      value: complementarios
+  - label: Tipo de servicio
+    name: tipo
+    widget: string
+    hint: 'Ej.: Restaurante, Artesanía, Farmacia. Varios separados por coma.'
+  - label: Subtítulo
+    name: subtitulo
+    widget: string
+    required: false
+  - label: Imagen principal
+    name: imagen
+    widget: image
+    required: false
+    choose_url: true
+  - label: Logo del negocio
+    name: logo
+    widget: image
+    required: false
+  - label: Descripción
+    name: cuerpo
+    widget: markdown
+    required: false
+    buttons:
+    - bold
+    - italic
+    - link
+    - heading-two
+    - heading-three
+    - bulleted-list
+    - numbered-list
+    - quote
+  - label: Datos destacados (franja superior)
+    name: resumen
+    widget: list
+    required: false
+    summary: '{{fields.k}}: {{fields.v}}'
+    fields:
+    - label: Dato
+      name: k
+      widget: string
+    - label: Valor
+      name: v
+      widget: string
+  - label: Bloques de información
+    name: grupos
+    widget: list
+    required: false
+    summary: '{{fields.titulo}}'
+    fields:
+    - label: Título del bloque
+      name: titulo
+      widget: string
+    - label: Campos
+      name: campos
+      widget: list
+      summary: '{{fields.k}}: {{fields.v}}'
+      fields:
+      - label: Campo
+        name: k
+        widget: string
+      - label: Valor
+        name: v
+        widget: string
+  - label: Servicios que ofrece
+    name: servicios
+    widget: list
+    required: false
+    hint: 'Ej.: Wifi, Estacionamiento, Desayuno'
+  - label: Redes y contacto rápido
+    name: redes
+    widget: object
+    required: false
+    collapsed: true
+    fields:
+    - label: WhatsApp (enlace https://wa.me/569…)
+      name: whatsapp
+      widget: string
+      required: false
+    - label: Instagram
+      name: instagram
+      widget: string
+      required: false
+    - label: Facebook
+      name: facebook
+      widget: string
+      required: false
+    - label: TikTok
+      name: tiktok
+      widget: string
+      required: false
+    - label: YouTube
+      name: youtube
+      widget: string
+      required: false
+    - label: Sitio web
+      name: web
+      widget: string
+      required: false
+  - label: Galería de fotos
+    name: galeria
+    widget: list
+    required: false
+    field:
+      label: Foto
+      name: foto
+      widget: image
+      choose_url: true
+  - label: Coordenadas [latitud, longitud]
+    name: coords
+    widget: list
+    required: false
+    hint: 'Dos números: latitud y longitud (ej. -38.85 y -71.69). Se usan para el mapa.'
+    field:
+      label: Valor
+      name: valor
+      widget: number
+      value_type: float
+  - label: Mapa de Google (URL de inserción)
+    name: mapa_embed
+    widget: string
+    required: false
+    hint: 'Opcional. En Google Maps: Compartir → Insertar un mapa → copiar solo la URL del src.'
+- name: guias
+  label: Guías turísticos
+  label_singular: Guía
+  folder: src/content/guias
+  extension: json
+  format: json
+  create: true
+  delete: true
+  slug: '{{fields.slug}}'
+  identifier_field: nombre
+  summary: '{{nombre}} · {{especialidad}}'
+  fields:
+  - label: Nombre
+    name: nombre
+    widget: string
+  - label: Dirección web (slug)
+    name: slug
+    widget: string
+    pattern:
+    - ^[a-z0-9]+(?:-[a-z0-9]+)*$
+    - Solo minúsculas, números y guiones
+    hint: 'Ej.: laguna-captren. Forma parte de la URL; no lo cambies si la página ya está publicada.'
+  - label: Especialidad
+    name: especialidad
+    widget: string
+    hint: 'Ej.: Guía General, Montaña, Escalada en roca'
+  - label: Foto
+    name: foto
+    widget: image
+    required: false
+  - label: Dirección
+    name: direccion
+    widget: string
+    required: false
+  - label: Certificaciones
+    name: certificaciones
+    widget: string
+    required: false
+  - label: Teléfono
+    name: telefono
+    widget: string
+    required: false
+  - label: WhatsApp (enlace https://wa.me/569…)
+    name: whatsapp
+    widget: string
+    required: false
+  - label: Correo
+    name: email
+    widget: string
+    required: false
+  - label: Instagram
+    name: instagram
+    widget: string
+    required: false
+  - label: Facebook
+    name: facebook
+    widget: string
+    required: false
+  - label: Sitio web
+    name: web
+    widget: string
+    required: false
+- name: noticias
+  label: Noticias
+  label_singular: Noticia
+  folder: src/content/noticias
+  extension: json
+  format: json
+  create: true
+  delete: true
+  slug: '{{fields.slug}}'
+  identifier_field: titulo
+  summary: '{{fecha}} · {{titulo}}'
+  sortable_fields:
+  - fecha
+  - titulo
+  fields:
+  - label: Título
+    name: titulo
+    widget: string
+  - label: Dirección web (slug)
+    name: slug
+    widget: string
+    pattern:
+    - ^[a-z0-9]+(?:-[a-z0-9]+)*$
+    - Solo minúsculas, números y guiones
+    hint: 'Ej.: laguna-captren. Forma parte de la URL; no lo cambies si la página ya está publicada.'
+  - label: Publicada
+    name: publicado
+    widget: boolean
+    default: true
+    required: false
+  - label: Fecha
+    name: fecha
+    widget: datetime
+    date_format: DD-MM-YYYY
+    time_format: false
+    format: YYYY-MM-DD
+  - label: Categoría
+    name: categoria
+    widget: string
+    default: Noticias
+  - label: Imagen
+    name: imagen
+    widget: image
+    required: false
+  - label: Texto
+    name: cuerpo
+    widget: markdown
+- name: configuracion
+  label: Configuración del sitio
+  editor:
+    preview: false
+  files:
+  - name: inicio
+    label: Portada
+    file: src/data/inicio.json
+    fields:
+    - label: Texto bajo el logo
+      name: bajada
+      widget: text
+      required: false
+    - label: Fotos del carrusel
+      name: slides
+      widget: list
+      field:
+        label: Foto
+        name: foto
+        widget: image
+    - label: Rutas destacadas (fila horizontal)
+      name: rutas_destacadas
+      widget: relation
+      collection: rutas
+      search_fields:
+      - titulo
+      value_field: slug
+      display_fields:
+      - titulo
+      multiple: true
+    - label: Imperdibles
+      name: imperdibles
+      widget: relation
+      collection: actividades
+      search_fields:
+      - titulo
+      value_field: slug
+      display_fields:
+      - titulo
+      multiple: true
+  - name: sitio
+    label: Datos generales, menú y pie de página
+    file: src/data/sitio.json
+    fields:
+    - label: Nombre del sitio
+      name: nombre
+      widget: string
+    - label: Lema
+      name: lema
+      widget: string
+    - label: Descripción (buscadores y redes)
+      name: descripcion
+      widget: text
+    - label: Correo de contacto
+      name: email_contacto
+      widget: string
+    - label: Endpoint del formulario (Formspree u otro)
+      name: formulario_endpoint
+      widget: string
+      required: false
+      hint: Si queda vacío, el formulario abre el correo del visitante.
+    - label: Coordenadas de Melipeuco (clima)
+      name: coordenadas
+      widget: list
+      field:
+        label: Valor
+        name: valor
+        widget: number
+        value_type: float
+    - label: Redes sociales
+      name: redes
+      widget: object
+      fields:
+      - label: Instagram
+        name: instagram
+        widget: string
+      - label: Facebook
+        name: facebook
+        widget: string
+      - label: TikTok
+        name: tiktok
+        widget: string
+    - label: Menú principal
+      name: menu
+      widget: list
+      summary: '{{fields.texto}}'
+      fields:
+      - label: Texto
+        name: texto
+        widget: string
+      - label: Enlace (si no tiene submenú)
+        name: url
+        widget: string
+        required: false
+      - label: Zona (color y emblema)
+        name: zona
+        widget: string
+        required: false
+      - label: Submenú
+        name: hijos
+        widget: list
+        required: false
+        summary: '{{fields.texto}}'
+        fields:
+        - label: Texto
+          name: texto
+          widget: string
+        - label: Enlace
+          name: url
+          widget: string
+        - label: Zona (color y emblema)
+          name: zona
+          widget: select
+          options:
+          - rutas
+          - noticias
+          - contacto
+          - que-hacer
+          - que-visitar
+          - gastronomia
+          - guias
+          - operadores
+          - complementarios
+          - alojamientos
+          - explora
+          - mapa
+        - label: Descripción corta
+          name: desc
+          widget: string
+          required: false
+    - label: Pie de página
+      name: footer
+      widget: list
+      summary: '{{fields.titulo}}'
+      fields:
+      - label: Título de la columna
+        name: titulo
+        widget: string
+      - label: Enlaces
+        name: enlaces
+        widget: list
+        summary: '{{fields.texto}}'
+        fields:
+        - label: Texto
+          name: texto
+          widget: string
+        - label: Enlace
+          name: url
+          widget: string
+  - name: mapa
+    label: Puntos del mapa general
+    file: src/data/mapa.json
+    fields:
+    - label: Puntos
+      name: puntos
+      widget: list
+      summary: '{{fields.name}}'
+      fields:
+      - label: Nombre
+        name: name
+        widget: string
+      - label: Latitud
+        name: lat
+        widget: number
+        value_type: float
+      - label: Longitud
+        name: lng
+        widget: number
+        value_type: float
+      - label: Track GPX
+        name: gpx
+        widget: file

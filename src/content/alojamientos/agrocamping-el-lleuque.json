@@ -1,0 +1,77 @@
+{
+  "slug": "agrocamping-el-lleuque",
+  "titulo": "Agrocamping El Lleuque",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Camping"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Transferencia"
+    }
+  ],
+  "cuerpo": "Agrocamping El Lleuque ofrece una experiencia auténtica en la naturaleza, ideal para quienes buscan relajarse y disfrutar de un entorno rural. Ubicado en un entorno natural privilegiado, este agrocamping combina la belleza del paisaje con servicios de alojamiento en sitios de camping.",
+  "imagen": "/media/2024/11/agrocampingellleuque02-1-wpcf_1024x608.jpg",
+  "galeria": [
+    "/media/2024/11/agrocampingellleuque02-1-wpcf_1024x608.jpg",
+    "/media/2024/11/agrocampingellleuque01-1-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "El Membrillo Alto, A 800 Mts. De Melipeuco NºS/N, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56983545584"
+        },
+        {
+          "k": "Email",
+          "v": "rodrigocarilao@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 83545584"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Transferencia"
+        },
+        {
+          "k": "Servicios",
+          "v": "Información turística"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12429.091438003521!2d-71.69583518718952!3d-38.8491106977469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369fd6a4e0cc1%3A0xb7ab3bcc004cf45a!2sAgrocamping%20El%20Lleuque!5e0!3m2!1ses-419!2scl!4v1729779561855!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56983545584",
+    "facebook": "https://web.facebook.com/AgrocampingElLleuque?locale=es_LA",
+    "instagram": "https://www.instagram.com/agrocampingellleuque/"
+  },
+  "logo": "/media/2024/11/logoagrocampingellleuque-1.jpg",
+  "servicios": [
+    "Información turística"
+  ],
+  "clase": "Camping",
+  "publicado": true,
+  "destacado": false
+}

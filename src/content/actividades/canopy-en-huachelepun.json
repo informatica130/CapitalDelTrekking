@@ -1,0 +1,30 @@
+{
+  "slug": "canopy-en-huachelepun",
+  "titulo": "Canopy en Huechelepun",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Canopy"
+    }
+  ],
+  "cuerpo": "¿Te imaginas la sensación que experimenta un ave al surcar el cielo desde las alturas? Esa es la experiencia que te brinda el canopy más alto de Chile, con 220 metros de altura. Vuela sobre el valle de Huechelepún y disfruta desde el aire de dos impresionantes cascadas que emergen entre la exuberante vegetación. Una aventura llena de adrenalina que sin duda querrás repetir.",
+  "imagen": "/media/2024/11/canopy2.webp",
+  "galeria": [
+    "/media/2024/11/canopy2.webp",
+    "/media/2024/11/canopy-melibike.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5221.811609128833!2d-71.52345840121062!3d-38.90322461008952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961313468d5d05af%3A0xac4b19feb7c92677!2sMelipeuco%20Extreme%20-%20CANOPY!5e0!3m2!1ses-419!2scl!4v1729103817767!5m2!1ses-419!2scl",
+  "operadores": [
+    "pewen-mapu",
+    "melipewunko",
+    "likan-kura"
+  ],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Canopy",
+  "publicado": true,
+  "destacado": false
+}

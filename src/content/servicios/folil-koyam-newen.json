@@ -1,0 +1,55 @@
+{
+  "slug": "folil-koyam-newen",
+  "titulo": "Folil Koyam Newen",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/33.folilkoyamnewen02.jpg",
+  "galeria": [
+    "/media/2024/11/33.folilkoyamnewen02.jpg",
+    "/media/2024/11/33.folilkoyamnewen04.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Santa Julia Km5 , NºS/N, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 89603823"
+        },
+        {
+          "k": "Email",
+          "v": "folilkoyam@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 89603823"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23923.375715372207!2d-71.72328223352137!3d-38.83766479112617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613434a4b1b8e91%3A0xce857a836fa5766a!2sFolio%20Coyan%20Newen!5e1!3m2!1ses!2scl!4v1730145017368!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56989603823",
+    "facebook": "https://www.facebook.com/people/Folil-Koyam-Gastronom%C3%ADa-Mapuche/100063618722660/?locale=ku_TR&_rdr",
+    "instagram": "https://www.instagram.com/folilkoyam/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

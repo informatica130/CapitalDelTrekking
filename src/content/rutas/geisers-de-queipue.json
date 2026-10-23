@@ -1,0 +1,113 @@
+{
+  "slug": "geisers-de-queipue",
+  "titulo": "Geisers de Queipúe",
+  "subtitulo": "Ruta Geisers de Queipúe",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "6 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "4"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "Esta ruta es una de las más emocionantes de Melipeuco, ideal para trekkeros experimentados, que buscan una aventura desafiante. El recorrido sigue el curso del vertiginoso río Queipúe, que nace en las faldas del imponente volcán Sollipulli. A lo largo del trayecto, el sendero cruza repetidamente el cañón del río, ofreciendo vistas espectaculares de formaciones geológicas talladas por la erosión del agua y el hielo a lo largo del tiempo. Uno de los aspectos más impresionantes de la ruta son las emanaciones termales, que emergen con gran fuerza desde el suelo, alcanzando alturas considerables, lo que añade un elemento único al paisaje. A medida que el camino avanza, el desnivel acumulado (casi 600 metros) pone a prueba la resistencia física, pero cada esfuerzo se ve recompensado. Al final del ascenso, las termas naturales esperan como un regalo perfecto para relajar el cuerpo tras la caminata, rodeadas por las majestuosas vistas del valle de Alpehue. Con un poco de suerte, los aventureros podrán contemplar el vuelo de cóndores sobre el horizonte.",
+  "imagen": "/media/2024/11/2.02alpehue-4-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/2.02alpehue-4-wpcf_1024x1024.jpg",
+    "/media/2024/11/2.03alpehue.webp",
+    "/media/2024/11/2.04alpehue-2-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "6 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "8h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "558m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1478m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "4"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Solo verano, con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.951512331024546,
+    -71.61326781349415
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "nuke-mawida",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Expertos",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/2024/11/02.cajonygeisersdealpehue.gpx",
+  "dificultad": "4",
+  "extension": "6 km",
+  "duracion": "Full day",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

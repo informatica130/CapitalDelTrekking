@@ -1,0 +1,111 @@
+{
+  "slug": "salto-chufquen-palomo",
+  "titulo": "Salto Chufquén-Palomo",
+  "subtitulo": "Ruta Salto Chufquén-Palomo",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "0,5 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable con permiso (*)"
+    }
+  ],
+  "cuerpo": "Este es un sendero perfecto para disfrutar en familia, que te permite llegar a un impresionante salto de agua caminando por un terreno casi plano. Es ideal para realizarlo con niños y personas de la tercera edad, ya que su dificultad es baja y el recorrido es relativamente corto. A lo largo del trayecto, te sumergirás en un entorno de naturaleza exuberante, rodeado de árboles y arbustos nativos como el coihue, el arrayán y el maqui, que te ofrecerán sombra y frescura. A medida que avanzas, escucharás el sonido relajante del agua corriendo, lo que hará tu caminata aún más placentera. Al llegar al Salto Chufquén, verás las aguas cristalinas del río cayendo con fuerza desde una altura de unos 30 metros, formando una piscina natural donde podrás refrescarte en días calurosos. Es un lugar perfecto para disfrutar de un picnic al aire libre, rodeado de la flora y fauna autóctonas.",
+  "imagen": "/media/2024/11/3.02salto-chufquen.webp",
+  "galeria": [
+    "/media/2024/11/3.02salto-chufquen.webp",
+    "/media/2024/11/3.03salto-chufquen-2-wpcf_1024x800.jpg",
+    "/media/2024/11/3.04salto-chufquen-5.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "0,5 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "1h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "377m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1115m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "59 933942013"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable con permiso (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.84151843063002,
+    -71.5607506161681
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "melipewunko"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/03.saltochufquen-palomo.gpx",
+  "dificultad": "1",
+  "extension": "0,5 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable con permiso (*)",
+  "publicado": true,
+  "destacado": false
+}

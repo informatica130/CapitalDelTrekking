@@ -1,0 +1,98 @@
+{
+  "slug": "cabanas-kume-mapu",
+  "titulo": "Cabañas Kume Mapu",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Efectivo y Transferencia, Tarjeta, Transferencia, Transferencias"
+    }
+  ],
+  "cuerpo": "Cabañas ubicadas en el sector El Membrillo bajo",
+  "imagen": "/media/2025/11/cabanas-kume-mapu-3.webp",
+  "galeria": [
+    "/media/2025/11/cabanas-kume-mapu-3.webp",
+    "/media/2025/11/cabanas-kume-mapu-2.webp",
+    "/media/2025/11/cabanas-kume-mapu-1.webp",
+    "/media/2025/11/cabanas-kume-mapu-4.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "El Membrillo bajo"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56 9 8325 6687"
+        },
+        {
+          "k": "Email",
+          "v": "ragarciav1977@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://www.facebook.com/p/Caba%C3%B1as-KUME-MAPU-Melipeuco-100057090144375/"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 8325 6687"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Sector el Membrillo bajo"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Efectivo y Transferencia, Tarjeta, Transferencia, Transferencias"
+        },
+        {
+          "k": "Servicios",
+          "v": "Aire Acondicionado, Aparcamiento, Calefacción Central, Cocina equipada, Conexión eléctrica , Estacionamiento, Microondas, Pago con Transbank, Pet friendly, Servicio de transportes, TV, Wi-Fi"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3823.7233780545134!2d-71.69316049999999!3d-38.843133699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613436d3067aafd%3A0xa26a040854457cfa!2sCaba%C3%B1as%20kume%20Mapu!5e1!3m2!1sen!2scl!4v1762187402359!5m2!1sen!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56983256687",
+    "facebook": "https://www.facebook.com/p/Caba%C3%B1as-KUME-MAPU-Melipeuco-100057090144375/",
+    "instagram": "https://www.instagram.com/cabanaskumemapu"
+  },
+  "logo": "",
+  "servicios": [
+    "Aire Acondicionado",
+    "Aparcamiento",
+    "Calefacción Central",
+    "Cocina equipada",
+    "Conexión eléctrica",
+    "Estacionamiento",
+    "Microondas",
+    "Pago con Transbank",
+    "Pet friendly",
+    "Servicio de transportes",
+    "TV",
+    "WI-FI"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

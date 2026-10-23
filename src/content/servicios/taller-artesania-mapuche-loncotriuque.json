@@ -1,0 +1,40 @@
+{
+  "slug": "taller-artesania-mapuche-loncotriuque",
+  "titulo": "Taller Artesanía Mapuche Loncotriuque",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Artesanía"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino a Termas de Molulco, Km 6,5, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 98803782"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12432.19312399347!2d-71.444893!3d-38.8313551!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961317b21e1fdb3d%3A0xa54cdde850eabe4f!2sTaller%20artesan%C3%ADa%20mapuche%20Loncotriuque!5e0!3m2!1ses-419!2scl!4v1730152496481!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Artesanía",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

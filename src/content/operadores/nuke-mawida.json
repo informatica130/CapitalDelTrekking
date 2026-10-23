@@ -1,0 +1,68 @@
+{
+  "slug": "nuke-mawida",
+  "titulo": "Ñuke Mawida",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Los Mallines Km 2 Nºsn, Melipeuco"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+569 34334504"
+    }
+  ],
+  "cuerpo": "Ñuke Mawida es una agencia local de la comuna de Melipeuco, enfocada en brindar servicios de excelencia y personalizados. Motivados por facilitar la conexión con historias locales, que aprendieron de la mano de sus abuelos, quienes les traspasaron sus conocimientos y formas maravillosas de ver el territorio. Reciben a todos los visitantes con los brazos abiertos y les apoyan para cumplir sus sueños.",
+  "imagen": "/media/2024/11/nukemahuida2-jpg.webp",
+  "galeria": [
+    "/media/2024/11/nukemahuida2-jpg.webp",
+    "/media/2024/11/nukemahuida3.webp",
+    "/media/2024/11/nukemahuida4.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Los Mallines Km 2 Nºsn, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 34334504"
+        },
+        {
+          "k": "Email",
+          "v": "nukemawida@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56934334504"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "",
+  "operadores": [
+    "laguna-arcoiris",
+    "llaima-cumbre",
+    "batea-mahuida",
+    "geisers-de-queipue"
+  ],
+  "relacionados": [
+    "batea-mahuida",
+    "geisers-de-queipue",
+    "laguna-arcoiris",
+    "llaima-cumbre"
+  ],
+  "redes": {
+    "whatsapp": "https://wa.me/+56934334504",
+    "facebook": "https://www.facebook.com/people/%C3%91ukemawida/100069368632322/",
+    "web": "@trekking_melipeuco_nukemawida"
+  },
+  "logo": "/media/2024/11/logo-nukemahuida.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

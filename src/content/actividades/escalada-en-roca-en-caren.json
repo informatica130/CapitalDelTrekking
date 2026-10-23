@@ -1,0 +1,27 @@
+{
+  "slug": "escalada-en-roca-en-caren",
+  "titulo": "Escalada en roca en Carén",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Escalada"
+    }
+  ],
+  "cuerpo": "Sumérgete en la emoción de escalar el Cerro Huallerupe, una experiencia única que desafiará todas tus habilidades y destrezas. Situado a solo unos minutos de Melipeuco, esta impresionante formación rocosa ofrece rutas de escalada que entregan vistas panorámicas inigualables del valle de Melipeuco. Cada movimiento se convertirá en un desafío personal que te permitirá superar tus propios límites.",
+  "imagen": "/media/2024/11/9kani-escalada2.webp",
+  "galeria": [
+    "/media/2024/11/9kani-escalada2.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3105.8997240174926!2d-71.53746!3d-38.880536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDUyJzQ5LjkiUyA3McKwMzInMTQuOSJX!5e0!3m2!1ses-419!2scl!4v1729104137211!5m2!1ses-419!2scl",
+  "operadores": [
+    "kani-escalada"
+  ],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Escalada",
+  "publicado": true,
+  "destacado": false
+}

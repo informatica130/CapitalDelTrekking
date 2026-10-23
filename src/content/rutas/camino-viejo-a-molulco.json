@@ -1,0 +1,109 @@
+{
+  "slug": "camino-viejo-a-molulco",
+  "titulo": "Camino viejo a Molulco",
+  "subtitulo": "Ruta Camino viejo a Molulco",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "9 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "travesía"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "En este recorrido, seguirás un antiguo camino vehicular que ahora es intransitable en auto, lo que lo convierte en una excelente opción para caminar o recorrer en bicicleta. A medida que te adentras en el valle de Molulco, sentirás cómo te transportas al pasado, atravesando una región que alguna vez tuvo una intensa actividad maderera, ganadera y agrícola, pero que hoy se encuentra casi despoblada. Mientras avanzas, notarás cómo el paisaje te muestra un proceso de restauración pasiva del bosque nativo, con árboles jóvenes creciendo donde antes hubo praderas y terrenos de cultivo. Verás también vestigios de las viejas construcciones que datan de principios del siglo XX, como cercas de piedra, muros en ruinas y casas abandonadas. Este camino te permitirá disfrutar de la tranquilidad del entorno, con el canto de las aves y el susurro del viento entre los árboles como compañía. Además, es ideal para aquellos que buscan conectar con la naturaleza y aprender sobre la historia local, en un ambiente sereno y lleno de vida.",
+  "imagen": "/media/2024/11/4.02camino-molulco-2-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/4.02camino-molulco-2-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "9 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "3h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "310m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "730m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "travesía"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.94515720856794,
+    -71.72073885454166
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "travesia"
+  ],
+  "gpx": "/media/kmz/04.caminoviejoamolulco.gpx",
+  "dificultad": "2",
+  "extension": "9 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

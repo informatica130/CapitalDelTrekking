@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import Heroe from '../components/Heroe.astro';
+import Icono from '../components/Icono.astro';
+import Emblema from '../components/Emblema.astro';
+---
+<Base titulo="Mi viaje" zona="mi-viaje" descripcion="Tu selección de rutas, actividades, alojamientos y servicios en Melipeuco.">
+  <Heroe titulo="Mi" destacado="viaje" zona="mi-viaje" imagen="/media/2024/11/amanecer_sollipulli1-jpg.webp" bajo migas={[{ texto: 'Mi viaje' }]} bajada="Guarda con el corazón las rutas, lugares y servicios que te interesan. Se quedan en este dispositivo." />
+  <section class="seccion" style="padding-top:40px">
+    <div class="contenedor">
+      <div class="acciones" id="accionesViaje" hidden style="margin-bottom:28px">
+        <a class="btn btn--zona" id="compartirWsp" target="_blank" rel="noopener"><Icono nombre="whatsapp" /> Enviar por WhatsApp</a>
+        <button class="btn btn--borde" type="button" data-imprimir><Icono nombre="imprimir" /> Imprimir</button>
+        <button class="btn btn--borde" type="button" id="vaciarViaje"><Icono nombre="cerrar" /> Vaciar lista</button>
+      </div>
+      <div class="grilla" id="listaViaje"></div>
+      <div class="vacio-viaje" id="vacioViaje" hidden>
+        <Emblema letra={4} />
+        <h2>Tu viaje está <em>vacío</em></h2>
+        <p class="prosa">Toca el corazón en cualquier ruta, actividad o alojamiento para guardarlo aquí.</p>
+        <div class="acciones" style="justify-content:center"><a class="btn btn--zona" href="/rutas-de-trekking/">Explorar rutas <Icono nombre="flecha" /></a></div>
+      </div>
+    </div>
+  </section>
+  <script>
+    import { viaje, cargarIndice } from '../scripts/app';
+    const lista = document.getElementById('listaViaje')!;
+    const vacio = document.getElementById('vacioViaje')!;
+    const acciones = document.getElementById('accionesViaje')!;
+    const wsp = document.getElementById('compartirWsp') as HTMLAnchorElement;
+    const esc = (t: string) => t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]!));
+    const pintar = async () => {
+      const indice = await cargarIndice();
+      const guardados = viaje.lista().map((u) => indice.find((d) => d.u === u)).filter(Boolean) as { t: string; u: string; c: string; i: string; x: string }[];
+      vacio.hidden = guardados.length > 0; acciones.hidden = guardados.length === 0;
+      lista.innerHTML = guardados.map((d) => `
+        <a href="${d.u}" class="tarjeta visible">
+          <div class="tarjeta__img">${d.i ? `<img src="${d.i}" alt="" loading="lazy">` : ''}
+            <div class="tarjeta__arriba"><span class="chip chip--solido">${esc(d.c)}</span>
+              <button type="button" class="fav" data-fav="${d.u}" aria-pressed="true" aria-label="Quitar de Mi viaje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></svg></button></div></div>
+          <div class="tarjeta__cuerpo"><h3>${esc(d.t)}</h3>${d.x ? `<p>${esc(d.x)}</p>` : ''}</div>
+        </a>`).join('');
+      const texto = `Mi viaje a Melipeuco Capital del Trekking:\n` + guardados.map((d) => `• ${d.t} (${d.c}): ${location.origin}${d.u}`).join('\n');
+      wsp.href = `https://wa.me/?text=${encodeURIComponent(texto)}`;
+    };
+    document.getElementById('vaciarViaje')!.addEventListener('click', () => { if (confirm('¿Vaciar tu lista de viaje?')) viaje.vaciar(); });
+    document.addEventListener('viaje:cambio', pintar);
+    pintar();
+  </script>
+</Base>

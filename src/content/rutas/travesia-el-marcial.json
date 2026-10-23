@@ -1,0 +1,109 @@
+{
+  "slug": "travesia-el-marcial",
+  "titulo": "Travesía El Marcial",
+  "subtitulo": "Ruta Travesía El Marcial",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "27,2 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Dos o más días"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "4"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "travesía"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere guía especializado (*)"
+    }
+  ],
+  "cuerpo": "Esta travesía de largo aliento, de 24 kilómetros y una duración de aproximadamente 3 días, te llevará a través de la solitaria cordillera de El Marcial. A lo largo del recorrido, bordearás desfiladeros, caminarás entre bosques nativos, cruzarás vastos coironales y atravesarás pequeños esteros cordilleranos de aguas cristalinas. Es un sendero de alta exigencia física, ideal para quienes buscan un desafío que los saque de su zona de confort. El esfuerzo requerido es recompensado con un paisaje salvaje y remoto. Dado que el sendero atraviesa terrenos privados, es indispensable realizar esta aventura con guías locales, quienes gestionan las autorizaciones necesarias con los propietarios y conocen bien la zona, garantizando así una experiencia segura y respetuosa con el entorno.",
+  "imagen": "/media/2024/11/10.03el-marcial-3-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/10.03el-marcial-3-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "27,2 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "3d"
+        },
+        {
+          "k": "Desnivel",
+          "v": "681m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1569m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "4"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "travesía"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "Sin información"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere guía especializado (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.85074120175522,
+    -71.47296391534115
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Expertos",
+  "tipo_recorrido": [
+    "travesia"
+  ],
+  "gpx": "/media/kmz/10.travesiaelmarcial-insunza-santaolga.gpx",
+  "dificultad": "4",
+  "extension": "27,2 km",
+  "duracion": "Dos o más días",
+  "condicion": "Requiere guía especializado (*)",
+  "publicado": true,
+  "destacado": false
+}

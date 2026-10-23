@@ -1,0 +1,112 @@
+{
+  "slug": "contrabandistas",
+  "titulo": "Contrabandistas",
+  "subtitulo": "Ruta Contrabandistas",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "8 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "2"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "Esta ruta histórica conectaba originalmente el Conguillío con la cuenca de Lonquimay a través del Valle de los Truenos. Hoy en día, solo se encuentran habilitados 4 de los 15 kilómetros que tenía en su extensión original. Este sendero fue utilizado durante siglos por el pueblo Pehuenche como una vía de tránsito a través de la cordillera, y más tarde sirvió como ruta para el contrabando de ganado y mercaderías, lo que explica su nombre actual. A lo largo del recorrido, te adentrarás en un profundo bosque de árboles nativos, donde predominan los imponentes coigües y las majestuosas araucarias, creando un entorno de densa vegetación que te acompaña en todo momento. Es una caminata que no solo ofrece contacto directo con la naturaleza, sino también un viaje a través de la historia y las antiguas tradiciones de la región.",
+  "imagen": "/media/2024/11/8.02contrabandistas-4-wpcf_1024x1024.jpg",
+  "galeria": [
+    "/media/2024/11/8.02contrabandistas-4-wpcf_1024x1024.jpg",
+    "/media/2024/11/8.03contrabandistas-4-wpcf_1024x1024.jpg",
+    "/media/2024/11/8.04contrabandistas-2-wpcf_1024x1024.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "8 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "1h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "90m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1172m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "2"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "www.pasesparques.cl"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.65131661345942,
+    -71.65088708465886
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/08.contrabandistas.gpx",
+  "dificultad": "2",
+  "extension": "8 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

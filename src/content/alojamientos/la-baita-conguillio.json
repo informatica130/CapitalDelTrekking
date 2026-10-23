@@ -1,0 +1,95 @@
+{
+  "slug": "la-baita-conguillio",
+  "titulo": "La Baita Conguillio",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Lodge"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta, Transferencias"
+    }
+  ],
+  "cuerpo": "Ecolodge diseñado para integrarse armoniosamente con el entorno natural del Parque Nacional ConguillIo. Dedicado a la preservación del entorno y prestación de servicios turisticos de alojamiento enfocados en el turismo sustentable.",
+  "imagen": "/media/2024/11/labaita-3-1.webp",
+  "galeria": [
+    "/media/2024/11/labaita-3-1.webp",
+    "/media/2024/11/labaita-5-1.webp",
+    "/media/2024/11/labaita-4.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino Laguna Verde NºS/N, Km. 18 (P.N Conguillio)"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 97332442"
+        },
+        {
+          "k": "Email",
+          "v": "Reservas@labaitaconguillio.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.labaitaconguillio.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 97332442"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Sector Conguillio"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Baño privado, Calefacción, Cunas disponibles, Desayuno incluído, Servicio de limpieza, Cocina equipada, Toallas."
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Tarjeta, Transferencias"
+        },
+        {
+          "k": "Servicios",
+          "v": "Adaptado para movilidad reducida, Bar, Estacionamiento, Spa, Tinajas"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6071.233543860537!2d-71.6260018!3d-38.7264927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613412aa77fc159%3A0x4518bae699ba80e6!2sLa%20Baita%20Conguillio!5e1!3m2!1ses-419!2scl!4v1729779164040!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56997332442",
+    "facebook": "https://web.facebook.com/LaBaitaConguillio1?locale=es_LA",
+    "instagram": "https://www.instagram.com/la_baita_conguillio/",
+    "youtube": "https://youtube.com/@labaitaconguillio3664?feature=shared"
+  },
+  "logo": "/media/2024/11/logo-labaita.jpg",
+  "servicios": [
+    "Adaptado para movilidad reducida",
+    "Bar",
+    "Estacionamiento",
+    "Spa",
+    "Tinajas"
+  ],
+  "clase": "Lodge",
+  "publicado": true,
+  "destacado": false
+}

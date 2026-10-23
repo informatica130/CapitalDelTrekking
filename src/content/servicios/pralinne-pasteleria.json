@@ -1,0 +1,56 @@
+{
+  "slug": "pralinne-pasteleria",
+  "titulo": "Pralinne Pastelería",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/50.pralinne02.webp",
+  "galeria": [
+    "/media/2024/11/50.pralinne02.webp",
+    "/media/2024/11/50.pralinne03.webp",
+    "/media/2024/11/50.pralinne04.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Entrega a pedido"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 64749139"
+        },
+        {
+          "k": "Email",
+          "v": "pralinne.pastelera@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 64749139"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56964749139",
+    "facebook": "https://www.facebook.com/profile.php?id=100066738458395",
+    "instagram": "https://www.instagram.com/pralinnepasteleria/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "kafe-lukay",
+  "titulo": "Kafe Lukay",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante, Souvenir"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Transferencia"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Av. Pedro Aguirre Cerda 250"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56 9 4234 3113"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 4234 3113"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.7400201200776!2d-71.69724442406525!3d-38.85389077173336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613697ae79c928d%3A0xa168ab018d7650c4!2sLUKAY%20Coffee%20%26%20Brew%20Bar!5e1!3m2!1ses!2scl!4v1730146955034!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56942343113",
+    "facebook": "https://www.facebook.com/p/Kafe-Lukay-100083072325484",
+    "instagram": "https://www.instagram.com/lukay_melipeuco/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante, Souvenir",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

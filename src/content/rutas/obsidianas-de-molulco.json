@@ -1,0 +1,111 @@
+{
+  "slug": "obsidianas-de-molulco",
+  "titulo": "Obsidianas de Molulco",
+  "subtitulo": "Ruta Obsidianas de Molulco",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "12 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "Esta ruta asciende por el valle de Molulco, hasta un yacimiento de rocas obsidianas, muy escasas en el sur de Chile. Este yacimiento fue un punto medular en la prehistoria regional, pues la obsidiana se empleaba para elaborar puntas de flecha, lanzas y cuchillas. Las piezas aquí originadas se han encontrado en yacimientos arqueológicos de puntos tan distantes como la costa de Puerto Montt. La ruta para llegar al yacimiento se interna por un camino vehícular privado, salpicado de pueblas abandonadas que testimonian el auge maderero-ganadero de Molulco durante el siglo XX. Al final de la ruta se alcanza un mallín con araucarias, en el cual se encuentran dispersos los bloques de obsidiana. Por tratarse de terrenos privados y yacimientos arqueológicos, la visita debe hacerse con guías autorizados por los propietarios. Es posible conectar esta ruta con la de ruta de la Laguna El Mirador del Molulco.",
+  "imagen": "/media/2024/11/30.02obsidianas-molulco.webp",
+  "galeria": [
+    "/media/2024/11/30.02obsidianas-molulco.webp",
+    "/media/2024/11/30.03obsidianas-molulco-2-wpcf_1024x1024.jpg",
+    "/media/2024/11/30.04obsidianas-molulco.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "12 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "3h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "190m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1080m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "569 97799845"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Solo 4x4"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.925707280915596,
+    -71.70071318650585
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "ida y vuelta"
+  ],
+  "gpx": "/media/kmz/30.valledelasobsidianasdemolulco.gpx",
+  "dificultad": "1",
+  "extension": "12 km",
+  "duracion": "Medio día",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

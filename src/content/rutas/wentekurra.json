@@ -1,0 +1,108 @@
+{
+  "slug": "wentekurra",
+  "titulo": "Wentekurra",
+  "subtitulo": "Ruta Wentekurra",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "3,4 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Medio día"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "1"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "ida y vuelta / travesía"
+    },
+    {
+      "k": "Condición",
+      "v": "Requiere acompañamiento local (*)"
+    }
+  ],
+  "cuerpo": "En el punto de inicio de este sendero se puede conocer un proyecto de cultivo y rescate del Copihue, con plantas de múltiples variedades cultivadas en vivero y al aire libre. Luego se interna por un bello bosque nativo, con destacada presencia de cipreses de la cordillera y abundantes musgos y hepáticas. Todo este bosque se desarrolla sobre un antiguo escorial volcánico. De ahí el nombre en mapudungun del sendero, ya que “Sobre las piedras crecen montañas” dice un refrán en esta lengua. Al finalizar el sendero, es posible hacer una degustación de gastronomía Mapuche en el Restaurant Folil Koyam (previa reserva), con una fascinante terraza a la altura de las copas del bosque. Es un sendero de 1 hora de duración, con desniveles suaves, apto para todo público.",
+  "imagen": "/media/2024/11/9.wentekurra2.webp",
+  "galeria": [
+    "/media/2024/11/9.wentekurra2.webp",
+    "/media/2024/11/9.wentekurra3.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "3,4 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "1h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "93m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "597m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "1"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "ida y vuelta / travesía"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "569 89603823"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Requiere acompañamiento local (*)"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Todo el año con equipo normal de trekking"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.835974535496376,
+    -71.7067792711647
+  ],
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "interes": "Familiares",
+  "tipo_recorrido": [
+    "ida y vuelta travesia"
+  ],
+  "gpx": "/media/kmz/09.wentekurra.gpx",
+  "dificultad": "1",
+  "extension": "3,4 km",
+  "duracion": "Medio día",
+  "condicion": "Requiere acompañamiento local (*)",
+  "publicado": true,
+  "destacado": false
+}

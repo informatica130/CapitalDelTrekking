@@ -1,0 +1,58 @@
+{
+  "slug": "patagonia-de-volcanes",
+  "titulo": "Patagonia de Volcanes",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/39.patagoniavolcanes02.webp",
+  "galeria": [
+    "/media/2024/11/39.patagoniavolcanes02.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "PEDRO AGUIRRE CERDA N° 519 MELIPEUCO URBANO"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 85158018"
+        },
+        {
+          "k": "Email",
+          "v": "massa132@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.patagoniadevolcanes.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 85158018"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.7863541525608!2d-71.69393562405564!3d-38.85278849413216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369a516226f19%3A0x54660c409dc3a411!2sPatagonia%20de%20Volcanes!5e1!3m2!1ses!2scl!4v1730146391074!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56985158018",
+    "facebook": "https://www.facebook.com/patagoniadevolcanes.cl/?locale=es_LA",
+    "instagram": "https://www.instagram.com/patagoniadevolcanes/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

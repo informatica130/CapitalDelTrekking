@@ -1,0 +1,55 @@
+{
+  "slug": "el-arriero",
+  "titulo": "El Arriero",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/40.elarriero02-jpg.webp",
+  "galeria": [
+    "/media/2024/11/40.elarriero02-jpg.webp",
+    "/media/2024/11/40.elarriero03-jpg.webp",
+    "/media/2024/11/40.elarriero04-jpg.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Galvarino 063, Melipeuco, Araucanía"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56 9 8346 8267"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 8346 8267"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.8008379617604!2d-71.69423287406532!3d-38.85244392173372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369bfe80452b3%3A0xb95fbbb687864cf5!2sEl%20Arriero!5e1!3m2!1ses!2scl!4v1730146413813!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56983468267",
+    "facebook": "https://www.facebook.com/p/El-Arriero-Restaurant-100091577314290/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

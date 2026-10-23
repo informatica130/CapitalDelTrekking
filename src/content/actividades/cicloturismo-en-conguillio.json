@@ -1,0 +1,27 @@
+{
+  "slug": "cicloturismo-en-conguillio",
+  "titulo": "Cicloturismo en Conguillio",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de actividad",
+      "v": "Cicloturismo"
+    }
+  ],
+  "cuerpo": "Sumérgete en la belleza del Parque Nacional Conguillío pedaleando entre araucarias milenarias, lagos cristalinos e imponentes vistas al volcán Llaima. Este recorrido te permitirá disfrutar del entorno a tu propio ritmo, sintiendo el viento en la cara.",
+  "imagen": "/media/2024/11/cicloturismo-melibike.webp",
+  "galeria": [
+    "/media/2024/11/cicloturismo-melibike.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d17605.13078114508!2d-71.64766524159056!3d-38.736704013653174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1struful%20truful!5e0!3m2!1ses-419!2scl!4v1729104789055!5m2!1ses-419!2scl",
+  "operadores": [
+    "congui"
+  ],
+  "relacionados": [],
+  "categoria": "actividad",
+  "tipo": "Cicloturismo",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,90 @@
+{
+  "slug": "centro-turistico-el-regreso",
+  "titulo": "Centro Turístico El Regreso",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Cabañas"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Transferencias"
+    }
+  ],
+  "cuerpo": "En Centro Turístico El Regreso, descubrirás un refugio de tranquilidad y conexión profunda con la naturaleza, rodeado de la belleza inigualable de la Araucanía Andina. Este rincón especial te invita a disfrutar de una escapada única, donde el descanso y la armonía con el entorno son protagonistas",
+  "imagen": "/media/2024/11/elregreso1-1-wpcf_1024x907.jpg",
+  "galeria": [
+    "/media/2024/11/elregreso1-1-wpcf_1024x907.jpg",
+    "/media/2024/11/elregreso2-1-wpcf_1024x907.jpg",
+    "/media/2024/11/elregreso3-1-wpcf_1024x907.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Kilometro Nº1,5, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56985426013"
+        },
+        {
+          "k": "Email",
+          "v": "elregresomelipeuco@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://www.centroturisticoelregreso.cl/"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56985426013"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 12:00 hrs."
+        },
+        {
+          "k": "Habitaciones",
+          "v": "Kitchenette, Toallas,Vajilla"
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Transferencias"
+        },
+        {
+          "k": "Servicios",
+          "v": "Tinajas"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12429.711482392444!2d-71.67234856305787!3d-38.84556180080894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9613695b5832e3eb%3A0xb38c39f329f75adb!2sCaba%C3%B1as%20EL%20Regreso%20So%C3%B1ado!5e0!3m2!1ses-419!2scl!4v1729779216096!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56985426013",
+    "facebook": "https://web.facebook.com/centroturisticoelregreso?locale=es_LA",
+    "instagram": "https://www.instagram.com/centroturisticoelregreso/"
+  },
+  "logo": "/media/2024/11/logoelregreso-1.jpg",
+  "servicios": [
+    "Tinajas"
+  ],
+  "clase": "Cabañas",
+  "publicado": true,
+  "destacado": false
+}

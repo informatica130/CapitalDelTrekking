@@ -5,9 +5,9 @@ import ListadoNegocios from '../components/ListadoNegocios.astro';
 import { servicios, url } from '../scripts/datos';
 const img = '/media/2024/11/cuatrorios04-jpg.webp';
 ---
-<Base titulo="Servicios complementarios" descripcion="Artesanía, arriendo de equipo, bicicletas, farmacias, banco, salud y otros servicios en Melipeuco." imagen={img}>
-  <Heroe titulo="Servicios" destacado="complementarios" imagen={img} bajada="Artesanía, arriendo de equipo y bicicletas, salud, banca y todo lo que necesitas durante tu visita." />
-  <section class="seccion"><div class="contenedor">
-    <ListadoNegocios lista={servicios.filter((s) => s.seccion === 'complementarios')} id="lista-complementarios" enlace={url.servicio} filtro={{ clave: 'tipo', etiqueta: 'Tipo de servicio', campo: (n) => n.tipo ?? '' }} />
+<Base titulo="Servicios complementarios" zona="complementarios" descripcion="Artesanía, arriendo de equipo, bicicletas, farmacias, banco, salud y otros servicios en Melipeuco." imagen={img}>
+  <Heroe titulo="Servicios" destacado="complementarios" zona="complementarios" imagen={img} migas={[{ texto: 'Servicios complementarios' }]} bajada="Artesanía, arriendo de equipo y bicicletas, salud, banca y todo lo que necesitas durante tu visita." />
+  <section class="seccion" style="padding-top:40px"><div class="contenedor">
+    <ListadoNegocios lista={servicios.filter((s) => s.seccion === 'complementarios')} id="lista-complementarios" enlace={url.servicio} letra={6} filtro={{ clave: 'tipo', etiqueta: 'Tipo de servicio', campo: (n) => n.tipo ?? '' }} />
   </div></section>
 </Base>

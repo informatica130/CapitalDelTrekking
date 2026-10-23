@@ -1,0 +1,64 @@
+{
+  "slug": "hostal-turismo-allipen",
+  "titulo": "Hostal Turismo Allipén",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Hostal"
+    }
+  ],
+  "cuerpo": "Una acogedora hostal familiar ubicada en el centro de Melipeuco. Ofrece alojamiento con opciones de tarifas que pueden incluir desayuno. Cuenta con estacionamiento privado, wifi gratuito y servicio de lavandería. Próximamente, también dispondremos de un restaurante para nuestros huéspedes.",
+  "imagen": "/media/2024/11/hostalturismoallipen01-1-wpcf_1024x882.jpg",
+  "galeria": [
+    "/media/2024/11/hostalturismoallipen01-1-wpcf_1024x882.jpg",
+    "/media/2024/11/hostalturismoallipen02-1-wpcf_1024x1013.jpg",
+    "/media/2024/11/hostalturismoallipen03-1-wpcf_1024x808.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Aurelio letelier 339"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 986719948"
+        },
+        {
+          "k": "Email",
+          "v": "ioackley@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 986719948"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3107.0876125006653!2d-71.69544032406529!3d-38.85335147173355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369ddbcf626ef%3A0xfea3ca706e557d73!2sHOSTAL%20TURISMO%20ALLIPEN!5e0!3m2!1ses-419!2scl!4v1729780360836!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+569986719948",
+    "facebook": "https://web.facebook.com/profile.php?id=100057459099018&locale=es_LA",
+    "instagram": "https://www.instagram.com/hostalturismoallipen/"
+  },
+  "logo": "/media/2024/11/hostalturismoallipen01-1.jpg",
+  "servicios": [],
+  "clase": "Hostal",
+  "publicado": true,
+  "destacado": false
+}

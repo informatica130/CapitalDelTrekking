@@ -1,0 +1,79 @@
+{
+  "slug": "lodge-nevados-de-sollipulli",
+  "titulo": "Lodge Nevados de Sollipulli",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Clase de alojamiento",
+      "v": "Lodge"
+    },
+    {
+      "k": "Forma de pago",
+      "v": "Efectivo, Tarjeta, Transferencia"
+    }
+  ],
+  "cuerpo": "El Lodge ofrece un alojamiento cómodo y acogedor, ideal para relajarse y recargar energías después de una jornada al aire libre. Durante todo el año, los visitantes pueden disfrutar de experiencias inolvidables, desde ascensos al Volcán Sollipulli y senderismo en verano, hasta esquí de randonnée y actividades invernales en un entorno privilegiado.\n\nComprometidos con la sustentabilidad, producimos nuestra propia energía y promovemos el reciclaje y el cuidado del entorno, fomentando un turismo responsable que permite disfrutar de la naturaleza de manera consciente.\n\nContamos con cabañas, domos y refugio de montaña completamente equipados, pensados para brindar comodidad y conexión con el entorno, convirtiendo cada estadía en una experiencia auténtica e inolvidable.",
+  "imagen": "/media/2024/11/nevadosdesollipulli-6.webp",
+  "galeria": [
+    "/media/2024/11/nevadosdesollipulli-6.webp",
+    "/media/2024/11/nevadosdesollipulli-4-jpg.webp",
+    "/media/2024/11/nevadosdesollipulli-3.jpg"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Carilafquen S/N, Melipeuco."
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56979097685"
+        },
+        {
+          "k": "Email",
+          "v": "sollipullilodge@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.sollipulli.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56979097685"
+        }
+      ]
+    },
+    {
+      "titulo": "Información del lugar",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Melipeuco / Sector Sollipulli / Sector Conguillio / Camino Icalma Orilla Río / Lago"
+        },
+        {
+          "k": "Check-in / check-out",
+          "v": "15:00 hrs. / 11:00 hrs."
+        },
+        {
+          "k": "Formas de pago",
+          "v": "Efectivo, Tarjeta, Transferencia"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3104.0821408561064!2d-71.4843!3d-38.9221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961313dbb6e637d9%3A0xf6df7d6050fa718a!2sNevados%20de%20Sollipulli%20Parque%20Natural%20%26%20Lodge!5e0!3m2!1ses!2scl!4v1729780299926!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56979097685",
+    "instagram": "https://www.instagram.com/nevados_sollipulli"
+  },
+  "logo": "/media/2024/11/logonevadosdesollipulli-1.jpg",
+  "servicios": [],
+  "clase": "Lodge",
+  "publicado": true,
+  "destacado": false
+}

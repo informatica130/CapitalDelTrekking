@@ -1,0 +1,60 @@
+{
+  "slug": "congui",
+  "titulo": "Congui",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Av. Pedro Aguirre Cerda 536, Melipeuco"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+569 91399293 - 569 92437941"
+    }
+  ],
+  "cuerpo": "Descubre la auténtica aventura en esta tierra de volcanes. Explora la majestuosidad de Melipeuco. Cada rincón encierra secretos ancestrales y paisajes impresionantes. Desde emocionantes recorridos en bicicleta hasta tours en cuatrimoto, Congui invitamos a vivir experiencias inolvidables en Melipeuco ¡Tu aventura comienza aquí!",
+  "imagen": "/media/2024/11/congui_actividad3-jpg.webp",
+  "galeria": [
+    "/media/2024/11/congui_actividad3-jpg.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Av. Pedro Aguirre Cerda 536, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 91399293 - 569 92437941"
+        },
+        {
+          "k": "Email",
+          "v": "reservascongui@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "www.congui.cl"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56991399294 - 56992437941"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3107.120534952206!2d-71.6946720740654!3d-38.852597821733625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369e758554c71%3A0xad23f9b5f1bf59e2!2sAv.%20Pedro%20Aguirre%20Cerda%20536%2C%204900043%20Pedro%20Aguirre%20Cerda%2C%20Melipeuco%2C%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1729111290884!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56991399294-56992437941",
+    "facebook": "https://www.facebook.com/ConguiSpa?mibextid=LQQJ4d",
+    "instagram": "https://www.instagram.com/somoscongui?igshid=MWZjMTM2ODFkZg%3D%3D"
+  },
+  "logo": "",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

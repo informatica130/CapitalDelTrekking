@@ -1,0 +1,56 @@
+{
+  "slug": "nevados-melipeuco",
+  "titulo": "Nevados Melipeuco",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Restaurante"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "/media/2024/11/37.nevadosmelipeuco02.webp",
+  "galeria": [
+    "/media/2024/11/37.nevadosmelipeuco02.webp",
+    "/media/2024/11/37.nevadosmelipeuco03-jpg.webp",
+    "/media/2024/11/37.nevadosmelipeuco04.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda #565"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 71738964"
+        },
+        {
+          "k": "Email",
+          "v": "nevadosmelipeuco@gmail.com"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "569 71738964"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2989.794368918855!2d-71.69498032406533!3d-38.852597821733596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961369ddf0411039%3A0x40c7d01e76ee3f1d!2sAv.%20Pedro%20Aguirre%20Cerda%20496%2C%204900044%20Melipeuco%2C%20Araucan%C3%ADa!5e1!3m2!1ses!2scl!4v1730146312903!5m2!1ses!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56971738964",
+    "facebook": "https://www.facebook.com/NevadosMelipeuco/",
+    "instagram": "https://www.instagram.com/nevadosmelipeuco/"
+  },
+  "logo": "",
+  "servicios": [],
+  "tipo": "Restaurante",
+  "seccion": "gastronomia",
+  "publicado": true,
+  "destacado": false
+}

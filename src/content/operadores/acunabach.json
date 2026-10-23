@@ -1,0 +1,63 @@
+{
+  "slug": "acunabach",
+  "titulo": "Acunabach",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Km 1 ruta 925s"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+56 9 7931 5279"
+    }
+  ],
+  "cuerpo": "Actividades de montaña. Ascenso Volcanes, ski de montaña",
+  "imagen": "/media/2025/11/acunabach-4.webp",
+  "galeria": [
+    "/media/2025/11/acunabach-4.webp",
+    "/media/2025/11/acunabach-1.webp",
+    "/media/2025/11/acunabach-2.webp",
+    "/media/2025/11/acunabach-3.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Km 1 ruta 925s"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+56 9 7931 5279"
+        },
+        {
+          "k": "Email",
+          "v": "acunabach@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://acunabach.cl/"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56 9 7931 5279"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {
+    "whatsapp": "https://wa.me/+56979315279",
+    "facebook": "https://www.facebook.com/acunabach",
+    "instagram": "https://www.instagram.com/acunabach"
+  },
+  "logo": "/media/2025/11/acunabach_logo.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

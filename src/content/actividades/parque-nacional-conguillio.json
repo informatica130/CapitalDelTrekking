@@ -1,0 +1,30 @@
+{
+  "slug": "parque-nacional-conguillio",
+  "titulo": "Parque Nacional Conguillio",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Natural / Área silvestre protegida"
+    }
+  ],
+  "cuerpo": "Un paisaje impresionante se despliega bajo el imponente Volcán Llaima, rodeado de lagunas cristalinas y bosques de araucarias. Este parque es considerado un relicto de paisaje del periodo cretácico y las diferentes estaciones del año enriquecen la variedad cromática del parque, convirtiendo cada visita en una experiencia única y diferente. Protegido desde 1940, el parque abarca casi 61 mil hectáreas y cuenta con una variada red de senderos que permiten recorrerlo y visitar sus atractivos.",
+  "imagen": "/media/2024/11/araucarias-nevadas.webp",
+  "galeria": [
+    "/media/2024/11/araucarias-nevadas.webp",
+    "/media/2024/11/IMG_1894.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d97191.2265486771!2d-71.7642597!3d-38.6886048!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961346408e4cc715%3A0xefdca357d0266894!2sParque%20Nacional%20Conguillio!5e1!3m2!1ses-419!2scl!4v1728489387490!5m2!1ses-419!2scl",
+  "operadores": [
+    "nuke-mawida",
+    "pewen-mapu",
+    "namku-adventure"
+  ],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Natural / Área silvestre protegida",
+  "publicado": true,
+  "destacado": false
+}

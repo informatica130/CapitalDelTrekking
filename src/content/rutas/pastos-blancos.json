@@ -1,0 +1,112 @@
+{
+  "slug": "pastos-blancos",
+  "titulo": "Pastos Blancos",
+  "subtitulo": "Ruta Pastos Blancos",
+  "resumen": [
+    {
+      "k": "Extensión (ida y vuelta)",
+      "v": "22 km"
+    },
+    {
+      "k": "Duración",
+      "v": "Full day"
+    },
+    {
+      "k": "Dificultad (escala MIDE)",
+      "v": "3"
+    },
+    {
+      "k": "Tipo de recorrido",
+      "v": "travesía"
+    },
+    {
+      "k": "Condición",
+      "v": "Autoguiable"
+    }
+  ],
+  "cuerpo": "El sendero de Pastos Blancos te lleva a través de más de 4 kilómetros de escoriales y lahares en las laderas del Volcán Llaima, brindándote una inmersión auténtica en su paisaje volcánico. Durante el trayecto, cruzarás algunos bosques que han logrado sobrevivir entre depósitos piroclásticos (escoriales) y fluvio-volcánicos (lahares) de distintas edades. Esto te permitirá observar de cerca el proceso de sucesión ecológica en diferentes estados de avance desde una perturbación volcánica. Ten en cuenta que en el sendero no hay puntos de carga de agua y la sombra es escasa, por lo que durante el verano puede resultar muy árido. Sin embargo, en invierno, Pastos Blancos se transforma en una excelente opción para esquí de randonee o caminata en raquetas, ofreciéndote un paisaje nevado y un entorno ideal para actividades invernales.",
+  "imagen": "/media/2024/11/29.02pastos-blancos.webp",
+  "galeria": [
+    "/media/2024/11/29.02pastos-blancos.webp",
+    "/media/2024/11/29.03pastos-blancos.webp",
+    "/media/2024/11/29.04pastos-blancos.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Información del sendero",
+      "campos": [
+        {
+          "k": "Extensión (ida y vuelta)",
+          "v": "22 km"
+        },
+        {
+          "k": "Tiempo estimado ida y vuelta",
+          "v": "6h"
+        },
+        {
+          "k": "Desnivel",
+          "v": "784m"
+        },
+        {
+          "k": "Altitud máxima (m.s.n.m.)",
+          "v": "1784m"
+        },
+        {
+          "k": "Dificultad (escala MIDE)",
+          "v": "3"
+        },
+        {
+          "k": "Tipo de recorrido",
+          "v": "travesía"
+        }
+      ]
+    },
+    {
+      "titulo": "Accesos y permisos",
+      "campos": [
+        {
+          "k": "Administrador",
+          "v": "www.pasesparques.cl"
+        },
+        {
+          "k": "Restricciones o permisos requeridos",
+          "v": "Autoguiable"
+        }
+      ]
+    },
+    {
+      "titulo": "Estacionalidad",
+      "campos": [
+        {
+          "k": "Consideraciones sobre condiciones invernales u otras",
+          "v": "Todo vehículo"
+        },
+        {
+          "k": "Requerimiento de equipo técnico",
+          "v": "Invierno con equipo de nieve"
+        }
+      ]
+    }
+  ],
+  "coords": [
+    -38.68866094518802,
+    -71.62293427116471
+  ],
+  "mapa_embed": "",
+  "operadores": [
+    "namku-adventure",
+    "pewen-mapu"
+  ],
+  "relacionados": [],
+  "interes": "Trekkeros",
+  "tipo_recorrido": [
+    "travesia"
+  ],
+  "gpx": "/media/kmz/29.pastosblancos.gpx",
+  "dificultad": "3",
+  "extension": "22 km",
+  "duracion": "Full day",
+  "condicion": "Autoguiable",
+  "publicado": true,
+  "destacado": false
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "la-casita-del-colibri",
+  "titulo": "La Casita del Colibrí",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Artesanía"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Ruta s 575 km 8, Melipeuco, Araucanía"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 93583022"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3106.633793252299!2d-71.5546731!3d-38.8637389!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDUxJzQ5LjAiUyA3McKwMzMnMTcuNiJX!5e0!3m2!1ses-419!2scl!4v1730152398781!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Artesanía",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}

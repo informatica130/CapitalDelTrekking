@@ -1,0 +1,26 @@
+{
+  "slug": "fiesta-del-baqueano",
+  "titulo": "Fiesta del Baqueano",
+  "subtitulo": "La experiencia",
+  "resumen": [
+    {
+      "k": "Tipo de atractivo",
+      "v": "Cultural / Fiesta costumbrista"
+    }
+  ],
+  "cuerpo": "La Fiesta del Baqueano honra las tradiciones campesinas que convergen en la Araucanía Andina, donde se entrelazan las culturas pehuenche, chilena y gaucha pampeana. Esta celebración, realizada en el mes de noviembre de cada año, destaca las destrezas de los baqueanos, expertos en la vida cordillerana. Con desfiles, doma de equinos, competencias ecuestres y música folclórica, la fiesta ofrece una experiencia genuina de la cultura baqueana.",
+  "imagen": "/media/2024/11/fiesta_baqueanos2-jpg.webp",
+  "galeria": [
+    "/media/2024/11/fiesta_baqueanos2-jpg.webp",
+    "/media/2024/11/cabalgata-de-baqueanos-en-china-muerta-1-jpg.webp"
+  ],
+  "grupos": [],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1260.0141918037602!2d-71.70088470737538!3d-38.85530645935876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96136922e3a98ea7%3A0x1ec676ba2726e9bd!2sCasa%20del%20Baqueano%20de%20Melipeuco!5e0!3m2!1ses-419!2scl!4v1730208164088!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "categoria": "atractivo",
+  "tipo": "Cultural / Fiesta costumbrista",
+  "publicado": true,
+  "destacado": false
+}

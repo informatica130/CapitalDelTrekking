@@ -1,0 +1,77 @@
+{
+  "slug": "pewen-mapu",
+  "titulo": "Turismo Pewen Mapu",
+  "subtitulo": "Conócenos",
+  "resumen": [
+    {
+      "k": "Ubicación",
+      "v": "Camino a Termas de Molulco, Km 6,5, Melipeuco"
+    },
+    {
+      "k": "Teléfono",
+      "v": "+569 92863765"
+    }
+  ],
+  "cuerpo": "Agencia local de turismo aventura en la comuna de Melipeuco, que realiza actividades de hikking, trekking, y ascensos a volcanes. Algunos de los atractivos que visitan son: el parque Conguillio, Volcán Sollipulli, Geiser de Queipúe, entre otros.",
+  "imagen": "/media/2024/11/pewenmapu2.webp",
+  "galeria": [
+    "/media/2024/11/pewenmapu2.webp",
+    "/media/2024/11/pewenmapu3.webp",
+    "/media/2024/11/pewenmapu4.webp"
+  ],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Camino a Termas de Molulco, Km 6,5, Melipeuco"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 92863765"
+        },
+        {
+          "k": "Email",
+          "v": "turismopewenmapu@gmail.com"
+        },
+        {
+          "k": "Página web",
+          "v": "https://pewenmapu.cl/"
+        },
+        {
+          "k": "Whatsapp",
+          "v": "56992863765"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.143822595987!2d-71.77137992406429!3d-38.87495117172892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961367e40c73b137%3A0xb2526c7c02662d94!2sPosada%20Los%20Arriesgados!5e0!3m2!1ses-419!2scl!4v1729111401144!5m2!1ses-419!2scl",
+  "operadores": [
+    "travesia-sollipulli-geisers",
+    "laguna-verde",
+    "salto-del-tiriento",
+    "laguna-caren-alto",
+    "truful-truful",
+    "laguna-icalma"
+  ],
+  "relacionados": [
+    "laguna-caren-alto",
+    "laguna-icalma",
+    "laguna-verde",
+    "salto-del-tiriento",
+    "travesia-sollipulli-geisers",
+    "truful-truful"
+  ],
+  "redes": {
+    "whatsapp": "https://wa.me/+56992863765",
+    "facebook": "https://www.facebook.com/pewenmapu",
+    "instagram": "https://www.instagram.com/pewenmapu/",
+    "youtube": "https://www.youtube.com/@turismopewenmapu9289"
+  },
+  "logo": "/media/2024/11/logo-pewen-mapu.jpg",
+  "servicios": [],
+  "publicado": true,
+  "destacado": false
+}

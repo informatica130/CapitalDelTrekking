@@ -1,0 +1,40 @@
+{
+  "slug": "congui",
+  "titulo": "Congui",
+  "subtitulo": "",
+  "resumen": [
+    {
+      "k": "Tipo de servicio",
+      "v": "Rental de bicicletas"
+    }
+  ],
+  "cuerpo": "",
+  "imagen": "",
+  "galeria": [],
+  "grupos": [
+    {
+      "titulo": "Contacto",
+      "campos": [
+        {
+          "k": "Ubicación",
+          "v": "Pedro Aguirre Cerda 536, local 9"
+        },
+        {
+          "k": "Teléfono",
+          "v": "+569 91399293"
+        }
+      ]
+    }
+  ],
+  "coords": null,
+  "mapa_embed": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d793664.2094819342!2d-72.7894401!3d-39.0095916!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96136926c4940c89%3A0xba910d1a79fef1d5!2sCONGUI.%20Tour%20Guiados%20en%20cuatrimoto%2Farriendo%20de%20bicicletas%20en%20Melipeuco!5e0!3m2!1ses-419!2scl!4v1730152553410!5m2!1ses-419!2scl",
+  "operadores": [],
+  "relacionados": [],
+  "redes": {},
+  "logo": "",
+  "servicios": [],
+  "tipo": "Rental de bicicletas",
+  "seccion": "complementarios",
+  "publicado": true,
+  "destacado": false
+}
