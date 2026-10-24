@@ -11,6 +11,9 @@ const pildoras = opciones.filter((o) => o.tipo === 'pildoras');
 <div class="filtros" data-filtros={contenedor}>
   {buscador && <label class="filtros__buscar"><Icono nombre="buscar" /><span class="sr">Buscar</span><input type="search" placeholder="Buscar por nombre o palabra…" data-buscar /></label>}
   {selects.length > 0 && (
+    <button type="button" class="filtros__abrir" aria-expanded="false" data-filtros-abrir><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4" /></svg>Filtros<b data-filtros-n></b></button>
+  )}
+  {selects.length > 0 && (
     <div class="filtros__selects">
       {selects.map((o) => (
         <select data-clave={o.clave} aria-label={o.etiqueta}>
@@ -57,7 +60,15 @@ const pildoras = opciones.filter((o) => o.tipo === 'pildoras');
     if (buscar && params.get('q')) buscar.value = params.get('q')!;
     const norm = (t: string) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
     const textos = items.map((el) => norm(el.textContent ?? ''));
+    // Botón "Filtros" (celulares): despliega los selectores y muestra cuántos hay activos
+    const abrir = caja.querySelector<HTMLButtonElement>('[data-filtros-abrir]');
+    const nActivos = caja.querySelector<HTMLElement>('[data-filtros-n]');
+    abrir?.addEventListener('click', () => {
+      const si = caja.classList.toggle('abierto');
+      abrir.setAttribute('aria-expanded', String(si));
+    });
     const aplicar = () => {
+      if (nActivos) { const n = selects.filter((s) => s.value).length; nActivos.textContent = n ? String(n) : ''; }
       const q = norm(buscar?.value ?? '').trim();
       const filtros = [...selects.map((s) => [s.dataset.clave!, s.value] as [string, string]), ...Object.entries(estado)].filter(([, v]) => v);
       let n = 0;

@@ -121,7 +121,7 @@ const cinta = ['Volcanes', 'Glaciares', 'Araucarias', 'Lagunas', 'Cascadas', 'Ge
         <span class="antetitulo">Trekking para todas y todos</span>
         <h2>Rutas de diferentes niveles… <em>hay una para ti</em></h2>
       </div>
-      <div class="niveles">
+      <div class="niveles carrusel-movil">
         {NIVELES.map((n, i) => (
           <a class="nivel revelar" style={`--c:${NIVEL_COLOR[n]};--d:${i}`} href={`/rutas-de-trekking/?interes=${n}`} data-tilt="8">
             {fotoNivel(n) && <img src={fotoNivel(n)} alt="" loading="lazy" />}
@@ -145,7 +145,7 @@ const cinta = ['Volcanes', 'Glaciares', 'Araucarias', 'Lagunas', 'Cascadas', 'Ge
         </div>
         <a class="btn btn--zona" href="/que-hacer/">Todas las actividades <Icono nombre="flecha" /></a>
       </div>
-      <div class="grilla grilla--4">
+      <div class="grilla grilla--4 carrusel-movil">
         {imperdibles.slice(0, 4).map((a, i) => (
           <FotoCard url={url.actividad(a!.slug)} titulo={a!.titulo} imagen={a!.imagen} texto={a!.extracto} etiqueta={{ t: a!.tipo }} color={PALETA[a!.categoria === 'actividad' ? 2 : 3].color} d={i} />
         ))}
@@ -175,7 +175,7 @@ const cinta = ['Volcanes', 'Glaciares', 'Araucarias', 'Lagunas', 'Cascadas', 'Ge
         <span class="antetitulo">Servicios turísticos</span>
         <h2>Todo para tu estadía <em>en Melipeuco</em></h2>
       </div>
-      <div class="accesos">
+      <div class="accesos carrusel-movil">
         {accesos.map((a, i) => (
           <a class="acceso revelar" href={a.url} style={`--c:${a.zona.color};--d:${i}`}>
             <Emblema letra={a.zona.letra} />
@@ -194,7 +194,7 @@ const cinta = ['Volcanes', 'Glaciares', 'Araucarias', 'Lagunas', 'Cascadas', 'Ge
           <div><span class="antetitulo"><Emblema letra={1} />Actualidad</span><h2>Noticias de <em>Melipeuco</em></h2></div>
           <a class="btn btn--zona" href="/noticias/">Ver todas <Icono nombre="flecha" /></a>
         </div>
-        <div class="grilla">
+        <div class="grilla carrusel-movil">
           {noticias.slice(0, 3).map((n, i) => (
             <Tarjeta url={url.noticia(n.slug)} titulo={n.titulo} imagen={n.imagen} texto={n.extracto} letra={1} d={i} chips={[{ t: fecha(n.fecha) }, { t: n.categoria }]} />
           ))}

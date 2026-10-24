@@ -7,6 +7,7 @@ import Panel from '../../components/Panel.astro';
 import Galeria from '../../components/Galeria.astro';
 import MapaRuta from '../../components/MapaRuta.astro';
 import Tarjeta from '../../components/Tarjeta.astro';
+import BarraAcciones from '../../components/BarraAcciones.astro';
 import { rutas, url, operadoresDe, vinculado, nivelMide, NIVEL_COLOR, mejorFoto, type Ruta } from '../../scripts/datos';
 
 export function getStaticPaths() {
@@ -100,4 +101,5 @@ const ind = [
       </div>
     </section>
   )}
+  <BarraAcciones fav={yo} principal={{ texto: 'Mapa y perfil', url: '#mapa', icono: 'mapa' }} />
 </Base>

@@ -264,5 +264,27 @@ export function iniciarEfectos() {
     });
   }
 
+  // Puntos de posición en los carruseles deslizables (celulares)
+  if (matchMedia('(max-width: 760px)').matches) {
+    document.querySelectorAll<HTMLElement>('.carrusel-movil, .galeria').forEach((c) => {
+      const hijos = [...c.children] as HTMLElement[];
+      if (hijos.length < 2) return;
+      const puntos = document.createElement('div'); puntos.className = 'puntos-carrusel'; puntos.setAttribute('aria-hidden', 'true');
+      puntos.innerHTML = hijos.map((_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('');
+      c.after(puntos);
+      const ps = [...puntos.children];
+      let raf = 0;
+      c.addEventListener('scroll', () => {
+        if (raf) return;
+        raf = requestAnimationFrame(() => {
+          raf = 0;
+          const paso = hijos[1].offsetLeft - hijos[0].offsetLeft || 1;
+          const i = Math.min(hijos.length - 1, Math.round(c.scrollLeft / paso));
+          ps.forEach((p, k) => p.classList.toggle('on', k === i));
+        });
+      }, { passive: true });
+    });
+  }
+
   arriba?.addEventListener('click', () => (lenis ? lenis.scrollTo(0, { duration: 1.6 }) : scrollTo({ top: 0, behavior: reducir ? 'auto' : 'smooth' })));
 }

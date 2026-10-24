@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import Icono from '../components/Icono.astro';
+import Emblema from '../components/Emblema.astro';
+---
+<Base titulo="Sin conexión" zona="explora">
+  <section class="seccion" style="min-height:90svh;display:grid;place-items:center;text-align:center;padding-top:140px">
+    <div class="contenedor" style="max-width:560px">
+      <Emblema letra={0} class="sin-conexion__emblema" />
+      <h1 style="font-size:clamp(2.2rem,8vw,3.6rem);margin-top:24px">Estás <em style="font-style:normal;color:var(--z)">sin señal</em></h1>
+      <p style="font-size:1.1rem;color:var(--suave)">Como en la montaña: no hay conexión en este momento. Las páginas que ya visitaste siguen disponibles, y tu lista de Mi viaje está guardada en este teléfono.</p>
+      <div class="acciones" style="justify-content:center;margin-top:28px">
+        <a class="btn btn--zona" href="/mi-viaje/"><Icono nombre="corazon" /> Ver Mi viaje</a>
+        <button class="btn btn--borde" type="button" onclick="location.reload()">Reintentar</button>
+      </div>
+    </div>
+  </section>
+</Base>

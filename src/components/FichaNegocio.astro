@@ -8,6 +8,7 @@ import Redes from './Redes.astro';
 import Galeria from './Galeria.astro';
 import Tarjeta from './Tarjeta.astro';
 import MapaRuta from './MapaRuta.astro';
+import BarraAcciones from './BarraAcciones.astro';
 import { ZONAS } from '../scripts/zonas';
 import { url, valorCampo, NIVEL_COLOR, mejorFoto, type Negocio, type Ruta, type Actividad } from '../scripts/datos';
 interface Props { n: Negocio; zona: string; listado: { url: string; texto: string }; propia: string; oferta?: { rutas: Ruta[]; actividades: Actividad[] } }
@@ -72,11 +73,12 @@ const tipo = n.clase || n.tipo || '';
   )}
 
   {(n.mapa_embed || n.coords || ubicacion) && (
-    <section class="seccion"><div class="contenedor">
+    <section class="seccion" id="ubicacion"><div class="contenedor">
       <div class="cabeza revelar"><span class="antetitulo">Ubicación</span><h2>Dónde <em>estamos</em></h2>{ubicacion && <p>{ubicacion}</p>}</div>
       {n.mapa_embed ? <iframe class="embed-mapa" src={n.mapa_embed} loading="lazy" referrerpolicy="no-referrer-when-downgrade" title={`Mapa de ${n.titulo}`} allowfullscreen></iframe>
         : n.coords ? <MapaRuta coords={n.coords} titulo={n.titulo} />
         : <a class="btn btn--zona" href={mapsBusqueda} target="_blank" rel="noopener"><Icono nombre="pin" /> Abrir en Google Maps</a>}
     </div></section>
   )}
+  <BarraAcciones fav={propia} whatsapp={whatsapp} telefono={tel} mapa={(n.mapa_embed || n.coords || ubicacion) ? '#ubicacion' : undefined} />
 </Base>

@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/movil.css';
 import sitio from '../data/sitio.json';
 import Icono from '../components/Icono.astro';
 import Emblema from '../components/Emblema.astro';
@@ -47,7 +48,12 @@ const emblemasHtml = partes.letras.map((l, i) => {
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content={z.oscuro} />
   <link rel="icon" href="/marca/emblema-8.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="/media/2025/05/cropped-logo-icon.webp" />
+  <link rel="apple-touch-icon" href="/iconos/icono-180.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Melipeuco" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -171,6 +177,14 @@ const emblemasHtml = partes.letras.map((l, i) => {
     </div>
   </footer>
 
+  <nav class="tabbar" aria-label="Navegación rápida">
+    <a href="/" aria-current={ruta === '/' ? 'page' : undefined} style="--tab:var(--montana)"><Icono nombre="casa" /><span>Inicio</span></a>
+    <a href="/rutas-de-trekking/" aria-current={ruta.startsWith('/rutas-de-trekking') || ruta.startsWith('/ruta-de-trekking') ? 'page' : undefined} style="--tab:var(--montana)"><Icono nombre="montana" /><span>Rutas</span></a>
+    <a href="/mapa/" aria-current={ruta.startsWith('/mapa') ? 'page' : undefined} style="--tab:var(--kultrun)"><Icono nombre="mapa" /><span>Mapa</span></a>
+    <button type="button" data-buscar-abrir aria-label="Buscar"><Icono nombre="buscar" /><span>Buscar</span></button>
+    <a href="/mi-viaje/" aria-current={ruta.startsWith('/mi-viaje') ? 'page' : undefined} style="--tab:var(--corazon)"><Icono nombre="corazon" /><span>Mi viaje</span><span class="contador-viaje">0</span></a>
+  </nav>
+
   <button class="arriba" type="button" aria-label="Volver arriba">
     <svg class="aro" viewBox="0 0 54 54"><circle cx="27" cy="27" r="24" /></svg>
     <svg class="flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
@@ -193,6 +207,11 @@ const emblemasHtml = partes.letras.map((l, i) => {
     import { iniciarApp } from '../scripts/app';
     iniciarApp();
     iniciarEfectos();
+
+    // App instalable y uso sin conexión de las páginas ya visitadas
+    if ('serviceWorker' in navigator && location.protocol === 'https:') {
+      addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => { /* sin service worker */ }));
+    }
   </script>
 </body>
 </html>

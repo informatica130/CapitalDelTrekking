@@ -1,0 +1,23 @@
+{
+  "name": "Melipeuco Capital del Trekking",
+  "short_name": "Melipeuco",
+  "description": "Rutas de trekking, volcanes, glaciares y araucarias en Melipeuco, Araucanía Andina.",
+  "lang": "es-CL",
+  "start_url": "/?app=1",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#121417",
+  "theme_color": "#121417",
+  "categories": ["travel", "sports", "navigation"],
+  "icons": [
+    { "src": "/iconos/icono-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/iconos/icono-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/iconos/icono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Rutas de trekking", "url": "/rutas-de-trekking/", "icons": [{ "src": "/iconos/icono-192.png", "sizes": "192x192" }] },
+    { "name": "Mapa de senderos", "url": "/mapa/", "icons": [{ "src": "/iconos/icono-192.png", "sizes": "192x192" }] },
+    { "name": "Mi viaje", "url": "/mi-viaje/", "icons": [{ "src": "/iconos/icono-192.png", "sizes": "192x192" }] }
+  ]
+}

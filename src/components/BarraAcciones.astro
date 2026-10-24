@@ -1,0 +1,16 @@
+---
+// Barra de acciones fija en la parte inferior (solo celulares) para las fichas de detalle.
+import Icono from './Icono.astro';
+interface Props { fav: string; whatsapp?: string; telefono?: string; mapa?: string; principal?: { texto: string; url: string; icono: string } }
+const { fav, whatsapp, telefono, mapa, principal } = Astro.props;
+const tel = (telefono ?? '').replace(/[^\d+]/g, '');
+---
+<nav class="barra-acciones" aria-label="Acciones">
+  {whatsapp ? <a class="wsp" href={whatsapp} target="_blank" rel="noopener"><Icono nombre="whatsapp" /><span>WhatsApp</span></a>
+    : principal ? <a class="principal" href={principal.url}><Icono nombre={principal.icono} /><span>{principal.texto}</span></a> : null}
+  {tel.length >= 8 && <a href={`tel:${tel}`} class={whatsapp ? 'solo-icono' : ''} aria-label="Llamar"><Icono nombre="telefono" />{!whatsapp && <span>Llamar</span>}</a>}
+  {mapa && !principal && <a href={mapa} class="solo-icono" aria-label="Cómo llegar"><Icono nombre="pin" /></a>}
+  <button type="button" data-fav={fav} aria-pressed="false" aria-label="Guardar en Mi viaje" class={whatsapp || principal ? 'solo-icono' : ''}><Icono nombre="corazon" /></button>
+  <button type="button" data-compartir aria-label="Compartir" class="solo-icono"><Icono nombre="compartir" /></button>
+</nav>
+<script>document.body.classList.add('con-acciones');</script>

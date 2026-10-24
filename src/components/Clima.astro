@@ -32,7 +32,8 @@ const [lat, lng] = sitio.coordenadas;
       c === 0 ? ['sol', 'Despejado'] : c <= 2 ? ['solnube', 'Parcialmente nublado'] : c === 3 ? ['nube', 'Nublado'] :
       c <= 48 ? ['niebla', 'Niebla'] : c <= 67 || (c >= 80 && c <= 82) ? ['lluvia', 'Lluvia'] : c <= 77 || c === 85 || c === 86 ? ['nieve', 'Nieve'] : ['tormenta', 'Tormenta'];
     const q = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=America%2FSantiago&forecast_days=5`;
-    fetch(q).then((r) => r.json()).then((d) => {
+    const CLAVE = 'mct-clima';
+    const pintar = (d: any, guardadoEn?: number) => {
       const c = d.current; const [k, t] = tipo(c.weather_code);
       caja.querySelector('[data-c-temp]')!.textContent = String(Math.round(c.temperature_2m));
       caja.querySelector('[data-c-desc]')!.textContent = t;
@@ -44,6 +45,25 @@ const [lat, lng] = sitio.coordenadas;
         const dia = i === 0 ? 'Hoy' : new Date(f + 'T12:00:00').toLocaleDateString('es-CL', { weekday: 'short' });
         return `<div class="clima__dia"><small>${dia}</small>${icono(tipo(d.daily.weather_code[i])[0])}<b>${Math.round(d.daily.temperature_2m_max[i])}°</b><small>${Math.round(d.daily.temperature_2m_min[i])}°</small></div>`;
       }).join('');
-    }).catch(() => { caja.querySelector('[data-c-desc]')!.textContent = 'No pudimos cargar el pronóstico.'; });
+      if (guardadoEn) {
+        const min = Math.round((Date.now() - guardadoEn) / 60000);
+        caja.querySelector('[data-c-desc]')!.textContent += ` · hace ${min < 60 ? `${min} min` : `${Math.round(min / 60)} h`}`;
+      }
+    };
+    const sinDatos = () => {
+      caja.classList.add('clima__panel--sin');
+      caja.querySelector('[data-c-desc]')!.innerHTML = 'Pronóstico no disponible ahora. <a href="https://www.meteochile.gob.cl/" target="_blank" rel="noopener">Ver en Meteochile →</a>';
+    };
+    fetch(q).then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); }).then((d) => {
+      pintar(d);
+      try { localStorage.setItem(CLAVE, JSON.stringify({ t: Date.now(), d })); } catch { /* sin almacenamiento */ }
+    }).catch(() => {
+      // Sin red o servicio saturado: usa el último pronóstico guardado (hasta 12 horas)
+      try {
+        const g = JSON.parse(localStorage.getItem(CLAVE) || 'null');
+        if (g && Date.now() - g.t < 12 * 3600e3) { pintar(g.d, g.t); return; }
+      } catch { /* sin almacenamiento */ }
+      sinDatos();
+    });
   }
 </script>
