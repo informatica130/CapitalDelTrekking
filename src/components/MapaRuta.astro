@@ -4,7 +4,7 @@ interface Props { gpx?: string; coords?: [number, number] | null; titulo: string
 const { gpx = '', coords, titulo } = Astro.props;
 const destino = coords ? `https://www.google.com/maps/dir/?api=1&destination=${coords[0]},${coords[1]}` : '';
 ---
-<div class="mapa" id="mapaRuta" data-gpx={gpx} data-lat={coords?.[0]} data-lng={coords?.[1]} data-titulo={titulo} role="region" aria-label={`Mapa de ${titulo}`}></div>
+<div data-lenis-prevent class="mapa" id="mapaRuta" data-gpx={gpx} data-lat={coords?.[0]} data-lng={coords?.[1]} data-titulo={titulo} role="region" aria-label={`Mapa de ${titulo}`}></div>
 {gpx && (
   <div class="perfil" id="perfil" hidden>
     <div class="perfil__cab"></div>

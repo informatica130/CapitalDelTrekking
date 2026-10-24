@@ -75,11 +75,10 @@ const emblemasHtml = partes.letras.map((l, i) => {
   <a class="saltar" href="#contenido">Saltar al contenido</a>
   <div class="progreso" aria-hidden="true"></div>
 
-  <header class={`header ${headerClaro ? 'header--claro' : ''}`}>
+  <header class="header">
     <div class="header__barra">
       <a href="/" class="marca" aria-label={`${sitio.nombre} — inicio`}>
-        <img class="m-claro" src="/marca/logo-color-claro.svg" alt="" width="156" height="40" />
-        <img class="m-oscuro" src="/marca/logo-color.svg" alt="" width="156" height="40" />
+        <img src="/marca/logo-mono.svg" alt="" width="172" height="44" />
       </a>
       <nav class="nav" aria-label="Principal">
         <ul>
@@ -119,9 +118,9 @@ const emblemasHtml = partes.letras.map((l, i) => {
     </div>
   </header>
 
-  <div class="menu-movil" id="menuMovil" role="dialog" aria-modal="true" aria-label="Menú">
+  <div class="menu-movil" id="menuMovil" role="dialog" aria-modal="true" aria-label="Menú" data-lenis-prevent>
     <div class="menu-movil__top">
-      <img src="/marca/logo-color-claro.svg" alt={sitio.nombre} width="156" height="40" />
+      <img src="/marca/logo-mono.svg" alt={sitio.nombre} width="156" height="40" />
       <button class="btn-icono" type="button" data-menu-cerrar aria-label="Cerrar menú"><Icono nombre="cerrar" /></button>
     </div>
     <ul>
@@ -142,10 +141,7 @@ const emblemasHtml = partes.letras.map((l, i) => {
   <footer class="pie">
     <div class="pie__montes"><Montes color="var(--noche)" capas={false} /></div>
     <div class="contenedor">
-      <div class="pie__logo revelar" id="pieLogo">
-        <div class="logo3d logo3d--pie" id="pieLogo3d" aria-hidden="true"></div>
-        <Logo variante="color" lema="claro" class="logo-svg--interactivo" />
-      </div>
+      <div class="pie__logo revelar"><Logo variante="color" lema="claro" class="logo-svg--interactivo logo-svg--giro" /></div>
       <div class="pie__grid">
         <div>
           <p class="lema">{sitio.lema}</p>
@@ -180,7 +176,7 @@ const emblemasHtml = partes.letras.map((l, i) => {
     <svg class="flecha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
   </button>
 
-  <div class="buscador" id="buscador" hidden role="dialog" aria-modal="true" aria-label="Buscar en el sitio" data-emblemas={JSON.stringify(emblemasHtml)}>
+  <div class="buscador" id="buscador" hidden data-lenis-prevent role="dialog" aria-modal="true" aria-label="Buscar en el sitio" data-emblemas={JSON.stringify(emblemasHtml)}>
     <div class="buscador__caja">
       <div class="buscador__campo">
         <Icono nombre="buscar" />
@@ -197,23 +193,6 @@ const emblemasHtml = partes.letras.map((l, i) => {
     import { iniciarApp } from '../scripts/app';
     iniciarApp();
     iniciarEfectos();
-
-    // Logo 3D del pie: se carga solo cuando el visitante se acerca al final de la página
-    const pie = document.getElementById('pieLogo3d');
-    const ref = document.getElementById('pieLogo');
-    if (pie && ref && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      const io = new IntersectionObserver(async ([e]) => {
-        if (!e.isIntersecting) return;
-        io.disconnect();
-        const [{ crearLogo3D, soportaWebGL }, partes, { PALETA }] = await Promise.all([
-          import('../scripts/logo3d'), import('../data/logo-partes.json'), import('../scripts/zonas'),
-        ]);
-        if (!soportaWebGL()) return;
-        const enlaces = ['/rutas-de-trekking/', '/noticias/', '/que-hacer/', '/que-visitar/', '/gastronomia/', '/guias-turisticos/', '/operadores-turisticos/', '/planifica-donde-dormir/', '/explora-melipeuco/'];
-        crearLogo3D(pie, partes.default ?? partes, { colores: PALETA.map((p) => p.color), enlaces, referencia: ref.querySelector<HTMLElement>('.logo-svg') ?? ref });
-      }, { rootMargin: '300px 0px' });
-      io.observe(ref);
-    }
   </script>
 </body>
 </html>

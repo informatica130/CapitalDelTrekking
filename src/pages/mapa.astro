@@ -18,7 +18,7 @@ const puntos = puntosMapa.map((p) => {
         <button type="button" aria-pressed="true" data-valor="">Todas <small>{puntos.length}</small></button>
         {NIVELES.map((n) => <button type="button" aria-pressed="false" data-valor={n} style={`--c:${NIVEL_COLOR[n]}`}>{n} <small>{puntos.filter((p) => p.nivel === n).length}</small></button>)}
       </div>
-      <div class="mapa mapa--grande" id="mapaGeneral" data-puntos={JSON.stringify(puntos)} data-colores={JSON.stringify(NIVEL_COLOR)}></div>
+      <div class="mapa mapa--grande" data-lenis-prevent id="mapaGeneral" data-puntos={JSON.stringify(puntos)} data-colores={JSON.stringify(NIVEL_COLOR)}></div>
       <p class="contador-res" style="margin-top:14px">Datos GPX referenciales: verifica siempre las condiciones en terreno.</p>
     </div>
   </section>

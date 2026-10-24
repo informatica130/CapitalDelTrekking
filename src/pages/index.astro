@@ -209,14 +209,15 @@ const cinta = ['Volcanes', 'Glaciares', 'Araucarias', 'Lagunas', 'Cascadas', 'Ge
     import { PALETA } from '../scripts/zonas';
     const caja = document.getElementById('logo3d');
     const enlaces = ['/rutas-de-trekking/', '/noticias/', '/que-hacer/', '/que-visitar/', '/gastronomia/', '/guias-turisticos/', '/operadores-turisticos/', '/planifica-donde-dormir/', '/explora-melipeuco/'];
-    if (caja && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      import('../scripts/logo3d').then(({ crearLogo3D, soportaWebGL }) => {
-        if (!soportaWebGL()) return;
-        const iniciar = () => crearLogo3D(caja, partes, { colores: PALETA.map((p) => p.color), enlaces, dispersar: true, referencia: document.getElementById('logo3dRef') ?? undefined });
-        // Si hay precarga, la entrada 3D espera a que suba el telón
-        const conPrecarga = !!document.querySelector('.precarga') && !document.documentElement.classList.contains('sin-precarga');
-        if (!conPrecarga || (window as unknown as { __precargaFin?: boolean }).__precargaFin) iniciar();
-        else document.addEventListener('precarga:fin', iniciar, { once: true });
+    if (caja) {
+      import('../scripts/logo3d').then(({ crearLogo3D, debeUsar3D }) => {
+        if (!debeUsar3D()) return;
+        // Se prepara de inmediato (detrás de la precarga) y la entrada arranca cuando sube el telón
+        const arrancar = new Promise<void>((ok) => {
+          if ((window as unknown as { __precargaFin?: boolean }).__precargaFin) ok();
+          else document.addEventListener('precarga:fin', () => ok(), { once: true });
+        });
+        crearLogo3D(caja, partes, { colores: PALETA.map((p) => p.color), enlaces, dispersar: true, referencia: document.getElementById('logo3dRef') ?? undefined, arrancar }).catch(() => { /* queda el logo SVG */ });
       }).catch(() => { /* se mantiene el logo SVG */ });
     }
 

@@ -1,4 +1,6 @@
-// Efectos de scroll y profundidad. Un solo bucle requestAnimationFrame para todo.
+// Efectos de scroll y profundidad.
+// Rendimiento: las posiciones de los elementos se miden una vez (y al cambiar el tamaño de la página);
+// en cada cuadro solo se calcula a partir de scrollY y se escriben transformaciones, sin leer el layout.
 import Lenis from 'lenis';
 const reducir = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const tactil = matchMedia('(hover: none)').matches;
@@ -34,46 +36,52 @@ function partirTitulos() {
 /** Botones que siguen levemente al cursor. */
 function magneticos() {
   if (tactil || reducir) return;
-  document.querySelectorAll<HTMLElement>('.btn, .btn-icono, .fav--grande').forEach((b) => {
+  document.querySelectorAll<HTMLElement>('.acciones .btn, .fav--grande').forEach((b) => {
+    let r: DOMRect | null = null;
+    b.addEventListener('pointerenter', () => { r = b.getBoundingClientRect(); });
     b.addEventListener('pointermove', (e) => {
-      const r = b.getBoundingClientRect();
-      b.style.translate = `${(e.clientX - r.left - r.width / 2) * .22}px ${(e.clientY - r.top - r.height / 2) * .3}px`;
+      if (!r) return;
+      b.style.translate = `${(e.clientX - r.left - r.width / 2) * .2}px ${(e.clientY - r.top - r.height / 2) * .28}px`;
     });
-    b.addEventListener('pointerleave', () => { b.style.translate = ''; });
+    b.addEventListener('pointerleave', () => { b.style.translate = ''; r = null; });
   });
 }
 
 /** Precarga de la primera visita: logo + contador, luego las franjas de colores suben como telón. */
 function precarga() {
   const el = document.querySelector<HTMLElement>('.precarga');
-  if (!el || document.documentElement.classList.contains('sin-precarga')) { el?.remove(); return; }
+  const fin = () => {
+    (window as unknown as { __precargaFin?: boolean }).__precargaFin = true;
+    document.dispatchEvent(new Event('precarga:fin'));
+  };
+  if (!el || document.documentElement.classList.contains('sin-precarga')) { el?.remove(); fin(); return; }
   const cuenta = el.querySelector<HTMLElement>('.precarga__cuenta');
   const barra = el.querySelector<HTMLElement>('.precarga__barra b');
-  const t0 = performance.now(), dur = 2400;
+  const t0 = performance.now(), dur = 2000;
   const paso = (t: number) => {
     const k = clamp((t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
     if (cuenta) cuenta.textContent = String(Math.round(e * 100)).padStart(3, '0');
     if (barra) barra.style.transform = `scaleX(${e})`;
     if (k < 1) { requestAnimationFrame(paso); return; }
     el.classList.add('fuera');
-    setTimeout(() => {
-      el.classList.add('fuera2');
-      // Avisa a la portada que puede empezar la entrada del logo 3D
-      (window as unknown as { __precargaFin?: boolean }).__precargaFin = true;
-      document.dispatchEvent(new Event('precarga:fin'));
-    }, 650);
-    setTimeout(() => el.remove(), 2000);
+    setTimeout(() => { el.classList.add('fuera2'); fin(); }, 600);
+    setTimeout(() => el.remove(), 1900);
     try { sessionStorage.setItem('mct-visto', '1'); } catch { /* sin almacenamiento */ }
   };
   requestAnimationFrame(paso);
+  // Seguridad: si algo falla, la precarga nunca bloquea la página más de 6 s
+  setTimeout(() => { if (el.isConnected) { el.remove(); fin(); } }, 6000);
 }
+
+interface Medida { el: HTMLElement; top: number; alto: number; v: number }
 
 export function iniciarEfectos() {
   precarga();
   partirTitulos();
   magneticos();
+
   if (!reducir) {
-    lenis = new Lenis({ duration: 1.2, easing: (t) => 1 - Math.pow(1 - t, 4), smoothWheel: true });
+    lenis = new Lenis({ duration: 1.1, easing: (t) => 1 - Math.pow(1 - t, 4), smoothWheel: true, wheelMultiplier: 1 });
     const raf = (t: number) => { lenis!.raf(t); requestAnimationFrame(raf); };
     requestAnimationFrame(raf);
     document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) => a.addEventListener('click', (e) => {
@@ -85,103 +93,134 @@ export function iniciarEfectos() {
     new MutationObserver(() => { document.body.classList.contains('bloqueo') ? lenis?.stop() : lenis?.start(); })
       .observe(document.body, { attributes: true, attributeFilter: ['class'] });
   }
+
   const progreso = document.querySelector<HTMLElement>('.progreso');
   const header = document.querySelector<HTMLElement>('.header');
   const arriba = document.querySelector<HTMLElement>('.arriba');
-  const parallax = [...document.querySelectorAll<HTMLElement>('[data-parallax]')];
-  const desarmes = [...document.querySelectorAll<HTMLElement>('[data-desarme]')];
-  const horizontales = [...document.querySelectorAll<HTMLElement>('[data-horizontal]')];
   const portada = document.querySelector<HTMLElement>('[data-portada]');
-  let ultimoY = window.scrollY;
-  let pendiente = false;
+  const capas = portada ? [...portada.querySelectorAll<HTMLElement>('[data-capa]')] : [];
+  const contPortada = portada?.querySelector<HTMLElement>('.portada__contenido') ?? null;
+  const textosPortada = contPortada ? [...contPortada.querySelectorAll<HTMLElement>('.portada__bajada, .acciones')] : [];
 
-  // Altura de las secciones horizontales según el largo de su fila
-  const medirHorizontales = () => horizontales.forEach((h) => {
-    const fila = h.querySelector<HTMLElement>('.horizontal__fila');
-    if (!fila || innerWidth <= 760) { h.style.height = ''; return; }
-    const extra = Math.max(0, fila.scrollWidth - innerWidth);
-    h.style.height = `${innerHeight + extra}px`;
-    h.dataset.extra = String(extra);
-  });
+  // ---------- Medidas en caché ----------
+  let altoDoc = 1, altoVentana = innerHeight, anchoVentana = innerWidth;
+  let parallax: Medida[] = [];
+  let desarmes: { el: HTMLElement; top: number; alto: number; ancho: number; letras: { el: HTMLElement; dx: number }[] }[] = [];
+  let horizontales: { el: HTMLElement; fila: HTMLElement; barra: HTMLElement | null; top: number; alto: number; extra: number }[] = [];
 
+  const medir = () => {
+    const y = scrollY;
+    altoVentana = innerHeight; anchoVentana = innerWidth;
+    // Altura de las secciones horizontales según el largo de su fila (antes de medir el resto)
+    document.querySelectorAll<HTMLElement>('[data-horizontal]').forEach((h) => {
+      const fila = h.querySelector<HTMLElement>('.horizontal__fila');
+      if (!fila || anchoVentana <= 760) { h.style.height = ''; return; }
+      fila.style.transform = '';
+      const extra = Math.max(0, fila.scrollWidth - anchoVentana);
+      h.style.height = `${altoVentana + extra}px`;
+      h.dataset.extra = String(extra);
+    });
+    altoDoc = Math.max(1, document.documentElement.scrollHeight - altoVentana);
+    parallax = [...document.querySelectorAll<HTMLElement>('[data-parallax]')].map((el) => {
+      const prev = el.style.transform; el.style.transform = '';
+      const r = el.getBoundingClientRect();
+      el.style.transform = prev;
+      return { el, top: r.top + y, alto: r.height, v: parseFloat(el.dataset.parallax || '0.2') };
+    });
+    desarmes = anchoVentana <= 760 ? [] : [...document.querySelectorAll<HTMLElement>('[data-desarme]')].map((d) => {
+      const r = d.getBoundingClientRect();
+      const cont = d.querySelector<HTMLElement>('.zonas__letras');
+      const ancho = cont?.getBoundingClientRect().width ?? anchoVentana;
+      const ls = [...d.querySelectorAll<HTMLElement>('.zonas__letra')];
+      const n = ls.length;
+      return {
+        el: d, top: r.top + y, alto: r.height, ancho,
+        // Desplazamiento (px) desde su lugar en el logo hasta su lugar en la fila separada
+        letras: ls.map((l, i) => {
+          const desde = parseFloat(l.dataset.x || '0'), w = parseFloat(l.dataset.w || '0');
+          const hasta = (i + 0.5) / n * 100 - w / 2;
+          return { el: l, dx: ((hasta - desde) / 100) * ancho };
+        }),
+      };
+    });
+    horizontales = [...document.querySelectorAll<HTMLElement>('[data-horizontal]')].flatMap((h) => {
+      const fila = h.querySelector<HTMLElement>('.horizontal__fila');
+      const extra = parseFloat(h.dataset.extra || '0');
+      if (!fila || !extra || anchoVentana <= 760) return [];
+      const r = h.getBoundingClientRect();
+      return [{ el: h, fila, barra: h.querySelector<HTMLElement>('.horizontal__barra i'), top: r.top + y, alto: r.height, extra }];
+    });
+  };
+
+  // ---------- Cuadro: solo cálculos con scrollY + escrituras ----------
+  let ultimoY = scrollY, giroY = scrollY, oculto = false, pendiente = false;
   const cuadro = () => {
     pendiente = false;
-    const y = window.scrollY;
-    const alto = document.documentElement.scrollHeight - innerHeight;
-    const p = alto > 0 ? y / alto : 0;
+    const y = scrollY;
+    const p = clamp(y / altoDoc);
     if (progreso) progreso.style.transform = `scaleX(${p})`;
-    if (arriba) { arriba.classList.toggle('visible', y > 600); arriba.style.setProperty('--p', p.toFixed(3)); }
+    if (arriba) { arriba.classList.toggle('visible', y > 700); arriba.style.setProperty('--p', p.toFixed(3)); }
     if (header) {
-      header.classList.toggle('solido', y > 40);
-      const menuAbierto = document.body.classList.contains('bloqueo');
-      header.classList.toggle('oculto', !menuAbierto && y > 500 && y > ultimoY + 4);
-      if (y < ultimoY - 4) header.classList.remove('oculto');
+      header.classList.toggle('solido', y > 30);
+      // Histéresis: se oculta tras bajar 140 px seguidos y vuelve al subir 10 px; nunca con un menú abierto
+      const dir = Math.sign(y - ultimoY);
+      if (dir !== 0 && Math.sign(y - giroY) !== dir) giroY = ultimoY;
+      const menuAbierto = document.body.classList.contains('bloqueo') || !!header.querySelector('.nav li.abierto, .nav li:hover');
+      if (!oculto && y > 420 && y - giroY > 140 && !menuAbierto) oculto = true;
+      if (oculto && (giroY - y > 10 || y < 420 || menuAbierto)) oculto = false;
+      header.classList.toggle('oculto', oculto);
     }
     ultimoY = y;
     if (reducir) return;
 
-    for (const el of parallax) {
-      const r = el.getBoundingClientRect();
-      if (r.bottom < -200 || r.top > innerHeight + 200) continue;
-      const v = parseFloat(el.dataset.parallax || '0.2');
-      const centro = r.top + r.height / 2 - innerHeight / 2;
-      el.style.transform = `translate3d(0, ${(-centro * v).toFixed(1)}px, 0)`;
+    for (const m of parallax) {
+      const top = m.top - y;
+      if (top + m.alto < -300 || top > altoVentana + 300) continue;
+      m.el.style.transform = `translate3d(0, ${(-(top + m.alto / 2 - altoVentana / 2) * m.v).toFixed(1)}px, 0)`;
     }
 
-    if (portada) {
-      const k = clamp(y / innerHeight);
-      portada.querySelectorAll<HTMLElement>('[data-capa]').forEach((c) => {
-        const v = parseFloat(c.dataset.capa || '0');
-        c.style.transform = `translate3d(0, ${(y * v).toFixed(1)}px, 0)`;
-      });
-      const cont = portada.querySelector<HTMLElement>('.portada__contenido');
-      if (cont) {
+    if (portada && y < altoVentana * 1.2) {
+      const k = clamp(y / altoVentana);
+      for (const c of capas) c.style.transform = `translate3d(0, ${(y * parseFloat(c.dataset.capa || '0')).toFixed(1)}px, 0)`;
+      if (contPortada) {
         // Con el logo 3D activo solo se desvanecen los textos: las letras se dispersan por su cuenta
-        const tres = portada.querySelector('.logo3d--listo');
-        cont.style.transform = `translate3d(0, ${y * (tres ? 0.15 : 0.35)}px, 0) scale(${tres ? 1 : 1 - k * 0.12})`;
-        if (tres) cont.querySelectorAll<HTMLElement>('.portada__bajada, .acciones').forEach((t) => { t.style.opacity = String(1 - k * 2); t.style.transform = `translate3d(0, ${k * 60}px, 0)`; });
-        else cont.style.opacity = String(1 - k * 1.4);
+        const tres = portada.classList.contains('con-3d');
+        contPortada.style.transform = `translate3d(0, ${y * (tres ? 0.15 : 0.35)}px, 0) scale(${tres ? 1 : 1 - k * 0.12})`;
+        if (tres) for (const t of textosPortada) { t.style.opacity = String(1 - k * 2); t.style.transform = `translate3d(0, ${k * 60}px, 0)`; }
+        else contPortada.style.opacity = String(1 - k * 1.4);
       }
     }
 
     for (const d of desarmes) {
-      if (innerWidth <= 760) break;
-      const r = d.getBoundingClientRect();
-      const k = clamp(-r.top / (r.height - innerHeight));
-      const letras = d.querySelectorAll<HTMLElement>('.zonas__letra');
-      const n = letras.length;
-      letras.forEach((l, i) => {
-        // De logo compacto (k=0) a letras separadas y alineadas (k=1), con un arco vertical
-        const desde = parseFloat(l.dataset.x || '0');
-        const hasta = (i + 0.5) / n * 100 - parseFloat(l.dataset.w || '0') / 2;
-        const e = 1 - Math.pow(1 - clamp((k - 0.05) / 0.6), 3);
-        const x = desde + (hasta - desde) * e;
+      const k = clamp((y - d.top) / (d.alto - altoVentana));
+      const e = 1 - Math.pow(1 - clamp((k - 0.05) / 0.6), 3);
+      const n = d.letras.length;
+      const etq = String(clamp((k - 0.55) / 0.25));
+      d.letras.forEach((l, i) => {
         const arco = Math.sin(e * Math.PI) * (i % 2 ? -26 : 26);
-        const escala = 1 - e * 0.3;
         const giro = Math.sin(e * Math.PI) * (i - n / 2) * 2;
-        l.style.left = `${x}%`;
-        l.style.transform = `translate3d(0, ${arco}px, 0) scale(${escala}) rotate(${giro}deg)`;
-        l.style.setProperty('--etq', String(clamp((k - 0.55) / 0.25)));
+        l.el.style.transform = `translate3d(${(l.dx * e).toFixed(1)}px, ${arco.toFixed(1)}px, 0) scale(${1 - e * 0.3}) rotate(${giro.toFixed(2)}deg)`;
+        l.el.style.setProperty('--etq', etq);
       });
     }
 
     for (const h of horizontales) {
-      const fila = h.querySelector<HTMLElement>('.horizontal__fila');
-      const barra = h.querySelector<HTMLElement>('.horizontal__barra i');
-      const extra = parseFloat(h.dataset.extra || '0');
-      if (!fila || !extra) continue;
-      const r = h.getBoundingClientRect();
-      const k = clamp(-r.top / (r.height - innerHeight));
-      fila.style.transform = `translate3d(${-k * extra}px, 0, 0)`;
-      if (barra) barra.style.transform = `scaleX(${k})`;
+      const k = clamp((y - h.top) / (h.alto - altoVentana));
+      h.fila.style.transform = `translate3d(${(-k * h.extra).toFixed(1)}px, 0, 0)`;
+      if (h.barra) h.barra.style.transform = `scaleX(${k})`;
     }
   };
   const pedir = () => { if (!pendiente) { pendiente = true; requestAnimationFrame(cuadro); } };
-  medirHorizontales();
-  if (lenis) lenis.on('scroll', pedir); else addEventListener('scroll', pedir, { passive: true });
-  addEventListener('resize', () => { medirHorizontales(); pedir(); });
-  addEventListener('load', () => { medirHorizontales(); pedir(); });
+
+  medir();
   cuadro();
+  if (lenis) lenis.on('scroll', pedir); else addEventListener('scroll', pedir, { passive: true });
+  let tRes = 0;
+  const remedir = () => { clearTimeout(tRes); tRes = window.setTimeout(() => { medir(); cuadro(); }, 120); };
+  addEventListener('resize', remedir);
+  addEventListener('load', remedir);
+  // Si cambia la altura del documento (imágenes que cargan, mapas, filtros), se vuelve a medir
+  new ResizeObserver(remedir).observe(document.body);
 
   // Apariciones
   const io = new IntersectionObserver((es) => es.forEach((e) => {
@@ -205,19 +244,25 @@ export function iniciarEfectos() {
   }), { threshold: 0.6 });
   document.querySelectorAll('[data-contar]').forEach((el) => ioc.observe(el));
 
-  // Inclinación 3D en tarjetas
+  // Inclinación 3D en tarjetas (el rectángulo se mide al entrar, no en cada movimiento)
   if (!reducir && !tactil) {
     document.querySelectorAll<HTMLElement>('[data-tilt]').forEach((el) => {
       const fuerza = parseFloat(el.dataset.tilt || '6');
+      let r: DOMRect | null = null, raf = 0, ex = 0, ey = 0;
+      el.addEventListener('pointerenter', () => { r = el.getBoundingClientRect(); });
       el.addEventListener('pointermove', (ev) => {
-        const r = el.getBoundingClientRect();
-        const x = (ev.clientX - r.left) / r.width, y = (ev.clientY - r.top) / r.height;
-        el.style.transform = `perspective(900px) rotateX(${(0.5 - y) * fuerza}deg) rotateY(${(x - 0.5) * fuerza}deg) translateY(-6px)`;
-        el.style.setProperty('--mx', `${x * 100}%`); el.style.setProperty('--my', `${y * 100}%`);
+        ex = ev.clientX; ey = ev.clientY;
+        if (raf || !r) return;
+        raf = requestAnimationFrame(() => {
+          raf = 0; if (!r) return;
+          const x = (ex - r.left) / r.width, y = (ey - r.top) / r.height;
+          el.style.transform = `perspective(900px) rotateX(${(0.5 - y) * fuerza}deg) rotateY(${(x - 0.5) * fuerza}deg) translateY(-6px)`;
+          el.style.setProperty('--mx', `${x * 100}%`); el.style.setProperty('--my', `${y * 100}%`);
+        });
       });
-      el.addEventListener('pointerleave', () => { el.style.transform = ''; });
+      el.addEventListener('pointerleave', () => { r = null; el.style.transform = ''; });
     });
   }
 
-  arriba?.addEventListener('click', () => (lenis ? lenis.scrollTo(0, { duration: 1.8 }) : scrollTo({ top: 0, behavior: reducir ? 'auto' : 'smooth' })));
+  arriba?.addEventListener('click', () => (lenis ? lenis.scrollTo(0, { duration: 1.6 }) : scrollTo({ top: 0, behavior: reducir ? 'auto' : 'smooth' })));
 }
