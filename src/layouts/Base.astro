@@ -25,6 +25,12 @@ const og = new URL(imagen, Astro.site ?? Astro.url).href;
 const activo = (url?: string) => (url && (url === '/' ? ruta === '/' : ruta.startsWith(url)) ? 'page' : undefined);
 const anio = new Date().getFullYear();
 const planos = sitio.menu.flatMap((m) => (m.hijos ? m.hijos : [{ ...m, desc: '' }]));
+// Siluetas de cordillera para la transición (una por capa)
+const CRESTAS = [
+  'M0 140V88L96 52L170 76L262 22L338 64L420 40L512 86L604 30L690 70L786 12L872 58L958 36L1046 80L1140 26L1232 66L1330 42L1440 72V140Z',
+  'M0 140V70L84 96L176 44L254 82L350 54L436 98L528 38L622 74L700 50L800 92L884 28L980 72L1066 48L1160 90L1250 40L1350 78L1440 56V140Z',
+  'M0 140V60L110 34L190 70L290 18L372 58L460 30L560 76L650 20L748 62L840 44L930 84L1030 24L1118 64L1210 32L1300 74L1384 46L1440 64V140Z',
+];
 // Emblemas en miniatura para el buscador (SVG en línea, uno por letra)
 const emblemasHtml = partes.letras.map((l, i) => {
   const [x, y, w, h] = l.caja;
@@ -84,8 +90,17 @@ const emblemasHtml = partes.letras.map((l, i) => {
     </div>
   )}
   <div class="transicion" aria-hidden="true">
-    <div class="transicion__barras">{PALETA.map((p, i) => <i style={`--c:${p.color}`}></i>)}</div>
-    <div class="transicion__emblema">{PALETA.map((_, i) => <Emblema letra={i} />)}</div>
+    {CRESTAS.map((d) => (
+      <div class="transicion__capa">
+        <svg class="transicion__cresta" viewBox="0 0 1440 140" preserveAspectRatio="none"><path d={d} /></svg>
+        <svg class="transicion__cresta transicion__cresta--abajo" viewBox="0 0 1440 140" preserveAspectRatio="none"><path d={d} /></svg>
+      </div>
+    ))}
+    <div class="transicion__info">
+      <div class="transicion__emblema">{PALETA.map((_, i) => <Emblema letra={i} />)}</div>
+      <span class="transicion__nombre"></span>
+      <svg class="transicion__linea" viewBox="0 0 220 24" fill="none"><path d="M2 20 L38 9 L58 15 L92 3 L118 14 L142 8 L170 17 L196 6 L218 13" /></svg>
+    </div>
   </div>
   <a class="saltar" href="#contenido">Saltar al contenido</a>
   <div class="progreso" aria-hidden="true"></div>

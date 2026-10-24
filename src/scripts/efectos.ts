@@ -49,7 +49,57 @@ function magneticos() {
 
 interface Medida { el: HTMLElement; top: number; alto: number; v: number }
 
+type Rgb = [number, number, number];
+const rgb = (hex = '#000000'): Rgb => { const n = parseInt(hex.slice(1), 16); return [(n >> 16) & 255, (n >> 8) & 255, n & 255]; };
+const mezclar = (a: Rgb, b: Rgb, f: number) => `rgb(${a.map((v, i) => Math.round(v + (b[i] - v) * f)).join(' ')})`;
+const suave = (x: number) => x * x * (3 - 2 * x);
+
+// Filas deslizables: flechas, arrastre con el mouse y barra de avance (el scroll vertical queda libre)
+function deslizables() {
+  document.querySelectorAll<HTMLElement>('[data-deslizable]').forEach((sec) => {
+    const fila = sec.querySelector<HTMLElement>('.horizontal__fila');
+    if (!fila) return;
+    const barra = sec.querySelector<HTMLElement>('.horizontal__barra i');
+    const flechas = [...sec.querySelectorAll<HTMLButtonElement>('[data-mover]')];
+    const paso = () => (fila.querySelector<HTMLElement>('.foto-card')?.offsetWidth ?? 300) + 26;
+    const pintar = () => {
+      const max = fila.scrollWidth - fila.clientWidth;
+      const p = max > 0 ? fila.scrollLeft / max : 1;
+      if (barra) barra.style.transform = `scaleX(${(0.1 + p * 0.9).toFixed(3)})`;
+      flechas.forEach((b) => { b.disabled = b.dataset.mover === '-1' ? fila.scrollLeft < 4 : fila.scrollLeft > max - 4; });
+    };
+    flechas.forEach((b) => b.addEventListener('click', () => fila.scrollBy({ left: Number(b.dataset.mover) * paso() * 2, behavior: 'smooth' })));
+    fila.addEventListener('scroll', pintar, { passive: true });
+    addEventListener('resize', pintar);
+    pintar();
+    // Arrastre con el mouse (en táctil el desplazamiento es nativo)
+    let x0 = 0, s0 = 0, movido = false, activo = false;
+    fila.addEventListener('pointerdown', (e) => {
+      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      activo = true; movido = false; x0 = e.clientX; s0 = fila.scrollLeft;
+    });
+    addEventListener('pointermove', (e) => {
+      if (!activo) return;
+      const dx = e.clientX - x0;
+      if (!movido && Math.abs(dx) > 6) { movido = true; fila.classList.add('arrastrando'); }
+      if (movido) fila.scrollLeft = s0 - dx;
+    });
+    addEventListener('pointerup', () => {
+      if (!activo) return; activo = false;
+      if (movido) {
+        // Termina en la tarjeta más cercana
+        const p = paso(); const destino = Math.round(fila.scrollLeft / p) * p;
+        fila.classList.remove('arrastrando');
+        fila.scrollTo({ left: destino, behavior: 'smooth' });
+      }
+    });
+    fila.addEventListener('click', (e) => { if (movido) { e.preventDefault(); e.stopPropagation(); movido = false; } }, true);
+    fila.addEventListener('dragstart', (e) => e.preventDefault());
+  });
+}
+
 export function iniciarEfectos() {
+  deslizables();
   partirTitulos();
   magneticos();
 
@@ -78,21 +128,17 @@ export function iniciarEfectos() {
   // ---------- Medidas en caché ----------
   let altoDoc = 1, altoVentana = innerHeight, anchoVentana = innerWidth;
   let parallax: Medida[] = [];
-  let desarmes: { el: HTMLElement; top: number; alto: number; ancho: number; letras: { el: HTMLElement; dx: number }[] }[] = [];
-  let horizontales: { el: HTMLElement; fila: HTMLElement; barra: HTMLElement | null; top: number; alto: number; extra: number }[] = [];
+  type Desarme = {
+    el: HTMLElement; top: number; alto: number; ancho: number;
+    letras: { el: HTMLElement; dx: number; color: Rgb; oscuro: Rgb }[];
+    fondo: HTMLElement | null; titulo: HTMLElement | null; avance: HTMLElement | null;
+    infos: HTMLElement[]; gigantes: HTMLElement[]; activa: number;
+  };
+  let desarmes: Desarme[] = [];
 
   const medir = () => {
     const y = scrollY;
     altoVentana = innerHeight; anchoVentana = innerWidth;
-    // Altura de las secciones horizontales según el largo de su fila (antes de medir el resto)
-    document.querySelectorAll<HTMLElement>('[data-horizontal]').forEach((h) => {
-      const fila = h.querySelector<HTMLElement>('.horizontal__fila');
-      if (!fila || anchoVentana <= 760) { h.style.height = ''; return; }
-      fila.style.transform = '';
-      const extra = Math.max(0, fila.scrollWidth - anchoVentana);
-      h.style.height = `${altoVentana + extra}px`;
-      h.dataset.extra = String(extra);
-    });
     altoDoc = Math.max(1, document.documentElement.scrollHeight - altoVentana);
     parallax = [...document.querySelectorAll<HTMLElement>('[data-parallax]')].map((el) => {
       const prev = el.style.transform; el.style.transform = '';
@@ -112,16 +158,12 @@ export function iniciarEfectos() {
         letras: ls.map((l, i) => {
           const desde = parseFloat(l.dataset.x || '0'), w = parseFloat(l.dataset.w || '0');
           const hasta = (i + 0.5) / n * 100 - w / 2;
-          return { el: l, dx: ((hasta - desde) / 100) * ancho };
+          return { el: l, dx: ((hasta - desde) / 100) * ancho, color: rgb(l.dataset.color), oscuro: rgb(l.dataset.oscuro) };
         }),
+        fondo: d.querySelector<HTMLElement>('.zonas__fondo'), titulo: d.querySelector<HTMLElement>('.zonas__titulo'),
+        avance: d.querySelector<HTMLElement>('.zonas__avance'),
+        infos: [...d.querySelectorAll<HTMLElement>('.zonas__info')], gigantes: [...d.querySelectorAll<HTMLElement>('.zonas__gigante .emblema')], activa: -1,
       };
-    });
-    horizontales = [...document.querySelectorAll<HTMLElement>('[data-horizontal]')].flatMap((h) => {
-      const fila = h.querySelector<HTMLElement>('.horizontal__fila');
-      const extra = parseFloat(h.dataset.extra || '0');
-      if (!fila || !extra || anchoVentana <= 760) return [];
-      const r = h.getBoundingClientRect();
-      return [{ el: h, fila, barra: h.querySelector<HTMLElement>('.horizontal__barra i'), top: r.top + y, alto: r.height, extra }];
     });
   };
 
@@ -166,22 +208,46 @@ export function iniciarEfectos() {
 
     for (const d of desarmes) {
       const k = clamp((y - d.top) / (d.alto - altoVentana));
-      const e = 1 - Math.pow(1 - clamp((k - 0.05) / 0.6), 3);
+      // 1) El logo se separa en sus nueve letras
+      const e = 1 - Math.pow(1 - clamp(k / 0.16), 3);
+      // 2) Recorrido: una letra (y su color) a la vez
+      const tinte = suave(clamp((k - 0.13) / 0.08));
+      const w = 0.5 + clamp((k - 0.2) / 0.74) * 8;
+      const t = clamp(w - 0.5, 0, 8), i0 = Math.floor(t), f = suave(t - i0), i1 = Math.min(8, i0 + 1);
       const n = d.letras.length;
-      const etq = String(clamp((k - 0.55) / 0.25));
+      const a0 = d.letras[i0], a1 = d.letras[i1];
+      if (d.fondo) {
+        d.fondo.style.opacity = tinte.toFixed(3);
+        d.fondo.style.setProperty('--fc', mezclar(a0.color, a1.color, f));
+        d.fondo.style.setProperty('--fz', mezclar(a0.oscuro, a1.oscuro, f));
+      }
+      d.el.classList.toggle('zonas--color', tinte > 0.5);
+      if (d.titulo) { d.titulo.style.opacity = String(1 - clamp((k - 0.08) / 0.08)); d.titulo.style.transform = `translate3d(0, ${(-clamp((k - 0.06) / 0.12) * 60).toFixed(1)}px, 0)`; }
+      if (d.avance) { d.avance.style.opacity = tinte.toFixed(2); (d.avance.firstElementChild as HTMLElement).style.transform = `scaleX(${((w + 0.5) / 9).toFixed(3)})`; }
+      const activa = tinte > 0.5 ? Math.min(8, Math.floor(w)) : -1;
       d.letras.forEach((l, i) => {
         const arco = Math.sin(e * Math.PI) * (i % 2 ? -26 : 26);
         const giro = Math.sin(e * Math.PI) * (i - n / 2) * 2;
-        l.el.style.transform = `translate3d(${(l.dx * e).toFixed(1)}px, ${arco.toFixed(1)}px, 0) scale(${1 - e * 0.3}) rotate(${giro.toFixed(2)}deg)`;
-        l.el.style.setProperty('--etq', etq);
+        const cerca = tinte * clamp(1 - Math.abs(w - (i + 0.5)) * 1.1);
+        const alza = cerca * -34, escala = 1 - e * 0.32 + cerca * 0.3;
+        l.el.style.transform = `translate3d(${(l.dx * e).toFixed(1)}px, ${(arco + alza).toFixed(1)}px, 0) scale(${escala.toFixed(3)}) rotate(${giro.toFixed(2)}deg)`;
+        l.el.style.opacity = (1 - tinte * 0.55 + cerca * 0.55).toFixed(3);
+        l.el.style.setProperty('--etq', String(clamp((k - 0.12) / 0.08) * (tinte > 0.5 ? cerca : 1)));
       });
+      d.infos.forEach((el, i) => {
+        const dist = w - (i + 0.5);
+        const v = tinte * clamp(1 - Math.abs(dist) * 1.6);
+        el.style.opacity = v.toFixed(3);
+        el.style.transform = `translate3d(0, ${(-dist * 70).toFixed(1)}px, 0) scale(${(0.94 + v * 0.06).toFixed(3)})`;
+        const g = d.gigantes[i];
+        if (g) { g.style.opacity = (v * 0.09).toFixed(3); g.style.transform = `rotate(${(dist * -25).toFixed(1)}deg) scale(${(0.8 + v * 0.2).toFixed(3)})`; }
+      });
+      if (activa !== d.activa) {
+        d.infos.forEach((el, i) => { el.classList.toggle('activa', i === activa); el.querySelector('a')?.setAttribute('tabindex', i === activa ? '0' : '-1'); });
+        d.activa = activa;
+      }
     }
 
-    for (const h of horizontales) {
-      const k = clamp((y - h.top) / (h.alto - altoVentana));
-      h.fila.style.transform = `translate3d(${(-k * h.extra).toFixed(1)}px, 0, 0)`;
-      if (h.barra) h.barra.style.transform = `scaleX(${k})`;
-    }
   };
   const pedir = () => { if (!pendiente) { pendiente = true; requestAnimationFrame(cuadro); } };
 

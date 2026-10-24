@@ -22,15 +22,15 @@ const fotoNivel = (n: string) => rutas.filter((r) => r.interes === n && r.imagen
 
 // Zonas del logo desarmado: cada letra lleva a su sección
 const destinos = [
-  { url: '/rutas-de-trekking/', nombre: 'Rutas de trekking', n: rutas.length },
-  { url: '/noticias/', nombre: 'Noticias', n: noticias.length },
-  { url: '/que-hacer/', nombre: 'Qué hacer', n: actividades.filter((a) => a.categoria === 'actividad').length },
-  { url: '/que-visitar/', nombre: 'Qué visitar', n: actividades.filter((a) => a.categoria === 'atractivo').length },
-  { url: '/gastronomia/', nombre: 'Gastronomía', n: servicios.filter((s) => s.seccion === 'gastronomia').length },
-  { url: '/guias-turisticos/', nombre: 'Guías', n: guias.length },
-  { url: '/operadores-turisticos/', nombre: 'Operadores', n: operadores.length },
-  { url: '/planifica-donde-dormir/', nombre: 'Dónde dormir', n: alojamientos.length },
-  { url: '/explora-melipeuco/', nombre: 'Explora', n: 0 },
+  { url: '/rutas-de-trekking/', nombre: 'Rutas de trekking', n: rutas.length, texto: 'Senderos entre volcanes, glaciares y bosques de araucarias, para todos los niveles.' },
+  { url: '/noticias/', nombre: 'Noticias', n: noticias.length, texto: 'Lo que pasa en Melipeuco: temporadas, eventos y novedades de los senderos.' },
+  { url: '/que-hacer/', nombre: 'Qué hacer', n: actividades.filter((a) => a.categoria === 'actividad').length, texto: 'Termas, kayak, cabalgatas, pesca y nieve: aventura en cada estación.' },
+  { url: '/que-visitar/', nombre: 'Qué visitar', n: actividades.filter((a) => a.categoria === 'atractivo').length, texto: 'Cascadas, lagunas, miradores y el Parque Nacional Conguillío.' },
+  { url: '/gastronomia/', nombre: 'Gastronomía', n: servicios.filter((s) => s.seccion === 'gastronomia').length, texto: 'Piñones, cordero al palo y cocina de la Araucanía Andina hecha con cariño.' },
+  { url: '/guias-turisticos/', nombre: 'Guías', n: guias.length, texto: 'Personas de la zona que conocen cada huella y cada historia del territorio.' },
+  { url: '/operadores-turisticos/', nombre: 'Operadores', n: operadores.length, texto: 'Agencias locales para salir a la montaña con equipo y experiencia.' },
+  { url: '/planifica-donde-dormir/', nombre: 'Dónde dormir', n: alojamientos.length, texto: 'Cabañas, hostales, lodges y camping bajo un cielo lleno de estrellas.' },
+  { url: '/explora-melipeuco/', nombre: 'Explora', n: 0, texto: 'Historia, cultura mapuche y el kultrun que late en el corazón de la comuna.' },
 ];
 const ANCHO = 1036;
 const letras = partes.letras.map((l, i) => ({ ...PALETA[i], ...destinos[i], i, x: (l.caja[0] / ANCHO) * 100, w: (l.caja[2] / ANCHO) * 100 }));
@@ -80,33 +80,50 @@ const cinta = ['Volcanes', 'Glaciares', 'Araucarias', 'Lagunas', 'Cascadas', 'Ge
   <section class="zonas" id="zonas" data-desarme>
     <div class="zonas__alto">
       <div class="zonas__escena">
-        <div class="zonas__titulo revelar">
+        <div class="zonas__fondo" aria-hidden="true"></div>
+        <div class="zonas__gigante" aria-hidden="true">{letras.map((l) => <Emblema letra={l.i} />)}</div>
+        <div class="zonas__titulo">
           <span class="antetitulo" style="justify-content:center">Nueve letras, nueve mundos</span>
           <h2>Cada letra de <em style="font-style:normal;background:var(--arcoiris);-webkit-background-clip:text;background-clip:text;color:transparent">Melipeuco</em> es una puerta</h2>
-          <p>Montañas, rostros, cascadas, araucarias, corazón, personas, animales, estrellas y el kultrun. Elige por dónde empezar.</p>
+          <p>Montañas, rostros, cascadas, araucarias, corazón, personas, animales, estrellas y el kultrun. Baja y recorre cada una.</p>
+        </div>
+        <div class="zonas__panel" aria-hidden="true">
+          {letras.map((l, k) => (
+            <div class="zonas__info" data-k={k}>
+              <span class="zonas__paso">{String(k + 1).padStart(2, '0')} / 09 · {l.simbolo}</span>
+              <h3>{l.nombre}</h3>
+              <p>{l.texto}</p>
+              <a href={l.url} tabindex="-1">{l.n ? `Ver ${l.n}` : 'Entrar'} <Icono nombre="flecha" /></a>
+            </div>
+          ))}
         </div>
         <div class="zonas__letras">
           {letras.map((l) => (
-            <a class="zonas__letra" href={l.url} style={`left:${l.x}%;width:${l.w}%`} data-x={l.x} data-w={l.w} aria-label={`${l.nombre}: ${l.simbolo}`}>
+            <a class="zonas__letra" href={l.url} style={`left:${l.x}%;width:${l.w}%`} data-x={l.x} data-w={l.w} data-color={l.color} data-oscuro={l.oscuro} aria-label={`${l.nombre}: ${l.simbolo}`}>
               <Emblema letra={l.i} />
               <span class="zonas__nombre"><b style={`color:${l.color}`}>{l.nombre}</b><small>{l.n ? `${l.n} · ` : ''}{l.simbolo}</small></span>
             </a>
           ))}
         </div>
+        <div class="zonas__avance" aria-hidden="true"><i></i></div>
       </div>
     </div>
   </section>
 
-  <section class="horizontal" data-horizontal style="--z:var(--montana)">
+  <section class="horizontal" data-deslizable style="--z:var(--montana)">
     <div class="horizontal__pista">
       <div class="horizontal__cabeza cabeza cabeza--fila">
         <div>
           <span class="antetitulo"><Emblema letra={0} />Descubre</span>
           <h2>{rutas.length} rutas de trekking <em>entre volcanes y glaciares</em></h2>
         </div>
-        <a class="btn btn--zona" href="/rutas-de-trekking/">Todas las rutas <Icono nombre="flecha" /></a>
+        <div class="horizontal__acciones">
+          <button class="horizontal__flecha" type="button" data-mover="-1" aria-label="Rutas anteriores"><Icono nombre="flecha" /></button>
+          <button class="horizontal__flecha" type="button" data-mover="1" aria-label="Más rutas"><Icono nombre="flecha" /></button>
+          <a class="btn btn--zona" href="/rutas-de-trekking/">Todas las rutas <Icono nombre="flecha" /></a>
+        </div>
       </div>
-      <div class="horizontal__fila">
+      <div class="horizontal__fila" tabindex="0" aria-label="Rutas destacadas">
         {destacadas.map((r, i) => (
           <FotoCard url={url.ruta(r!.slug)} titulo={r!.titulo} imagen={r!.imagen} texto={r!.extracto} etiqueta={{ t: `${r!.interes} · ${r!.extension}` }} color={NIVEL_COLOR[r!.interes]} d={i % 4} />
         ))}
