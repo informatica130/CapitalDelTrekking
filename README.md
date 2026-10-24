@@ -35,8 +35,9 @@ símbolos y el lema) y `src/components/Emblema.astro` dibuja una sola letra. Los
 ## Diseño, animaciones y profundidad
 
 - **Portada con profundidad**: fotos, capas de cordillera y logo que se mueven a distinta velocidad al hacer scroll (parallax).
-- **«Cada letra es una puerta»**: al hacer scroll, el logo se desarma y cada letra se convierte en el acceso a su zona.
-- **Fila horizontal de rutas**: la sección queda fija y las tarjetas se desplazan de lado mientras bajas.
+- **«Cada letra es una puerta»**: al hacer scroll, el logo se desarma en sus 9 letras y el fondo va tomando el color de cada zona, con su nombre, descripción y enlace.
+- **Fila de rutas destacadas**: se desliza de lado con flechas, arrastre o el dedo, sin frenar el scroll vertical.
+- **Transición entre páginas**: capas de cordillera con el color y el emblema de la sección de destino.
 - Títulos que suben palabra por palabra, emblemas flotantes en cada página y fotos que aparecen como cortina.
 - Tarjetas con inclinación 3D y brillo al pasar el mouse, y contadores animados.
 - Barra de progreso de lectura en los colores del logo y botón «volver arriba» con anillo de avance.
