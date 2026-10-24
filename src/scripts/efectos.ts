@@ -47,36 +47,9 @@ function magneticos() {
   });
 }
 
-/** Precarga de la primera visita: logo + contador, luego las franjas de colores suben como telón. */
-function precarga() {
-  const el = document.querySelector<HTMLElement>('.precarga');
-  const fin = () => {
-    (window as unknown as { __precargaFin?: boolean }).__precargaFin = true;
-    document.dispatchEvent(new Event('precarga:fin'));
-  };
-  if (!el || document.documentElement.classList.contains('sin-precarga')) { el?.remove(); fin(); return; }
-  const cuenta = el.querySelector<HTMLElement>('.precarga__cuenta');
-  const barra = el.querySelector<HTMLElement>('.precarga__barra b');
-  const t0 = performance.now(), dur = 2000;
-  const paso = (t: number) => {
-    const k = clamp((t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
-    if (cuenta) cuenta.textContent = String(Math.round(e * 100)).padStart(3, '0');
-    if (barra) barra.style.transform = `scaleX(${e})`;
-    if (k < 1) { requestAnimationFrame(paso); return; }
-    el.classList.add('fuera');
-    setTimeout(() => { el.classList.add('fuera2'); fin(); }, 600);
-    setTimeout(() => el.remove(), 1900);
-    try { sessionStorage.setItem('mct-visto', '1'); } catch { /* sin almacenamiento */ }
-  };
-  requestAnimationFrame(paso);
-  // Seguridad: si algo falla, la precarga nunca bloquea la página más de 6 s
-  setTimeout(() => { if (el.isConnected) { el.remove(); fin(); } }, 6000);
-}
-
 interface Medida { el: HTMLElement; top: number; alto: number; v: number }
 
 export function iniciarEfectos() {
-  precarga();
   partirTitulos();
   magneticos();
 

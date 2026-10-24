@@ -55,7 +55,7 @@ const cinta = ['Volcanes', 'Glaciares', 'Araucarias', 'Lagunas', 'Cascadas', 'Ge
       <div>
         <h1 class="sr">Melipeuco Capital del Trekking</h1>
         <div class="logo3d-caja" id="logo3dRef">
-          <Logo variante="color" lema="claro" animado class="logo-svg--interactivo" />
+          <Logo variante="color" lema="claro" vivo espera class="logo-portada" />
         </div>
         <p class="portada__bajada">{inicio.bajada ?? `3 volcanes, glaciares milenarios, bosques de araucarias y ${rutas.length} rutas de trekking en el corazón de la Araucanía Andina.`}</p>
         <div class="acciones">
@@ -209,16 +209,23 @@ const cinta = ['Volcanes', 'Glaciares', 'Araucarias', 'Lagunas', 'Cascadas', 'Ge
     import { PALETA } from '../scripts/zonas';
     const caja = document.getElementById('logo3d');
     const enlaces = ['/rutas-de-trekking/', '/noticias/', '/que-hacer/', '/que-visitar/', '/gastronomia/', '/guias-turisticos/', '/operadores-turisticos/', '/planifica-donde-dormir/', '/explora-melipeuco/'];
+    // Sin 3D (equipo modesto, sin WebGL o movimiento reducido): se anima el logo SVG vivo al subir el telón
+    const logoSvg = document.querySelector<SVGSVGElement>('.logo-portada');
+    const animarSvg = () => {
+      const ir = () => import('../scripts/logo-vivo').then(({ darVida }) => logoSvg && darVida(logoSvg, { entrada: true }));
+      if ((window as unknown as { __precargaFin?: boolean }).__precargaFin) ir(); else document.addEventListener('precarga:fin', ir, { once: true });
+    };
     if (caja) {
       import('../scripts/logo3d').then(({ crearLogo3D, debeUsar3D }) => {
-        if (!debeUsar3D()) return;
+        if (!debeUsar3D()) { animarSvg(); return; }
         // Se prepara de inmediato (detrás de la precarga) y la entrada arranca cuando sube el telón
         const arrancar = new Promise<void>((ok) => {
           if ((window as unknown as { __precargaFin?: boolean }).__precargaFin) ok();
           else document.addEventListener('precarga:fin', () => ok(), { once: true });
         });
-        crearLogo3D(caja, partes, { colores: PALETA.map((p) => p.color), enlaces, dispersar: true, referencia: document.getElementById('logo3dRef') ?? undefined, arrancar }).catch(() => { /* queda el logo SVG */ });
-      }).catch(() => { /* se mantiene el logo SVG */ });
+        crearLogo3D(caja, partes, { colores: PALETA.map((p) => p.color), enlaces, dispersar: true, referencia: document.getElementById('logo3dRef') ?? undefined, arrancar })
+          .then((r) => { if (!r) animarSvg(); }).catch(animarSvg);
+      }).catch(animarSvg);
     }
 
     // Carrusel de la portada

@@ -89,7 +89,7 @@ export async function crearLogo3D(contenedor: HTMLElement, partes: Partes, op: O
   const logo = new THREE.Group(); logo.scale.set(1, -1, 1); raiz.add(logo);
   const crema = new THREE.MeshStandardMaterial({ color: 0xfff8ec, roughness: 0.35, metalness: 0.05, envMapIntensity: 0.7 });
 
-  type Letra = { g: THREE.Group; fondo: THREE.Mesh; base: THREE.Vector3; ent: { z: number; rx: number; ry: number; rz: number }; giro: number; giroObj: number; hover: number; disp: THREE.Vector3; rot: THREE.Vector3 };
+  type Letra = { g: THREE.Group; fondo: THREE.Mesh; mat: THREE.MeshStandardMaterial; base: THREE.Vector3; ent: { z: number; x: number; y: number; rx: number; ry: number; rz: number }; giro: number; giroObj: number; hover: number; disp: THREE.Vector3; rot: THREE.Vector3 };
   const azar = (a: number) => (Math.random() * 2 - 1) * a;
   const materiales: THREE.Material[] = [crema];
   const letras: Letra[] = geos.map((geo, i) => {
@@ -97,16 +97,19 @@ export async function crearLogo3D(contenedor: HTMLElement, partes: Partes, op: O
     materiales.push(mat);
     const g = new THREE.Group();
     const fondo = new THREE.Mesh(geo.fondo, mat);
-    const simbolo = new THREE.Mesh(geo.simbolo, crema);
+    // Las estrellas (letra 7) tienen su propio material para poder brillar
+    const matSimbolo = i === 7 ? new THREE.MeshStandardMaterial({ color: 0xfff8ec, roughness: 0.3, emissive: 0xffe7a0, emissiveIntensity: 0, envMapIntensity: 0.7 }) : crema;
+    if (matSimbolo !== crema) materiales.push(matSimbolo);
+    const simbolo = new THREE.Mesh(geo.simbolo, matSimbolo);
     // El mismo símbolo en la cara trasera (espejado), reutilizando la geometría
-    const trasero = new THREE.Mesh(geo.simbolo, crema); trasero.scale.set(-1, 1, -1);
+    const trasero = new THREE.Mesh(geo.simbolo, matSimbolo); trasero.scale.set(-1, 1, -1);
     g.add(fondo, simbolo, trasero);
     g.position.set(geo.cx, geo.cy, 0);
     g.userData.i = i; fondo.userData.i = i;
     logo.add(g);
     return {
-      g, fondo, base: g.position.clone(),
-      ent: { z: 1600 + azar(400), rx: azar(1.6), ry: azar(2.4), rz: azar(0.8) },
+      g, fondo, mat: matSimbolo, base: g.position.clone(),
+      ent: { z: 1600 + azar(400), x: (i - 4) * 260 + azar(160), y: -420 + azar(220), rx: azar(1.6), ry: azar(2.4), rz: azar(0.8) },
       giro: 0, giroObj: 0, hover: 0,
       disp: new THREE.Vector3(azar(260) + (i - 4) * 210, azar(160) + 60, 120 + Math.random() * 380),
       rot: new THREE.Vector3(azar(2), azar(3), azar(1.2)),
@@ -143,7 +146,9 @@ export async function crearLogo3D(contenedor: HTMLElement, partes: Partes, op: O
     camara.aspect = w / h;
     const ref = op.referencia?.getBoundingClientRect();
     const objetivoPx = ref && ref.width > 0 ? ref.width : w / 1.08;
-    const d = ((ancho * w) / objetivoPx) / (2 * t * camara.aspect);
+    // En pantallas angostas se deja margen para el balanceo de las letras; la cara frontal (z máx.) es la que calza
+    const holgura = w < 600 ? 0.93 : 1;
+    const d = ((ancho * w) / (objetivoPx * holgura)) / (2 * t * camara.aspect) + caja.max.z;
     camara.position.set(0, 0, ref ? d : Math.max(d, (alto * 1.2) / (2 * t)));
     mundoPorPx = (2 * camara.position.z * t) / h;
     camara.updateProjectionMatrix();
@@ -224,20 +229,38 @@ export async function crearLogo3D(contenedor: HTMLElement, partes: Partes, op: O
     letras.forEach((l, i) => {
       const p = ENTRADA ? clamp((ms - 150 - i * RETRASO) / ENTRADA) : 1;
       const e = facil.salidaAtras(p), ex = facil.salidaExpo(p);
-      const ola = reducir ? 0 : Math.sin(seg * 1.4 + i * 0.7) * 7;
+      // Aterrizaje: leve achatamiento justo al llegar
+      const aterriza = p > 0.62 && p < 1 ? Math.sin(((p - 0.62) / 0.38) * Math.PI) : 0;
       l.giro += (l.giroObj - l.giro) * 0.08;
       l.hover += ((sobre === i ? 1 : 0) - l.hover) * 0.12;
+      // Personalidad: cada letra se mueve según lo que representa (solo cuando ya llegó)
+      let dy = 0, rx = 0, ry = Math.sin(seg * 0.7 + i * 1.3) * 0.08, rz = 0, esc = 1;
+      if (!reducir && p >= 1) {
+        const ciclo = (periodo: number, desfase = 0) => ((seg + desfase) % periodo) / periodo;
+        switch (i) {
+          case 0: dy = Math.sin(seg * 0.8) * 10; esc = 1 + Math.sin(seg * 0.8) * 0.012; break;                       // montaña: respira
+          case 1: { const c = ciclo(5); rx = c < 0.08 ? Math.sin((c / 0.08) * Math.PI) * 0.35 : 0; dy = Math.sin(seg * 1.3) * 4; break; } // rostro: asiente
+          case 2: rz = Math.sin(seg * 3.1) * 0.035; dy = Math.sin(seg * 2.2) * 3; break;                            // cascada: ondula
+          case 3: rz = Math.sin(seg * 1.1) * 0.09; break;                                                            // araucaria: se mece
+          case 4: { const c = ciclo(1.4); esc = 1 + (c < 0.12 ? Math.sin((c / 0.12) * Math.PI) * 0.12 : c > 0.2 && c < 0.3 ? Math.sin(((c - 0.2) / 0.1) * Math.PI) * 0.07 : 0); break; } // corazón: late
+          case 5: { const c = ciclo(2.6, 0.5); dy = c < 0.22 ? -Math.sin((c / 0.22) * Math.PI) * 26 : 0; break; }    // persona: salta
+          case 6: { const c = ciclo(3.2, 1); rx = c < 0.1 ? Math.sin((c / 0.1) * Math.PI * 2) * 0.28 : 0; break; }  // animales: picotean
+          case 7: ry += Math.sin(seg * 0.5) * 0.25; l.mat.emissiveIntensity = 0.35 + Math.sin(seg * 3.3) * 0.25 + Math.sin(seg * 7.1) * 0.1; break; // estrellas: brillan
+          case 8: rz = seg * 0.35; break;                                                                            // kultrun: gira como tambor
+        }
+      }
       l.g.position.set(
-        l.base.x + l.disp.x * ke,
-        l.base.y + ola + l.disp.y * ke - l.hover * 10,
-        (1 - ex) * -l.ent.z + l.hover * 70 + l.disp.z * ke * 0.8,
+        l.base.x + (1 - ex) * l.ent.x + l.disp.x * ke,
+        l.base.y + (1 - ex) * l.ent.y + dy + l.disp.y * ke - l.hover * 12,
+        (1 - ex) * -l.ent.z + l.hover * 80 + l.disp.z * ke * 0.8,
       );
       l.g.rotation.set(
-        (1 - e) * l.ent.rx + l.rot.x * ke + Math.sin(seg * 0.9 + i) * 0.04,
-        (1 - e) * l.ent.ry + l.giro + l.rot.y * ke + Math.sin(seg * 0.7 + i * 1.3) * 0.12,
-        (1 - e) * l.ent.rz + l.rot.z * ke,
+        (1 - e) * l.ent.rx + l.rot.x * ke + rx,
+        (1 - e) * l.ent.ry + l.giro + l.rot.y * ke + ry,
+        (1 - e) * l.ent.rz + l.rot.z * ke + rz,
       );
-      l.g.scale.setScalar(0.25 + 0.75 * e + l.hover * 0.06);
+      const s0 = (0.25 + 0.75 * e + l.hover * 0.07) * esc;
+      l.g.scale.set(s0 * (1 + aterriza * 0.06), s0 * (1 - aterriza * 0.1), s0);
     });
     if (lema) {
       const p = ENTRADA ? clamp((ms - 1100) / 1200) : 1;

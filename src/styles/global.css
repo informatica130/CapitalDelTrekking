@@ -4,7 +4,6 @@
    M montaña · E rostro · L cascada · I araucaria · P corazón · E persona · U animales · C estrellas · O kultrun
    ========================================================================== */
 
-@view-transition { navigation: auto; }
 
 :root {
   /* Paleta del logo */
@@ -226,7 +225,7 @@ body.bloqueo { overflow: hidden; }
 @keyframes letraCae { 0% { opacity: 0; transform: translateY(-160px) rotate(-14deg) scale(.6); } 60% { opacity: 1; transform: translateY(10px) rotate(3deg) scaleY(.9); } 80% { transform: translateY(-4px) scaleY(1.04); } 100% { opacity: 1; transform: none; } }
 @keyframes simboloAparece { from { opacity: 0; transform: scale(.2) rotate(-30deg); } to { opacity: 1; transform: none; } }
 @keyframes lemaAparece { from { opacity: 0; transform: translateY(14px); letter-spacing: .3em; } to { opacity: 1; transform: none; } }
-.logo-svg .logo-letra { transition: transform .5s var(--ease-rebote); }
+.logo-svg:not(.logo-svg--vivo) .logo-letra { transition: transform .5s var(--ease-rebote); }
 .logo-svg--interactivo .logo-letra:hover { transform: translateY(-14px) rotate(-4deg); }
 .logo-svg--interactivo .logo-letra:hover .logo-simbolo { animation: latido .7s var(--ease) ; }
 @keyframes latido { 0%, 100% { transform: none; } 35% { transform: scale(1.15) rotate(6deg); } 70% { transform: scale(.96) rotate(-3deg); } }
@@ -627,7 +626,6 @@ body.bloqueo { overflow: hidden; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .revelar, .revelar--cortina { opacity: 1; transform: none; clip-path: none; }
   .zonas__alto { height: auto; }
-  @view-transition { navigation: none; }
 }
 
 @media print {
@@ -666,27 +664,6 @@ body.bloqueo { overflow: hidden; }
 .partir.visible .w > span { transform: none; }
 .partir em .w > span, .partir .w em { color: inherit; }
 
-/* ---------- Transición entre páginas ---------- */
-::view-transition-old(root) { animation: .65s cubic-bezier(.76, 0, .24, 1) both paginaSale; }
-::view-transition-new(root) { animation: .85s cubic-bezier(.76, 0, .24, 1) both paginaEntra; }
-@keyframes paginaSale { to { opacity: .4; transform: scale(.96) translateY(-3vh); filter: blur(2px) brightness(.7); } }
-@keyframes paginaEntra { from { clip-path: inset(100% 0 0 0 round 40px 40px 0 0); } to { clip-path: inset(0 0 0 0 round 0); } }
-
-/* ---------- Precarga (primera visita) ---------- */
-.precarga { position: fixed; inset: 0; z-index: 9500; display: grid; place-items: center; pointer-events: none; }
-.precarga__franjas { position: absolute; inset: 0; display: flex; }
-.precarga__franjas i { flex: 1; background: var(--noche); transition: transform 1s cubic-bezier(.76, 0, .24, 1); transition-delay: calc(var(--i) * 55ms); position: relative; }
-.precarga__franjas i::after { content: ""; position: absolute; inset: auto 0 0; height: 0; background: var(--c); transition: height .9s cubic-bezier(.76, 0, .24, 1); transition-delay: calc(var(--i) * 55ms); }
-.precarga.fuera .precarga__franjas i::after { height: 100%; }
-.precarga.fuera2 .precarga__franjas i { transform: translateY(-100%); }
-.precarga__centro { position: relative; z-index: 2; display: grid; justify-items: center; gap: 30px; transition: opacity .5s, transform .8s var(--ease); }
-.precarga.fuera .precarga__centro { opacity: 0; transform: translateY(-30px) scale(.95); }
-.precarga .logo-svg { width: min(620px, 82vw); }
-.precarga__cuenta { font: 800 clamp(1rem, 2vw, 1.3rem)/1 var(--f-titulo); color: #fff; letter-spacing: .3em; font-variant-numeric: tabular-nums; }
-.precarga__barra { width: min(320px, 60vw); height: 3px; border-radius: 3px; background: rgb(255 255 255 / .12); overflow: hidden; }
-.precarga__barra b { display: block; height: 100%; background: var(--arcoiris); transform-origin: 0 50%; transform: scaleX(0); }
-html.sin-precarga .precarga { display: none; }
-
 /* ---------- Emblemas que giran en 3D ---------- */
 @keyframes giro3d { 0% { transform: perspective(400px) rotateY(0); } 100% { transform: perspective(400px) rotateY(360deg); } }
 .mega a:hover .emblema, .menu-movil a:hover .emblema, .antetitulo:hover .emblema, .bloque:hover .emblema, .tarjeta:hover .tarjeta__sinfoto .emblema { animation: giro3d 1s var(--ease) both; }
@@ -701,7 +678,6 @@ html.sin-precarga .precarga { display: none; }
 
 @media (prefers-reduced-motion: reduce) {
   .partir .w > span { transform: none !important; }
-  ::view-transition-old(root), ::view-transition-new(root) { animation: none; }
 }
 
 /* Evita desbordes horizontales por elementos que entran desde los lados */
@@ -716,3 +692,37 @@ main { overflow-x: clip; }
 .logo-svg--giro .logo-letra { transform-box: fill-box; transform-origin: center; }
 .logo-svg--giro .logo-letra:hover { animation: letraGira .9s var(--ease) both; }
 @keyframes letraGira { 0% { transform: perspective(500px) rotateY(0) translateY(0); } 50% { transform: perspective(500px) rotateY(180deg) translateY(-14px); } 100% { transform: perspective(500px) rotateY(360deg) translateY(0); } }
+
+/* ---------- Pantalla de carga (primera visita) ---------- */
+.carga {
+  --subida: 0%;
+  position: fixed; inset: 0; z-index: 9500; display: grid; place-items: center; background: radial-gradient(120% 90% at 50% 35%, #1c2126 0%, #101214 60%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--subida) + 2%), 93% calc(100% - var(--subida) + 6%), 86% calc(100% - var(--subida) + 1%), 78% calc(100% - var(--subida) + 8%), 70% calc(100% - var(--subida) + 3%), 61% calc(100% - var(--subida) + 9%), 53% calc(100% - var(--subida)), 45% calc(100% - var(--subida) + 7%), 37% calc(100% - var(--subida) + 2%), 28% calc(100% - var(--subida) + 8%), 20% calc(100% - var(--subida) + 3%), 11% calc(100% - var(--subida) + 7%), 0 calc(100% - var(--subida) + 2%));
+}
+.carga__centro { display: grid; justify-items: center; gap: 34px; width: min(640px, 86vw); }
+.carga .logo-svg { width: 100%; }
+.carga__cordillera { width: min(420px, 70vw); height: 46px; overflow: visible; }
+.carga__base, .carga__linea { fill: none; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.carga__base { stroke: rgb(255 255 255 / .1); }
+.carga__linea { stroke: var(--persona); filter: drop-shadow(0 0 6px rgb(233 169 43 / .55)); }
+.carga__pie { display: flex; flex-wrap: nowrap; white-space: nowrap; gap: 18px; align-items: baseline; font: 600 .78rem/1 var(--f-texto); letter-spacing: .2em; text-transform: uppercase; color: rgb(255 255 255 / .55); }
+.carga__num { font: 800 1.15rem/1 var(--f-titulo); color: #fff; letter-spacing: .12em; font-variant-numeric: tabular-nums; }
+html.sin-precarga .carga { display: none; }
+
+/* ---------- Transición entre páginas ---------- */
+.transicion { position: fixed; inset: 0; z-index: 9400; pointer-events: none; display: grid; place-items: center; }
+.transicion__barras { position: absolute; inset: 0; display: flex; }
+.transicion__barras i { flex: 1; background: var(--c); transform: scaleY(0); margin-right: -1px; }
+.transicion__emblema { position: relative; width: clamp(90px, 14vw, 150px); opacity: 0; filter: drop-shadow(0 18px 40px rgb(0 0 0 / .35)); }
+.transicion__emblema .emblema { display: none; width: 100%; height: auto; }
+.transicion__emblema .emblema-fondo { fill: #fff; }
+.transicion__emblema .emblema-simbolo { fill: #17191B; }
+html.entrando .transicion, html.saliendo .transicion { pointer-events: auto; }
+html.entrando .transicion__barras i { transform: scaleY(1); }
+html.entrando .transicion__emblema { opacity: 1; }
+
+/* ---------- Logo vivo ---------- */
+.logo-svg--vivo { overflow: visible; }
+.logo-svg--vivo .logo-letra { cursor: default; }
+.logo-svg--vivo.logo-svg--entrada:not(.logo-svg--listo) { opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .logo-svg--vivo.logo-svg--entrada:not(.logo-svg--listo) { opacity: 1; } }

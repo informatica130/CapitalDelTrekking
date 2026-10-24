@@ -65,19 +65,28 @@ const emblemasHtml = partes.letras.map((l, i) => {
       try { if (sessionStorage.getItem('mct-visto') || matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('sin-precarga'); } catch (e) { document.documentElement.classList.add('sin-precarga'); }
     </script>
   )}
+  <script is:inline>
+    try { if (sessionStorage.getItem('mct-trans') !== null && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('entrando'); } catch (e) {}
+  </script>
   <slot name="head" />
 </head>
 <body>
   {precarga && (
-    <div class="precarga" aria-hidden="true">
-      <div class="precarga__franjas">{PALETA.map((p, i) => <i style={`--i:${i};--c:${p.color}`}></i>)}</div>
-      <div class="precarga__centro">
-        <Logo variante="color" lema="claro" animado />
-        <div class="precarga__barra"><b></b></div>
-        <span class="precarga__cuenta">000</span>
+    <div class="carga" aria-hidden="true">
+      <div class="carga__centro">
+        <Logo variante="color" lema="claro" vivo espera class="carga__logo" />
+        <svg class="carga__cordillera" viewBox="0 0 600 70" preserveAspectRatio="none">
+          <path class="carga__base" d="M0 62 L48 40 L84 52 L132 18 L176 46 L214 30 L262 56 L318 8 L366 44 L404 28 L452 50 L500 22 L548 46 L600 34" />
+          <path class="carga__linea" d="M0 62 L48 40 L84 52 L132 18 L176 46 L214 30 L262 56 L318 8 L366 44 L404 28 L452 50 L500 22 L548 46 L600 34" />
+        </svg>
+        <div class="carga__pie"><span class="carga__num">000</span><span>Melipeuco · Araucanía Andina</span></div>
       </div>
     </div>
   )}
+  <div class="transicion" aria-hidden="true">
+    <div class="transicion__barras">{PALETA.map((p, i) => <i style={`--c:${p.color}`}></i>)}</div>
+    <div class="transicion__emblema">{PALETA.map((_, i) => <Emblema letra={i} />)}</div>
+  </div>
   <a class="saltar" href="#contenido">Saltar al contenido</a>
   <div class="progreso" aria-hidden="true"></div>
 
@@ -147,7 +156,7 @@ const emblemasHtml = partes.letras.map((l, i) => {
   <footer class="pie">
     <div class="pie__montes"><Montes color="var(--noche)" capas={false} /></div>
     <div class="contenedor">
-      <div class="pie__logo revelar"><Logo variante="color" lema="claro" class="logo-svg--interactivo logo-svg--giro" /></div>
+      <div class="pie__logo"><Logo variante="color" lema="claro" vivo /></div>
       <div class="pie__grid">
         <div>
           <p class="lema">{sitio.lema}</p>
@@ -204,9 +213,14 @@ const emblemasHtml = partes.letras.map((l, i) => {
 
   <script>
     import { iniciarEfectos } from '../scripts/efectos';
+    import { pantallaDeCarga, transiciones } from '../scripts/carga';
+    import { activarLogosVivos } from '../scripts/logo-vivo';
     import { iniciarApp } from '../scripts/app';
     iniciarApp();
     iniciarEfectos();
+    pantallaDeCarga();
+    transiciones();
+    activarLogosVivos();
 
     // App instalable y uso sin conexión de las páginas ya visitadas
     if ('serviceWorker' in navigator && location.protocol === 'https:') {

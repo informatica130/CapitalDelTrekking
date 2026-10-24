@@ -1,26 +1,35 @@
 ---
 // Logo de Melipeuco Capital del Trekking desarmado en sus 9 letras-símbolo.
 // variante: color (cada letra con su color de zona) | blanco | negro
-// animado: las letras caen una a una, luego aparecen sus símbolos y el lema.
+// animado: entrada con CSS (las letras caen una a una).
+// vivo: cada símbolo se anima según lo que representa (GSAP, ver scripts/logo-vivo.ts).
 import partes from '../data/logo-partes.json';
+import simbolos from '../data/logo-simbolos.json';
 import { PALETA } from '../scripts/zonas';
-interface Props { variante?: 'color' | 'blanco' | 'negro'; lema?: 'oscuro' | 'claro' | false; animado?: boolean; class?: string; titulo?: string }
-const { variante = 'color', lema = 'claro', animado = false, class: clase = '', titulo = 'Melipeuco Capital del Trekking' } = Astro.props;
+interface Props { variante?: 'color' | 'blanco' | 'negro'; lema?: 'oscuro' | 'claro' | false; animado?: boolean; vivo?: boolean; entrada?: boolean; espera?: boolean; class?: string; titulo?: string }
+const { variante = 'color', lema = 'claro', animado = false, vivo = false, entrada = true, espera = false, class: clase = '', titulo = 'Melipeuco Capital del Trekking' } = Astro.props;
 const fondo = (i: number) => (variante === 'color' ? PALETA[i].color : variante === 'blanco' ? '#FFFFFF' : '#17191B');
 const simbolo = variante === 'blanco' ? '#17191B' : '#FFF8EC';
 const colorLema = lema === 'oscuro' ? '#17191B' : '#FFFFFF';
 const vb = lema ? '0 0 1036 265' : '0 0 1036 162';
+const clases = ['logo-svg', animado && !vivo ? 'logo-svg--animado' : '', vivo ? 'logo-svg--vivo' : '', vivo && entrada ? 'logo-svg--entrada' : '', clase].filter(Boolean).join(' ');
 ---
-<svg class={`logo-svg ${animado ? 'logo-svg--animado' : ''} ${clase}`} viewBox={vb} role="img" aria-label={titulo} xmlns="http://www.w3.org/2000/svg">
+<svg class={clases} viewBox={vb} role="img" aria-label={titulo} xmlns="http://www.w3.org/2000/svg" data-logo-vivo={vivo ? (entrada ? 'entrada' : 'reposo') : undefined} data-espera={espera ? '' : undefined}>
   <title>{titulo}</title>
   {partes.letras.map((l, i) => {
     const [x, y, w, h] = l.caja;
     return (
-      <g class="logo-letra" style={`--i:${i};transform-origin:${x + w / 2}px ${y + h}px`}>
+      <g class="logo-letra" data-letra={i} data-caja={vivo ? l.caja.join(' ') : undefined} style={vivo ? `--i:${i}` : `--i:${i};transform-origin:${x + w / 2}px ${y + h}px`}>
         <path class="logo-fondo" fill={fondo(i)} d={l.fondo} />
-        <path class="logo-simbolo" fill={simbolo} d={l.simbolo} style={`transform-origin:${x + w / 2}px ${y + h / 2}px`} />
+        {vivo ? (
+          <g class="logo-simbolo" fill={simbolo}>
+            {simbolos[i].map((s, k) => <path class="logo-pieza" data-k={k} data-cx={s.cx} data-cy={s.cy} data-w={s.w} data-h={s.h} d={s.d} />)}
+          </g>
+        ) : (
+          <path class="logo-simbolo" fill={simbolo} d={l.simbolo} style={`transform-origin:${x + w / 2}px ${y + h / 2}px`} />
+        )}
       </g>
     );
   })}
-  {lema && <g class="logo-lema" fill={colorLema}>{partes.lema.map((d) => <path d={d} />)}</g>}
+  {lema && <g class="logo-lema" fill={colorLema}>{partes.lema.map((d) => <path class="logo-lema__letra" d={d} />)}</g>}
 </svg>
